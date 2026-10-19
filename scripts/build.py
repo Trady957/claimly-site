@@ -96,7 +96,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <div class="bg" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 <header><div class="wrap nav">
 <a class="brand" href="/">Claimly<span class="reg">&reg;</span></a>
-<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
+<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
 </div></header>
 """
 
@@ -119,6 +119,7 @@ def footer():
 <a href="/#finder">AI finder</a>
 <a href="/#shop">Browse names</a>
 <a href="/new/">New this week</a>
+<a href="/name-my-business/">Name my business</a>
 {cats}
 </div>
 <div>
@@ -223,6 +224,9 @@ def home():
 <div class="loadmore"><button class="btn btn-cta" id="loadMore" style="display:none">Load more</button></div>
 </div></section>
 
+<section class="section-pad" style="padding-top:0"><div class="wrap"><div style="background:var(--ink);color:var(--bone);border-radius:22px;padding:30px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+<div><div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7">Can&rsquo;t decide?</div><h2 style="font-family:'Schibsted Grotesk';font-size:clamp(22px,3vw,30px);margin:6px 0 6px">We&rsquo;ll name your business for you</h2><p style="margin:0;opacity:.8;max-width:52ch">10 checked names made for your business, plus your domain registered. Delivered in 48 hours, from $149.</p></div>
+<a class="btn btn-cta" href="/name-my-business/">See the naming package &rarr;</a></div></div></section>
 <section class="section-pad" id="how"><div class="wrap">
 <h2>How it works</h2>
 <p class="section-sub">From finding a name to owning it &mdash; usually the same day.</p>
@@ -507,6 +511,82 @@ def trending_html():
 {f'<div class="catlinks">{chips}</div>' if chips else ''}
 </div></section>"""
 
+# ───────────────────────── naming package page ─────────────────────────
+PACKAGES = [
+    ("naming_starter", "Starter", 149, ["10 hand-picked, available names made for your business", "Each name checked for .com / .co availability", "Your favourite domain registered for you (first year included)", "Matching handle check on Instagram, X and LinkedIn", "Delivered by email within 48 hours"]),
+    ("naming_brand", "Brand kit", 299, ["Everything in Starter", "Simple wordmark logo concept for your chosen name", "Colour palette and font pairing", "Short tagline options", "One round of changes, delivered within 3 days"]),
+]
+
+def package_page():
+    canon = f"{SITE}/name-my-business/"
+    title = "Name My Business: Business Name + Domain Package | Claimly"
+    desc = "Struggling to name your business? Get 10 checked, available brand names and your domain registered for you, from $149. Optional logo and brand kit."
+    ld = {"@context":"https://schema.org","@type":"Service","name":"Business naming package","provider":{"@type":"Organization","name":"Claimly","url":SITE+"/"},
+          "areaServed":"Worldwide","offers":[{"@type":"Offer","name":n,"price":str(pr),"priceCurrency":"USD","url":canon} for _,n,pr,_ in PACKAGES]}
+    cards = "".join(f"""<div class="pk{' pk-hi' if i==1 else ''}">
+<div class="pk-name">{esc(n)}{'<span class="pk-tag">Most complete</span>' if i==1 else ''}</div>
+<div class="pk-price"><small>$</small>{pr}</div>
+<ul>{''.join(f'<li>{esc(x)}</li>' for x in feats)}</ul>
+<button class="btn btn-cta wide" type="button" onclick="pickPk('{k}')">Choose {esc(n)}</button>
+</div>""" for i,(k,n,pr,feats) in enumerate(PACKAGES))
+    opts = "".join(f'<option value="{k}" data-price="{pr}">{esc(n)} &middot; ${pr}</option>' for k,n,pr,_ in PACKAGES)
+    faq = [("How does it work?","Tell us about your business. Within 48 hours you get 10 names that fit it, each with an available domain. Pick your favourite and we register it for you."),
+           ("What if I don’t like any of the names?","Reply and tell us why. We send a second set of names at no extra cost."),
+           ("Which domain extensions are included?",".com, .co, .io, .app and similar are included in the price. Premium or already-owned names are not."),
+           ("Do you work with businesses in the UAE and Saudi Arabia?","Yes. We work with founders everywhere, and we can suggest names that work in both English and Arabic markets.")]
+    faq_html = "".join(f"<details class='pk-faq'><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q,a in faq)
+    return head(title, desc, canon, '<script type="application/ld+json">'+json.dumps(ld)+'</script>') + f"""
+<style>
+.pk-wrap{{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 34px}}
+.pk{{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}}
+.pk-hi{{border:2px solid var(--ink)}}
+.pk-name{{font-family:'Schibsted Grotesk';font-weight:800;font-size:20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}}
+.pk-tag{{font-size:11.5px;font-weight:700;background:var(--ink);color:var(--bone);padding:3px 9px;border-radius:99px}}
+.pk-price{{font-family:'Schibsted Grotesk';font-weight:900;font-size:44px;margin:8px 0 10px}}.pk-price small{{font-size:20px;color:var(--muted)}}
+.pk ul{{margin:0 0 20px;padding-left:18px;flex:1}}.pk li{{margin:6px 0;font-size:15px}}
+.pk-form{{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;max-width:620px;margin:0 auto 34px;scroll-margin-top:90px}}
+.pk-form textarea{{font-family:'Hanken Grotesk';font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bone);min-height:110px;resize:vertical}}
+.pk-steps{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:8px 0 30px}}.pk-steps div{{border-top:2px solid var(--ink);padding-top:10px;font-size:15px}}.pk-steps b{{display:block;font-family:'Schibsted Grotesk';margin-bottom:4px}}
+.pk-faq{{border-bottom:1px solid var(--line);padding:12px 0}}.pk-faq summary{{font-weight:700;cursor:pointer}}.pk-faq p{{margin:8px 0 0;color:var(--muted)}}
+#pkDone{{display:none;text-align:center}}
+@media(max-width:760px){{.pk-wrap,.pk-steps{{grid-template-columns:1fr}}}}
+</style>
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; Name my business</div>
+<h1>Name your business in 48 hours</h1>
+<p class="section-sub">Stuck on a name? Tell us what you do. We send you 10 brandable names with available domains, then register your favourite for you.</p>
+<div class="pk-steps"><div><b>1. Tell us about it</b>What you do, who it&rsquo;s for, the feel you want.</div><div><b>2. Get 10 names</b>Checked and available, delivered by email.</div><div><b>3. Pick and launch</b>We register your domain. You start building.</div></div>
+<div class="pk-wrap">{cards}</div>
+<form class="pk-form" id="pkForm" onsubmit="return pkSubmit(event)">
+<div id="pkFields">
+<h2 style="font-family:'Schibsted Grotesk';margin:0 0 14px;font-size:22px">Start your order</h2>
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<div class="field"><label for="pkKind">Package</label><select id="pkKind" name="kind" required>{opts}</select></div>
+<div class="field"><label for="pkEmail">Your email</label><input type="email" id="pkEmail" name="email" required placeholder="you@company.com" autocomplete="email" maxlength="200"></div>
+<div class="field"><label for="pkBiz">What does your business do?</label><textarea id="pkBiz" name="business" required maxlength="1500" placeholder="e.g. A home cleaning service in Dubai for busy families. Friendly, trustworthy, modern."></textarea></div>
+<div class="field"><label for="pkCountry">Country</label><input id="pkCountry" name="country" maxlength="80" placeholder="e.g. UAE"></div>
+<div class="field"><label for="pkNotes">Names or words you like or dislike (optional)</label><input id="pkNotes" name="notes" maxlength="1500"></div>
+<div class="field"><label for="pkHeard">How did you find Claimly?</label><select id="pkHeard" name="heard_about" required><option value="">Choose one</option><option>Google search</option><option>LinkedIn</option><option>X / Twitter</option><option>Reddit</option><option>Instagram</option><option>Friend or colleague</option><option>AI assistant (ChatGPT, Claude…)</option><option>Other</option></select></div>
+<p class="reassure" style="margin:0 0 10px">By placing your order, you confirm this information is correct and you authorize this purchase right now.</p>
+<button class="btn btn-cta wide" type="submit">Continue to secure payment &rarr;</button>
+<p class="reassure">Card or PayPal &middot; processed by PayPal &middot; full refund if we can&rsquo;t deliver</p>
+</div>
+<div id="pkDone"><h3 style="font-family:'Schibsted Grotesk'">Complete payment in the PayPal tab</h3><p>Your order is saved. In PayPal, pay <strong>$<span id="pkPrice"></span></strong> and add your email in the note so we can match it. Your names arrive within 48 hours of payment.</p><p class="reassure">PayPal didn&rsquo;t open? <a id="pkLink" href="#" target="_blank" rel="noopener">Open PayPal</a></p></div>
+</form>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px">Questions</h2>
+{faq_html}
+<p style="margin:28px 0 0">Prefer to pick a name yourself? <a href="/#shop">Browse ready-to-register names</a> from $15.</p>
+</div></main>
+<script>
+function pickPk(k){{document.getElementById('pkKind').value=k;var f=document.getElementById('pkForm');f.scrollIntoView({{behavior:'smooth'}});setTimeout(function(){{document.getElementById('pkEmail').focus()}},400);}}
+function pkSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;
+ var sel=document.getElementById('pkKind'),price=Number(sel.options[sel.selectedIndex].dataset.price),a=claimlyAttr(),v=function(n){{return (f[n].value||'').trim();}};
+ claimlySave('claimly_orders',{{kind:sel.value,domain:'Naming package: '+sel.options[sel.selectedIndex].text.split(' ')[0],price:price,email:v('email').slice(0,200),business:v('business').slice(0,1500),country:v('country').slice(0,80),notes:v('notes').slice(0,1500),heard_about:v('heard_about'),referrer:(a.ref||'').slice(0,500),landing_page:(a.land||location.pathname).slice(0,500),utm_source:a.us||'',utm_medium:a.um||'',utm_campaign:a.uc||''}});
+ var url='{PAY_BASE}/'+price+'USD';window.open(url,'_blank','noopener');
+ document.getElementById('pkPrice').textContent=price;document.getElementById('pkLink').href=url;
+ document.getElementById('pkFields').style.display='none';document.getElementById('pkDone').style.display='block';return false;}}
+</script>""" + footer() + "</body></html>"
+
 def notfound():
     return head("Page not found | Claimly", "This page doesn't exist.", SITE+"/404.html", robots="noindex") + f"""
 <main class="page"><div class="wrap" style="text-align:center;padding:60px 0">
@@ -516,7 +596,7 @@ def notfound():
 </div></main>""" + footer() + "</body></html>"
 
 def sitemap():
-    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY)] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
+    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY)] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
     body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
 
@@ -532,6 +612,7 @@ def build():
     open(os.path.join(OUT, "index.html"), "w").write(home())
     open(os.path.join(OUT, "404.html"), "w").write(notfound())
     os.makedirs(os.path.join(OUT, "new")); open(os.path.join(OUT, "new", "index.html"), "w").write(new_page())
+    os.makedirs(os.path.join(OUT, "name-my-business")); open(os.path.join(OUT, "name-my-business", "index.html"), "w").write(package_page())
     for i, d in enumerate(D):
         p = os.path.join(OUT, "d", d["fqdn"]); os.makedirs(p)
         open(os.path.join(p, "index.html"), "w").write(domain_page(d, i))

@@ -43,7 +43,7 @@ jobs:
         continue-on-error: true
       - name: Add new names, drop sold/taken ones
         if: github.event_name != 'push'
-        run: python3 scripts/daily_update.py --add "${{ github.event.inputs.add || '25' }}" --recheck 60
+        run: python3 scripts/daily_update.py --add "${{ github.event.inputs.add || '25' }}" --recheck 120
       - name: Save today's changes
         if: github.event_name != 'push'
         run: |

@@ -25,10 +25,24 @@ ADD, RECHECK = arg("--add", 25), arg("--recheck", 60)
 SITE = "https://claimly.ae"
 NO_RDAP = {"ai"}  # no reliable public RDAP: never auto-added
 
+_BOOT = None
+def rdap_base(tld):
+    global _BOOT
+    if _BOOT is None:
+        _BOOT = {}
+        try:
+            with urllib.request.urlopen("https://data.iana.org/rdap/dns.json", timeout=20) as r:
+                for tlds, urls in json.loads(r.read().decode())["services"]:
+                    u = next((x for x in urls if x.startswith("https")), urls[0])
+                    for t in tlds: _BOOT[t] = u if u.endswith("/") else u + "/"
+        except Exception as e:
+            print("RDAP bootstrap unavailable, using rdap.org:", e)
+    return _BOOT.get(tld, "https://rdap.org/")
+
 def rdap(domain):
     if domain.rsplit(".", 1)[1] in NO_RDAP:
         return "uncertain"
-    req = urllib.request.Request("https://rdap.org/domain/" + domain,
+    req = urllib.request.Request(rdap_base(domain.rsplit(".", 1)[1]) + "domain/" + domain,
         headers={"User-Agent": "claimly-daily/1.0", "Accept": "application/rdap+json"})
     for attempt in range(3):
         try:
@@ -42,7 +56,8 @@ def rdap(domain):
             time.sleep(2 * (attempt + 1))
     return "uncertain"
 
-def check_all(domains, workers=4):
+def check_all(domains, workers=None):
+    workers = workers or (8 if ADD > 100 else 4)
     with ThreadPoolExecutor(max_workers=workers) as ex:
         return dict(zip(domains, ex.map(rdap, domains)))
 
@@ -63,9 +78,18 @@ def good(n):
     has_word = any(w in n for w in ROOTWORDS if len(w) >= 3)
     return has_word or len(n) <= 7
 
+# Minimum price per extension: first-year registration cost (which Claimly pays) plus a margin.
+FLOOR = {"com": 15, "xyz": 15, "app": 25, "dev": 25, "co": 39, "studio": 39, "shop": 45,
+         "io": 59, "tech": 59, "store": 69, "eco": 89}
+SKIP_NEW = {"eco"}  # too expensive to register for this shop's price range: no new ones
+
+def floor_for(ext):
+    return FLOOR.get(ext, 39)
+
 def shop_price(name, cat, ext):
     p, tier = G.price_for(name, cat, ext)          # generator scale ($30–150)
-    return max(15, min(75, math.ceil(p / 10) * 5)), tier   # Claimly scale ($15–75)
+    f = floor_for(ext)
+    return max(f, min(max(75, f + 30), math.ceil(p / 10) * 5)), tier   # Claimly scale
 
 SB_URL = "https://bbjreybvwqdzsfbcunlm.supabase.co"
 SB_KEY = "sb_publishable_JeEACKfWsGaFXTat1B-WVw_uWkUR8ZK"   # public, insert-only
@@ -91,6 +115,11 @@ def main():
     before = len(inv)
     inv = [x for x in inv if x["d"] not in sold and x["d"] not in taken]
     removed_sold = before - len(inv)
+    repriced = 0
+    for x in inv:
+        f = floor_for(x["d"].split(".", 1)[1])
+        if x["p"] < f: x["p"] = f; repriced += 1
+    if repriced: log.append(f"Raised {repriced} prices to the minimum for their extension")
     if removed_sold: log.append(f"Removed {removed_sold} sold/taken names")
 
     # 2. re-check the oldest-checked names
@@ -128,14 +157,14 @@ def main():
             n = G.cap(n)
             ext = random.choice(["com", "com", "co", "io"] if cat in ("AI", "SaaS", "Crypto") else ["com", "com", "co"])
             d = f"{n.lower()}.{ext}"
-            if d not in seen and good(n):
+            if d not in seen and d not in {c[3] for c in trend_cands} and good(n):
                 trend_cands.append((cat, n, ext, d, word))
     random.shuffle(trend_cands)
     for cat in order:
-        for n in G.gen_for_cat(cat, 40):
+        for n in G.gen_for_cat(cat, max(40, ADD * 10 // len(order))):
             ext = G.ext_for(cat, n)
             d = f"{n.lower()}.{ext}"
-            if d not in seen and ext not in NO_RDAP and ext in G.EXTS and good(n):
+            if d not in seen and ext not in NO_RDAP and ext not in SKIP_NEW and ext in G.EXTS and good(n):
                 cands.append((cat, n, ext, d, ""))
     random.shuffle(cands)
     # round-robin by category so one category can't take every slot
@@ -146,10 +175,12 @@ def main():
     while any(by.values()):
         for cat in order:
             if by.get(cat): queue.append(by[cat].pop())
+    uniq, queue = set(), [q for q in queue if not (q[3] in uniq or uniq.add(q[3]))]
     added, checked = [], []
-    for i in range(0, len(queue), 20):
+    for i in range(0, len(queue), 40 if ADD > 100 else 20):
         if len(added) >= ADD: break
-        batch = queue[i:i + 20]
+        batch = queue[i:i + (40 if ADD > 100 else 20)]
+        if ADD > 100 and i % 400 == 0: print(f"  checked {i}, added {len(added)}", flush=True)
         res = check_all([b[3] for b in batch])
         for cat, n, ext, d, word in batch:
             checked.append(d)
