@@ -131,7 +131,7 @@ def footer():
 <div class="policy">
 <h4>Policies</h4>
 <details><summary>Terms of Service</summary><div class="ptext">Listings are subject to availability at the time of purchase. After payment we register the domain and transfer it to you, or register it directly in your name; ownership passes on completion. Prices are in USD and include the first year of registration. Renewals are paid by you to your registrar. Domains are provided for lawful use.</div></details>
-<details><summary>Privacy Policy</summary><div class="ptext">We collect only what&rsquo;s needed to complete your order: your email, the domain, your registrar, and how you found us. Payments are handled by PayPal; we never see your card details. We don&rsquo;t sell your data.</div></details>
+<details><summary>Privacy Policy</summary><div class="ptext">We collect only what&rsquo;s needed to complete your order: your email, the domain, and how you found us. Payments are handled by PayPal; we never see your card details. We don&rsquo;t sell your data.</div></details>
 <details><summary>Refund Policy</summary><div class="ptext">If a domain can&rsquo;t be delivered after payment, you receive a full refund. As domains are unique assets transferred to you, completed transfers are final. Contact us within 7 days for any delivery issue.</div></details>
 </div>
 </div>
@@ -232,7 +232,7 @@ def home():
 <p class="section-sub">From finding a name to owning it &mdash; usually the same day.</p>
 <div class="steps">
 <div class="step"><div class="n">01</div><h3>Find your name</h3><p>Search the catalogue or describe your business to the AI finder. Every name is short, brandable and availability-checked.</p></div>
-<div class="step"><div class="n">02</div><h3>Order &amp; pay</h3><p>Enter your email and registrar, then pay by card or PayPal. PayPal&rsquo;s buyer protection applies, and you get a full refund if we can&rsquo;t deliver.</p></div>
+<div class="step"><div class="n">02</div><h3>Order &amp; pay</h3><p>Enter your email, then pay by card or PayPal. PayPal&rsquo;s buyer protection applies, and you get a full refund if we can&rsquo;t deliver.</p></div>
 <div class="step"><div class="n">03</div><h3>Get your domain</h3><p>We register the domain in your name or transfer it to your registrar account, and email you as soon as it&rsquo;s yours.</p></div>
 </div>
 </div></section>
@@ -338,8 +338,6 @@ def modal():
 <input type="hidden" name="domain" id="fDomain"><input type="hidden" name="price" id="fPrice">
 <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
 <div class="field"><label for="fEmail">Your email (for delivery)</label><input type="email" name="email" id="fEmail" required placeholder="you@company.com" autocomplete="email"></div>
-<div class="field"><label for="fReg">Where should we deliver it?</label>
-<select name="registrar" id="fReg"><option>Not sure &mdash; register it for me</option><option>GoDaddy</option><option>Namecheap</option><option>Cloudflare</option><option>Google / Squarespace</option><option>Tasjeel / AE registrar</option><option>Other (I&rsquo;ll reply by email)</option></select></div>
 <div class="field"><label for="fHeard">How did you find Claimly?</label>
 <select name="heard_about" id="fHeard" required><option value="">Choose one</option><option>Google search</option><option>Reddit</option><option>X / Twitter</option><option>LinkedIn</option><option>Instagram</option><option>Facebook</option><option>Indie Hackers / Product Hunt</option><option>Friend or colleague</option><option>Domain marketplace (Afternic, Dan, Sedo)</option><option>AI assistant (ChatGPT, Claude…)</option><option>Other</option></select></div>
 <input type="hidden" name="referrer" id="fRef"><input type="hidden" name="landing_page" id="fLand">
@@ -375,7 +373,7 @@ document.getElementById('orderForm').addEventListener('submit',function(e){{
  const link=PAY_BASE+'/'+CUR.price+'USD';
  const w=window.open(link,'_blank');try{{if(w)w.opener=null;}}catch(_){{}}
  if(!f['bot-field'].value){{const v=n=>(f[n]&&f[n].value||'').trim().slice(0,480);
-  claimlySave('claimly_orders',{{domain:CUR.fqdn,price:Number(CUR.price),email:v('email'),registrar:v('registrar'),heard_about:v('heard_about'),referrer:v('referrer'),landing_page:v('landing_page'),utm_source:v('utm_source').slice(0,100),utm_medium:v('utm_medium').slice(0,100),utm_campaign:v('utm_campaign').slice(0,100)}});}}
+  claimlySave('claimly_orders',{{domain:CUR.fqdn,price:Number(CUR.price),email:v('email'),heard_about:v('heard_about'),referrer:v('referrer'),landing_page:v('landing_page'),utm_source:v('utm_source').slice(0,100),utm_medium:v('utm_medium').slice(0,100),utm_campaign:v('utm_campaign').slice(0,100)}});}}
  document.getElementById('dName').textContent=CUR.fqdn;document.getElementById('dPrice').textContent=CUR.price;
  document.getElementById('dNote').textContent=CUR.fqdn;document.getElementById('dEmail').textContent=document.getElementById('fEmail').value;
  document.getElementById('dLink').href=link;
@@ -436,7 +434,7 @@ def domain_page(d, idx):
 </div>
 <div class="prose">
 <h2>What you get</h2>
-<p>When you buy {d['fqdn']} we register it in your name, or transfer it to your account at the registrar you choose. You own it outright and renew it yourself each year at your registrar&rsquo;s normal rate. We email you at each step, and if the name can&rsquo;t be delivered for any reason you get a full refund.</p>
+<p>When you buy {d['fqdn']} we register it in your name, or transfer it to your registrar account if you prefer (just reply to our email). You own it outright and renew it yourself each year at your registrar&rsquo;s normal rate. We email you at each step, and if the name can&rsquo;t be delivered for any reason you get a full refund.</p>
 <h2>Good fit for</h2>
 <p>{esc(d['cat'])} businesses: {CAT_BLURB.get(d['cat'],'new businesses')}. Not quite right? Try the <a href="/#finder" style="color:var(--cobalt);font-weight:600">AI name finder</a> or browse more names below.</p>
 </div>
