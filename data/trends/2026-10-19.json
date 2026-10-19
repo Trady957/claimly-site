@@ -19,327 +19,244 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "منصة مدرستي",
-   "geo": "SA",
-   "traffic": 100000
+   "q": "severe thunderstorm warning",
+   "geo": "ZA",
+   "traffic": 50000
   },
   {
-   "q": "bally bagayoko",
-   "geo": "FR",
+   "q": "afghanistan vs zimbabwe",
+   "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "الصحة القابضة",
-   "geo": "SA",
+   "q": "कश्मीर",
+   "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "catholic priest killed by cross",
-   "geo": "CA",
-   "traffic": 5000
-  },
-  {
-   "q": "gqeberha weather",
-   "geo": "AU",
-   "traffic": 5000
-  },
-  {
-   "q": "duisburg",
+   "q": "flughafen",
    "geo": "DE",
    "traffic": 5000
   },
   {
-   "q": "secret fashion show",
-   "geo": "DE",
+   "q": "florent pagny",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "christian horner",
+   "q": "chute",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "afghanistan vs zimbabwe",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "crime",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "storm",
    "geo": "GB",
    "traffic": 2000
   },
   {
-   "q": "बांग्लादेश",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "nep vs oma",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "nep vs oma",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "salzburg",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "nordkurier",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "elina svitolina",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "cac 40",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "wage",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "tembeling road",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "seyi makinde nlng dividend claims",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "ocarina of time remake switch 2",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "samsung one ui 9",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "ott release this week",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "national day holidays in uae 2026",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "تركي المالكي",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "humanitarian crisis",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "teams",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "wendys",
+   "q": "alexandra eala",
    "geo": "CA",
-   "traffic": 1000
+   "traffic": 2000
   },
   {
-   "q": "orionid meteor shower",
-   "geo": "CA",
-   "traffic": 1000
-  },
-  {
-   "q": "pension",
+   "q": "elina svitolina gael monfils split",
    "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "bon jovi",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "afghanistan vs zimbabwe",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "impfung",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "gabriel attal",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "money laundering",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "boletim focus",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "小栗旬",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "救命病棟24時 キャスト",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "martin keown man city ffp",
+   "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "bunte",
+   "q": "bbc denies celebrity traitors rumors",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "قضاء",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "kerstin lee langley",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "elvira öberg",
+   "q": "bank",
    "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "rettungswagen",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "essonne",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "philippe poutou",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "afghanistan vs zimbabwe",
+   "geo": "SG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Local",
-   "score": 7100
-  },
-  {
-   "category": "Creator",
-   "score": 6000
-  },
-  {
-   "category": "Fashion",
-   "score": 5000
-  },
-  {
    "category": "Finance",
-   "score": 3600
-  },
-  {
-   "category": "Travel",
-   "score": 3100
-  },
-  {
-   "category": "SaaS",
-   "score": 1300
-  },
-  {
-   "category": "Gaming",
-   "score": 600
+   "score": 3000
   },
   {
    "category": "Education",
+   "score": 2000
+  },
+  {
+   "category": "Local",
+   "score": 1900
+  },
+  {
+   "category": "SaaS",
+   "score": 400
+  },
+  {
+   "category": "Marketing",
    "score": 200
   },
   {
-   "category": "AI",
-   "score": 100
+   "category": "Legal",
+   "score": 200
   },
   {
-   "category": "E-commerce",
-   "score": 100
+   "category": "Travel",
+   "score": 200
   },
   {
-   "category": "Food",
-   "score": 100
+   "category": "Crypto",
+   "score": 200
+  },
+  {
+   "category": "Health",
+   "score": 200
   }
  ],
  "words": [
   {
-   "word": "show",
-   "category": "Creator",
-   "score": 5500
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 5000
-  },
-  {
-   "word": "fashion",
-   "category": "Fashion",
-   "score": 5000
-  },
-  {
-   "word": "wage",
+   "word": "money",
    "category": "Finance",
    "score": 2000
   },
   {
-   "word": "road",
-   "category": "Travel",
+   "word": "focus",
+   "category": "Education",
    "score": 2000
-  },
-  {
-   "word": "teams",
-   "category": "SaaS",
-   "score": 1200
-  },
-  {
-   "word": "holidays",
-   "category": "Travel",
-   "score": 1000
-  },
-  {
-   "word": "pension",
-   "category": "Finance",
-   "score": 1000
-  },
-  {
-   "word": "haze",
-   "category": "Local",
-   "score": 1000
-  },
-  {
-   "word": "gold",
-   "category": "Finance",
-   "score": 500
-  },
-  {
-   "word": "stage",
-   "category": "Creator",
-   "score": 500
-  },
-  {
-   "word": "community",
-   "category": "Local",
-   "score": 500
-  },
-  {
-   "word": "welfare",
-   "category": "Local",
-   "score": 200
   },
   {
    "word": "city",
    "category": "Local",
+   "score": 1000
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 1000
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 700
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 400
+  },
+  {
+   "word": "claim",
+   "category": "Legal",
    "score": 200
   },
   {
-   "word": "hints",
-   "category": "Education",
-   "score": 200
-  },
-  {
-   "word": "king",
-   "category": "Gaming",
-   "score": 200
-  },
-  {
-   "word": "hunter",
-   "category": "Gaming",
-   "score": 200
-  },
-  {
-   "word": "town",
+   "word": "near",
    "category": "Local",
    "score": 200
   },
   {
-   "word": "rocket",
-   "category": "AI",
-   "score": 100
+   "word": "flight",
+   "category": "Travel",
+   "score": 200
   },
   {
-   "word": "launch",
-   "category": "SaaS",
-   "score": 100
-  },
-  {
-   "word": "boss",
-   "category": "Gaming",
-   "score": 100
-  },
-  {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 100
-  },
-  {
-   "word": "shipping",
-   "category": "E-commerce",
-   "score": 100
-  },
-  {
-   "word": "trade",
-   "category": "Finance",
-   "score": 100
-  },
-  {
-   "word": "nuggets",
-   "category": "Food",
-   "score": 100
+   "word": "crypto",
+   "category": "Crypto",
+   "score": 200
   }
  ]
 }
