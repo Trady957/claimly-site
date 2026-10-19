@@ -19,128 +19,128 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "severe thunderstorm warning",
-   "geo": "ZA",
-   "traffic": 50000
-  },
-  {
-   "q": "afghanistan vs zimbabwe",
-   "geo": "AE",
+   "q": "quaest",
+   "geo": "BR",
    "traffic": 20000
   },
   {
-   "q": "unglück",
-   "geo": "DE",
+   "q": "south africa vs australia",
+   "geo": "AU",
    "traffic": 10000
   },
   {
-   "q": "flughafen",
-   "geo": "DE",
-   "traffic": 10000
-  },
-  {
-   "q": "कश्मीर",
-   "geo": "IN",
+   "q": "sunday night football lambeau field police",
+   "geo": "US",
    "traffic": 5000
   },
   {
-   "q": "florent pagny",
-   "geo": "FR",
+   "q": "richard riehle",
+   "geo": "US",
    "traffic": 5000
   },
   {
-   "q": "chute",
-   "geo": "FR",
+   "q": "طرابزون سبور ضد بشكتاش",
+   "geo": "SA",
    "traffic": 5000
-  },
-  {
-   "q": "quaest pesquisa",
-   "geo": "BR",
-   "traffic": 5000
-  },
-  {
-   "q": "storm",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "bbc denies celebrity traitors rumors",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "alexandra eala",
-   "geo": "CA",
-   "traffic": 2000
   },
   {
    "q": "elina svitolina gael monfils split",
    "geo": "AU",
-   "traffic": 2000
+   "traffic": 5000
   },
   {
-   "q": "bon jovi",
-   "geo": "AU",
-   "traffic": 2000
-  },
-  {
-   "q": "afghanistan vs zimbabwe",
-   "geo": "AU",
-   "traffic": 2000
-  },
-  {
-   "q": "gabriel attal",
+   "q": "nevers",
    "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "pete hegseth pentagon leadership future",
+   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "money laundering",
+   "q": "al-hilal vs al-hazem",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "phishing",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "asia pulp & paper",
    "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "afghanistan vs zimbabwe",
-   "geo": "ZA",
+   "q": "trabzonspor vs beşiktaş",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "boletim focus",
+   "q": "al-hilal x al hazm",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "小栗旬",
+   "q": "日本郵政",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "救命病棟24時 キャスト",
-   "geo": "JP",
-   "traffic": 2000
+   "q": "kelly ripa dog adoption delayed",
+   "geo": "US",
+   "traffic": 1000
   },
   {
-   "q": "martin keown man city ffp",
+   "q": "al-hilal vs al-hazem",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "sholing fc",
    "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "alexandra eala",
-   "geo": "GB",
-   "traffic": 1000
-  },
-  {
-   "q": "బ్లాక్మెయిల్",
+   "q": "al-hilal vs al-hazem",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "alexandra eala",
+   "q": "electronic invoicing",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "قضاء",
+   "q": "trabzonspor vs beşiktaş",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "طرابزون سبور ضد بشكتاش",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "trabzonspor vs beşiktaş",
    "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "gestev",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "trabzonspor vs beşiktaş",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "chevron",
+   "geo": "AU",
    "traffic": 1000
   },
   {
@@ -149,104 +149,63 @@
    "traffic": 1000
   },
   {
-   "q": "kim jong un",
-   "geo": "AU",
-   "traffic": 1000
-  },
-  {
-   "q": "kerstin lee langley",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "bank",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "essonne",
+   "q": "manchester city",
    "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "malaysia",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "al-hilal vs al-hazem",
+   "geo": "NG",
+   "traffic": 1000
+  },
+  {
+   "q": "al-hilal vs al-hazem",
+   "geo": "ZA",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Finance",
-   "score": 3000
-  },
-  {
-   "category": "Education",
-   "score": 2000
-  },
-  {
    "category": "Local",
-   "score": 1900
+   "score": 1800
   },
   {
-   "category": "SaaS",
-   "score": 400
+   "category": "Pets",
+   "score": 1000
   },
   {
-   "category": "Marketing",
-   "score": 200
+   "category": "Gaming",
+   "score": 500
   },
   {
-   "category": "Legal",
-   "score": 200
+   "category": "Finance",
+   "score": 300
   },
   {
    "category": "Travel",
-   "score": 200
-  },
-  {
-   "category": "Crypto",
-   "score": 200
-  },
-  {
-   "category": "Health",
    "score": 200
   }
  ],
  "words": [
   {
-   "word": "money",
-   "category": "Finance",
-   "score": 2000
-  },
-  {
-   "word": "focus",
-   "category": "Education",
-   "score": 2000
-  },
-  {
    "word": "city",
    "category": "Local",
+   "score": 1600
+  },
+  {
+   "word": "dog",
+   "category": "Pets",
    "score": 1000
   },
   {
-   "word": "bank",
-   "category": "Finance",
-   "score": 1000
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 700
-  },
-  {
-   "word": "team",
-   "category": "SaaS",
-   "score": 400
-  },
-  {
-   "word": "claim",
-   "category": "Legal",
-   "score": 200
-  },
-  {
-   "word": "near",
-   "category": "Local",
-   "score": 200
+   "word": "boss",
+   "category": "Gaming",
+   "score": 500
   },
   {
    "word": "flight",
@@ -254,9 +213,19 @@
    "score": 200
   },
   {
-   "word": "crypto",
-   "category": "Crypto",
+   "word": "tax",
+   "category": "Finance",
    "score": 200
+  },
+  {
+   "word": "rain",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "trade",
+   "category": "Finance",
+   "score": 100
   }
  ]
 }
