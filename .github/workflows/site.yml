@@ -32,6 +32,15 @@ jobs:
         if: github.event_name != 'push'
         run: python3 scripts/trends.py
         continue-on-error: true
+      - name: Search stats from Google Search Console and Bing
+        if: github.event_name != 'push'
+        env:
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+        run: |
+          pip install --quiet google-auth requests
+          python3 scripts/seo.py
+        continue-on-error: true
       - name: Add new names, drop sold/taken ones
         if: github.event_name != 'push'
         run: python3 scripts/daily_update.py --add "${{ github.event.inputs.add || '25' }}" --recheck 60

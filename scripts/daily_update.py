@@ -172,6 +172,7 @@ def main():
     report_stats({"run_date": TODAY, "shop_size": len(inv), "added": len(added), "removed_taken": len(gone),
                   "removed_sold": removed_sold, "trending_categories": ", ".join(hot)[:500],
                   "trending_words": ", ".join(w["word"] for w in tr.get("words", [])[:15])[:1000],
+                  "top_searches": "; ".join(f"{x['q']} ({x['geo']})" for x in tr.get("top_searches", [])[:12])[:2000],
                   "new_names": ", ".join(f"{a['d']}|{a['p']}|{a['c']}" for a in added)[:4000]})
     summary = f"## Claimly daily update {TODAY}\n\nShop now has **{len(inv)}** names.\n\n" + "\n".join(f"- {l}" for l in log) + "\n"
     print(summary)
