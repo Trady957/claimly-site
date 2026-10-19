@@ -67,6 +67,20 @@ def shop_price(name, cat, ext):
     p, tier = G.price_for(name, cat, ext)          # generator scale ($30–150)
     return max(15, min(75, math.ceil(p / 10) * 5)), tier   # Claimly scale ($15–75)
 
+SB_URL = "https://bbjreybvwqdzsfbcunlm.supabase.co"
+SB_KEY = "sb_publishable_JeEACKfWsGaFXTat1B-WVw_uWkUR8ZK"   # public, insert-only
+
+def report_stats(row):
+    """Send today's numbers to the morning dashboard (Supabase table claimly_daily_stats)."""
+    if os.environ.get("CLAIMLY_NO_STATS"): return
+    try:
+        req = urllib.request.Request(SB_URL + "/rest/v1/claimly_daily_stats", data=json.dumps(row).encode(),
+            headers={"apikey": SB_KEY, "Content-Type": "application/json", "Prefer": "return=minimal"}, method="POST")
+        urllib.request.urlopen(req, timeout=20)
+        print("Stats sent to dashboard")
+    except Exception as e:
+        print("Could not send stats (not fatal):", e)
+
 def main():
     inv = json.load(open(os.path.join(DATA, "inventory.json")))
     sold, taken = set(lines("sold.txt")), set(lines("taken.txt"))
@@ -76,7 +90,8 @@ def main():
     # 1. drop sold / taken
     before = len(inv)
     inv = [x for x in inv if x["d"] not in sold and x["d"] not in taken]
-    if before - len(inv): log.append(f"Removed {before - len(inv)} sold/taken names")
+    removed_sold = before - len(inv)
+    if removed_sold: log.append(f"Removed {removed_sold} sold/taken names")
 
     # 2. re-check the oldest-checked names
     oldest = sorted(inv, key=lambda x: x.get("k", ""))[:RECHECK]
@@ -154,6 +169,10 @@ def main():
     urls = [f"{SITE}/", f"{SITE}/new/", f"{SITE}/sitemap.xml"] + [f"{SITE}/d/{a['d']}/" for a in added] + \
            sorted({f"{SITE}/domains/{a['c'].lower().replace(' ', '-')}/" for a in added})
     open(os.path.join(DATA, "new_urls.txt"), "w").write("\n".join(urls) + "\n")
+    report_stats({"run_date": TODAY, "shop_size": len(inv), "added": len(added), "removed_taken": len(gone),
+                  "removed_sold": removed_sold, "trending_categories": ", ".join(hot)[:500],
+                  "trending_words": ", ".join(w["word"] for w in tr.get("words", [])[:15])[:1000],
+                  "new_names": ", ".join(f"{a['d']}|{a['p']}|{a['c']}" for a in added)[:4000]})
     summary = f"## Claimly daily update {TODAY}\n\nShop now has **{len(inv)}** names.\n\n" + "\n".join(f"- {l}" for l in log) + "\n"
     print(summary)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
