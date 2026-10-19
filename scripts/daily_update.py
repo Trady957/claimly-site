@@ -175,7 +175,8 @@ def main():
     while any(by.values()):
         for cat in order:
             if by.get(cat): queue.append(by[cat].pop())
-    uniq, queue = set(), [q for q in queue if not (q[3] in uniq or uniq.add(q[3]))]
+    uniq = set()
+    queue = [q for q in queue if not (q[3] in uniq or uniq.add(q[3]))]
     added, checked = [], []
     for i in range(0, len(queue), 40 if ADD > 100 else 20):
         if len(added) >= ADD: break
