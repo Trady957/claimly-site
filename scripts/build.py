@@ -340,6 +340,7 @@ def modal():
 <select name="heard_about" id="fHeard" required><option value="">Choose one</option><option>Google search</option><option>Reddit</option><option>X / Twitter</option><option>LinkedIn</option><option>Instagram</option><option>Facebook</option><option>Indie Hackers / Product Hunt</option><option>Friend or colleague</option><option>Domain marketplace (Afternic, Dan, Sedo)</option><option>AI assistant (ChatGPT, Claude…)</option><option>Other</option></select></div>
 <input type="hidden" name="referrer" id="fRef"><input type="hidden" name="landing_page" id="fLand">
 <input type="hidden" name="utm_source" id="fUs"><input type="hidden" name="utm_medium" id="fUm"><input type="hidden" name="utm_campaign" id="fUc">
+<p class="reassure" style="margin:0 0 10px">By placing your order, you confirm this information is correct and you authorize this purchase right now.</p>
 <button class="btn btn-cta wide" type="submit" id="payBtn">Continue to secure payment &rarr;</button>
 <p class="reassure">Card or PayPal &middot; processed by PayPal &middot; we never see your card</p>
 </form>
