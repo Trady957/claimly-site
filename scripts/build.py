@@ -169,14 +169,14 @@ def home():
           '<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"ItemList","name":"Featured brandable domains","itemListElement":items})+'</script>\n'
           '<script type="application/ld+json">'+json.dumps(faq_ld)+'</script>')
     title = f"Brandable Domain Names from ${MINP} | Claimly"
-    desc = f"{NFMT} short, brandable domain names from ${MINP}. Describe your business and our AI finds names that fit. Pay by card or PayPal, same-day delivery, full refund if not delivered."
+    desc = f"Short, brandable domain names from ${MINP}. Describe your business and our AI finds names that fit. Pay by card or PayPal, same-day delivery, full refund if not delivered."
     h = head(title, desc, SITE+"/", ld)
-    catchips = f'<a class="chip active" href="/new/">New this week ({len(recent())})</a>' + "".join(f'<a class="chip" href="/domains/{slug(c)}/">{esc(c)}</a>' for c in CATS)
+    catchips = '<a class="chip active" href="/new/">New this week</a>' + "".join(f'<a class="chip" href="/domains/{slug(c)}/">{esc(c)}</a>' for c in CATS)
     faqhtml = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q,a in faqs)
     data = json.dumps(RAW, separators=(",",":"))
     return h + f"""
 <section class="hero" id="finder"><div class="wrap">
-<div class="hero-top"><span class="eyebrow"><span class="spark"></span>AI domain finder &middot; {NFMT} available</span><span class="hero-counter">{NFMT} domains &middot; {len(CATS)} categories</span></div>
+<div class="hero-top"><span class="eyebrow"><span class="spark"></span>AI domain finder</span><span class="hero-counter">New names added daily</span></div>
 <h1 class="giant">Domains<span class="sr"> &mdash; brandable domain names for your business</span></h1>
 <div class="floaters" aria-hidden="true">
 <span class="float fa">VaultMint.com <small>$129</small></span>
@@ -212,9 +212,8 @@ def home():
 </div></section>
 
 <div class="toolbar" id="shop"><div class="wrap toolbar-in">
-<div class="searchbar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="Search {NFMT} names…" autocomplete="off" aria-label="Search domains"></div>
+<div class="searchbar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="Search names…" autocomplete="off" aria-label="Search domains"></div>
 <div class="chips" id="chips"></div>
-<span class="count" id="count"></span>
 <select class="sort" id="sort" aria-label="Sort"><option value="featured">Featured</option><option value="plo">Price &uarr;</option><option value="phi">Price &darr;</option><option value="az">A&ndash;Z</option></select>
 </div></div>
 
@@ -251,7 +250,7 @@ def home():
 const RAW={data};const CATS={json.dumps(CATS)};const EXTS={json.dumps(EXTS)};const TIERS={json.dumps(TIERS)};const KEYMAP={json.dumps(KEYMAP,separators=(",",":"))};
 const D=RAW.map(a=>({{name:a[0],ext:EXTS[a[1]],price:a[2],cat:CATS[a[3]],tier:TIERS[a[4]],fqdn:a[0].toLowerCase()+"."+EXTS[a[1]]}}));
 const PAGE=60;let activeCat='All',q='',sortBy='featured',shown=PAGE;
-const grid=document.getElementById('grid'),countEl=document.getElementById('count'),emptyEl=document.getElementById('empty'),
+const grid=document.getElementById('grid'),emptyEl=document.getElementById('empty'),
  chipsEl=document.getElementById('chips'),searchEl=document.getElementById('search'),sortEl=document.getElementById('sort'),loadMore=document.getElementById('loadMore');
 chipsEl.innerHTML='<button class="chip active" data-cat="All">All</button>'+CATS.map(c=>`<button class="chip" data-cat="${{c}}">${{c}}</button>`).join('');
 chipsEl.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{{activeCat=b.dataset.cat;chipsEl.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');shown=PAGE;render();}});
@@ -265,7 +264,6 @@ function render(){{
  if(sortBy==='plo')list=list.slice().sort((a,b)=>a.price-b.price);
  else if(sortBy==='phi')list=list.slice().sort((a,b)=>b.price-a.price);
  else if(sortBy==='az')list=list.slice().sort((a,b)=>a.fqdn.localeCompare(b.fqdn));
- countEl.textContent=list.length.toLocaleString()+' names';
  emptyEl.style.display=list.length?'none':'block';
  grid.innerHTML=list.slice(0,shown).map(d=>cardHTML(d)).join('');
  wire(grid);
@@ -439,7 +437,7 @@ def domain_page(d, idx):
 </div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:34px 0 14px">Similar {esc(d['cat'].lower())} domains</h2>
 <div class="linkgrid">{rel}</div>
-<p style="margin-top:18px"><a class="btn btn-ghost" href="/domains/{slug(d['cat'])}/">All {len(BYCAT[d['cat']])} {esc(d['cat'].lower())} domains &rarr;</a></p>
+<p style="margin-top:18px"><a class="btn btn-ghost" href="/domains/{slug(d['cat'])}/">All {esc(d['cat'].lower())} domains &rarr;</a></p>
 </div></main>
 <script>window.CLAIMLY_D={jsd};</script>
 """ + footer() + modal() + "</body></html>"
@@ -449,9 +447,9 @@ def cat_page(c):
     items = sorted(BYCAT[c], key=lambda x: (-["starter","standard","premium"].index(x["tier"]), x["fqdn"]))
     canon = f"{SITE}/domains/{slug(c)}/"
     lo = min(x["price"] for x in items); hi = max(x["price"] for x in items)
-    title = f"{len(items)} Brandable {c} Domain Names for Sale | Claimly"
-    desc = f"Browse {len(items)} available {c.lower()} domain names from ${lo}, ideal for {CAT_BLURB[c]}. Same-day delivery, pay by card or PayPal."
-    il = {"@context":"https://schema.org","@type":"ItemList","name":f"{c} domain names","numberOfItems":len(items),
+    title = f"Brandable {c} Domain Names for Sale | Claimly"
+    desc = f"Browse available {c.lower()} domain names from ${lo}, ideal for {CAT_BLURB[c]}. Same-day delivery, pay by card or PayPal."
+    il = {"@context":"https://schema.org","@type":"ItemList","name":f"{c} domain names",
           "itemListElement":[{"@type":"ListItem","position":i+1,"url":f"{SITE}/d/{x['fqdn']}/","name":x["fqdn"]} for i,x in enumerate(items[:50])]}
     ld = '<script type="application/ld+json">'+json.dumps(il)+'</script>'
     links = "".join(f'<a href="/d/{x["fqdn"]}/">{x["fqdn"]}<span>${x["price"]}</span></a>' for x in items)
@@ -460,7 +458,7 @@ def cat_page(c):
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; {esc(c)} domains</div>
 <h1>Brandable {esc(c.lower())} domain names</h1>
-<p class="section-sub">{len(items)} available names from ${lo} to ${hi}, picked for {CAT_BLURB[c]}. Each price includes the first year of registration, and most orders are delivered the same day.</p>
+<p class="section-sub">Available names from ${lo} to ${hi}, picked for {CAT_BLURB[c]}. Each price includes the first year of registration, and most orders are delivered the same day.</p>
 <div class="linkgrid">{links}</div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:40px 0 14px">Other categories</h2>
 <div class="catlinks">{others}</div>
@@ -488,7 +486,7 @@ def new_page():
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; New this week</div>
 <h1>New brandable domain names</h1>
-<p class="section-sub">We add fresh, availability-checked names every day. These are the latest {len(items)}.</p>
+<p class="section-sub">We add fresh, availability-checked names every day. Here are the latest.</p>
 {body}
 </div></main>""" + footer() + "</body></html>"
 
@@ -513,7 +511,7 @@ def notfound():
 <main class="page"><div class="wrap" style="text-align:center;padding:60px 0">
 <h1>That page isn&rsquo;t here</h1>
 <p class="section-sub" style="margin:0 auto 24px">The name may have been sold, or the link is wrong.</p>
-<a class="btn btn-cta" href="/#shop">Browse {NFMT} available names</a>
+<a class="btn btn-cta" href="/#shop">Browse available names</a>
 </div></main>""" + footer() + "</body></html>"
 
 def sitemap():
