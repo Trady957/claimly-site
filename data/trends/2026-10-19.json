@@ -1,0 +1,345 @@
+{
+ "date": "2026-10-19",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "منصة مدرستي",
+   "geo": "SA",
+   "traffic": 100000
+  },
+  {
+   "q": "bally bagayoko",
+   "geo": "FR",
+   "traffic": 10000
+  },
+  {
+   "q": "الصحة القابضة",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "catholic priest killed by cross",
+   "geo": "CA",
+   "traffic": 5000
+  },
+  {
+   "q": "gqeberha weather",
+   "geo": "AU",
+   "traffic": 5000
+  },
+  {
+   "q": "duisburg",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "secret fashion show",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "christian horner",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "बांग्लादेश",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "nep vs oma",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "nep vs oma",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "salzburg",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "nordkurier",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "elina svitolina",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "cac 40",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "wage",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "tembeling road",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "seyi makinde nlng dividend claims",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "ocarina of time remake switch 2",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "samsung one ui 9",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "ott release this week",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "national day holidays in uae 2026",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "تركي المالكي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "humanitarian crisis",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "teams",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "wendys",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "orionid meteor shower",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "pension",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "bunte",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "elvira öberg",
+   "geo": "DE",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Local",
+   "score": 7100
+  },
+  {
+   "category": "Creator",
+   "score": 6000
+  },
+  {
+   "category": "Fashion",
+   "score": 5000
+  },
+  {
+   "category": "Finance",
+   "score": 3600
+  },
+  {
+   "category": "Travel",
+   "score": 3100
+  },
+  {
+   "category": "SaaS",
+   "score": 1300
+  },
+  {
+   "category": "Gaming",
+   "score": 600
+  },
+  {
+   "category": "Education",
+   "score": 200
+  },
+  {
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "category": "E-commerce",
+   "score": 100
+  },
+  {
+   "category": "Food",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "show",
+   "category": "Creator",
+   "score": 5500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 5000
+  },
+  {
+   "word": "fashion",
+   "category": "Fashion",
+   "score": 5000
+  },
+  {
+   "word": "wage",
+   "category": "Finance",
+   "score": 2000
+  },
+  {
+   "word": "road",
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "word": "teams",
+   "category": "SaaS",
+   "score": 1200
+  },
+  {
+   "word": "holidays",
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "word": "pension",
+   "category": "Finance",
+   "score": 1000
+  },
+  {
+   "word": "haze",
+   "category": "Local",
+   "score": 1000
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "stage",
+   "category": "Creator",
+   "score": 500
+  },
+  {
+   "word": "community",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "welfare",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "hints",
+   "category": "Education",
+   "score": 200
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "hunter",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "town",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "launch",
+   "category": "SaaS",
+   "score": 100
+  },
+  {
+   "word": "boss",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "shipping",
+   "category": "E-commerce",
+   "score": 100
+  },
+  {
+   "word": "trade",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "nuggets",
+   "category": "Food",
+   "score": 100
+  }
+ ]
+}
