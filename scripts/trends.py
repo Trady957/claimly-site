@@ -48,6 +48,7 @@ def analyse(searches):
     cat_score = collections.Counter(); words = collections.Counter(); word_cat = {}
     for title, geo, vol in searches:
         for tok in re.findall(r"[a-z]{3,12}", title.lower()):
+            if tok.endswith("s") and tok[:-1] in generic: tok = tok[:-1]   # holidays -> holiday? only if listed
             cat = None
             if tok in generic: cat = generic[tok]
             elif tok in keymap: cat = G.CATS[keymap[tok]]

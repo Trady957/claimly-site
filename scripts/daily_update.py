@@ -105,7 +105,8 @@ def main():
     for w in tr.get("words", [])[:15]:
         word, cat = w["word"], w.get("category") or (hot[0] if hot else "SaaS")
         if cat not in G.CATS: continue
-        forms = {G.cap(word) + sfx for sfx in G.SUFFIX} | {G.cap(pre) + G.cap(word) for pre in G.PREFIX}
+        forms = {G.cap(word) + sfx for sfx in G.SUFFIX if sfx[0] != word[-1]} | \
+                {G.cap(pre) + G.cap(word) for pre in G.PREFIX if pre[-1] != word[0]}
         for f in random.sample(sorted(forms), min(12, len(forms))):
             n = G.clean(f)
             if not n: continue
