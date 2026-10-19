@@ -1,17 +1,19 @@
 # claimly-site
 
-The claimly.ae storefront. Netlify builds it with `python3 scripts/build.py` on every push.
+The claimly.ae storefront, hosted free on GitHub Pages. `.github/workflows/site.yml` builds it with `python3 scripts/build.py` and publishes it on every push and every morning.
+
+Orders and newsletter sign-ups are saved to Supabase (tables `claimly_orders` and `claimly_subscribers`; the site's key can only add rows, never read them).
 
 ## What runs automatically
-Every day at 07:00 Dubai time, GitHub Actions (`.github/workflows/daily.yml`):
+Every day at 07:00 Dubai time, GitHub Actions (`.github/workflows/site.yml`):
 0. Reads Google Trends "Trending now" for 14 countries (`scripts/trends.py`) and saves the day's trending categories and words in `data/trends/`. Only generic words on `data/generic_words.txt` are ever used for names, never people, teams or brands from the news.
 1. Removes names listed in `data/sold.txt` and names someone else registered.
 2. Re-checks the 60 oldest-checked names with RDAP and drops any that got registered.
 3. Generates new brandable names (up to 60% from today's trending words, the rest in trending and under-stocked categories), checks them, and adds 25 available ones (`data/inventory.json`).
-4. Commits. Netlify rebuilds the site: new `/d/<name>/` pages, `/new/`, and `sitemap.xml` with dates.
+4. Commits, rebuilds and publishes the site to GitHub Pages: new `/d/<name>/` pages, `/new/`, and `sitemap.xml` with dates.
 5. Pings IndexNow (Bing, Yandex and others). Google picks up changes from the sitemap in Search Console.
 
-Run it by hand: GitHub → Actions → "Daily domain update" → Run workflow.
+Run it by hand: GitHub → Actions → "Daily update and publish" → Run workflow.
 
 ## When a domain sells
 Add it on its own line to `data/sold.txt` and commit. It disappears from the site on the next build.
@@ -22,4 +24,3 @@ Add it on its own line to `data/sold.txt` and commit. It disappears from the sit
 - `data/taken.txt`, `data/sold.txt`: names removed from the shop
 - `scripts/names.py`: the name generator (word lists and pricing)
 - `site/`: static files copied as-is (css, favicon, og image, verification files, IndexNow key)
-- `netlify/functions/finder.js`: the AI finder (needs `ANTHROPIC_API_KEY` in Netlify)

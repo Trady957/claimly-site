@@ -12,6 +12,9 @@ DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "dist")
 SITE = "https://claimly.ae"
 PAY_BASE = "https://www.paypal.com/paypalme/Claimly26"
+# Orders and newsletter sign-ups are saved in Supabase (insert-only for the public key; nobody can read them from the site).
+SB_URL = "https://bbjreybvwqdzsfbcunlm.supabase.co"
+SB_KEY = "sb_publishable_JeEACKfWsGaFXTat1B-WVw_uWkUR8ZK"
 EMAIL = "hello@claimly.ae"
 TODAY = datetime.date.today().isoformat()
 
@@ -104,8 +107,8 @@ def footer():
 <div>
 <div class="brand" style="font-size:19px;margin-bottom:10px">Claimly<span class="reg">&reg;</span></div>
 <p class="blurb">A curated shop of brandable domain names for founders and small businesses &mdash; registered in your name and handed over the same day.</p>
-<form class="news" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return claimlyNews(event)">
-<input type="hidden" name="form-name" value="newsletter"><p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<form class="news" name="newsletter" onsubmit="return claimlyNews(event)">
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
 <input type="email" name="email" required placeholder="Email for new names &amp; price drops" aria-label="Email address">
 <button class="btn btn-cta" type="submit">Subscribe</button>
 </form>
@@ -141,7 +144,8 @@ def footer():
 function claimlyAttr(){{try{{return JSON.parse(sessionStorage.getItem('claimly_attr')||'{{}}');}}catch(e){{return {{ref:document.referrer,land:location.pathname}};}}}}
 </script>
 <script>
-function claimlyNews(e){{e.preventDefault();var f=e.target;fetch('/',{{method:'POST',headers:{{'Content-Type':'application/x-www-form-urlencoded'}},body:new URLSearchParams(new FormData(f)).toString()}}).catch(function(){{}});f.style.display='none';document.getElementById('newsOk').style.display='block';return false;}}
+function claimlySave(table,row){{return fetch('{SB_URL}/rest/v1/'+table,{{method:'POST',keepalive:true,headers:{{'apikey':'{SB_KEY}','Content-Type':'application/json','Prefer':'return=minimal'}},body:JSON.stringify(row)}}).catch(function(){{}});}}
+function claimlyNews(e){{e.preventDefault();var f=e.target;if(!f['bot-field'].value)claimlySave('claimly_subscribers',{{email:f.email.value.trim().slice(0,200)}});f.style.display='none';document.getElementById('newsOk').style.display='block';return false;}}
 </script>
 """
 
@@ -298,7 +302,7 @@ async function runFinder(){{
  const shortlist=scoreAll(tokens,wantCats).slice(0,80).map(x=>x.d);
  const label=btn.innerHTML;btn.disabled=true;btn.innerHTML='Searching…';
  let picks=null;
- if(raw.trim()){{try{{
+ if(false&&raw.trim()){{try{{
   const ctl=new AbortController();const tm=setTimeout(()=>ctl.abort(),9000);
   const res=await fetch('/.netlify/functions/finder',{{method:'POST',signal:ctl.signal,headers:{{'Content-Type':'application/json'}},
     body:JSON.stringify({{brief:raw,vibe:vibe,shortlist:shortlist.map(d=>({{fqdn:d.fqdn,cat:d.cat,price:d.price}}))}})}});
@@ -328,8 +332,7 @@ def modal():
 <div class="m-price"><small>$</small><span id="mPrice">—</span></div>
 <div class="m-name" id="mName">name.com</div>
 <ul class="m-incl"><li>First year of registration included</li><li>Delivered to you, usually the same day</li><li>Full refund if we can&rsquo;t deliver</li></ul>
-<form name="order" id="orderForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="order">
+<form name="order" id="orderForm">
 <input type="hidden" name="domain" id="fDomain"><input type="hidden" name="price" id="fPrice">
 <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
 <div class="field"><label for="fEmail">Your email (for delivery)</label><input type="email" name="email" id="fEmail" required placeholder="you@company.com" autocomplete="email"></div>
@@ -368,7 +371,8 @@ document.getElementById('orderForm').addEventListener('submit',function(e){{
  e.preventDefault();if(!CUR)return;const f=e.target;if(!f.reportValidity())return;
  const link=PAY_BASE+'/'+CUR.price+'USD';
  const w=window.open(link,'_blank');try{{if(w)w.opener=null;}}catch(_){{}}
- fetch('/',{{method:'POST',keepalive:true,headers:{{'Content-Type':'application/x-www-form-urlencoded'}},body:new URLSearchParams(new FormData(f)).toString()}}).catch(()=>{{}});
+ if(!f['bot-field'].value){{const v=n=>(f[n]&&f[n].value||'').trim().slice(0,480);
+  claimlySave('claimly_orders',{{domain:CUR.fqdn,price:Number(CUR.price),email:v('email'),registrar:v('registrar'),heard_about:v('heard_about'),referrer:v('referrer'),landing_page:v('landing_page'),utm_source:v('utm_source').slice(0,100),utm_medium:v('utm_medium').slice(0,100),utm_campaign:v('utm_campaign').slice(0,100)}});}}
  document.getElementById('dName').textContent=CUR.fqdn;document.getElementById('dPrice').textContent=CUR.price;
  document.getElementById('dNote').textContent=CUR.fqdn;document.getElementById('dEmail').textContent=document.getElementById('fEmail').value;
  document.getElementById('dLink').href=link;
@@ -517,33 +521,7 @@ def sitemap():
     body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
 
-NETLIFY_TOML = """[build]
-  publish = "."
 
-[functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    Strict-Transport-Security = "max-age=31536000"
-
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
-
-[[redirects]]
-  from = "https://www.claimly.ae/*"
-  to = "https://claimly.ae/:splat"
-  status = 301
-  force = true
-"""
 
 def build():
     if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -562,6 +540,8 @@ def build():
         p = os.path.join(OUT, "domains", slug(c)); os.makedirs(p)
         open(os.path.join(p, "index.html"), "w").write(cat_page(c))
     open(os.path.join(OUT, "sitemap.xml"), "w").write(sitemap())
+    open(os.path.join(OUT, "CNAME"), "w").write("claimly.ae\n")   # GitHub Pages custom domain
+    open(os.path.join(OUT, ".nojekyll"), "w").write("")
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nDisallow: /.netlify/\n\nSitemap: {SITE}/sitemap.xml\n")
     print(f"built {N} domain pages ({len(recent())} new this week), {len(CATS)} category pages into {OUT}")
 
