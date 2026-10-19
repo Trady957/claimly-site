@@ -26,16 +26,21 @@
   {
    "q": "afghanistan vs zimbabwe",
    "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "unglück",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "flughafen",
+   "geo": "DE",
    "traffic": 10000
   },
   {
    "q": "कश्मीर",
    "geo": "IN",
-   "traffic": 5000
-  },
-  {
-   "q": "flughafen",
-   "geo": "DE",
    "traffic": 5000
   },
   {
@@ -49,17 +54,17 @@
    "traffic": 5000
   },
   {
-   "q": "afghanistan vs zimbabwe",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "crime",
-   "geo": "ZA",
+   "q": "quaest pesquisa",
+   "geo": "BR",
    "traffic": 5000
   },
   {
    "q": "storm",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "bbc denies celebrity traitors rumors",
    "geo": "GB",
    "traffic": 2000
   },
@@ -84,11 +89,6 @@
    "traffic": 2000
   },
   {
-   "q": "impfung",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
    "q": "gabriel attal",
    "geo": "FR",
    "traffic": 2000
@@ -96,6 +96,11 @@
   {
    "q": "money laundering",
    "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "afghanistan vs zimbabwe",
+   "geo": "ZA",
    "traffic": 2000
   },
   {
@@ -119,13 +124,13 @@
    "traffic": 1000
   },
   {
-   "q": "bbc denies celebrity traitors rumors",
+   "q": "alexandra eala",
    "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "alexandra eala",
-   "geo": "GB",
+   "q": "బ్లాక్మెయిల్",
+   "geo": "IN",
    "traffic": 1000
   },
   {
@@ -139,6 +144,16 @@
    "traffic": 1000
   },
   {
+   "q": "alexandra eala",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "kim jong un",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
    "q": "kerstin lee langley",
    "geo": "DE",
    "traffic": 1000
@@ -149,23 +164,8 @@
    "traffic": 1000
   },
   {
-   "q": "rettungswagen",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
    "q": "essonne",
    "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "philippe poutou",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "afghanistan vs zimbabwe",
-   "geo": "SG",
    "traffic": 1000
   }
  ],
