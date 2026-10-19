@@ -1,0 +1,36 @@
+name: Daily domain update
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 07:00 Dubai time, every day
+  workflow_dispatch:
+    inputs:
+      add:
+        description: "How many new names to add"
+        default: "25"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Add new names, drop sold/taken ones
+        run: python3 scripts/daily_update.py --add "${{ github.event.inputs.add || '25' }}" --recheck 60
+      - name: Test the build
+        run: python3 scripts/build.py
+      - name: Commit (Netlify redeploys automatically)
+        run: |
+          git config user.name "claimly-bot"
+          git config user.email "claimly-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && echo "No changes" || (git commit -m "Daily update $(date -u +%F)" && git push)
+      - name: Wait for Netlify, then ping search engines (IndexNow)
+        run: |
+          sleep 240
+          python3 scripts/indexnow.py

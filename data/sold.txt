@@ -1,0 +1,1 @@
+# One sold domain per line (e.g. riamii.com). Sold names are removed from the site on the next build.
