@@ -19,9 +19,9 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "quaest",
-   "geo": "BR",
-   "traffic": 20000
+   "q": "spurs vs coventry",
+   "geo": "US",
+   "traffic": 10000
   },
   {
    "q": "south africa vs australia",
@@ -29,42 +29,92 @@
    "traffic": 10000
   },
   {
-   "q": "sunday night football lambeau field police",
+   "q": "trainer union berlin",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "spurs vs coventry",
+   "geo": "NG",
+   "traffic": 10000
+  },
+  {
+   "q": "jason sudeikis",
    "geo": "US",
    "traffic": 5000
   },
   {
-   "q": "richard riehle",
+   "q": "byu cougars football top ranking 2026",
    "geo": "US",
    "traffic": 5000
+  },
+  {
+   "q": "spurs vs coventry",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "spurs vs coventry",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "getafe - rayo vallecano",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "getafe vs rayo",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "kelly ripa dog adoption delayed",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "paul ferris",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "ronnie o'sullivan",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "trabzonspor vs beşiktaş",
+   "geo": "AE",
+   "traffic": 2000
   },
   {
    "q": "طرابزون سبور ضد بشكتاش",
-   "geo": "SA",
-   "traffic": 5000
-  },
-  {
-   "q": "elina svitolina gael monfils split",
-   "geo": "AU",
-   "traffic": 5000
-  },
-  {
-   "q": "nevers",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "pete hegseth pentagon leadership future",
-   "geo": "US",
+   "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "al-hilal vs al-hazem",
+   "q": "ثمانية",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "phishing",
+   "q": "spurs vs coventry",
+   "geo": "CA",
+   "traffic": 2000
+  },
+  {
+   "q": "mauro lustrinelli",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "union berlin",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "new mexico",
    "geo": "DE",
    "traffic": 2000
   },
@@ -74,13 +124,8 @@
    "traffic": 2000
   },
   {
-   "q": "trabzonspor vs beşiktaş",
+   "q": "al-hilal vs al-hazem",
    "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "al-hilal x al hazm",
-   "geo": "BR",
    "traffic": 2000
   },
   {
@@ -89,23 +134,13 @@
    "traffic": 2000
   },
   {
-   "q": "kelly ripa dog adoption delayed",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "al-hilal vs al-hazem",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "sholing fc",
+   "q": "james maddison",
    "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "al-hilal vs al-hazem",
-   "geo": "IN",
+   "q": "spurs vs coventry",
+   "geo": "AE",
    "traffic": 1000
   },
   {
@@ -114,28 +149,13 @@
    "traffic": 1000
   },
   {
-   "q": "trabzonspor vs beşiktaş",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "طرابزون سبور ضد بشكتاش",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "trabzonspor vs beşiktaş",
+   "q": "spurs vs coventry",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "gestev",
-   "geo": "CA",
-   "traffic": 1000
-  },
-  {
-   "q": "trabzonspor vs beşiktaş",
-   "geo": "CA",
+   "q": "spurs vs coventry",
+   "geo": "AU",
    "traffic": 1000
   },
   {
@@ -144,67 +164,38 @@
    "traffic": 1000
   },
   {
-   "q": "alexandra eala",
-   "geo": "AU",
-   "traffic": 1000
-  },
-  {
-   "q": "manchester city",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "malaysia",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "al-hilal vs al-hazem",
-   "geo": "NG",
-   "traffic": 1000
-  },
-  {
-   "q": "al-hilal vs al-hazem",
-   "geo": "ZA",
+   "q": "trainer von union berlin",
+   "geo": "DE",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Local",
-   "score": 1800
-  },
-  {
    "category": "Pets",
-   "score": 1000
-  },
-  {
-   "category": "Gaming",
-   "score": 500
+   "score": 2000
   },
   {
    "category": "Finance",
-   "score": 300
+   "score": 700
   },
   {
    "category": "Travel",
+   "score": 200
+  },
+  {
+   "category": "Local",
    "score": 200
   }
  ],
  "words": [
   {
-   "word": "city",
-   "category": "Local",
-   "score": 1600
-  },
-  {
    "word": "dog",
    "category": "Pets",
-   "score": 1000
+   "score": 2000
   },
   {
-   "word": "boss",
-   "category": "Gaming",
+   "word": "ledger",
+   "category": "Finance",
    "score": 500
   },
   {
@@ -221,11 +212,6 @@
    "word": "rain",
    "category": "Local",
    "score": 200
-  },
-  {
-   "word": "trade",
-   "category": "Finance",
-   "score": 100
   }
  ]
 }
