@@ -20,6 +20,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Read Google Trends (14 countries, early morning)
+        run: python3 scripts/trends.py
+        continue-on-error: true
       - name: Add new names, drop sold/taken ones
         run: python3 scripts/daily_update.py --add "${{ github.event.inputs.add || '25' }}" --recheck 60
       - name: Test the build

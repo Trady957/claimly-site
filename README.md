@@ -4,9 +4,10 @@ The claimly.ae storefront. Netlify builds it with `python3 scripts/build.py` on 
 
 ## What runs automatically
 Every day at 07:00 Dubai time, GitHub Actions (`.github/workflows/daily.yml`):
+0. Reads Google Trends "Trending now" for 14 countries (`scripts/trends.py`) and saves the day's trending categories and words in `data/trends/`. Only generic words on `data/generic_words.txt` are ever used for names, never people, teams or brands from the news.
 1. Removes names listed in `data/sold.txt` and names someone else registered.
 2. Re-checks the 60 oldest-checked names with RDAP and drops any that got registered.
-3. Generates new brandable names, checks them, and adds 25 available ones (`data/inventory.json`).
+3. Generates new brandable names (up to 60% from today's trending words, the rest in trending and under-stocked categories), checks them, and adds 25 available ones (`data/inventory.json`).
 4. Commits. Netlify rebuilds the site: new `/d/<name>/` pages, `/new/`, and `sitemap.xml` with dates.
 5. Pings IndexNow (Bing, Yandex and others). Google picks up changes from the sitemap in Search Console.
 

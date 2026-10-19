@@ -88,23 +88,45 @@ def main():
     append("taken.txt", gone)
     log.append(f"Re-checked {len(oldest)} names, {len(gone)} now registered elsewhere: {', '.join(gone) or 'none'}")
 
-    # 3. new names, spread across categories (fewest names first)
+    # 3. new names: today's Google Trends first, then categories with the fewest names
     random.seed(TODAY)
     counts = {c: 0 for c in G.CATS}
     for x in inv: counts[x["c"]] = counts.get(x["c"], 0) + 1
-    order = sorted(G.CATS, key=lambda c: counts[c])
+    tr = {}
+    tp = os.path.join(DATA, "trends", "latest.json")
+    if os.path.exists(tp):
+        tr = json.load(open(tp))
+        if tr.get("date") != TODAY: tr = {}
+    hot = [c["category"] for c in tr.get("categories", []) if c["category"] in G.CATS][:5]
+    order = hot + [c for c in sorted(G.CATS, key=lambda c: counts[c]) if c not in hot]
     cands = []
+    # names built from today's trending generic words (e.g. gold -> goldly.co, getgold.com)
+    trend_cands = []
+    for w in tr.get("words", [])[:15]:
+        word, cat = w["word"], w.get("category") or (hot[0] if hot else "SaaS")
+        if cat not in G.CATS: continue
+        forms = {G.cap(word) + sfx for sfx in G.SUFFIX} | {G.cap(pre) + G.cap(word) for pre in G.PREFIX}
+        for f in random.sample(sorted(forms), min(12, len(forms))):
+            n = G.clean(f)
+            if not n: continue
+            n = G.cap(n)
+            ext = random.choice(["com", "com", "co", "io"] if cat in ("AI", "SaaS", "Crypto") else ["com", "com", "co"])
+            d = f"{n.lower()}.{ext}"
+            if d not in seen and good(n):
+                trend_cands.append((cat, n, ext, d, word))
+    random.shuffle(trend_cands)
     for cat in order:
         for n in G.gen_for_cat(cat, 40):
             ext = G.ext_for(cat, n)
             d = f"{n.lower()}.{ext}"
             if d not in seen and ext not in NO_RDAP and ext in G.EXTS and good(n):
-                cands.append((cat, n, ext, d))
+                cands.append((cat, n, ext, d, ""))
     random.shuffle(cands)
     # round-robin by category so one category can't take every slot
     by = {}
     for c in cands: by.setdefault(c[0], []).append(c)
-    queue = []
+    # up to 60% of today's slots come from trending words, the rest from the normal generator
+    queue = trend_cands[: ADD * 3]
     while any(by.values()):
         for cat in order:
             if by.get(cat): queue.append(by[cat].pop())
@@ -113,14 +135,19 @@ def main():
         if len(added) >= ADD: break
         batch = queue[i:i + 20]
         res = check_all([b[3] for b in batch])
-        for cat, n, ext, d in batch:
+        for cat, n, ext, d, word in batch:
             checked.append(d)
+            n_trend = sum(1 for a in added if a.get("w"))
+            if word and n_trend >= int(ADD * 0.6): continue
             if res[d] == "available" and len(added) < ADD:
                 p, tier = shop_price(n, cat, ext)
-                added.append({"d": d, "p": p, "c": cat, "t": tier, "a": TODAY, "k": TODAY})
+                item = {"d": d, "p": p, "c": cat, "t": tier, "a": TODAY, "k": TODAY}
+                if word: item["w"] = word
+                added.append(item)
     append("seen.txt", checked)
     inv = added + inv
-    log.append(f"Checked {len(checked)} new candidates, added {len(added)}: " + ", ".join(f"{a['d']} (${a['p']})" for a in added))
+    log.append(f"Checked {len(checked)} new candidates, added {len(added)}: " + ", ".join(f"{a['d']} (${a['p']}" + (f", trend: {a['w']})" if a.get('w') else ")") for a in added))
+    if hot: log.append("Trending categories today: " + ", ".join(hot))
 
     json.dump(inv, open(os.path.join(DATA, "inventory.json"), "w"), indent=0, separators=(",", ":"))
     urls = [f"{SITE}/", f"{SITE}/new/", f"{SITE}/sitemap.xml"] + [f"{SITE}/d/{a['d']}/" for a in added] + \

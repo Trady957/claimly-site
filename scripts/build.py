@@ -28,6 +28,12 @@ INV = sorted(INV, key=lambda x: x["a"], reverse=True)
 ADDED = {x["d"]: x["a"] for x in INV}
 RAW = [[x["d"].rsplit(".",1)[0].capitalize(), EXTS.index(x["d"].rsplit(".",1)[1]), x["p"], CATS.index(x["c"]), TIERS.index(x["t"]), ""] for x in INV]
 KEYMAP = json.load(open(os.path.join(DATA, "keymap.json")))
+TRENDS = {}
+try:
+    TRENDS = json.load(open(os.path.join(DATA, "trends", "latest.json")))
+except Exception:
+    pass
+TREND_WORD = {x["d"]: x.get("w") for x in INV if x.get("w")}
 
 def slug(c): return re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")
 def esc(s): return html.escape(str(s), quote=True)
@@ -224,6 +230,7 @@ def home():
 </div>
 </div></section>
 
+{trending_html()}
 <section class="section-pad" style="padding-top:0"><div class="wrap">
 <h2>Browse by category</h2>
 <p class="section-sub">Hand-picked names for every kind of business.</p>
@@ -480,6 +487,22 @@ def new_page():
 <p class="section-sub">We add fresh, availability-checked names every day. These are the latest {len(items)}.</p>
 {body}
 </div></main>""" + footer() + "</body></html>"
+
+def trending_html():
+    if not TRENDS.get("date"): return ""
+    picks = [d for d in D if TREND_WORD.get(d["fqdn"]) and ADDED.get(d["fqdn"]) == TRENDS["date"]][:8]
+    cats = [c["category"] for c in TRENDS.get("categories", []) if c["category"] in CATS][:5]
+    if not picks and not cats: return ""
+    words = sorted({TREND_WORD[d["fqdn"]] for d in picks})
+    links = "".join(f'<a href="/d/{d["fqdn"]}/">{d["fqdn"]}<span>${d["price"]}</span></a>' for d in picks)
+    chips = "".join(f'<a class="chip" href="/domains/{slug(c)}/">{esc(c)}</a>' for c in cats)
+    nice = datetime.date.fromisoformat(TRENDS["date"]).strftime("%-d %B")
+    return f"""<section class="section-pad" id="trending" style="padding-top:0"><div class="wrap">
+<h2>Trending in search today</h2>
+<p class="section-sub">Fresh names inspired by what the world is searching on Google ({nice}){(": " + ", ".join(words)) if words else ""}.</p>
+{f'<div class="linkgrid" style="margin-bottom:16px">{links}</div>' if links else ''}
+{f'<div class="catlinks">{chips}</div>' if chips else ''}
+</div></section>"""
 
 def notfound():
     return head("Page not found | Claimly", "This page doesn't exist.", SITE+"/404.html", robots="noindex") + f"""
