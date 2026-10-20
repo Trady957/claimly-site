@@ -120,6 +120,8 @@ def footer():
 <a href="/#shop">Browse names</a>
 <a href="/new/">New this week</a>
 <a href="/name-my-business/">Name my business</a>
+<a href="/launch/">Launch your business</a>
+<a href="/partners/">For agencies</a>
 {cats}
 </div>
 <div>
@@ -354,6 +356,7 @@ def modal():
 <p>We&rsquo;ll email you at <strong id="dEmail"></strong> as soon as the domain is yours.</p>
 <a class="btn btn-cta wide" id="dLink" target="_blank" rel="noopener">PayPal didn&rsquo;t open? Pay here &rarr;</a>
 <p class="reassure">Questions? <a href="mailto:{EMAIL}" style="color:var(--cobalt)">{EMAIL}</a></p>
+<p class="reassure" style="margin-top:14px"><strong>Next:</strong> <a href="/launch/" style="color:var(--cobalt)">get a company license, website and email for your new name &rarr;</a></p>
 </div>
 </div></div>
 <script>
@@ -569,7 +572,7 @@ def package_page():
 <button class="btn btn-cta wide" type="submit">Continue to secure payment &rarr;</button>
 <p class="reassure">Card or PayPal &middot; processed by PayPal &middot; full refund if we can&rsquo;t deliver</p>
 </div>
-<div id="pkDone"><h3 style="font-family:'Schibsted Grotesk'">Complete payment in the PayPal tab</h3><p>Your order is saved. In PayPal, pay <strong>$<span id="pkPrice"></span></strong> and add your email in the note so we can match it. Your names arrive within 48 hours of payment.</p><p class="reassure">PayPal didn&rsquo;t open? <a id="pkLink" href="#" target="_blank" rel="noopener">Open PayPal</a></p></div>
+<div id="pkDone"><h3 style="font-family:'Schibsted Grotesk'">Complete payment in the PayPal tab</h3><p>Your order is saved. In PayPal, pay <strong>$<span id="pkPrice"></span></strong> and add your email in the note so we can match it. Your names arrive within 48 hours of payment.</p><p class="reassure">PayPal didn&rsquo;t open? <a id="pkLink" href="#" target="_blank" rel="noopener">Open PayPal</a></p><p class="reassure" style="margin-top:14px"><strong>Next:</strong> <a href="/launch/">company license, website and email for your business &rarr;</a></p></div>
 </form>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px">Questions</h2>
 {faq_html}
@@ -585,6 +588,122 @@ function pkSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)
  document.getElementById('pkFields').style.display='none';document.getElementById('pkDone').style.display='block';return false;}}
 </script>""" + footer() + "</body></html>"
 
+# ───────────────────────── launch + partners pages ─────────────────────────
+PARTNERS = json.load(open(os.path.join(ROOT, "data", "partners.json")))
+LP_CSS = """<style>
+.lp-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 34px}
+.lp{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.lp h2{font-family:'Schibsted Grotesk';font-size:21px;margin:0}.lp p{margin:0;color:var(--muted);flex:1}
+.lp .by{font-size:13px;font-weight:700;color:var(--ink)}
+.lp-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-ghost{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+.lp-form{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;max-width:620px;margin:0 auto 30px;scroll-margin-top:90px}
+.lp-form textarea{font-family:'Hanken Grotesk';font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bone);min-height:90px;resize:vertical}
+.lp-check{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin:6px 0 14px}.lp-check input{margin-top:3px}
+.lp-ok{display:none;text-align:center}
+.disclose{font-size:13px;color:var(--muted);text-align:center;margin:0 0 30px}
+.pk-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 34px}
+.pk{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}
+.pk-hi{border:2px solid var(--ink)}.pk-name{font-family:'Schibsted Grotesk';font-weight:800;font-size:20px}
+.pk-price{font-family:'Schibsted Grotesk';font-weight:900;font-size:44px;margin:8px 0 4px}.pk-price small{font-size:20px;color:var(--muted)}
+.pk-each{color:var(--muted);font-size:14px;margin-bottom:10px}.pk ul{margin:0 0 20px;padding-left:18px;flex:1}.pk li{margin:6px 0;font-size:15px}
+@media(max-width:760px){.lp-grid,.pk-wrap{grid-template-columns:1fr}}
+</style>"""
+
+def launch_page():
+    canon = f"{SITE}/launch/"
+    title = "Launch Your Business: License, Website & Email | Claimly"
+    desc = "Got your name? Next: a UAE company license, a website and a professional email on your domain. Free introductions to trusted partners."
+    cards = ""
+    for x in PARTNERS:
+        visit = ""
+        if x.get("url"):
+            visit = f'<a class="btn btn-ghost" href="{esc(x["url"])}" target="_blank" rel="sponsored noopener" onclick="lpClick(\'{x["id"]}\')">Visit {esc(x["partner"])} &rarr;</a>'
+        by = f'<div class="by">Partner: {esc(x["partner"])}</div>' if x.get("partner") else ""
+        cards += (f'<div class="lp"><h2>{esc(x["title"])}</h2>{by}<p>{esc(x["blurb"])}</p>'
+                  f'<div class="lp-btns"><button class="btn btn-cta" type="button" onclick="lpPick(\'{x["id"]}\')">{esc(x["cta"])}</button>{visit}</div></div>')
+    opts = "".join(f'<option value="{x["id"]}">{esc(x["title"])}</option>' for x in PARTNERS)
+    return head(title, desc, canon) + LP_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; Launch your business</div>
+<h1>You have the name. Now launch it.</h1>
+<p class="section-sub">What every new business needs next. Tell us what you need and we&rsquo;ll introduce you to a trusted partner, free.</p>
+<div class="lp-grid">{cards}</div>
+<form class="lp-form" id="lpForm" onsubmit="return lpSubmit(event)">
+<div id="lpFields">
+<h2 style="font-family:'Schibsted Grotesk';margin:0 0 14px;font-size:22px">Get a free introduction</h2>
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<div class="field"><label for="lpNeed">What do you need?</label><select id="lpNeed" name="need">{opts}</select></div>
+<div class="field"><label for="lpName">Your name</label><input id="lpName" name="name" required maxlength="200" autocomplete="name"></div>
+<div class="field"><label for="lpEmail">Email</label><input type="email" id="lpEmail" name="email" required maxlength="200" autocomplete="email"></div>
+<div class="field"><label for="lpPhone">WhatsApp / phone (optional)</label><input id="lpPhone" name="phone" maxlength="50" autocomplete="tel"></div>
+<div class="field"><label for="lpDetails">Tell us a little (business type, country, timing)</label><textarea id="lpDetails" name="details" maxlength="1500"></textarea></div>
+<label class="lp-check"><input type="checkbox" name="consent" required> I agree that Claimly may share my details with one partner so they can contact me with an offer.</label>
+<button class="btn btn-cta wide" type="submit">Send my request &rarr;</button>
+</div>
+<div class="lp-ok" id="lpOk"><h3 style="font-family:'Schibsted Grotesk'">Thanks, we&rsquo;re on it.</h3><p>We&rsquo;ll email you within one working day with your introduction.</p></div>
+</form>
+<p class="disclose">Claimly may earn a referral fee from partners. It never changes the price you pay.</p>
+</div></main>
+<script>
+function lpClick(id){{claimlySave('claimly_partner_clicks',{{partner:id,page:location.pathname.slice(0,300)}});}}
+function lpPick(id){{document.getElementById('lpNeed').value=id;claimlySave('claimly_partner_clicks',{{partner:id+':intro',page:location.pathname.slice(0,300)}});document.getElementById('lpForm').scrollIntoView({{behavior:'smooth'}});setTimeout(function(){{document.getElementById('lpName').focus()}},400);}}
+function lpSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;var a=claimlyAttr(),need=f.need.value,v=function(n){{return (f[n].value||'').trim();}};
+ claimlySave('claimly_leads',{{kind:need==='store'?'website':need,name:v('name').slice(0,200),email:v('email').slice(0,200),phone:v('phone').slice(0,50),details:((need==='store'?'Online store. ':'')+v('details')).slice(0,1500),consent:f.consent.checked,page:location.pathname.slice(0,300),utm_source:(a.us||'').slice(0,100)}});
+ document.getElementById('lpFields').style.display='none';document.getElementById('lpOk').style.display='block';return false;}}
+</script>""" + footer() + "</body></html>"
+
+AGENCY = [("agency_5", "5 naming packages", 545, 109, ["5 Starter packages to use for any of your clients", "10 checked names + domain registered, per client", "Delivered to you, unbranded, to pass on", "48-hour turnaround per brief", "Use them within 6 months"]),
+          ("agency_10", "10 naming packages", 990, 99, ["10 Starter packages to use for any of your clients", "Everything in the 5-pack", "Priority 24-hour turnaround", "Upgrade any one to a Brand kit for $120", "Use them within 6 months"])]
+
+def partners_page():
+    canon = f"{SITE}/partners/"
+    title = "Partner Program for Business Setup Firms & Agencies | Claimly"
+    desc = "Business setup consultants and agencies: offer your clients a name and domain in 48 hours. Wholesale naming packages from $99 each."
+    cards = ""
+    for i, (k, n, pr, each, feats) in enumerate(AGENCY):
+        lis = "".join(f"<li>{esc(x)}</li>" for x in feats)
+        hi = " pk-hi" if i == 1 else ""
+        cards += (f'<div class="pk{hi}"><div class="pk-name">{esc(n)}</div><div class="pk-price"><small>$</small>{pr}</div>'
+                  f'<div class="pk-each">${each} per client, paid upfront</div><ul>{lis}</ul>'
+                  f'<button class="btn btn-cta wide" type="button" onclick="agPick(\'{k}\')">Choose {esc(n)}</button></div>')
+    opts = "".join(f'<option value="{k}" data-price="{pr}">{esc(n)} &middot; ${pr}</option>' for k, n, pr, _, _ in AGENCY) + '<option value="talk" data-price="0">Talk to us first</option>'
+    names = json.dumps({k: n for k, n, _, _, _ in AGENCY})
+    return head(title, desc, canon) + LP_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; Partners</div>
+<h1>Give your clients a name in 48 hours</h1>
+<p class="section-sub">For business setup consultants, accountants and agencies. Your clients need a business name and domain before almost anything else. We do the naming; you deliver it under your service.</p>
+<div class="pk-wrap">{cards}</div>
+<form class="lp-form" id="agForm" onsubmit="return agSubmit(event)">
+<div id="agFields">
+<h2 style="font-family:'Schibsted Grotesk';margin:0 0 14px;font-size:22px">Become a partner</h2>
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<div class="field"><label for="agKind">Option</label><select id="agKind" name="kind">{opts}</select></div>
+<div class="field"><label for="agCompany">Company</label><input id="agCompany" name="company" required maxlength="200"></div>
+<div class="field"><label for="agName">Your name</label><input id="agName" name="name" required maxlength="200"></div>
+<div class="field"><label for="agEmail">Work email</label><input type="email" id="agEmail" name="email" required maxlength="200"></div>
+<div class="field"><label for="agPhone">WhatsApp / phone (optional)</label><input id="agPhone" name="phone" maxlength="50"></div>
+<p class="reassure" style="margin:0 0 10px">By placing your order, you confirm this information is correct and you authorize this purchase right now.</p>
+<button class="btn btn-cta wide" type="submit">Continue &rarr;</button>
+<p class="reassure">Bundles are paid upfront by card or PayPal. Unused packages are refundable within 30 days.</p>
+</div>
+<div class="lp-ok" id="agOk"><h3 style="font-family:'Schibsted Grotesk'" id="agOkH">Thanks!</h3><p id="agOkP"></p></div>
+</form>
+</div></main>
+<script>
+var AG_NAMES={names};
+function agPick(k){{document.getElementById('agKind').value=k;document.getElementById('agForm').scrollIntoView({{behavior:'smooth'}});setTimeout(function(){{document.getElementById('agCompany').focus()}},400);}}
+function agSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;var a=claimlyAttr(),sel=f.kind,k=sel.value,price=Number(sel.options[sel.selectedIndex].dataset.price),v=function(n){{return (f[n].value||'').trim();}};
+ claimlySave('claimly_leads',{{kind:'agency',name:v('name').slice(0,200),email:v('email').slice(0,200),phone:v('phone').slice(0,50),company:v('company').slice(0,200),details:k,consent:true,page:location.pathname.slice(0,300),utm_source:(a.us||'').slice(0,100)}});
+ if(k!=='talk'){{claimlySave('claimly_orders',{{kind:k,domain:'Agency bundle: '+AG_NAMES[k],price:price,email:v('email').slice(0,200),business:v('company').slice(0,1500),referrer:(a.ref||'').slice(0,500),landing_page:(a.land||location.pathname).slice(0,500),utm_source:a.us||'',utm_medium:a.um||'',utm_campaign:a.uc||''}});
+  var url='{PAY_BASE}/'+price+'USD';window.open(url,'_blank','noopener');
+  document.getElementById('agOkH').textContent='Complete payment in the PayPal tab';
+  document.getElementById('agOkP').innerHTML='Your order is saved. Pay <strong>$'+price+'</strong> and add your company name in the note. We will email you within one working day to set up your first brief. <a href="'+url+'" target="_blank" rel="noopener">Open PayPal</a>';}}
+ else{{document.getElementById('agOkP').textContent='We will email you within one working day.';}}
+ document.getElementById('agFields').style.display='none';document.getElementById('agOk').style.display='block';return false;}}
+</script>""" + footer() + "</body></html>"
+
 def notfound():
     return head("Page not found | Claimly", "This page doesn't exist.", SITE+"/404.html", robots="noindex") + f"""
 <main class="page"><div class="wrap" style="text-align:center;padding:60px 0">
@@ -594,7 +713,7 @@ def notfound():
 </div></main>""" + footer() + "</body></html>"
 
 def sitemap():
-    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY)] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
+    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY)] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
     body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
 
@@ -610,6 +729,8 @@ def build():
     open(os.path.join(OUT, "index.html"), "w").write(home())
     open(os.path.join(OUT, "404.html"), "w").write(notfound())
     os.makedirs(os.path.join(OUT, "new")); open(os.path.join(OUT, "new", "index.html"), "w").write(new_page())
+    for slug_, fn in (("launch", launch_page), ("partners", partners_page)):
+        os.makedirs(os.path.join(OUT, slug_)); open(os.path.join(OUT, slug_, "index.html"), "w").write(fn())
     os.makedirs(os.path.join(OUT, "name-my-business")); open(os.path.join(OUT, "name-my-business", "index.html"), "w").write(package_page())
     for i, d in enumerate(D):
         p = os.path.join(OUT, "d", d["fqdn"]); os.makedirs(p)
