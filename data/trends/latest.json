@@ -1,5 +1,5 @@
 {
- "date": "2026-10-19",
+ "date": "2026-10-20",
  "geos": [
   "US",
   "GB",
@@ -19,199 +19,236 @@
  "failed": [],
  "top_searches": [
   {
+   "q": "weather",
+   "geo": "SG",
+   "traffic": 10000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "BR",
+   "traffic": 10000
+  },
+  {
    "q": "spurs vs coventry",
-   "geo": "US",
-   "traffic": 10000
+   "geo": "AE",
+   "traffic": 5000
   },
   {
-   "q": "south africa vs australia",
-   "geo": "AU",
-   "traffic": 10000
-  },
-  {
-   "q": "trainer union berlin",
+   "q": "friedrich merz",
    "geo": "DE",
-   "traffic": 10000
-  },
-  {
-   "q": "spurs vs coventry",
-   "geo": "NG",
-   "traffic": 10000
-  },
-  {
-   "q": "jason sudeikis",
-   "geo": "US",
    "traffic": 5000
   },
   {
-   "q": "byu cougars football top ranking 2026",
-   "geo": "US",
-   "traffic": 5000
-  },
-  {
-   "q": "spurs vs coventry",
-   "geo": "IN",
-   "traffic": 5000
-  },
-  {
-   "q": "spurs vs coventry",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "getafe - rayo vallecano",
+   "q": "mustapha 49ers",
    "geo": "US",
    "traffic": 2000
+  },
+  {
+   "q": "shipwreck",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "weather warnings",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "gta vi",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "49ers vs commanders",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "ترتيب الدوري التركي",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "برلمان",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "bmw abfindungen",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "fryzza airfryer pizza",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "national agency for food and drug administration and control",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "al hilal sfc vs al-hazem f.c. standings",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "when does the world series start",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "world series tickets",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "tampa bay rays vs cleveland guardians timeline",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "sherrod brown",
+   "geo": "US",
+   "traffic": 1000
   },
   {
    "q": "getafe vs rayo",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "kelly ripa dog adoption delayed",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "paul ferris",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "ronnie o'sullivan",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "trabzonspor vs beşiktaş",
    "geo": "AE",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "طرابزون سبور ضد بشكتاش",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "ثمانية",
+   "q": "كهبوب",
    "geo": "SA",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "spurs vs coventry",
+   "q": "cbc",
    "geo": "CA",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "mauro lustrinelli",
+   "q": "manchester city punishment",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "49ers – commanders",
    "geo": "DE",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "union berlin",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "new mexico",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "asia pulp & paper",
+   "q": "arrest",
    "geo": "SG",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "al-hilal vs al-hazem",
+   "q": "the straits times",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "天气",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "national youth service corps",
    "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "日本郵政",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "james maddison",
-   "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "spurs vs coventry",
-   "geo": "AE",
+   "q": "braga fc",
+   "geo": "NG",
    "traffic": 1000
   },
   {
-   "q": "electronic invoicing",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "spurs vs coventry",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "spurs vs coventry",
-   "geo": "AU",
-   "traffic": 1000
-  },
-  {
-   "q": "chevron",
-   "geo": "AU",
-   "traffic": 1000
-  },
-  {
-   "q": "trainer von union berlin",
-   "geo": "DE",
+   "q": "getafe",
+   "geo": "NG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Pets",
-   "score": 2000
+   "category": "Local",
+   "score": 14000
+  },
+  {
+   "category": "Food",
+   "score": 4000
+  },
+  {
+   "category": "Creator",
+   "score": 2200
+  },
+  {
+   "category": "Green",
+   "score": 500
   },
   {
    "category": "Finance",
-   "score": 700
+   "score": 200
+  },
+  {
+   "category": "Crypto",
+   "score": 200
   },
   {
    "category": "Travel",
-   "score": 200
-  },
-  {
-   "category": "Local",
-   "score": 200
+   "score": 100
   }
  ],
  "words": [
   {
-   "word": "dog",
-   "category": "Pets",
+   "word": "weather",
+   "category": "Local",
+   "score": 12500
+  },
+  {
+   "word": "pizza",
+   "category": "Food",
    "score": 2000
   },
   {
-   "word": "ledger",
-   "category": "Finance",
+   "word": "food",
+   "category": "Food",
+   "score": 2000
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 1500
+  },
+  {
+   "word": "tree",
+   "category": "Green",
    "score": 500
   },
   {
-   "word": "flight",
-   "category": "Travel",
+   "word": "video",
+   "category": "Creator",
    "score": 200
   },
   {
-   "word": "tax",
+   "word": "coin",
+   "category": "Crypto",
+   "score": 200
+  },
+  {
+   "word": "market",
    "category": "Finance",
-   "score": 200
+   "score": 100
   },
   {
-   "word": "rain",
-   "category": "Local",
-   "score": 200
+   "word": "silver",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 100
   }
  ]
 }
