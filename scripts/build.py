@@ -726,6 +726,8 @@ def build():
     for f in os.listdir(SITE_DIR):
         dst = os.path.join(OUT, "assets", f) if f.endswith(".css") else os.path.join(OUT, f)
         shutil.copy(os.path.join(SITE_DIR, f), dst)
+    if os.path.isdir(os.path.join(ROOT, "social")):   # Instagram images, used by Metricool
+        shutil.copytree(os.path.join(ROOT, "social"), os.path.join(OUT, "social"))
     open(os.path.join(OUT, "index.html"), "w").write(home())
     open(os.path.join(OUT, "404.html"), "w").write(notfound())
     os.makedirs(os.path.join(OUT, "new")); open(os.path.join(OUT, "new", "index.html"), "w").write(new_page())
