@@ -11,7 +11,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1080, 1350
 RED, INK, BONE, BONE2, MUTED, WHITE = "#E0231C", "#141314", "#F4F3F1", "#FFFFFF", "#6B6766", "#FFFFFF"
-FD = "/usr/share/fonts/opentype/inter/"
+import os
+_REPO_FONTS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "fonts") + "/"
+FD = _REPO_FONTS if os.path.exists(_REPO_FONTS + "InterDisplay-Black.otf") else "/usr/share/fonts/opentype/inter/"
 
 def font(weight, size, display=True):
     return ImageFont.truetype(f"{FD}{'InterDisplay' if display else 'Inter'}-{weight}.otf", size)
