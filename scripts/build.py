@@ -87,6 +87,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canon}"><meta property="og:image" content="{SITE}/og-image.png">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="{SITE}/og-image.png">
+<meta name="p:domain_verify" content="a499319593d2ca67933886e9969ee4c6"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {FONTS}
 <link rel="stylesheet" href="/assets/site.css">
