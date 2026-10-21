@@ -1,0 +1,272 @@
+{
+ "date": "2026-10-21",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "tigres - león",
+   "geo": "US",
+   "traffic": 10000
+  },
+  {
+   "q": "al-nassr vs neom sc standings",
+   "geo": "AE",
+   "traffic": 10000
+  },
+  {
+   "q": "psg vs fc barcelona standings",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "australia south africa cricket scores",
+   "geo": "AU",
+   "traffic": 10000
+  },
+  {
+   "q": "ترتيبات طلائع الجيش – نادى بيراميدز",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "lotto max draw",
+   "geo": "CA",
+   "traffic": 5000
+  },
+  {
+   "q": "cyberpunk 2077 update 2.5",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "ind vs nz",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "today bank holiday",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "police commemoration day",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "aaj ka panchang",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "oilers",
+   "geo": "CA",
+   "traffic": 2000
+  },
+  {
+   "q": "who got eliminated on dancing with the stars tonight",
+   "geo": "CA",
+   "traffic": 2000
+  },
+  {
+   "q": "bom",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "sydney swans",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "spurs – thunder",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "wolverhampton wanderers f.c. vs portsmouth fc standings",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "the diplomat season 5",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "nhl mammoth",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "fight night boxing game",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "roberto de zerbi",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "ترتيبات طلائع الجيش – نادى بيراميدز",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "nba",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "knicks vs 76ers",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "devon levi",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "rosenheim cops duda",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "tedox schließt filialen",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "fraud",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "spurs vs thunder",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "psv",
+   "geo": "ZA",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Finance",
+   "score": 2400
+  },
+  {
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "category": "Health",
+   "score": 600
+  },
+  {
+   "category": "E-commerce",
+   "score": 400
+  },
+  {
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "category": "Real estate",
+   "score": 200
+  },
+  {
+   "category": "Green",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 2000
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 1000
+  },
+  {
+   "word": "calm",
+   "category": "Health",
+   "score": 600
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "wild",
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 200
+  }
+ ]
+}

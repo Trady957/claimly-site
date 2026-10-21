@@ -1,5 +1,5 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "geos": [
   "US",
   "GB",
@@ -19,183 +19,223 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "lottery sambad",
-   "geo": "IN",
-   "traffic": 50000
+   "q": "tigres - león",
+   "geo": "US",
+   "traffic": 10000
   },
   {
-   "q": "লটারি রেজাল্ট",
-   "geo": "IN",
-   "traffic": 20000
-  },
-  {
-   "q": "india vs zimbabwe",
-   "geo": "AE",
-   "traffic": 20000
-  },
-  {
-   "q": "sharjah gas odor safety update",
+   "q": "al-nassr vs neom sc standings",
    "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "south africa vs australia",
-   "geo": "ZA",
+   "q": "psg vs fc barcelona standings",
+   "geo": "SA",
    "traffic": 10000
   },
   {
-   "q": "najee harris",
-   "geo": "US",
-   "traffic": 5000
+   "q": "australia south africa cricket scores",
+   "geo": "AU",
+   "traffic": 10000
   },
   {
-   "q": "kyle kennedy",
-   "geo": "US",
-   "traffic": 5000
-  },
-  {
-   "q": "التعاون ضد القادسية",
+   "q": "ترتيبات طلائع الجيش – نادى بيراميدز",
    "geo": "SA",
    "traffic": 5000
   },
   {
-   "q": "rich butler",
+   "q": "lotto max draw",
    "geo": "CA",
    "traffic": 5000
   },
   {
-   "q": "thibault bazin",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "tocantins",
-   "geo": "BR",
-   "traffic": 5000
-  },
-  {
-   "q": "deportación",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "trump administration cnn press ban",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "jordan elliott",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "south africa vs australia",
+   "q": "cyberpunk 2077 update 2.5",
    "geo": "GB",
    "traffic": 2000
   },
   {
-   "q": "kranti gaud",
+   "q": "ind vs nz",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "بترول أسيوط ضد الزمالك",
-   "geo": "AE",
+   "q": "today bank holiday",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "indw vs zimw",
-   "geo": "AE",
+   "q": "police commemoration day",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "النصر ونيوم",
-   "geo": "SA",
+   "q": "aaj ka panchang",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "bombardier",
+   "q": "oilers",
    "geo": "CA",
    "traffic": 2000
   },
   {
-   "q": "birgit hesse",
-   "geo": "DE",
+   "q": "who got eliminated on dancing with the stars tonight",
+   "geo": "CA",
    "traffic": 2000
   },
   {
-   "q": "christophe dechavanne",
+   "q": "bom",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "sydney swans",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "spurs – thunder",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "asiaone",
-   "geo": "SG",
+   "q": "wolverhampton wanderers f.c. vs portsmouth fc standings",
+   "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "singtel imda penalty march outage",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "elon musk",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "jogo aberto ao vivo",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "recém-nascido",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "trump iran",
+   "q": "the diplomat season 5",
    "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "prince harry uk return interview",
+   "q": "nhl mammoth",
    "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "boardwalk rock 2027",
-   "geo": "US",
+   "q": "fight night boxing game",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "roberto de zerbi",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "ترتيبات طلائع الجيش – نادى بيراميدز",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "nba",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "knicks vs 76ers",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "devon levi",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "rosenheim cops duda",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "tedox schließt filialen",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "fraud",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "spurs vs thunder",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "psv",
+   "geo": "ZA",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "E-commerce",
-   "score": 1000
+   "category": "Finance",
+   "score": 2400
   },
   {
-   "category": "Legal",
-   "score": 500
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "category": "Health",
+   "score": 600
+  },
+  {
+   "category": "E-commerce",
+   "score": 400
   },
   {
    "category": "Local",
    "score": 200
   },
   {
-   "category": "Creator",
+   "category": "Real estate",
+   "score": 200
+  },
+  {
+   "category": "Green",
    "score": 200
   }
  ],
  "words": [
   {
-   "word": "price",
-   "category": "E-commerce",
+   "word": "bank",
+   "category": "Finance",
+   "score": 2000
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
    "score": 1000
   },
   {
-   "word": "law",
-   "category": "Legal",
+   "word": "calm",
+   "category": "Health",
+   "score": 600
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
    "score": 500
   },
   {
@@ -204,8 +244,28 @@
    "score": 200
   },
   {
-   "word": "star",
-   "category": "Creator",
+   "word": "stock",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "wild",
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
    "score": 200
   }
  ]
