@@ -28,18 +28,38 @@ dd = os.path.join(ROOT, "social", "daily")
 for f in os.listdir(dd):
     if f.endswith(".json") and f != "latest.json":
         used |= {n["domain"] for n in json.load(open(os.path.join(dd, f))).get("names", [])}
+WEAK = re.compile(r"(ova|evo|ix|ary|ery|ora|ly|ify|able|era)$")   # suffix-made words read as filler
 pool = {}
 for x in inv:
     d = x["d"]
     if d in gone or d in used or d in DS.PREMIUM: continue
     if not re.fullmatch(r"[a-z]+\.(com|co|io|app)", d): continue
     if not DS.two_words(d.split(".")[0]) or len(d) > 15: continue
+    if WEAK.search(d.split(".")[0]): continue
+    lab, ext = d.split(".")
+    if ext == "io" and lab.endswith("io"): continue
+    if any(lab == w + w for w in DS.WORDS if len(w) >= 3): continue
     pool.setdefault(x["c"], []).append(x)
 for c in pool: random.shuffle(pool[c]); pool[c].sort(key=lambda x: (x["d"].split(".")[1] != "com", len(x["d"])))
 CATS = [c for c in DS.PHRASE if len(pool.get(c, [])) >= 25]
 
+def parts(d):
+    lab = d.split(".")[0]
+    for w in DS.WORDS:
+        if len(w) >= 2 and lab.startswith(w) and lab[len(w):] in DS.WORDS:
+            return {w, lab[len(w):]}
+    return {lab}
+
 def take(cat, n):
-    out = pool[cat][:n]; del pool[cat][:n]; return out
+    out, seen, keep = [], set(), []
+    for x in pool[cat]:
+        pr = parts(x["d"])
+        if len(out) < n and not (pr & seen):
+            out.append(x); seen |= pr
+        else:
+            keep.append(x)
+    pool[cat] = keep
+    return out
 
 HASH = {"Finance": "#fintech #financebrand", "AI": "#aistartup #techstartup", "SaaS": "#saas #softwarestartup",
         "E-commerce": "#ecommerce #onlinestore", "Local": "#localbusiness #shoplocal", "Health": "#wellnessbrand #healthbusiness",
@@ -175,7 +195,7 @@ FPS, RW, RH = 30, 1080, 1920
 def ease(t): t = max(0.0, min(1.0, t)); return 1 - (1 - t) ** 3
 
 def reel(path, cat, items):
-    title = f"5 names for your {DS.PHRASE.get(cat, 'business')}"
+    title = f"{len(items)} names for your {DS.PHRASE.get(cat, 'business')}"
     total = int(FPS * 11.5)
     bg = Image.new("RGB", (RW, RH), S.BONE)
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{RW}x{RH}",
@@ -212,7 +232,7 @@ def reel(path, cat, items):
     p.stdin.close(); p.wait()
 
 def reel_cover(path, cat, items):
-    S.names(path, f"Available today · {cat}", f"5 names for your {DS.PHRASE.get(cat, 'business')}",
+    S.names(path, f"Available today · {cat}", f"{len(items)} names for your {DS.PHRASE.get(cat, 'business')}",
             [(x["d"], x["p"]) for x in items], "Domain + first year included. Link in bio.")
 
 # ---------------------------------------------------------------- build the month
@@ -231,7 +251,7 @@ def main():
         if n % 2 == 0:
             items = take(cat, 5)
             reel(os.path.join(fd, "reel.mp4"), cat, items); reel_cover(os.path.join(fd, "reel-cover.jpg"), cat, items)
-            entry["feed"] = {"type": "REEL", "title": f"Reel: 5 names for your {DS.PHRASE[cat]}", "media": [url("reel.mp4")],
+            entry["feed"] = {"type": "REEL", "title": f"Reel: {len(items)} names for your {DS.PHRASE[cat]}", "media": [url("reel.mp4")],
                              "cover": url("reel-cover.jpg"), "caption": names_caption(cat, items, "reel"), "domains": [x["d"] for x in items]}
         elif n % 6 == 1 and car_i < len(CAROUSELS):
             title, slides = CAROUSELS[car_i]; car_i += 1
@@ -263,7 +283,7 @@ def main():
         pcat = CATS[(ci + 13) % len(CATS)]; pitems = take(pcat, 5)
         pin_list(os.path.join(fd, "pin.jpg"), pcat, pitems)
         entry["pin"] = {"file": url("pin.jpg"), "board": {"Food": "Café & Food Brand Names", "AI": "Tech & AI Startup Names", "SaaS": "Tech & AI Startup Names", "Crypto": "Tech & AI Startup Names", "Gaming": "Tech & AI Startup Names"}.get(pcat, "Business Name Ideas"),
-                        "title": f"5 name ideas for your {DS.PHRASE[pcat]} (domains available)",
+                        "title": f"{len(pitems)} name ideas for your {DS.PHRASE[pcat]} (domains available)",
                         "description": f"Brandable, available domain names for a {DS.PHRASE[pcat]}: " + ", ".join(x['d'] for x in pitems) + ". First year of registration included.",
                         "link": f"https://claimly.ae/domains/{slug(pcat)}/?utm_source=pinterest&utm_medium=pin"}
         plan.append(entry)
