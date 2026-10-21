@@ -91,6 +91,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 {FONTS}
 <link rel="stylesheet" href="/assets/site.css">
 {extra_ld}
+<script>function loadScript(a){{var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}}loadScript(function(){{beTracker.t({{hash:"8ba47d0fd40dc1413af50dcb436aff42"}})}});</script>
 </head>
 <body>
 <div class="bg" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
@@ -133,7 +134,7 @@ def footer():
 <div class="policy">
 <h4>Policies</h4>
 <details><summary>Terms of Service</summary><div class="ptext">Listings are subject to availability at the time of purchase. After payment we register the domain and transfer it to you, or register it directly in your name; ownership passes on completion. Prices are in USD and include the first year of registration. Renewals are paid by you to your registrar. Domains are provided for lawful use.</div></details>
-<details><summary>Privacy Policy</summary><div class="ptext">We collect only what&rsquo;s needed to complete your order: your email, the domain, and how you found us. Payments are handled by PayPal; we never see your card details. We don&rsquo;t sell your data.</div></details>
+<details><summary>Privacy Policy</summary><div class="ptext">We collect only what&rsquo;s needed to complete your order: your email, the domain, and how you found us. Payments are handled by PayPal; we never see your card details. We count anonymous page visits with Metricool to see which pages are useful. We don&rsquo;t sell your data.</div></details>
 <details><summary>Refund Policy</summary><div class="ptext">If a domain can&rsquo;t be delivered after payment, you receive a full refund. As domains are unique assets transferred to you, completed transfers are final. Contact us within 7 days for any delivery issue.</div></details>
 </div>
 </div>
