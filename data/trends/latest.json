@@ -1,5 +1,5 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-22",
  "geos": [
   "US",
   "GB",
@@ -19,258 +19,220 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "bangladesh vs afghanistan",
-   "geo": "AE",
-   "traffic": 20000
-  },
-  {
-   "q": "bangladesh vs afghanistan",
-   "geo": "SA",
-   "traffic": 20000
-  },
-  {
-   "q": "كفاراتسخيليا",
-   "geo": "SA",
-   "traffic": 10000
-  },
-  {
-   "q": "bayern arsenal tv",
+   "q": "mirage absturz",
    "geo": "DE",
    "traffic": 10000
   },
   {
-   "q": "மழைநீர் சேகரிப்பு",
+   "q": "india vs nz t20",
    "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "khaleej times",
-   "geo": "AE",
+   "q": "مطر",
+   "geo": "SA",
    "traffic": 5000
   },
   {
-   "q": "bangladesh national cricket team vs afghanistan national cricket team match scorecard",
-   "geo": "AE",
+   "q": "jogos hoje",
+   "geo": "BR",
    "traffic": 5000
   },
   {
-   "q": "ocbc malaysian ringgit savings account",
-   "geo": "SG",
+   "q": "チケットぴあ",
+   "geo": "JP",
    "traffic": 5000
   },
   {
-   "q": "david hearn reflecting pool case",
+   "q": "cruz azul",
    "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "రాశి",
-   "geo": "IN",
+   "q": "bronny james",
+   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "المركز الوطني للأرصاد",
+   "q": "darius garland",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "lakers vs warriors",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "مطار الملك فهد",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "south africa national cricket team vs australia national cricket team timeline",
+   "q": "lakers vs golden state warriors match player stats",
    "geo": "AU",
    "traffic": 2000
   },
   {
-   "q": "hackerangriff",
+   "q": "poziții inter vs șahtior donețk",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "heilbronn",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "boursorama",
+   "q": "nba",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "démarchage",
-   "geo": "FR",
+   "q": "jogo futebol",
+   "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "bangladesh vs afghanistan",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "right",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "hyron andrews",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "enoch godongwana online gambling tax",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "cheslin kolbe",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "docomo",
+   "q": "トラ ベーション",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "prince harry memory of princess diana",
+   "q": "sandro mamukelashvili",
    "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "downdetector",
+   "q": "king fahd international airport",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "محمد صبحي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "ziaire williams",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "lakers vs warriors",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "estudiantes",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "annie andrews",
    "geo": "US",
-   "traffic": 1000
+   "traffic": 500
   },
   {
-   "q": "jeffrey donaldson",
-   "geo": "GB",
-   "traffic": 1000
+   "q": "keegan murray",
+   "geo": "US",
+   "traffic": 500
   },
   {
-   "q": "rashid khan",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "dubai roads new speed regulations",
+   "q": "weather sharjah",
    "geo": "AE",
-   "traffic": 1000
+   "traffic": 500
   },
   {
-   "q": "stick run",
-   "geo": "AU",
-   "traffic": 1000
+   "q": "lakers vs warriors",
+   "geo": "AE",
+   "traffic": 500
   },
   {
-   "q": "katherine set for life winner",
+   "q": "trail blazers vs suns",
    "geo": "AU",
-   "traffic": 1000
+   "traffic": 500
   },
   {
-   "q": "australian football league",
+   "q": "tasmania vs victoria",
    "geo": "AU",
-   "traffic": 1000
+   "traffic": 500
+  },
+  {
+   "q": "ps5 pro update",
+   "geo": "DE",
+   "traffic": 500
+  },
+  {
+   "q": "mobilisation",
+   "geo": "FR",
+   "traffic": 500
+  },
+  {
+   "q": "lakers – warriors",
+   "geo": "FR",
+   "traffic": 500
   }
  ],
  "categories": [
   {
-   "category": "SaaS",
-   "score": 14100
-  },
-  {
-   "category": "Finance",
-   "score": 7500
-  },
-  {
    "category": "Gaming",
-   "score": 3100
+   "score": 1200
   },
   {
-   "category": "E-commerce",
-   "score": 2900
-  },
-  {
-   "category": "Health",
-   "score": 2700
-  },
-  {
-   "category": "Legal",
-   "score": 2200
-  },
-  {
-   "category": "Travel",
-   "score": 1000
+   "category": "Green",
+   "score": 900
   },
   {
    "category": "AI",
    "score": 500
   },
   {
-   "category": "Food",
-   "score": 300
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "category": "Travel",
+   "score": 100
+  },
+  {
+   "category": "Fashion",
+   "score": 100
   }
  ],
  "words": [
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 14000
-  },
-  {
-   "word": "savings",
-   "category": "Finance",
-   "score": 5000
-  },
-  {
-   "word": "case",
-   "category": "Legal",
-   "score": 2000
-  },
-  {
-   "word": "cup",
+   "word": "king",
    "category": "Gaming",
-   "score": 2000
+   "score": 1200
   },
   {
-   "word": "tax",
-   "category": "Finance",
-   "score": 2000
+   "word": "sun",
+   "category": "Green",
+   "score": 900
   },
   {
-   "word": "run",
-   "category": "Health",
-   "score": 1700
-  },
-  {
-   "word": "league",
-   "category": "Gaming",
-   "score": 1100
-  },
-  {
-   "word": "road",
-   "category": "Travel",
-   "score": 1000
-  },
-  {
-   "word": "life",
-   "category": "Health",
-   "score": 1000
-  },
-  {
-   "word": "agent",
+   "word": "rocket",
    "category": "AI",
    "score": 500
   },
   {
-   "word": "stock",
-   "category": "Finance",
+   "word": "weather",
+   "category": "Local",
    "score": 500
   },
   {
-   "word": "tea",
-   "category": "Food",
-   "score": 300
+   "word": "savings",
+   "category": "Finance",
+   "score": 100
   },
   {
-   "word": "pipeline",
-   "category": "SaaS",
+   "word": "gold",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
    "score": 100
   }
  ]

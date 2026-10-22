@@ -1,28 +1,28 @@
 {
- "date": "2026-10-21",
- "category": "SaaS",
- "title": "Names for your software startup",
- "image_url": "https://claimly.ae/social/daily/2026-10-21.jpg",
+ "date": "2026-10-22",
+ "category": "E-commerce",
+ "title": "Names for your online store",
+ "image_url": "https://claimly.ae/social/daily/2026-10-22.jpg",
  "names": [
   {
-   "domain": "trygrid.co",
+   "domain": "getpop.co",
    "price": 55
   },
   {
-   "domain": "buildfox.co",
-   "price": 39
+   "domain": "sellhub.co",
+   "price": 55
   },
   {
-   "domain": "cloudhub.co",
+   "domain": "shelfix.co",
+   "price": 60
+  },
+  {
+   "domain": "shopevo.co",
+   "price": 45
+  },
+  {
+   "domain": "trysell.co",
    "price": 40
-  },
-  {
-   "domain": "queueix.com",
-   "price": 55
-  },
-  {
-   "domain": "scopeowl.co",
-   "price": 39
   }
  ]
 }

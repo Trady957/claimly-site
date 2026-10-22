@@ -1,0 +1,239 @@
+{
+ "date": "2026-10-22",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "mirage absturz",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "india vs nz t20",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "مطر",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "jogos hoje",
+   "geo": "BR",
+   "traffic": 5000
+  },
+  {
+   "q": "チケットぴあ",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "cruz azul",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "bronny james",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "darius garland",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "lakers vs warriors",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "مطار الملك فهد",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "lakers vs golden state warriors match player stats",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "poziții inter vs șahtior donețk",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "nba",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "jogo futebol",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "トラ ベーション",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "sandro mamukelashvili",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "king fahd international airport",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "محمد صبحي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "ziaire williams",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "lakers vs warriors",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "estudiantes",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "annie andrews",
+   "geo": "US",
+   "traffic": 500
+  },
+  {
+   "q": "keegan murray",
+   "geo": "US",
+   "traffic": 500
+  },
+  {
+   "q": "weather sharjah",
+   "geo": "AE",
+   "traffic": 500
+  },
+  {
+   "q": "lakers vs warriors",
+   "geo": "AE",
+   "traffic": 500
+  },
+  {
+   "q": "trail blazers vs suns",
+   "geo": "AU",
+   "traffic": 500
+  },
+  {
+   "q": "tasmania vs victoria",
+   "geo": "AU",
+   "traffic": 500
+  },
+  {
+   "q": "ps5 pro update",
+   "geo": "DE",
+   "traffic": 500
+  },
+  {
+   "q": "mobilisation",
+   "geo": "FR",
+   "traffic": 500
+  },
+  {
+   "q": "lakers – warriors",
+   "geo": "FR",
+   "traffic": 500
+  }
+ ],
+ "categories": [
+  {
+   "category": "Gaming",
+   "score": 1200
+  },
+  {
+   "category": "Green",
+   "score": 900
+  },
+  {
+   "category": "AI",
+   "score": 500
+  },
+  {
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "category": "Travel",
+   "score": 100
+  },
+  {
+   "category": "Fashion",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 1200
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 900
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "savings",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 100
+  }
+ ]
+}
