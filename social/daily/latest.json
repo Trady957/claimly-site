@@ -1,28 +1,28 @@
 {
- "date": "2026-10-22",
- "category": "E-commerce",
- "title": "Names for your online store",
- "image_url": "https://claimly.ae/social/daily/2026-10-22.jpg",
+ "date": "2026-10-23",
+ "category": "Local",
+ "title": "Names for your local business",
+ "image_url": "https://claimly.ae/social/daily/2026-10-23.jpg",
  "names": [
   {
-   "domain": "getpop.co",
-   "price": 55
-  },
-  {
-   "domain": "sellhub.co",
-   "price": 55
-  },
-  {
-   "domain": "shelfix.co",
-   "price": 60
-  },
-  {
-   "domain": "shopevo.co",
+   "domain": "nearly.co",
    "price": 45
   },
   {
-   "domain": "trysell.co",
-   "price": 40
+   "domain": "citybay.co",
+   "price": 50
+  },
+  {
+   "domain": "cityhub.co",
+   "price": 55
+  },
+  {
+   "domain": "cityova.co",
+   "price": 45
+  },
+  {
+   "domain": "townbay.co",
+   "price": 55
   }
  ]
 }

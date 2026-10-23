@@ -1,5 +1,5 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "geos": [
   "US",
   "GB",
@@ -19,220 +19,239 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "mirage absturz",
+   "q": "siemens energy aktie news",
    "geo": "DE",
    "traffic": 10000
   },
   {
-   "q": "india vs nz t20",
+   "q": "gold mcx",
    "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "مطر",
+   "q": "nhl standings",
+   "geo": "CA",
+   "traffic": 5000
+  },
+  {
+   "q": "flu shots",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "bruce blakeman",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "dallas stars",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "riyadh",
    "geo": "SA",
-   "traffic": 5000
+   "traffic": 2000
   },
   {
-   "q": "jogos hoje",
-   "geo": "BR",
-   "traffic": 5000
+   "q": "قوى",
+   "geo": "SA",
+   "traffic": 2000
   },
   {
-   "q": "チケットぴあ",
+   "q": "afc bournemouth vs ac milan standings",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "toothpaste",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "ebola outbreak abuja",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "francis duru",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "power outage",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "celtic f.c. vs rc celta de vigo standings",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "celtic f.c. vs rc celta de vigo standings",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "宮本茂",
    "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "cruz azul",
-   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "bronny james",
-   "geo": "US",
+   "q": "台風31号",
+   "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "darius garland",
+   "q": "vaccinations",
    "geo": "US",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "lakers vs warriors",
+   "q": "jaylin williams",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "mw4",
    "geo": "GB",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "مطار الملك فهد",
+   "q": "bears vs patriots",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "سعر الذهب",
    "geo": "SA",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "lakers vs golden state warriors match player stats",
+   "q": "vancouver canucks",
+   "geo": "CA",
+   "traffic": 1000
+  },
+  {
+   "q": "oklahoma city thunder vs denver nuggets match player stats",
    "geo": "AU",
-   "traffic": 2000
+   "traffic": 1000
   },
   {
-   "q": "poziții inter vs șahtior donețk",
+   "q": "deutsche rentenversicherung nachzahlung",
    "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "nba",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "jogo futebol",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "トラ ベーション",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "sandro mamukelashvili",
-   "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "king fahd international airport",
-   "geo": "SA",
+   "q": "bears – patriots",
+   "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "محمد صبحي",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "ziaire williams",
-   "geo": "AU",
-   "traffic": 1000
-  },
-  {
-   "q": "lakers vs warriors",
+   "q": "76ers vs cavaliers",
    "geo": "SG",
    "traffic": 1000
   },
   {
-   "q": "estudiantes",
+   "q": "leo jardim",
    "geo": "BR",
    "traffic": 1000
   },
   {
-   "q": "annie andrews",
-   "geo": "US",
-   "traffic": 500
+   "q": "原辰徳",
+   "geo": "JP",
+   "traffic": 1000
   },
   {
-   "q": "keegan murray",
-   "geo": "US",
-   "traffic": 500
-  },
-  {
-   "q": "weather sharjah",
-   "geo": "AE",
-   "traffic": 500
-  },
-  {
-   "q": "lakers vs warriors",
-   "geo": "AE",
-   "traffic": 500
-  },
-  {
-   "q": "trail blazers vs suns",
-   "geo": "AU",
-   "traffic": 500
-  },
-  {
-   "q": "tasmania vs victoria",
-   "geo": "AU",
-   "traffic": 500
-  },
-  {
-   "q": "ps5 pro update",
-   "geo": "DE",
-   "traffic": 500
-  },
-  {
-   "q": "mobilisation",
-   "geo": "FR",
-   "traffic": 500
-  },
-  {
-   "q": "lakers – warriors",
-   "geo": "FR",
-   "traffic": 500
+   "q": "高橋由伸",
+   "geo": "JP",
+   "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Gaming",
-   "score": 1200
-  },
-  {
    "category": "Green",
-   "score": 900
-  },
-  {
-   "category": "AI",
-   "score": 500
-  },
-  {
-   "category": "Local",
-   "score": 500
+   "score": 10200
   },
   {
    "category": "Finance",
-   "score": 200
+   "score": 5300
+  },
+  {
+   "category": "Food",
+   "score": 2600
+  },
+  {
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "category": "Local",
+   "score": 1500
+  },
+  {
+   "category": "E-commerce",
+   "score": 300
   },
   {
    "category": "Travel",
    "score": 100
   },
   {
-   "category": "Fashion",
+   "category": "Health",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "king",
-   "category": "Gaming",
-   "score": 1200
-  },
-  {
-   "word": "sun",
+   "word": "energy",
    "category": "Green",
-   "score": 900
-  },
-  {
-   "word": "rocket",
-   "category": "AI",
-   "score": 500
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 500
-  },
-  {
-   "word": "savings",
-   "category": "Finance",
-   "score": 100
+   "score": 10000
   },
   {
    "word": "gold",
    "category": "Finance",
+   "score": 5300
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 2600
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 1000
+  },
+  {
+   "word": "community",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 300
+  },
+  {
+   "word": "leaf",
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "word": "road",
+   "category": "Travel",
    "score": 100
   },
   {
-   "word": "travel",
-   "category": "Travel",
+   "word": "tennis",
+   "category": "Health",
    "score": 100
   }
  ]
