@@ -1,0 +1,283 @@
+{
+ "date": "2026-10-24",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "lakers",
+   "geo": "US",
+   "traffic": 20000
+  },
+  {
+   "q": "quem gastou mais com cartão corporativo lula ou bolsonaro",
+   "geo": "BR",
+   "traffic": 20000
+  },
+  {
+   "q": "atlante - san luis",
+   "geo": "US",
+   "traffic": 5000
+  },
+  {
+   "q": "ధర",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "موعد صلاة الفجر",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "arte film ein unmöglicher zufall",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "flavio bolsonaro e vorcaro",
+   "geo": "BR",
+   "traffic": 5000
+  },
+  {
+   "q": "はま寿司 予約",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "gary sanchez",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "garrett cleavinger",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "sydney sweeney",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "last one laughing uk halloween special",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "euromillions results lottery results",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "nba scores",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "ssa",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "gold rate in dubai",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "daniel stewart",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "spurs – rockets",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "lulinha",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "keaton wagler",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "guerre ukraine russie",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "polymarket",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "quem ganhou o debate",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "keegan murray",
+   "geo": "US",
+   "traffic": 500
+  },
+  {
+   "q": "brandin podziemski",
+   "geo": "US",
+   "traffic": 500
+  },
+  {
+   "q": "lakers vs clippers",
+   "geo": "GB",
+   "traffic": 500
+  },
+  {
+   "q": "spurs vs rockets",
+   "geo": "GB",
+   "traffic": 500
+  },
+  {
+   "q": "current ballon d or rankings",
+   "geo": "IN",
+   "traffic": 500
+  },
+  {
+   "q": "ತುಟ್ಟಿಭತ್ಯೆ",
+   "geo": "IN",
+   "traffic": 500
+  },
+  {
+   "q": "voter list",
+   "geo": "IN",
+   "traffic": 500
+  }
+ ],
+ "categories": [
+  {
+   "category": "E-commerce",
+   "score": 20200
+  },
+  {
+   "category": "Creator",
+   "score": 5000
+  },
+  {
+   "category": "AI",
+   "score": 3200
+  },
+  {
+   "category": "Finance",
+   "score": 2400
+  },
+  {
+   "category": "Local",
+   "score": 1100
+  },
+  {
+   "category": "Gaming",
+   "score": 700
+  },
+  {
+   "category": "Travel",
+   "score": 100
+  },
+  {
+   "category": "Real estate",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "cart",
+   "category": "E-commerce",
+   "score": 20000
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 5000
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 3000
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
+   "score": 2000
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 700
+  },
+  {
+   "word": "haze",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 400
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "town",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 100
+  },
+  {
+   "word": "nest",
+   "category": "Real estate",
+   "score": 100
+  },
+  {
+   "word": "space",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "data",
+   "category": "AI",
+   "score": 100
+  }
+ ]
+}

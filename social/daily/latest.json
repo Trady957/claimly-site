@@ -1,28 +1,28 @@
 {
- "date": "2026-10-23",
- "category": "Local",
- "title": "Names for your local business",
- "image_url": "https://claimly.ae/social/daily/2026-10-23.jpg",
+ "date": "2026-10-24",
+ "category": "Health",
+ "title": "Names for your health or wellness brand",
+ "image_url": "https://claimly.ae/social/daily/2026-10-24.jpg",
  "names": [
   {
-   "domain": "nearly.co",
-   "price": 45
+   "domain": "fitai.co",
+   "price": 60
   },
   {
-   "domain": "citybay.co",
+   "domain": "bodyly.co",
+   "price": 55
+  },
+  {
+   "domain": "sageai.co",
+   "price": 55
+  },
+  {
+   "domain": "getlife.co",
    "price": 50
   },
   {
-   "domain": "cityhub.co",
-   "price": 55
-  },
-  {
-   "domain": "cityova.co",
-   "price": 45
-  },
-  {
-   "domain": "townbay.co",
-   "price": 55
+   "domain": "healify.co",
+   "price": 60
   }
  ]
 }

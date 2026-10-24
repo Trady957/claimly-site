@@ -1,5 +1,5 @@
 {
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "geos": [
   "US",
   "GB",
@@ -19,239 +19,264 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "siemens energy aktie news",
-   "geo": "DE",
-   "traffic": 10000
+   "q": "lakers",
+   "geo": "US",
+   "traffic": 20000
   },
   {
-   "q": "gold mcx",
+   "q": "quem gastou mais com cartão corporativo lula ou bolsonaro",
+   "geo": "BR",
+   "traffic": 20000
+  },
+  {
+   "q": "atlante - san luis",
+   "geo": "US",
+   "traffic": 5000
+  },
+  {
+   "q": "ధర",
    "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "nhl standings",
-   "geo": "CA",
+   "q": "موعد صلاة الفجر",
+   "geo": "SA",
    "traffic": 5000
   },
   {
-   "q": "flu shots",
-   "geo": "US",
-   "traffic": 2000
+   "q": "arte film ein unmöglicher zufall",
+   "geo": "DE",
+   "traffic": 5000
   },
   {
-   "q": "bruce blakeman",
-   "geo": "US",
-   "traffic": 2000
+   "q": "flavio bolsonaro e vorcaro",
+   "geo": "BR",
+   "traffic": 5000
   },
   {
-   "q": "dallas stars",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "riyadh",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "قوى",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "afc bournemouth vs ac milan standings",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "toothpaste",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "ebola outbreak abuja",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "francis duru",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "power outage",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "celtic f.c. vs rc celta de vigo standings",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "celtic f.c. vs rc celta de vigo standings",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "宮本茂",
+   "q": "はま寿司 予約",
    "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "gary sanchez",
+   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "台風31号",
-   "geo": "JP",
+   "q": "garrett cleavinger",
+   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "vaccinations",
+   "q": "sydney sweeney",
    "geo": "US",
-   "traffic": 1000
+   "traffic": 2000
   },
   {
-   "q": "jaylin williams",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "mw4",
+   "q": "last one laughing uk halloween special",
    "geo": "GB",
-   "traffic": 1000
+   "traffic": 2000
   },
   {
-   "q": "bears vs patriots",
+   "q": "euromillions results lottery results",
    "geo": "GB",
-   "traffic": 1000
+   "traffic": 2000
   },
   {
-   "q": "سعر الذهب",
-   "geo": "SA",
-   "traffic": 1000
+   "q": "nba scores",
+   "geo": "GB",
+   "traffic": 2000
   },
   {
-   "q": "vancouver canucks",
-   "geo": "CA",
-   "traffic": 1000
+   "q": "ssa",
+   "geo": "IN",
+   "traffic": 2000
   },
   {
-   "q": "oklahoma city thunder vs denver nuggets match player stats",
+   "q": "gold rate in dubai",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "daniel stewart",
    "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "spurs – rockets",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "lulinha",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "keaton wagler",
+   "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "deutsche rentenversicherung nachzahlung",
-   "geo": "DE",
+   "q": "guerre ukraine russie",
+   "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "bears – patriots",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "76ers vs cavaliers",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "leo jardim",
+   "q": "polymarket",
    "geo": "BR",
    "traffic": 1000
   },
   {
-   "q": "原辰徳",
-   "geo": "JP",
+   "q": "quem ganhou o debate",
+   "geo": "BR",
    "traffic": 1000
   },
   {
-   "q": "高橋由伸",
-   "geo": "JP",
-   "traffic": 1000
+   "q": "keegan murray",
+   "geo": "US",
+   "traffic": 500
+  },
+  {
+   "q": "brandin podziemski",
+   "geo": "US",
+   "traffic": 500
+  },
+  {
+   "q": "lakers vs clippers",
+   "geo": "GB",
+   "traffic": 500
+  },
+  {
+   "q": "spurs vs rockets",
+   "geo": "GB",
+   "traffic": 500
+  },
+  {
+   "q": "current ballon d or rankings",
+   "geo": "IN",
+   "traffic": 500
+  },
+  {
+   "q": "ತುಟ್ಟಿಭತ್ಯೆ",
+   "geo": "IN",
+   "traffic": 500
+  },
+  {
+   "q": "voter list",
+   "geo": "IN",
+   "traffic": 500
   }
  ],
  "categories": [
   {
-   "category": "Green",
-   "score": 10200
-  },
-  {
-   "category": "Finance",
-   "score": 5300
-  },
-  {
-   "category": "Food",
-   "score": 2600
+   "category": "E-commerce",
+   "score": 20200
   },
   {
    "category": "Creator",
-   "score": 2000
+   "score": 5000
+  },
+  {
+   "category": "AI",
+   "score": 3200
+  },
+  {
+   "category": "Finance",
+   "score": 2400
   },
   {
    "category": "Local",
-   "score": 1500
+   "score": 1100
   },
   {
-   "category": "E-commerce",
-   "score": 300
+   "category": "Gaming",
+   "score": 700
   },
   {
    "category": "Travel",
    "score": 100
   },
   {
-   "category": "Health",
+   "category": "Real estate",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "energy",
-   "category": "Green",
-   "score": 10000
+   "word": "cart",
+   "category": "E-commerce",
+   "score": 20000
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 5000
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 3000
   },
   {
    "word": "gold",
    "category": "Finance",
-   "score": 5300
-  },
-  {
-   "word": "nugget",
-   "category": "Food",
-   "score": 2600
-  },
-  {
-   "word": "star",
-   "category": "Creator",
    "score": 2000
   },
   {
-   "word": "city",
-   "category": "Local",
-   "score": 1000
+   "word": "king",
+   "category": "Gaming",
+   "score": 700
   },
   {
-   "word": "community",
+   "word": "haze",
    "category": "Local",
    "score": 500
   },
   {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 300
+   "word": "city",
+   "category": "Local",
+   "score": 400
   },
   {
-   "word": "leaf",
-   "category": "Green",
+   "word": "stock",
+   "category": "Finance",
    "score": 200
   },
   {
-   "word": "road",
+   "word": "market",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "town",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "holiday",
    "category": "Travel",
    "score": 100
   },
   {
-   "word": "tennis",
-   "category": "Health",
+   "word": "nest",
+   "category": "Real estate",
+   "score": 100
+  },
+  {
+   "word": "space",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "data",
+   "category": "AI",
    "score": 100
   }
  ]
