@@ -1,0 +1,253 @@
+{
+ "date": "2026-10-25",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "brewers",
+   "geo": "US",
+   "traffic": 100000
+  },
+  {
+   "q": "rockets game",
+   "geo": "US",
+   "traffic": 20000
+  },
+  {
+   "q": "arch manning",
+   "geo": "US",
+   "traffic": 20000
+  },
+  {
+   "q": "rbny vs inter miami",
+   "geo": "NG",
+   "traffic": 20000
+  },
+  {
+   "q": "rbny vs inter miami",
+   "geo": "ZA",
+   "traffic": 10000
+  },
+  {
+   "q": "tse apuração",
+   "geo": "BR",
+   "traffic": 10000
+  },
+  {
+   "q": "rbny vs inter miami",
+   "geo": "AE",
+   "traffic": 5000
+  },
+  {
+   "q": "moto gp",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "santos vs bahia",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "صحيفة عكاظ",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "motogp",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "zeit",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "coup de vent",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "ultradroite",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "singapore domestic worker debt traps",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "gil vicente f.c. vs fc porto standings",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "atlanta united vs chicago",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "martha stewart",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "motogp",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "motogp",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "ca foundation september 2026 result date",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "neymar",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "aussie racing cars",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "wellington phoenix vs central coast mariners",
+   "geo": "AU",
+   "traffic": 1000
+  },
+  {
+   "q": "james bond filme",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "rbny vs inter miami",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "チェキ",
+   "geo": "JP",
+   "traffic": 1000
+  },
+  {
+   "q": "オバマ大統領",
+   "geo": "JP",
+   "traffic": 1000
+  },
+  {
+   "q": "アメリカ 中間選挙",
+   "geo": "JP",
+   "traffic": 1000
+  },
+  {
+   "q": "福井新聞",
+   "geo": "JP",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "AI",
+   "score": 20400
+  },
+  {
+   "category": "Gaming",
+   "score": 20000
+  },
+  {
+   "category": "Green",
+   "score": 1000
+  },
+  {
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "category": "Health",
+   "score": 100
+  },
+  {
+   "category": "Food",
+   "score": 100
+  },
+  {
+   "category": "Real estate",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 20200
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 20000
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 1000
+  },
+  {
+   "word": "coast",
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "word": "data",
+   "category": "AI",
+   "score": 200
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "life",
+   "category": "Health",
+   "score": 100
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 100
+  }
+ ]
+}
