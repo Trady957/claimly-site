@@ -29,6 +29,7 @@ INV = [x for x in json.load(open(os.path.join(DATA, "inventory.json"))) if x["d"
 # newest additions first, otherwise keep the curated order
 INV = sorted(INV, key=lambda x: x["a"], reverse=True)
 ADDED = {x["d"]: x["a"] for x in INV}
+CHECKED = {x["d"]: x.get("k", x["a"]) for x in INV}
 RAW = [[x["d"].rsplit(".",1)[0].capitalize(), EXTS.index(x["d"].rsplit(".",1)[1]), x["p"], CATS.index(x["c"]), TIERS.index(x["t"]), ""] for x in INV]
 KEYMAP = json.load(open(os.path.join(DATA, "keymap.json")))
 TRENDS = {}
@@ -98,7 +99,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <div class="bg" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 <header><div class="wrap nav">
 <a class="brand" href="/">Claimly<span class="reg">&reg;</span></a>
-<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
+<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/business-name-ideas/">Name ideas</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
 </div></header>
 """
 
@@ -122,6 +123,8 @@ def footer():
 <a href="/#shop">Browse names</a>
 <a href="/new/">New this week</a>
 <a href="/name-my-business/">Name my business</a>
+<a href="/business-name-ideas/">Business name ideas</a>
+<a href="/guides/">Naming guides</a>
 <a href="/launch/">Launch your business</a>
 <a href="/partners/">For agencies</a>
 {cats}
@@ -402,6 +405,13 @@ def describe(d):
     return (f"{d['fqdn']} is a brandable domain name that suits {CAT_BLURB.get(c,'new businesses')}. "
             f"At {L} letters it&rsquo;s {length_note}, and it uses {ext_note}.")
 
+import seo_content as _SC
+IDEA_LINKS = {}
+for _c in CATS:
+    _ts = [t for t in _SC.IDEAS if _c in t[3]][:4]
+    if _ts:
+        IDEA_LINKS[_c] = '<p style="margin-top:10px">Name ideas: ' + " &middot; ".join(f'<a href="/business-name-ideas/{t[0]}/" style="color:var(--cobalt);font-weight:600">{esc(t[1].lower())}</a>' for t in _ts) + '</p>'
+
 def domain_page(d, idx):
     same = [x for x in BYCAT[d["cat"]] if x["fqdn"] != d["fqdn"]]
     rnd = random.Random(d["fqdn"])
@@ -435,6 +445,7 @@ def domain_page(d, idx):
 <p>One-time price &middot; first year of registration included</p>
 <button class="btn btn-cta wide" style="margin-top:14px" onclick="openModal('{d['fqdn']}')">Buy {d['fqdn']} &rarr;</button>
 <p>Card or PayPal &middot; usually delivered same day &middot; full refund if not delivered</p>
+<p style="color:#1E7A4C;font-weight:600;margin-top:8px">&#10003; Checked available on {datetime.date.fromisoformat(CHECKED.get(d['fqdn'], TODAY)).strftime('%-d %b %Y')}</p>
 </div>
 </div>
 <div class="prose">
@@ -442,11 +453,15 @@ def domain_page(d, idx):
 <p>When you buy {d['fqdn']} we register it in your name, or transfer it to your registrar account if you prefer (just reply to our email). You own it outright and renew it yourself each year at your registrar&rsquo;s normal rate. We email you at each step, and if the name can&rsquo;t be delivered for any reason you get a full refund.</p>
 <h2>Good fit for</h2>
 <p>{esc(d['cat'])} businesses: {CAT_BLURB.get(d['cat'],'new businesses')}. Not quite right? Try the <a href="/#finder" style="color:var(--cobalt);font-weight:600">AI name finder</a> or browse more names below.</p>
+{IDEA_LINKS.get(d['cat'], '')}
+<div style="background:var(--bone2);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><b style="font-family:'Schibsted Grotesk';font-size:18px">Not sure this is the one?</b><br><span style="color:var(--muted)">Get 10 names made for your business, domains checked, in 48 hours.</span></div><a class="btn btn-cta" href="/name-my-business/?utm_source=domain-page">Name my business &rarr;</a></div>
 </div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:34px 0 14px">Similar {esc(d['cat'].lower())} domains</h2>
 <div class="linkgrid">{rel}</div>
 <p style="margin-top:18px"><a class="btn btn-ghost" href="/domains/{slug(d['cat'])}/">All {esc(d['cat'].lower())} domains &rarr;</a></p>
 </div></main>
+<div class="buybar"><span><b>{d['fqdn']}</b> &middot; ${d['price']}</span><button class="btn btn-cta" onclick="openModal('{d['fqdn']}')">Buy now</button></div>
+<style>.buybar{{display:none}}@media(max-width:700px){{.buybar{{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;justify-content:space-between;align-items:center;gap:10px;background:var(--bone2);border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}}.buybar span{{font-size:14px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}footer{{padding-bottom:80px}}}}</style>
 <script>window.CLAIMLY_D={jsd};</script>
 """ + footer() + modal() + "</body></html>"
 
@@ -706,6 +721,127 @@ function agSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)
  document.getElementById('agFields').style.display='none';document.getElementById('agOk').style.display='block';return false;}}
 </script>""" + footer() + "</body></html>"
 
+# ───────────────────────── SEO: business name ideas + guides ─────────────────────────
+import seo_content as SC
+SEO_CSS = """<style>
+.idea-intro{max-width:68ch;font-size:17px;line-height:1.6;color:var(--muted)}
+.namegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin:22px 0 8px}
+.namegrid a{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--bone2);border:1px solid var(--line);border-radius:12px;padding:13px 15px;text-decoration:none;color:var(--ink);font-weight:700;font-size:16px}
+.namegrid a span{font-size:13px;font-weight:700;color:#fff;background:var(--red,#E0231C);border-radius:99px;padding:3px 9px}
+.namegrid a:hover{border-color:var(--ink)}
+.tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:10px 0 0}
+.tips div{border-top:2px solid var(--ink);padding-top:10px;font-size:15px;line-height:1.5}
+.tips b{display:block;font-family:'Schibsted Grotesk';margin-bottom:4px}
+.cta-band{background:var(--ink);color:var(--bone);border-radius:20px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin:36px 0}
+.cta-band h2{font-family:'Schibsted Grotesk';margin:0 0 6px;font-size:24px}.cta-band p{margin:0;opacity:.8;max-width:52ch}
+.faq details{border-bottom:1px solid var(--line);padding:13px 0}.faq summary{font-weight:700;cursor:pointer}.faq p{margin:8px 0 0;color:var(--muted);max-width:70ch}
+.ideas-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:20px 0}
+.ideas-list a{display:block;background:var(--bone2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink);font-weight:700}
+.ideas-list a small{display:block;font-weight:500;color:var(--muted);margin-top:3px}
+.guide{max-width:70ch}.guide h2{font-family:'Schibsted Grotesk';font-size:23px;margin:30px 0 8px}.guide p{font-size:17px;line-height:1.65;margin:0}
+@media(max-width:760px){.tips{grid-template-columns:1fr}}
+</style>"""
+
+def _ideas_names(t, n=24):
+    slug_, label, phrase, cats, kws, intro, tips = t
+    pool = [x for x in D if x["cat"] in cats and x["fqdn"].split(".")[1] in ("com", "co", "io", "app", "shop", "studio", "store")]
+    label_of = lambda x: x["fqdn"].split(".")[0]
+    match = [x for x in pool if any(k in label_of(x) for k in kws)]
+    rest = [x for x in pool if x not in match]
+    rnd = random.Random(slug_ + TODAY)                 # fresh mix every day
+    rnd.shuffle(match); rnd.shuffle(rest)
+    pick = (match + rest)[:n]
+    pick.sort(key=lambda x: (x["fqdn"].split(".")[1] != "com", len(x["fqdn"])))
+    return pick
+
+def idea_page(t):
+    slug_, label, phrase, cats, kws, intro, tips = t
+    canon = f"{SITE}/business-name-ideas/{slug_}/"
+    names = _ideas_names(t)
+    lo = min(x["price"] for x in names) if names else 15
+    title = f"{label} Name Ideas with Available Domains | Claimly"
+    desc = f"Name ideas for your {phrase}, each with an available domain from ${lo}. Plus practical tips for choosing a {phrase} name that customers remember."
+    faqs = [(f"How do I choose a name for my {phrase}?", f"Write down what makes your {phrase} different and how you want customers to feel, list 30+ ideas, cut anything hard to say or spell, then check the domain and social handles before you decide."),
+            (f"Are these {phrase} names really available?", "Yes. Every name on this page is checked as unregistered before it is listed, and the list refreshes daily. Prices include the first year of registration, and you get a full refund if a name can't be delivered."),
+            (f"Can someone name my {phrase} for me?", f"Yes. With the Claimly naming package you describe your {phrase} and get 10 checked names with available domains within 48 hours, from $149. We register the one you pick.")]
+    ld = [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
+          {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Claimly", "item": SITE + "/"},
+              {"@type": "ListItem", "position": 2, "name": "Business name ideas", "item": SITE + "/business-name-ideas/"},
+              {"@type": "ListItem", "position": 3, "name": f"{label} name ideas", "item": canon}]},
+          {"@context": "https://schema.org", "@type": "ItemList", "name": f"{label} name ideas", "itemListElement": [
+              {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/d/{x['fqdn']}/", "name": x["fqdn"]} for i, x in enumerate(names)]}]
+    ldh = "".join('<script type="application/ld+json">' + json.dumps(o) + '</script>' for o in ld)
+    grid = "".join(f'<a href="/d/{x["fqdn"]}/">{x["fqdn"]}<span>${x["price"]}</span></a>' for x in names)
+    tips_h = "".join(f"<div><b>Tip {i}</b>{esc(tip)}</div>" for i, tip in enumerate(tips, 1))
+    faq_h = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faqs)
+    others = [o for o in SC.IDEAS if o[0] != slug_ and set(o[3]) & set(cats)][:6] or SC.IDEAS[:6]
+    oth = "".join(f'<a href="/business-name-ideas/{o[0]}/">{esc(o[1])} names</a>' for o in others)
+    cat_links = " · ".join(f'<a href="/domains/{slug(c)}/">all {esc(c.lower())} domains</a>' for c in cats)
+    return head(title, desc, canon, ldh) + SEO_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; <a href="/business-name-ideas/">Business name ideas</a> &rsaquo; {esc(label)}</div>
+<h1>{esc(label)} name ideas</h1>
+<p class="idea-intro">{esc(intro)} Here are names that fit, each with the domain still available to register today.</p>
+<div class="namegrid">{grid}</div>
+<p style="color:var(--muted);font-size:14px">Prices include the first year of registration. Updated {datetime.date.today().strftime('%-d %B %Y')}. See {cat_links}.</p>
+<h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:38px 0 6px">How to name your {esc(phrase)}</h2>
+<div class="tips">{tips_h}</div>
+<div class="cta-band"><div><h2>Want names made for your {esc(phrase)}?</h2><p>Describe your business and get 10 checked names with available domains in 48 hours. We register the one you pick.</p></div>
+<a class="btn btn-cta" href="/name-my-business/?utm_source=ideas&amp;utm_medium={slug_}">Get my 10 names &rarr;</a></div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:0 0 6px">Questions</h2>
+<div class="faq">{faq_h}</div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:36px 0 10px">More name ideas</h2>
+<div class="ideas-list">{oth}</div>
+<p><a href="/guides/how-to-name-a-business/">Read: how to name a business in 7 steps &rarr;</a></p>
+</div></main>""" + footer() + "</body></html>"
+
+def ideas_hub():
+    canon = f"{SITE}/business-name-ideas/"
+    title = "Business Name Ideas by Industry, with Available Domains | Claimly"
+    desc = "Business name ideas for bakeries, cafés, salons, agencies, startups and more. Every name comes with an available domain, from $15."
+    items = "".join(f'<a href="/business-name-ideas/{t[0]}/">{esc(t[1])} names<small>{esc(t[2].capitalize())}</small></a>' for t in SC.IDEAS)
+    ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Business name ideas by industry", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/business-name-ideas/{t[0]}/", "name": f"{t[1]} name ideas"} for i, t in enumerate(SC.IDEAS)]}
+    return head(title, desc, canon, '<script type="application/ld+json">' + json.dumps(ld) + '</script>') + SEO_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; Business name ideas</div>
+<h1>Business name ideas</h1>
+<p class="idea-intro">Pick your type of business to see name ideas that fit, each with an available domain you can register today. Every list refreshes daily with newly checked names.</p>
+<div class="ideas-list">{items}</div>
+<div class="cta-band"><div><h2>Still stuck?</h2><p>Tell us what you do and get 10 names made for your business, with domains checked, in 48 hours.</p></div><a class="btn btn-cta" href="/name-my-business/?utm_source=ideas-hub">See the naming package &rarr;</a></div>
+<p><a href="/guides/">Naming guides &rarr;</a></p>
+</div></main>""" + footer() + "</body></html>"
+
+def guide_page(g):
+    slug_, title_, summary, sections = g
+    canon = f"{SITE}/guides/{slug_}/"
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": title_, "description": summary, "url": canon,
+          "datePublished": "2026-10-25", "dateModified": TODAY, "author": {"@type": "Organization", "name": "Claimly"},
+          "publisher": {"@type": "Organization", "name": "Claimly", "logo": {"@type": "ImageObject", "url": SITE + "/og-image.png"}}, "image": SITE + "/og-image.png"}
+    body = "".join(f"<h2>{esc(h)}</h2><p>{esc(p)}</p>" for h, p in sections)
+    more = "".join(f'<a href="/guides/{o[0]}/">{esc(o[1])}</a>' for o in SC.GUIDES if o[0] != slug_)
+    ideas = "".join(f'<a href="/business-name-ideas/{t[0]}/">{esc(t[1])} names</a>' for t in SC.IDEAS[:8])
+    return head(f"{title_} | Claimly", summary, canon, '<script type="application/ld+json">' + json.dumps(ld) + '</script>') + SEO_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; {esc(title_)}</div>
+<article class="guide"><h1>{esc(title_)}</h1><p class="idea-intro" style="margin-top:8px">{esc(summary)}</p>{body}</article>
+<div class="cta-band"><div><h2>Find a name with the domain ready</h2><p>Browse checked, available names from $15, or get 10 names made for your business in 48 hours.</p></div><a class="btn btn-cta" href="/name-my-business/?utm_source=guide&amp;utm_medium={slug_}">Get 10 names &rarr;</a></div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px">Name ideas by business</h2><div class="ideas-list">{ideas}</div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px">More guides</h2><div class="ideas-list">{more}</div>
+</div></main>""" + footer() + "</body></html>"
+
+def guides_hub():
+    canon = f"{SITE}/guides/"
+    items = "".join(f'<a href="/guides/{g[0]}/">{esc(g[1])}<small>{esc(g[2])}</small></a>' for g in SC.GUIDES)
+    return head("Business Naming Guides | Claimly", "Practical guides on naming a business, choosing a domain name and checking a name is available.", canon) + SEO_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; Guides</div>
+<h1>Naming guides</h1>
+<p class="idea-intro">Short, practical guides for founders choosing a business name and domain.</p>
+<div class="ideas-list">{items}</div>
+</div></main>""" + footer() + "</body></html>"
+
 def notfound():
     return head("Page not found | Claimly", "This page doesn't exist.", SITE+"/404.html", robots="noindex") + f"""
 <main class="page"><div class="wrap" style="text-align:center;padding:60px 0">
@@ -715,7 +851,7 @@ def notfound():
 </div></main>""" + footer() + "</body></html>"
 
 def sitemap():
-    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY)] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
+    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
     body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
 
@@ -733,6 +869,12 @@ def build():
     open(os.path.join(OUT, "index.html"), "w").write(home())
     open(os.path.join(OUT, "404.html"), "w").write(notfound())
     os.makedirs(os.path.join(OUT, "new")); open(os.path.join(OUT, "new", "index.html"), "w").write(new_page())
+    os.makedirs(os.path.join(OUT, "business-name-ideas")); open(os.path.join(OUT, "business-name-ideas", "index.html"), "w").write(ideas_hub())
+    for t in SC.IDEAS:
+        os.makedirs(os.path.join(OUT, "business-name-ideas", t[0])); open(os.path.join(OUT, "business-name-ideas", t[0], "index.html"), "w").write(idea_page(t))
+    os.makedirs(os.path.join(OUT, "guides")); open(os.path.join(OUT, "guides", "index.html"), "w").write(guides_hub())
+    for g in SC.GUIDES:
+        os.makedirs(os.path.join(OUT, "guides", g[0])); open(os.path.join(OUT, "guides", g[0], "index.html"), "w").write(guide_page(g))
     for slug_, fn in (("launch", launch_page), ("partners", partners_page)):
         os.makedirs(os.path.join(OUT, slug_)); open(os.path.join(OUT, slug_, "index.html"), "w").write(fn())
     os.makedirs(os.path.join(OUT, "name-my-business")); open(os.path.join(OUT, "name-my-business", "index.html"), "w").write(package_page())
