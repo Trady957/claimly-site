@@ -1,28 +1,28 @@
 {
- "date": "2026-10-25",
- "category": "Creator",
- "title": "Names for your creator brand",
- "image_url": "https://claimly.ae/social/daily/2026-10-25.jpg",
+ "date": "2026-10-26",
+ "category": "Education",
+ "title": "Names for your education business",
+ "image_url": "https://claimly.ae/social/daily/2026-10-26.jpg",
  "names": [
   {
-   "domain": "brushai.co",
+   "domain": "prepio.co",
    "price": 40
   },
   {
-   "domain": "lensary.co",
+   "domain": "eduflow.co",
+   "price": 50
+  },
+  {
+   "domain": "gradeai.co",
    "price": 40
   },
   {
-   "domain": "pixelly.co",
-   "price": 55
+   "domain": "quizfox.co",
+   "price": 50
   },
   {
-   "domain": "reelary.co",
-   "price": 55
-  },
-  {
-   "domain": "evershot.co",
-   "price": 39
+   "domain": "sageowl.co",
+   "price": 45
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "date": "2026-10-25",
+ "date": "2026-10-26",
  "geos": [
   "US",
   "GB",
@@ -19,219 +19,211 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "brewers",
-   "geo": "US",
-   "traffic": 100000
-  },
-  {
-   "q": "rockets game",
-   "geo": "US",
-   "traffic": 20000
-  },
-  {
-   "q": "arch manning",
-   "geo": "US",
-   "traffic": 20000
-  },
-  {
-   "q": "rbny vs inter miami",
-   "geo": "NG",
-   "traffic": 20000
-  },
-  {
-   "q": "rbny vs inter miami",
-   "geo": "ZA",
-   "traffic": 10000
-  },
-  {
-   "q": "tse apuração",
-   "geo": "BR",
-   "traffic": 10000
-  },
-  {
-   "q": "rbny vs inter miami",
+   "q": "fc barcelona vs real madrid standings",
    "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "kimi antonelli 2026 f1 title chase",
+   "geo": "AU",
+   "traffic": 20000
+  },
+  {
+   "q": "sports",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "全日本大学女子駅伝対校選手権大会",
+   "geo": "JP",
+   "traffic": 10000
+  },
+  {
+   "q": "tijuana - santos",
+   "geo": "US",
    "traffic": 5000
   },
   {
-   "q": "moto gp",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "santos vs bahia",
+   "q": "riyadh saudi arabia",
    "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "seahawks – chiefs",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "台風 情報 31 号",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "emanuel wilson",
+   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "صحيفة عكاظ",
-   "geo": "SA",
+   "q": "andrew armstrong",
+   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "motogp",
+   "q": "versicherung",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "zeit",
+   "q": "seahawks – chiefs",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "coup de vent",
-   "geo": "FR",
+   "q": "小林よしのり",
+   "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "ultradroite",
-   "geo": "FR",
+   "q": "ブライス ハーパー",
+   "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "singapore domestic worker debt traps",
-   "geo": "SG",
+   "q": "モーニングショー 玉川",
+   "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "gil vicente f.c. vs fc porto standings",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "atlanta united vs chicago",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "martha stewart",
+   "q": "grizzlies",
    "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "motogp",
+   "q": "aj barner",
    "geo": "US",
    "traffic": 1000
   },
   {
-   "q": "motogp",
+   "q": "tabla liga mx",
+   "geo": "US",
+   "traffic": 1000
+  },
+  {
+   "q": "gifty nifty",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "ca foundation september 2026 result date",
+   "q": "ind a vs nz a test",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "neymar",
-   "geo": "IN",
+   "q": "cade cunningham",
+   "geo": "CA",
    "traffic": 1000
   },
   {
-   "q": "aussie racing cars",
+   "q": "lancashire cricket releases james anderson",
    "geo": "AU",
    "traffic": 1000
   },
   {
-   "q": "wellington phoenix vs central coast mariners",
-   "geo": "AU",
+   "q": "76ers – pistons",
+   "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "james bond filme",
-   "geo": "DE",
+   "q": "timberwolves – raptors",
+   "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "rbny vs inter miami",
-   "geo": "SG",
+   "q": "knicks – magic",
+   "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "チェキ",
+   "q": "cruzeiro x libertad",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "ドクターs",
    "geo": "JP",
    "traffic": 1000
   },
   {
-   "q": "オバマ大統領",
-   "geo": "JP",
-   "traffic": 1000
+   "q": "domantas sabonis",
+   "geo": "US",
+   "traffic": 500
   },
   {
-   "q": "アメリカ 中間選挙",
-   "geo": "JP",
-   "traffic": 1000
+   "q": "jerry rice",
+   "geo": "US",
+   "traffic": 500
   },
   {
-   "q": "福井新聞",
-   "geo": "JP",
-   "traffic": 1000
+   "q": "penelope cruz",
+   "geo": "US",
+   "traffic": 500
   }
  ],
  "categories": [
   {
-   "category": "AI",
-   "score": 20400
+   "category": "Real estate",
+   "score": 20500
   },
   {
    "category": "Gaming",
-   "score": 20000
-  },
-  {
-   "category": "Green",
-   "score": 1000
-  },
-  {
-   "category": "Travel",
-   "score": 1000
+   "score": 1100
   },
   {
    "category": "Finance",
-   "score": 200
+   "score": 800
   },
   {
-   "category": "Health",
-   "score": 100
+   "category": "Local",
+   "score": 300
   },
   {
-   "category": "Food",
-   "score": 100
+   "category": "E-commerce",
+   "score": 300
   },
   {
-   "category": "Real estate",
+   "category": "Creator",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "rocket",
-   "category": "AI",
-   "score": 20200
-  },
-  {
    "word": "game",
    "category": "Gaming",
-   "score": 20000
-  },
-  {
-   "word": "sun",
-   "category": "Green",
    "score": 1000
   },
   {
-   "word": "coast",
-   "category": "Travel",
-   "score": 1000
+   "word": "pension",
+   "category": "Finance",
+   "score": 500
   },
   {
-   "word": "data",
-   "category": "AI",
+   "word": "city",
+   "category": "Local",
    "score": 200
   },
   {
-   "word": "stock",
+   "word": "gold",
    "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
    "score": 100
   },
   {
@@ -240,13 +232,18 @@
    "score": 100
   },
   {
-   "word": "life",
-   "category": "Health",
+   "word": "gift",
+   "category": "E-commerce",
    "score": 100
   },
   {
-   "word": "nugget",
-   "category": "Food",
+   "word": "king",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "haze",
+   "category": "Local",
    "score": 100
   }
  ]
