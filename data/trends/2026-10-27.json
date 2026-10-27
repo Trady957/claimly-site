@@ -1,0 +1,263 @@
+{
+ "date": "2026-10-27",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "pakistan vs sri lanka",
+   "geo": "IN",
+   "traffic": 50000
+  },
+  {
+   "q": "pakistan vs sri lanka",
+   "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "SA",
+   "traffic": 20000
+  },
+  {
+   "q": "glenn phillips",
+   "geo": "IN",
+   "traffic": 10000
+  },
+  {
+   "q": "new zealand national cricket team vs india national cricket team match scorecard",
+   "geo": "AE",
+   "traffic": 10000
+  },
+  {
+   "q": "pakistan vs sri lanka",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "new zealand national cricket team vs india national cricket team match scorecard",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "ソフトバンク 対 dena",
+   "geo": "JP",
+   "traffic": 10000
+  },
+  {
+   "q": "ipad mini 8",
+   "geo": "US",
+   "traffic": 5000
+  },
+  {
+   "q": "sa vs aus",
+   "geo": "AU",
+   "traffic": 5000
+  },
+  {
+   "q": "medl enugu six day power outage",
+   "geo": "NG",
+   "traffic": 5000
+  },
+  {
+   "q": "sa vs aus",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "vivant 考察",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "matthew perry",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "sa vs aus",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "pakistan vs sri lanka",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "shah rukh khan king movie poster",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "nz vs ind",
+   "geo": "CA",
+   "traffic": 2000
+  },
+  {
+   "q": "pak vs sl",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "florian david fitz",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "chauffage",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "singapore transboundary haze pollution act",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "pak vs sl",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "widow",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "lua do caçador",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "aviação",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "paul scholes",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "namibia vs ireland",
+   "geo": "AE",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "SaaS",
+   "score": 41300
+  },
+  {
+   "category": "Local",
+   "score": 2500
+  },
+  {
+   "category": "Gaming",
+   "score": 2300
+  },
+  {
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "category": "Food",
+   "score": 1000
+  },
+  {
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "category": "Green",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 41300
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 2000
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "word": "haze",
+   "category": "Local",
+   "score": 2000
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 1000
+  },
+  {
+   "word": "town",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 100
+  }
+ ]
+}

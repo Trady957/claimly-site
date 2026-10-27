@@ -1,5 +1,5 @@
 {
- "date": "2026-10-26",
+ "date": "2026-10-27",
  "geos": [
   "US",
   "GB",
@@ -19,231 +19,244 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "fc barcelona vs real madrid standings",
+   "q": "pakistan vs sri lanka",
+   "geo": "IN",
+   "traffic": 50000
+  },
+  {
+   "q": "pakistan vs sri lanka",
    "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "kimi antonelli 2026 f1 title chase",
-   "geo": "AU",
+   "q": "new zealand vs india",
+   "geo": "SA",
    "traffic": 20000
   },
   {
-   "q": "sports",
-   "geo": "DE",
+   "q": "glenn phillips",
+   "geo": "IN",
    "traffic": 10000
   },
   {
-   "q": "全日本大学女子駅伝対校選手権大会",
-   "geo": "JP",
+   "q": "new zealand national cricket team vs india national cricket team match scorecard",
+   "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "tijuana - santos",
-   "geo": "US",
-   "traffic": 5000
-  },
-  {
-   "q": "riyadh saudi arabia",
+   "q": "pakistan vs sri lanka",
    "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "new zealand national cricket team vs india national cricket team match scorecard",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "ソフトバンク 対 dena",
+   "geo": "JP",
+   "traffic": 10000
+  },
+  {
+   "q": "ipad mini 8",
+   "geo": "US",
    "traffic": 5000
   },
   {
-   "q": "seahawks – chiefs",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "台風 情報 31 号",
-   "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "emanuel wilson",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "andrew armstrong",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "versicherung",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "seahawks – chiefs",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "小林よしのり",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "ブライス ハーパー",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "モーニングショー 玉川",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "grizzlies",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "aj barner",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "tabla liga mx",
-   "geo": "US",
-   "traffic": 1000
-  },
-  {
-   "q": "gifty nifty",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "ind a vs nz a test",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "cade cunningham",
-   "geo": "CA",
-   "traffic": 1000
-  },
-  {
-   "q": "lancashire cricket releases james anderson",
+   "q": "sa vs aus",
    "geo": "AU",
-   "traffic": 1000
+   "traffic": 5000
   },
   {
-   "q": "76ers – pistons",
-   "geo": "FR",
-   "traffic": 1000
+   "q": "medl enugu six day power outage",
+   "geo": "NG",
+   "traffic": 5000
   },
   {
-   "q": "timberwolves – raptors",
-   "geo": "FR",
-   "traffic": 1000
+   "q": "sa vs aus",
+   "geo": "ZA",
+   "traffic": 5000
   },
   {
-   "q": "knicks – magic",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "cruzeiro x libertad",
-   "geo": "BR",
-   "traffic": 1000
-  },
-  {
-   "q": "ドクターs",
+   "q": "vivant 考察",
    "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "matthew perry",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "sa vs aus",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "pakistan vs sri lanka",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "shah rukh khan king movie poster",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "nz vs ind",
+   "geo": "CA",
+   "traffic": 2000
+  },
+  {
+   "q": "pak vs sl",
+   "geo": "AU",
+   "traffic": 2000
+  },
+  {
+   "q": "florian david fitz",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "chauffage",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "singapore transboundary haze pollution act",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "pak vs sl",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "widow",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "lua do caçador",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "aviação",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "paul scholes",
+   "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "domantas sabonis",
-   "geo": "US",
-   "traffic": 500
-  },
-  {
-   "q": "jerry rice",
-   "geo": "US",
-   "traffic": 500
-  },
-  {
-   "q": "penelope cruz",
-   "geo": "US",
-   "traffic": 500
+   "q": "namibia vs ireland",
+   "geo": "AE",
+   "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Real estate",
-   "score": 20500
-  },
-  {
-   "category": "Gaming",
-   "score": 1100
-  },
-  {
-   "category": "Finance",
-   "score": 800
+   "category": "SaaS",
+   "score": 41300
   },
   {
    "category": "Local",
-   "score": 300
+   "score": 2500
   },
   {
-   "category": "E-commerce",
-   "score": 300
+   "category": "Gaming",
+   "score": 2300
   },
   {
    "category": "Creator",
+   "score": 2000
+  },
+  {
+   "category": "Food",
+   "score": 1000
+  },
+  {
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "category": "Green",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "game",
-   "category": "Gaming",
-   "score": 1000
-  },
-  {
-   "word": "pension",
-   "category": "Finance",
-   "score": 500
-  },
-  {
-   "word": "city",
-   "category": "Local",
-   "score": 200
-  },
-  {
-   "word": "gold",
-   "category": "Finance",
-   "score": 200
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 200
-  },
-  {
-   "word": "movie",
-   "category": "Creator",
-   "score": 100
-  },
-  {
-   "word": "market",
-   "category": "Finance",
-   "score": 100
-  },
-  {
-   "word": "gift",
-   "category": "E-commerce",
-   "score": 100
+   "word": "team",
+   "category": "SaaS",
+   "score": 41300
   },
   {
    "word": "king",
    "category": "Gaming",
-   "score": 100
+   "score": 2000
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 2000
   },
   {
    "word": "haze",
    "category": "Local",
+   "score": 2000
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 1000
+  },
+  {
+   "word": "town",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 200
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "sun",
+   "category": "Green",
    "score": 100
   }
  ]
