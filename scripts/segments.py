@@ -24,7 +24,21 @@ SEGMENTS = {
     "Learning":         ("Education",   ["learn", "tutor", "skill", "class", "quiz", "mentor", "study", "prep"], ["com", "co"]),
     "Legal & business": ("Legal",       ["law", "clause", "deed", "pact", "notary", "trust", "brief", "claim"],  ["com", "co"]),
     "Pets":             ("Pets",        ["paw", "pet", "pup", "tail", "wag", "fetch", "purr", "woof"],           ["com", "co"]),
+    # US-first markets (Oct 2026): the business types Americans search and register most
+    # (Census BFS: retail, professional services, construction, other services lead new applications)
+    "Clothing brands":  ("Fashion",     ["wear", "tee", "denim", "stitch", "knit", "drip", "hoodie", "cloth"],   ["com", "co", "shop"]),
+    "Food trucks & BBQ":("Food",        ["truck", "grill", "taco", "smoke", "pit", "eats", "burger", "kitchen"], ["com", "co"]),
+    "Home services":    ("Local",       ["clean", "maid", "lawn", "roof", "plumb", "handy", "fix", "paint"],    ["com", "co"]),
+    "Construction":     ("Local",       ["build", "beam", "brick", "deck", "timber", "pave", "weld", "rig"],     ["com", "co"]),
+    "Trucking & freight":("Local",      ["freight", "haul", "cargo", "fleet", "route", "load", "ship", "dispatch"], ["com", "co"]),
+    "Consulting":       ("Marketing",   ["consult", "advise", "growth", "brand", "media", "leads", "rank", "scale"], ["com", "co"]),
+    "Candles & handmade":("E-commerce", ["candle", "wick", "soap", "craft", "clay", "scent", "jar", "gift"],     ["com", "co", "shop"]),
+    "US real estate":   ("Real estate", ["realty", "homes", "porch", "acre", "listing", "door", "title", "move"], ["com", "co"]),
+    "Fitness & coaching":("Health",     ["gym", "coach", "lift", "yoga", "pilates", "sweat", "grit", "flex"],    ["com", "co"]),
 }
+# US markets get two turns per round in candidates(), so most new segment names serve US searchers
+US_FIRST = {"Clothing brands", "Food trucks & BBQ", "Home services", "Construction", "Trucking & freight",
+            "Consulting", "Candles & handmade", "US real estate", "Fitness & coaching"}
 
 # short, positive, easy-to-say brand words that pair with any market word
 BRAND = ["forge", "pilot", "spark", "nest", "hive", "bloom", "crest", "peak", "harbor", "beacon",
@@ -60,6 +74,7 @@ def candidates(seed=None, per_segment=60, seen=frozenset()):
             if d not in seen: out.append((cat, name, ext, d, seg))
             if len(out) >= per_segment: break
         pools[seg] = out
+    order = [s for s in SEGMENTS if s in US_FIRST] + list(SEGMENTS)   # US markets twice per round, first
     while any(pools.values()):
-        for seg in SEGMENTS:
+        for seg in order:
             if pools[seg]: yield pools[seg].pop(0)

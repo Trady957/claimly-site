@@ -28,6 +28,16 @@ _GONE = _lines("sold.txt") | _lines("taken.txt")
 INV = [x for x in json.load(open(os.path.join(DATA, "inventory.json"))) if x["d"] not in _GONE]
 # newest additions first, otherwise keep the curated order
 INV = sorted(INV, key=lambda x: x["a"], reverse=True)
+# Week-one sale: 20% off every domain (not .eco) until Sunday 1 Nov 2026. The daily build on
+# Monday 2 Nov (03:00 UTC, Sunday night in the US) puts prices back by itself.
+SALE_END = "2026-11-01"
+SALE_ON = datetime.date.today().isoformat() <= SALE_END
+SALE_PCT = 20
+WAS = {}
+if SALE_ON:
+    for x in INV:
+        if x["d"].rsplit(".", 1)[1] != "eco":
+            WAS[x["d"]] = x["p"]; x["p"] = max(10, round(x["p"] * (100 - SALE_PCT) / 100))
 ADDED = {x["d"]: x["a"] for x in INV}
 CHECKED = {x["d"]: x.get("k", x["a"]) for x in INV}
 RAW = [[x["d"].rsplit(".",1)[0].capitalize(), EXTS.index(x["d"].rsplit(".",1)[1]), x["p"], CATS.index(x["c"]), TIERS.index(x["t"]), ""] for x in INV]
@@ -77,6 +87,8 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 
 OFFER_BAR = """<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Launch offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; until 30 Nov <u>See how &rarr;</u></a>"""
 
+SALE_BAR = f"""<a href="/#shop" style="display:block;background:#E0231C;color:#fff;text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>This week only: 20% off every domain</b> &middot; ends Sunday night (US time) <span id="saleLeft"></span> &middot; <u>Shop now &rarr;</u></a><script>(function(){{var e=new Date("2026-11-02T03:00:00Z"),el=document.getElementById("saleLeft");function t(){{var m=Math.max(0,e-new Date()),d=Math.floor(m/864e5),h=Math.floor(m%864e5/36e5);if(el)el.textContent=m?"· "+(d?d+"d ":"")+h+"h left":"";}}t();setInterval(t,6e4);}})();</script>"""
+
 def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview:large"):
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -104,7 +116,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <a class="brand" href="/">Claimly<span class="reg">&reg;</span></a>
 <nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/business-name-ideas/">Name ideas</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
 </div></header>
-{OFFER_BAR if OFFER_ON else ""}
+{SALE_BAR if SALE_ON else ""}{OFFER_BAR if OFFER_ON else ""}
 """
 
 def footer():
@@ -426,7 +438,7 @@ def domain_page(d, idx):
     desc = f"Buy {d['fqdn']}, a brandable {d['cat'].lower()} domain name, for ${d['price']}. First year included, delivered same day, full refund if not delivered."
     prod = {"@context":"https://schema.org","@type":"Product","name":d["fqdn"],"description":html.unescape(re.sub('<[^>]+>','',describe(d))),
             "image":SITE+"/og-image.png","url":canon,"category":d["cat"]+" domain names","brand":{"@type":"Brand","name":"Claimly"},
-            "offers":{"@type":"Offer","price":str(d["price"]),"priceCurrency":"USD","availability":"https://schema.org/InStock","url":canon,"priceValidUntil":"2027-12-31",
+            "offers":{"@type":"Offer","price":str(d["price"]),"priceCurrency":"USD","availability":"https://schema.org/InStock","url":canon,"priceValidUntil":("2026-11-01" if SALE_ON else "2027-12-31"),
                       "seller":{"@type":"Organization","name":"Claimly"}}}
     crumbs = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Claimly","item":SITE+"/"},
@@ -446,7 +458,7 @@ def domain_page(d, idx):
 <p class="prose" style="margin:0">{describe(d)}</p>
 </div>
 <div class="dside">
-<div class="dprice"><small>$</small>{d['price']}</div>
+<div class="dprice"><small>$</small>{d['price']}{f' <s style="font-size:.45em;opacity:.5">${WAS[d["fqdn"]]}</s>' if d['fqdn'] in WAS else ''}</div>{f'<p style="color:#E0231C;font-weight:700;margin:4px 0 0">{SALE_PCT}% off until Sunday night</p>' if d['fqdn'] in WAS else ''}
 <p>One-time price &middot; first year of registration included</p>
 <button class="btn btn-cta wide" style="margin-top:14px" onclick="openModal('{d['fqdn']}')">Buy {d['fqdn']} &rarr;</button>
 <p>Card or PayPal &middot; usually delivered same day &middot; full refund if not delivered</p>
@@ -822,7 +834,8 @@ def _ideas_names(t, n=24):
     # easy two-word segment names first, then other keyword matches, then the rest
     match.sort(key=lambda x: x["fqdn"] not in SEGMENT_NAMES)
     pick = (match + rest)[:n]
-    pick.sort(key=lambda x: (x["fqdn"].split(".")[1] != "com", len(x["fqdn"])))
+    hit = {x["fqdn"] for x in match}
+    pick.sort(key=lambda x: (x["fqdn"] not in hit, x["fqdn"].split(".")[1] != "com", len(x["fqdn"])))   # names that fit the business first
     return pick
 
 def idea_page(t):

@@ -15,6 +15,8 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import names as G
 
 GEOS = ["US", "GB", "IN", "AE", "SA", "CA", "AU", "DE", "FR", "SG", "NG", "ZA", "BR", "JP"]
+# US searches count most (main market), then other English-speaking markets, then the rest
+GEO_WEIGHT = {"US": 3.0, "GB": 1.5, "CA": 1.5, "AU": 1.5}
 TODAY = datetime.date.today().isoformat()
 
 def traffic(t):
@@ -62,7 +64,7 @@ def main():
     searches, failed = [], []
     for g in GEOS:
         try:
-            searches += [(t, g, v) for t, v in fetch(g)]
+            searches += [(t, g, int(v * GEO_WEIGHT.get(g, 1.0))) for t, v in fetch(g)]
         except Exception as e:
             failed.append(f"{g}: {e}")
     cat_score, words, word_cat = analyse(searches)

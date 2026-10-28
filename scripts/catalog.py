@@ -75,6 +75,9 @@ def main():
             "link": f"{SITE}/d/{dom}/?utm_source=pinterest&utm_medium=catalog",
             "image_link": f"{SITE}/pins/{dom}.jpg",
             "price": f"{price:.2f} USD",
+            # week-one sale (same rule as build.py): 20% off until Sunday 1 Nov 2026, not .eco
+            "sale_price": (f"{max(10, round(price * 0.8)):.2f} USD"
+                           if datetime.date.today().isoformat() <= "2026-11-01" and not dom.endswith(".eco") else ""),
             "availability": "in stock",
             "condition": "new",
             "brand": "Claimly",

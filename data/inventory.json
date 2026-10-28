@@ -1,5 +1,473 @@
 [
 {
+"d":"maplerealty.co",
+"p":39,
+"c":"Real estate",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
+"d":"denimnorth.shop",
+"p":45,
+"c":"Fashion",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"harborplumb.co",
+"p":39,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Home services"
+},
+{
+"d":"riverjar.com",
+"p":40,
+"c":"E-commerce",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"mateknit.co",
+"p":39,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"luckypave.com",
+"p":25,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"movegolden.com",
+"p":30,
+"c":"Real estate",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
+"d":"denimsummit.com",
+"p":25,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"soapspark.shop",
+"p":45,
+"c":"E-commerce",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"beaconcloth.shop",
+"p":45,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"nestload.com",
+"p":25,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Trucking & freight"
+},
+{
+"d":"deckcrew.co",
+"p":40,
+"c":"Local",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"adviseforge.com",
+"p":20,
+"c":"Marketing",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Consulting"
+},
+{
+"d":"brickcedar.com",
+"p":15,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"shipurban.com",
+"p":25,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Trucking & freight"
+},
+{
+"d":"porchsilver.com",
+"p":25,
+"c":"Real estate",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
+"d":"grillriver.com",
+"p":20,
+"c":"Food",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Food trucks & BBQ"
+},
+{
+"d":"littlerig.co",
+"p":39,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"teelucky.shop",
+"p":45,
+"c":"Fashion",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"materoute.com",
+"p":25,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Trucking & freight"
+},
+{
+"d":"amberbrick.co",
+"p":39,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"oasiscandle.co",
+"p":39,
+"c":"E-commerce",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"kindgrit.co",
+"p":39,
+"c":"Health",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Fitness & coaching"
+},
+{
+"d":"dripsummit.com",
+"p":30,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"hubtaco.co",
+"p":40,
+"c":"Food",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Food trucks & BBQ"
+},
+{
+"d":"forgehandy.com",
+"p":30,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Home services"
+},
+{
+"d":"candledune.com",
+"p":20,
+"c":"E-commerce",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"hivecandle.co",
+"p":39,
+"c":"E-commerce",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"pavegolden.com",
+"p":25,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"leadswise.co",
+"p":39,
+"c":"Marketing",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Consulting"
+},
+{
+"d":"atlasjar.com",
+"p":40,
+"c":"E-commerce",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"arrowknit.com",
+"p":30,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"paveriver.com",
+"p":30,
+"c":"Local",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"hivelift.co",
+"p":39,
+"c":"Health",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Fitness & coaching"
+},
+{
+"d":"hoodieroyal.com",
+"p":25,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"eatsorbit.com",
+"p":30,
+"c":"Food",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Food trucks & BBQ"
+},
+{
+"d":"arrowplumb.com",
+"p":20,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Home services"
+},
+{
+"d":"luckyship.co",
+"p":40,
+"c":"Local",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Trucking & freight"
+},
+{
+"d":"scentpearl.com",
+"p":20,
+"c":"E-commerce",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"lanterntaco.co",
+"p":39,
+"c":"Food",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Food trucks & BBQ"
+},
+{
+"d":"porchtrue.co",
+"p":39,
+"c":"Real estate",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
+"d":"pearlgrill.com",
+"p":25,
+"c":"Food",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Food trucks & BBQ"
+},
+{
+"d":"crestmove.com",
+"p":35,
+"c":"Real estate",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
+"d":"tacofalcon.com",
+"p":25,
+"c":"Food",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Food trucks & BBQ"
+},
+{
+"d":"lawnbeacon.com",
+"p":30,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Home services"
+},
+{
+"d":"stitchpalm.com",
+"p":25,
+"c":"Fashion",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Clothing brands"
+},
+{
+"d":"porchkind.com",
+"p":30,
+"c":"Real estate",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
+"d":"stoneplumb.com",
+"p":15,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Home services"
+},
+{
+"d":"maplerig.co",
+"p":39,
+"c":"Local",
+"t":"standard",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Construction"
+},
+{
+"d":"compasshaul.com",
+"p":20,
+"c":"Local",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Trucking & freight"
+},
+{
+"d":"soaproyal.shop",
+"p":45,
+"c":"E-commerce",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"Candles & handmade"
+},
+{
+"d":"meadowacre.com",
+"p":25,
+"c":"Real estate",
+"t":"starter",
+"a":"2026-10-28",
+"k":"2026-10-28",
+"s":"US real estate"
+},
+{
 "d":"dunelogic.io",
 "p":60,
 "c":"AI",
