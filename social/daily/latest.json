@@ -1,28 +1,28 @@
 {
- "date": "2026-10-27",
- "category": "Gaming",
- "title": "Names for your gaming studio",
- "image_url": "https://claimly.ae/social/daily/2026-10-27.jpg",
+ "date": "2026-10-28",
+ "category": "Health",
+ "title": "Names for your health or wellness brand",
+ "image_url": "https://claimly.ae/social/daily/2026-10-28.jpg",
  "names": [
   {
-   "domain": "fragai.co",
+   "domain": "lifely.co",
+   "price": 55
+  },
+  {
+   "domain": "goodlife.co",
+   "price": 40
+  },
+  {
+   "domain": "rehabkit.co",
    "price": 45
   },
   {
-   "domain": "bosspawn.com",
-   "price": 30
+   "domain": "smartlife.co",
+   "price": 39
   },
   {
-   "domain": "scoreera.com",
-   "price": 30
-  },
-  {
-   "domain": "realmable.com",
-   "price": 35
-  },
-  {
-   "domain": "pingsprite.com",
-   "price": 30
+   "domain": "swiftnutri.co",
+   "price": 39
   }
  ]
 }

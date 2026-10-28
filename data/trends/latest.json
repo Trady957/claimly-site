@@ -1,5 +1,5 @@
 {
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "geos": [
   "US",
   "GB",
@@ -19,187 +19,195 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "pakistan vs sri lanka",
+   "q": "zimbabwe vs india",
    "geo": "IN",
-   "traffic": 50000
+   "traffic": 200000
   },
   {
-   "q": "pakistan vs sri lanka",
+   "q": "bangladesh vs west indies",
    "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "new zealand vs india",
-   "geo": "SA",
+   "q": "日本シリーズ スタメン",
+   "geo": "JP",
    "traffic": 20000
   },
   {
-   "q": "glenn phillips",
-   "geo": "IN",
+   "q": "fioul",
+   "geo": "FR",
    "traffic": 10000
   },
   {
-   "q": "new zealand national cricket team vs india national cricket team match scorecard",
+   "q": "newport beach flooding",
+   "geo": "US",
+   "traffic": 5000
+  },
+  {
+   "q": "कर्मचारी",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "zimbabwe women's national cricket team vs india women's national cricket team match scorecard",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "smuggling",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "biometria",
+   "geo": "BR",
+   "traffic": 5000
+  },
+  {
+   "q": "aposentadoria",
+   "geo": "BR",
+   "traffic": 5000
+  },
+  {
+   "q": "a ja wilson",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "when is black friday",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "budget time",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "matt renshaw",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "बैंक अवकाश",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "ಅಶ್ವಿನಿ ಗೌಡ",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "ಬಿಗ್ ಬಾಸ್ ಕನ್ನಡ",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "zimbabwe women's national cricket team vs india women's national cricket team match scorecard",
    "geo": "AE",
-   "traffic": 10000
+   "traffic": 2000
   },
   {
-   "q": "pakistan vs sri lanka",
+   "q": "smit machchhar",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "jio platforms share price",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "ballistic missile",
    "geo": "SA",
-   "traffic": 10000
-  },
-  {
-   "q": "new zealand national cricket team vs india national cricket team match scorecard",
-   "geo": "SA",
-   "traffic": 10000
-  },
-  {
-   "q": "ソフトバンク 対 dena",
-   "geo": "JP",
-   "traffic": 10000
-  },
-  {
-   "q": "ipad mini 8",
-   "geo": "US",
-   "traffic": 5000
-  },
-  {
-   "q": "sa vs aus",
-   "geo": "AU",
-   "traffic": 5000
-  },
-  {
-   "q": "medl enugu six day power outage",
-   "geo": "NG",
-   "traffic": 5000
-  },
-  {
-   "q": "sa vs aus",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "vivant 考察",
-   "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "matthew perry",
-   "geo": "US",
    "traffic": 2000
   },
   {
-   "q": "sa vs aus",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "pakistan vs sri lanka",
-   "geo": "GB",
-   "traffic": 2000
-  },
-  {
-   "q": "shah rukh khan king movie poster",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "nz vs ind",
+   "q": "butter recall",
    "geo": "CA",
    "traffic": 2000
   },
   {
-   "q": "pak vs sl",
-   "geo": "AU",
-   "traffic": 2000
-  },
-  {
-   "q": "florian david fitz",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "chauffage",
+   "q": "quentin deranque",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "new zealand vs india",
-   "geo": "SG",
+   "q": "sarah knafo",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "singapore transboundary haze pollution act",
-   "geo": "SG",
+   "q": "camille etienne",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "pak vs sl",
-   "geo": "ZA",
+   "q": "シャドバ ビヨンド",
+   "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "new zealand vs india",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "widow",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "lua do caçador",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "aviação",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "paul scholes",
+   "q": "michael douglas",
    "geo": "GB",
    "traffic": 1000
   },
   {
-   "q": "namibia vs ireland",
-   "geo": "AE",
+   "q": "sally dynevor",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "കണ്ണൂര്",
+   "geo": "IN",
    "traffic": 1000
   }
  ],
  "categories": [
   {
    "category": "SaaS",
-   "score": 41300
+   "score": 14200
   },
   {
-   "category": "Local",
-   "score": 2500
+   "category": "Travel",
+   "score": 5900
   },
   {
-   "category": "Gaming",
-   "score": 2300
-  },
-  {
-   "category": "Creator",
-   "score": 2000
-  },
-  {
-   "category": "Food",
-   "score": 1000
+   "category": "Finance",
+   "score": 2200
   },
   {
    "category": "E-commerce",
-   "score": 200
+   "score": 2000
   },
   {
-   "category": "AI",
-   "score": 100
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "category": "Legal",
+   "score": 500
   },
   {
    "category": "Green",
+   "score": 200
+  },
+  {
+   "category": "Health",
+   "score": 100
+  },
+  {
+   "category": "Education",
+   "score": 100
+  },
+  {
+   "category": "Food",
    "score": 100
   }
  ],
@@ -207,56 +215,51 @@
   {
    "word": "team",
    "category": "SaaS",
-   "score": 41300
+   "score": 14200
+  },
+  {
+   "word": "beach",
+   "category": "Travel",
+   "score": 5000
+  },
+  {
+   "word": "budget",
+   "category": "Finance",
+   "score": 2200
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 2000
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 700
   },
   {
    "word": "king",
    "category": "Gaming",
-   "score": 2000
-  },
-  {
-   "word": "movie",
-   "category": "Creator",
-   "score": 2000
-  },
-  {
-   "word": "haze",
-   "category": "Local",
-   "score": 2000
-  },
-  {
-   "word": "nugget",
-   "category": "Food",
-   "score": 1000
-  },
-  {
-   "word": "town",
-   "category": "Local",
    "score": 500
   },
   {
-   "word": "sale",
-   "category": "E-commerce",
+   "word": "flight",
+   "category": "Travel",
    "score": 200
   },
   {
-   "word": "league",
-   "category": "Gaming",
-   "score": 200
-  },
-  {
-   "word": "score",
-   "category": "Gaming",
+   "word": "golf",
+   "category": "Health",
    "score": 100
   },
   {
-   "word": "rocket",
-   "category": "AI",
+   "word": "course",
+   "category": "Education",
    "score": 100
   },
   {
-   "word": "sun",
-   "category": "Green",
+   "word": "farm",
+   "category": "Food",
    "score": 100
   }
  ]

@@ -1,0 +1,266 @@
+{
+ "date": "2026-10-28",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "zimbabwe vs india",
+   "geo": "IN",
+   "traffic": 200000
+  },
+  {
+   "q": "bangladesh vs west indies",
+   "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "日本シリーズ スタメン",
+   "geo": "JP",
+   "traffic": 20000
+  },
+  {
+   "q": "fioul",
+   "geo": "FR",
+   "traffic": 10000
+  },
+  {
+   "q": "newport beach flooding",
+   "geo": "US",
+   "traffic": 5000
+  },
+  {
+   "q": "कर्मचारी",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "zimbabwe women's national cricket team vs india women's national cricket team match scorecard",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "smuggling",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "biometria",
+   "geo": "BR",
+   "traffic": 5000
+  },
+  {
+   "q": "aposentadoria",
+   "geo": "BR",
+   "traffic": 5000
+  },
+  {
+   "q": "a ja wilson",
+   "geo": "US",
+   "traffic": 2000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "when is black friday",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "budget time",
+   "geo": "GB",
+   "traffic": 2000
+  },
+  {
+   "q": "matt renshaw",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "बैंक अवकाश",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "ಅಶ್ವಿನಿ ಗೌಡ",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "ಬಿಗ್ ಬಾಸ್ ಕನ್ನಡ",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "zimbabwe women's national cricket team vs india women's national cricket team match scorecard",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "smit machchhar",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "jio platforms share price",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "ballistic missile",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "butter recall",
+   "geo": "CA",
+   "traffic": 2000
+  },
+  {
+   "q": "quentin deranque",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "sarah knafo",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "camille etienne",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "シャドバ ビヨンド",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "michael douglas",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "sally dynevor",
+   "geo": "GB",
+   "traffic": 1000
+  },
+  {
+   "q": "കണ്ണൂര്",
+   "geo": "IN",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "SaaS",
+   "score": 14200
+  },
+  {
+   "category": "Travel",
+   "score": 5900
+  },
+  {
+   "category": "Finance",
+   "score": 2200
+  },
+  {
+   "category": "E-commerce",
+   "score": 2000
+  },
+  {
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "category": "Legal",
+   "score": 500
+  },
+  {
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "category": "Health",
+   "score": 100
+  },
+  {
+   "category": "Education",
+   "score": 100
+  },
+  {
+   "category": "Food",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 14200
+  },
+  {
+   "word": "beach",
+   "category": "Travel",
+   "score": 5000
+  },
+  {
+   "word": "budget",
+   "category": "Finance",
+   "score": 2200
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 2000
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 700
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "flight",
+   "category": "Travel",
+   "score": 200
+  },
+  {
+   "word": "golf",
+   "category": "Health",
+   "score": 100
+  },
+  {
+   "word": "course",
+   "category": "Education",
+   "score": 100
+  },
+  {
+   "word": "farm",
+   "category": "Food",
+   "score": 100
+  }
+ ]
+}
