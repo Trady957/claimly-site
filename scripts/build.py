@@ -565,12 +565,21 @@ def segments_html():
 OFFER_END = "2026-11-30"                       # launch price ends after this date
 OFFER_ON = TODAY <= OFFER_END
 OFFER_TXT = "Launch price until 30 Nov"
-REG = {"naming_starter": 149, "naming_brand": 299}
-LAUNCH = {"naming_starter": 99, "naming_brand": 199}
+REG = {"naming_quick": 69, "naming_starter": 149, "naming_shield": 189, "naming_duo": 298,
+       "naming_brand": 299, "naming_bilingual": 349, "naming_launch": 499}
+LAUNCH = {"naming_quick": 49, "naming_starter": 99, "naming_shield": 139, "naming_duo": 159,
+          "naming_brand": 199, "naming_bilingual": 249, "naming_launch": 349}
 PKG_FROM = LAUNCH["naming_starter"] if OFFER_ON else REG["naming_starter"]
+def _pp(k): return LAUNCH[k] if OFFER_ON else REG[k]
+# key, name, price, features, badge
 PACKAGES = [
-    ("naming_starter", "Starter", LAUNCH["naming_starter"] if OFFER_ON else 149, ["10 hand-picked, available names made for your business", "Each name checked for .com / .co availability", "Your favourite domain registered for you (first year included)", "Matching handle check on Instagram, X and LinkedIn", "Delivered by email within 48 hours"]),
-    ("naming_brand", "Brand kit", LAUNCH["naming_brand"] if OFFER_ON else 299, ["Everything in Starter", "Simple wordmark logo concept for your chosen name", "Colour palette and font pairing", "Short tagline options", "One round of changes, delivered within 3 days"]),
+    ("naming_quick", "Quick Pick", _pp("naming_quick"), ["3 names made for your business", ".com checked for each", "Your favourite domain registered for you (first year included)", "Delivered within 24 hours"], ""),
+    ("naming_starter", "Starter", _pp("naming_starter"), ["10 hand-picked, available names made for your business", "Each name checked for .com / .co availability", "Your favourite domain registered for you (first year included)", "Matching handle check on Instagram, X and LinkedIn", "Delivered by email within 48 hours"], "Most popular"),
+    ("naming_shield", "Name + Shield", _pp("naming_shield"), ["Everything in Starter", "Your name also registered as .co and .net, so no one can copy it", "Handle check on Instagram, TikTok, X and LinkedIn", "Delivered within 48 hours"], ""),
+    ("naming_brand", "Brand kit", _pp("naming_brand"), ["Everything in Starter", "Simple wordmark logo concept for your chosen name", "Colour palette and font pairing", "Short tagline options", "One round of changes, delivered within 3 days"], ""),
+    ("naming_bilingual", "Bilingual Brand", _pp("naming_bilingual"), ["Everything in Brand kit", "Every name checked for Arabic pronunciation and meaning", "Wordmark in English and Arabic", "Arabic and English taglines", "Made for UAE and Saudi customers, delivered within 4 days"], "Gulf favourite"),
+    ("naming_launch", "Founder Launch", _pp("naming_launch"), ["Everything in Brand kit", "One-page website live on your new domain", "Business email setup guide (you@yourname.com)", "Instagram starter kit: bio, profile image, 3 post templates", "Delivered within 7 days"], "Everything to launch"),
+    ("naming_duo", "Duo: 2 businesses", _pp("naming_duo"), ["Two Starter packages, for you and a friend or a second idea", "10 names + registered domain for each", "Delivered within 48 hours"], ""),
 ]
 
 FREE_FORM = """<div class="pk-form" id="free" style="scroll-margin-top:90px">
@@ -598,14 +607,14 @@ def package_page():
     title = "Name My Business: Business Name + Domain Package | Claimly"
     desc = "Struggling to name your business? Get 10 checked, available brand names and your domain registered for you, from ${PKG_FROM}. Optional logo and brand kit."
     ld = {"@context":"https://schema.org","@type":"Service","name":"Business naming package","provider":{"@type":"Organization","name":"Claimly","url":SITE+"/"},
-          "areaServed":"Worldwide","offers":[{"@type":"Offer","name":n,"price":str(pr),"priceCurrency":"USD","url":canon} for _,n,pr,_ in PACKAGES]}
-    cards = "".join(f"""<div class="pk{' pk-hi' if i==1 else ''}">
-<div class="pk-name">{esc(n)}{'<span class="pk-tag">Most complete</span>' if i==1 else ''}</div>
+          "areaServed":"Worldwide","offers":[{"@type":"Offer","name":n,"price":str(pr),"priceCurrency":"USD","url":canon} for _,n,pr,_,_ in PACKAGES]}
+    cards = "".join(f"""<div class="pk{' pk-hi' if badge else ''}">
+<div class="pk-name">{esc(n)}{f'<span class="pk-tag">{esc(badge)}</span>' if badge else ''}</div>
 <div class="pk-price"><small>$</small>{pr}{f' <s style="font-size:22px;color:var(--muted);font-weight:600">${REG[k]}</s>' if OFFER_ON else ''}</div>{f'<div style="color:var(--red,#E0231C);font-weight:700;font-size:14px;margin:-6px 0 10px">{OFFER_TXT}</div>' if OFFER_ON else ''}
 <ul>{''.join(f'<li>{esc(x)}</li>' for x in feats)}</ul>
 <button class="btn btn-cta wide" type="button" onclick="pickPk('{k}')">Choose {esc(n)}</button>
-</div>""" for i,(k,n,pr,feats) in enumerate(PACKAGES))
-    opts = "".join(f'<option value="{k}" data-price="{pr}">{esc(n)} &middot; ${pr}</option>' for k,n,pr,_ in PACKAGES)
+</div>""" for i,(k,n,pr,feats,badge) in enumerate(PACKAGES))
+    opts = "".join(f'<option value="{k}" data-price="{pr}"{" selected" if k=="naming_starter" else ""}>{esc(n)} &middot; ${pr}</option>' for k,n,pr,_,_ in PACKAGES)
     faq = [("How does it work?","Tell us about your business. Within 48 hours you get 10 names that fit it, each with an available domain. Pick your favourite and we register it for you."),
            ("What if I don’t like any of the names?","Reply and tell us why. We send a second set of names at no extra cost."),
            ("Which domain extensions are included?",".com, .co, .io, .app and similar are included in the price. Premium or already-owned names are not."),
@@ -613,7 +622,8 @@ def package_page():
     faq_html = "".join(f"<details class='pk-faq'><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q,a in faq)
     return head(title, desc, canon, '<script type="application/ld+json">'+json.dumps(ld)+'</script>') + f"""
 <style>
-.pk-wrap{{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 34px}}
+.pk-wrap{{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 34px}}
+@media(max-width:1000px){{.pk-wrap{{grid-template-columns:1fr 1fr}}}}
 .pk{{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}}
 .pk-hi{{border:2px solid var(--ink)}}
 .pk-name{{font-family:'Schibsted Grotesk';font-weight:800;font-size:20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}}
@@ -658,7 +668,7 @@ def package_page():
 function pickPk(k){{document.getElementById('pkKind').value=k;var f=document.getElementById('pkForm');f.scrollIntoView({{behavior:'smooth'}});setTimeout(function(){{document.getElementById('pkEmail').focus()}},400);}}
 function pkSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;
  var sel=document.getElementById('pkKind'),price=Number(sel.options[sel.selectedIndex].dataset.price),a=claimlyAttr(),v=function(n){{return (f[n].value||'').trim();}};
- claimlySave('claimly_orders',{{kind:sel.value,domain:'Naming package: '+sel.options[sel.selectedIndex].text.split(' ')[0],price:price,email:v('email').slice(0,200),business:v('business').slice(0,1500),country:v('country').slice(0,80),notes:v('notes').slice(0,1500),heard_about:v('heard_about'),referrer:(a.ref||'').slice(0,500),landing_page:(a.land||location.pathname).slice(0,500),utm_source:a.us||'',utm_medium:a.um||'',utm_campaign:a.uc||''}});
+ claimlySave('claimly_orders',{{kind:sel.value,domain:('Naming package: '+sel.options[sel.selectedIndex].text.split(' \u00b7')[0]).slice(0,80),price:price,email:v('email').slice(0,200),business:v('business').slice(0,1500),country:v('country').slice(0,80),notes:v('notes').slice(0,1500),heard_about:v('heard_about'),referrer:(a.ref||'').slice(0,500),landing_page:(a.land||location.pathname).slice(0,500),utm_source:a.us||'',utm_medium:a.um||'',utm_campaign:a.uc||''}});
  var url='{PAY_BASE}/'+price+'USD';window.open(url,'_blank','noopener');
  document.getElementById('pkPrice').textContent=price;document.getElementById('pkLink').href=url;
  document.getElementById('pkFields').style.display='none';document.getElementById('pkDone').style.display='block';return false;}}
