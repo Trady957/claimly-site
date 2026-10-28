@@ -16,6 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import names as G  # the original generator (word lists, pricing rules)
+import segments as S  # market-segment word lists (two-word names buyers are searching for)
 
 TODAY = datetime.date.today().isoformat()
 ARGS = sys.argv[1:]
@@ -170,8 +171,10 @@ def main():
     # round-robin by category so one category can't take every slot
     by = {}
     for c in cands: by.setdefault(c[0], []).append(c)
-    # up to 60% of today's slots come from trending words, the rest from the normal generator
-    queue = trend_cands[: ADD * 3]
+    # market-segment names (two real words, e.g. CrewMind.com) go first: up to 50% of slots,
+    # then trending words (up to 30%), then the normal generator
+    seg_cands = list(S.candidates(seed=TODAY, per_segment=max(8, ADD), seen=seen))
+    queue = seg_cands[: ADD * 4] + trend_cands[: ADD * 2]
     while any(by.values()):
         for cat in order:
             if by.get(cat): queue.append(by[cat].pop())
@@ -185,12 +188,16 @@ def main():
         res = check_all([b[3] for b in batch])
         for cat, n, ext, d, word in batch:
             checked.append(d)
+            seg = word if word in S.SEGMENTS else ""
             n_trend = sum(1 for a in added if a.get("w"))
-            if word and n_trend >= int(ADD * 0.6): continue
+            n_seg = sum(1 for a in added if a.get("s"))
+            if seg and n_seg >= int(ADD * 0.5): continue
+            if word and not seg and n_trend >= int(ADD * 0.3): continue
             if res[d] == "available" and len(added) < ADD:
                 p, tier = shop_price(n, cat, ext)
                 item = {"d": d, "p": p, "c": cat, "t": tier, "a": TODAY, "k": TODAY}
-                if word: item["w"] = word
+                if seg: item["s"] = seg
+                elif word: item["w"] = word
                 added.append(item)
     append("seen.txt", checked)
     inv = added + inv
