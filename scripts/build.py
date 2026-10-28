@@ -74,6 +74,8 @@ CAT_BLURB = {
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;900&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">')
 
+OFFER_BAR = """<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Launch offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; until 30 Nov <u>See how &rarr;</u></a>"""
+
 def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview:large"):
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -101,6 +103,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <a class="brand" href="/">Claimly<span class="reg">&reg;</span></a>
 <nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/business-name-ideas/">Name ideas</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
 </div></header>
+{OFFER_BAR if OFFER_ON else ""}
 """
 
 def footer():
@@ -232,8 +235,8 @@ def home():
 </div></section>
 
 <section class="section-pad" style="padding-top:0"><div class="wrap"><div style="background:var(--ink);color:var(--bone);border-radius:22px;padding:30px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
-<div><div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7">Can&rsquo;t decide?</div><h2 style="font-family:'Schibsted Grotesk';font-size:clamp(22px,3vw,30px);margin:6px 0 6px">We&rsquo;ll name your business for you</h2><p style="margin:0;opacity:.8;max-width:52ch">10 checked names made for your business, plus your domain registered. Delivered in 48 hours, from $149.</p></div>
-<a class="btn btn-cta" href="/name-my-business/">See the naming package &rarr;</a></div></div></section>
+<div><div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7">Can&rsquo;t decide?</div><h2 style="font-family:'Schibsted Grotesk';font-size:clamp(22px,3vw,30px);margin:6px 0 6px">We&rsquo;ll name your business for you</h2><p style="margin:0;opacity:.8;max-width:52ch">10 checked names made for your business, plus your domain registered. Delivered in 48 hours, from ${PKG_FROM}{(' <b style="background:var(--red,#E0231C);color:#fff;border-radius:99px;padding:2px 9px;font-size:13px;margin-left:4px">' + OFFER_TXT + '</b>') if OFFER_ON else ''}.</p></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-cta" href="/name-my-business/">See the naming package &rarr;</a><a class="btn" style="border:1px solid var(--bone);color:var(--bone)" href="/name-my-business/#free">Get 3 free ideas</a></div></div></div></section>
 <section class="section-pad" id="how"><div class="wrap">
 <h2>How it works</h2>
 <p class="section-sub">From finding a name to owning it &mdash; usually the same day.</p>
@@ -454,7 +457,7 @@ def domain_page(d, idx):
 <h2>Good fit for</h2>
 <p>{esc(d['cat'])} businesses: {CAT_BLURB.get(d['cat'],'new businesses')}. Not quite right? Try the <a href="/#finder" style="color:var(--cobalt);font-weight:600">AI name finder</a> or browse more names below.</p>
 {IDEA_LINKS.get(d['cat'], '')}
-<div style="background:var(--bone2);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><b style="font-family:'Schibsted Grotesk';font-size:18px">Not sure this is the one?</b><br><span style="color:var(--muted)">Get 10 names made for your business, domains checked, in 48 hours.</span></div><a class="btn btn-cta" href="/name-my-business/?utm_source=domain-page">Name my business &rarr;</a></div>
+<div style="background:var(--bone2);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><b style="font-family:'Schibsted Grotesk';font-size:18px">Not sure this is the one?</b><br><span style="color:var(--muted)">Get 10 names made for your business, domains checked, in 48 hours.</span></div><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-cta" href="/name-my-business/?utm_source=domain-page">Name my business{f" &middot; ${PKG_FROM}" if OFFER_ON else ""} &rarr;</a><a class="btn" style="border:1px solid var(--ink)" href="/name-my-business/?utm_source=domain-page#free">3 free ideas</a></div></div>
 </div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:34px 0 14px">Similar {esc(d['cat'].lower())} domains</h2>
 <div class="linkgrid">{rel}</div>
@@ -530,20 +533,46 @@ def trending_html():
 </div></section>"""
 
 # ───────────────────────── naming package page ─────────────────────────
+OFFER_END = "2026-11-30"                       # launch price ends after this date
+OFFER_ON = TODAY <= OFFER_END
+OFFER_TXT = "Launch price until 30 Nov"
+REG = {"naming_starter": 149, "naming_brand": 299}
+LAUNCH = {"naming_starter": 99, "naming_brand": 199}
+PKG_FROM = LAUNCH["naming_starter"] if OFFER_ON else REG["naming_starter"]
 PACKAGES = [
-    ("naming_starter", "Starter", 149, ["10 hand-picked, available names made for your business", "Each name checked for .com / .co availability", "Your favourite domain registered for you (first year included)", "Matching handle check on Instagram, X and LinkedIn", "Delivered by email within 48 hours"]),
-    ("naming_brand", "Brand kit", 299, ["Everything in Starter", "Simple wordmark logo concept for your chosen name", "Colour palette and font pairing", "Short tagline options", "One round of changes, delivered within 3 days"]),
+    ("naming_starter", "Starter", LAUNCH["naming_starter"] if OFFER_ON else 149, ["10 hand-picked, available names made for your business", "Each name checked for .com / .co availability", "Your favourite domain registered for you (first year included)", "Matching handle check on Instagram, X and LinkedIn", "Delivered by email within 48 hours"]),
+    ("naming_brand", "Brand kit", LAUNCH["naming_brand"] if OFFER_ON else 299, ["Everything in Starter", "Simple wordmark logo concept for your chosen name", "Colour palette and font pairing", "Short tagline options", "One round of changes, delivered within 3 days"]),
 ]
+
+FREE_FORM = """<div class="pk-form" id="free" style="scroll-margin-top:90px">
+<div id="frFields">
+<div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Not ready to order?</div>
+<h2 style="font-family:'Schibsted Grotesk';margin:6px 0 6px;font-size:22px">Get 3 free name ideas</h2>
+<p style="margin:0 0 14px;color:var(--muted)">Tell us about your business. We email you 3 name ideas with available domains within 24 hours. Free, no card needed.</p>
+<form onsubmit="return frSubmit(event)">
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<div class="field"><label for="frEmail">Your email</label><input type="email" id="frEmail" name="email" required placeholder="you@company.com" autocomplete="email" maxlength="200"></div>
+<div class="field"><label for="frBiz">What does your business do?</label><textarea id="frBiz" name="details" required maxlength="1400" style="font-family:'Hanken Grotesk';font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bone);min-height:90px;resize:vertical;width:100%;box-sizing:border-box" placeholder="e.g. Home bakery in Riyadh, custom cakes for birthdays"></textarea></div>
+<button class="btn btn-cta wide" type="submit">Send me 3 free names &rarr;</button>
+<p class="reassure">One email with your names. No spam.</p>
+</form></div>
+<div id="frDone" style="display:none;text-align:center"><h3 style="font-family:'Schibsted Grotesk'">Got it! Your 3 names are on the way.</h3><p>Check your inbox within 24 hours (and the spam folder, just in case).</p></div>
+</div>
+<script>
+function frSubmit(e){e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;var a=claimlyAttr();
+ claimlySave('claimly_leads',{kind:'free_names',email:f.email.value.trim().slice(0,200),details:f.details.value.trim().slice(0,1400),consent:true,page:location.pathname.slice(0,300),utm_source:(a.us||'').slice(0,100)});
+ document.getElementById('frFields').style.display='none';document.getElementById('frDone').style.display='block';return false;}
+</script>"""
 
 def package_page():
     canon = f"{SITE}/name-my-business/"
     title = "Name My Business: Business Name + Domain Package | Claimly"
-    desc = "Struggling to name your business? Get 10 checked, available brand names and your domain registered for you, from $149. Optional logo and brand kit."
+    desc = "Struggling to name your business? Get 10 checked, available brand names and your domain registered for you, from ${PKG_FROM}. Optional logo and brand kit."
     ld = {"@context":"https://schema.org","@type":"Service","name":"Business naming package","provider":{"@type":"Organization","name":"Claimly","url":SITE+"/"},
           "areaServed":"Worldwide","offers":[{"@type":"Offer","name":n,"price":str(pr),"priceCurrency":"USD","url":canon} for _,n,pr,_ in PACKAGES]}
     cards = "".join(f"""<div class="pk{' pk-hi' if i==1 else ''}">
 <div class="pk-name">{esc(n)}{'<span class="pk-tag">Most complete</span>' if i==1 else ''}</div>
-<div class="pk-price"><small>$</small>{pr}</div>
+<div class="pk-price"><small>$</small>{pr}{f' <s style="font-size:22px;color:var(--muted);font-weight:600">${REG[k]}</s>' if OFFER_ON else ''}</div>{f'<div style="color:var(--red,#E0231C);font-weight:700;font-size:14px;margin:-6px 0 10px">{OFFER_TXT}</div>' if OFFER_ON else ''}
 <ul>{''.join(f'<li>{esc(x)}</li>' for x in feats)}</ul>
 <button class="btn btn-cta wide" type="button" onclick="pickPk('{k}')">Choose {esc(n)}</button>
 </div>""" for i,(k,n,pr,feats) in enumerate(PACKAGES))
@@ -591,6 +620,7 @@ def package_page():
 </div>
 <div id="pkDone"><h3 style="font-family:'Schibsted Grotesk'">Complete payment in the PayPal tab</h3><p>Your order is saved. In PayPal, pay <strong>$<span id="pkPrice"></span></strong> and add your email in the note so we can match it. Your names arrive within 48 hours of payment.</p><p class="reassure">PayPal didn&rsquo;t open? <a id="pkLink" href="#" target="_blank" rel="noopener">Open PayPal</a></p><p class="reassure" style="margin-top:14px"><strong>Next:</strong> <a href="/launch/">company license, website and email for your business &rarr;</a></p></div>
 </form>
+{FREE_FORM}
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px">Questions</h2>
 {faq_html}
 <p style="margin:28px 0 0">Prefer to pick a name yourself? <a href="/#shop">Browse ready-to-register names</a> from $15.</p>
@@ -763,7 +793,7 @@ def idea_page(t):
     desc = f"Name ideas for your {phrase}, each with an available domain from ${lo}. Plus practical tips for choosing a {phrase} name that customers remember."
     faqs = [(f"How do I choose a name for my {phrase}?", f"Write down what makes your {phrase} different and how you want customers to feel, list 30+ ideas, cut anything hard to say or spell, then check the domain and social handles before you decide."),
             (f"Are these {phrase} names really available?", "Yes. Every name on this page is checked as unregistered before it is listed, and the list refreshes daily. Prices include the first year of registration, and you get a full refund if a name can't be delivered."),
-            (f"Can someone name my {phrase} for me?", f"Yes. With the Claimly naming package you describe your {phrase} and get 10 checked names with available domains within 48 hours, from $149. We register the one you pick.")]
+            (f"Can someone name my {phrase} for me?", f"Yes. With the Claimly naming package you describe your {phrase} and get 10 checked names with available domains within 48 hours, from ${PKG_FROM}. We register the one you pick.")]
     ld = [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
           {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": "Claimly", "item": SITE + "/"},
@@ -788,7 +818,8 @@ def idea_page(t):
 <h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:38px 0 6px">How to name your {esc(phrase)}</h2>
 <div class="tips">{tips_h}</div>
 <div class="cta-band"><div><h2>Want names made for your {esc(phrase)}?</h2><p>Describe your business and get 10 checked names with available domains in 48 hours. We register the one you pick.</p></div>
-<a class="btn btn-cta" href="/name-my-business/?utm_source=ideas&amp;utm_medium={slug_}">Get my 10 names &rarr;</a></div>
+<a class="btn btn-cta" href="/name-my-business/?utm_source=ideas&amp;utm_medium={slug_}">Get my 10 names{f" &middot; ${PKG_FROM}" if OFFER_ON else ""} &rarr;</a></div>
+{FREE_FORM}
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:0 0 6px">Questions</h2>
 <div class="faq">{faq_h}</div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:36px 0 10px">More name ideas</h2>
