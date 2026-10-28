@@ -205,8 +205,8 @@ def main():
     if hot: log.append("Trending categories today: " + ", ".join(hot))
 
     json.dump(inv, open(os.path.join(DATA, "inventory.json"), "w"), indent=0, separators=(",", ":"))
-    urls = [f"{SITE}/", f"{SITE}/new/", f"{SITE}/sitemap.xml"] + [f"{SITE}/d/{a['d']}/" for a in added] + \
-           sorted({f"{SITE}/domains/{a['c'].lower().replace(' ', '-')}/" for a in added})
+    urls = [f"{SITE}/", f"{SITE}/new/", f"{SITE}/sitemap.xml"] + [f"{SITE}/d/{a['d']}/" for a in inv if a.get("a") == TODAY] + \
+           sorted({f"{SITE}/domains/{a['c'].lower().replace(' ', '-')}/" for a in inv if a.get("a") == TODAY})
     open(os.path.join(DATA, "new_urls.txt"), "w").write("\n".join(urls) + "\n")
     report_stats({"run_date": TODAY, "shop_size": len(inv), "added": len(added), "removed_taken": len(gone),
                   "removed_sold": removed_sold, "trending_categories": ", ".join(hot)[:500],

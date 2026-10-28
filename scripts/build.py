@@ -38,6 +38,7 @@ try:
 except Exception:
     pass
 TREND_WORD = {x["d"]: x.get("w") for x in INV if x.get("w")}
+SEGMENT_NAMES = {x["d"] for x in INV if x.get("s")}   # two real words, picked for high-demand markets
 
 def slug(c): return re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")
 def esc(s): return html.escape(str(s), quote=True)
@@ -247,6 +248,7 @@ def home():
 </div>
 </div></section>
 
+{segments_html()}
 {trending_html()}
 <section class="section-pad" style="padding-top:0"><div class="wrap">
 <h2>Browse by category</h2>
@@ -532,6 +534,33 @@ def trending_html():
 {f'<div class="catlinks">{chips}</div>' if chips else ''}
 </div></section>"""
 
+SEG_OF = {x["d"]: x["s"] for x in INV if x.get("s")}
+SEG_IDEA = {"AI agents": "ai-agent", "Automation": "saas", "Payments": "fintech", "Health & care": "clinic",
+            "Clean energy": "solar-company", "Creators": "content-creator", "Online stores": "online-store",
+            "UAE real estate": "real-estate", "Cafes & food": "coffee-shop", "Beauty & fashion": "salon",
+            "Travel & stays": "travel-agency", "Learning": "tutoring", "Legal & business": "law-firm", "Pets": "pet-business"}
+
+def segments_html():
+    """Home section: easy two-word names for the markets buyers are spending in."""
+    by = {}
+    for d in D:
+        s = SEG_OF.get(d["fqdn"])
+        if s and d["fqdn"].endswith((".com", ".co")): by.setdefault(s, []).append(d)
+    if not by: return ""
+    rnd = random.Random("seg" + TODAY)
+    picks = []
+    for s in sorted(by):
+        rnd.shuffle(by[s]); picks += by[s][:1]
+    rnd.shuffle(picks); picks = picks[:12]
+    links = "".join(f'<a href="/d/{d["fqdn"]}/">{d["fqdn"]}<span>${d["price"]}</span></a>' for d in picks)
+    chips = "".join(f'<a class="chip" href="/business-name-ideas/{SEG_IDEA[s]}/">{esc(s)}</a>' for s in sorted(by) if s in SEG_IDEA)
+    return f"""<section class="section-pad" id="markets" style="padding-top:0"><div class="wrap">
+<h2>Easy names for hot markets</h2>
+<p class="section-sub">Two real words, easy to say, with the domain still free. Picked for the markets where new businesses are starting right now.</p>
+<div class="linkgrid" style="margin-bottom:16px">{links}</div>
+<div class="catlinks">{chips}</div>
+</div></section>"""
+
 # ───────────────────────── naming package page ─────────────────────────
 OFFER_END = "2026-11-30"                       # launch price ends after this date
 OFFER_ON = TODAY <= OFFER_END
@@ -780,6 +809,8 @@ def _ideas_names(t, n=24):
     rest = [x for x in pool if x not in match]
     rnd = random.Random(slug_ + TODAY)                 # fresh mix every day
     rnd.shuffle(match); rnd.shuffle(rest)
+    # easy two-word segment names first, then other keyword matches, then the rest
+    match.sort(key=lambda x: x["fqdn"] not in SEGMENT_NAMES)
     pick = (match + rest)[:n]
     pick.sort(key=lambda x: (x["fqdn"].split(".")[1] != "com", len(x["fqdn"])))
     return pick

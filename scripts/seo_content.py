@@ -115,6 +115,18 @@ IDEAS = [
  ("gaming", "Gaming studio", "gaming studio", ["Gaming"], ["pixel", "quest", "arena", "loot", "guild", "realm", "level", "arcade"],
   "Gaming studio names should feel fun and fit a logo on a splash screen.",
   ["Game words (quest, realm, loot) make the genre clear.", "Check the name on Steam and app stores.", "Secure the Discord and X handles too."]),
+ ("ai-agent", "AI agent", "AI agent or automation tool", ["AI", "SaaS"], ["agent", "mind", "prompt", "bot", "logic", "brain", "task", "relay", "sync", "ops"],
+  "AI agents are the fastest-growing software category of 2026, and most obvious names are gone. A calm, human-sounding name stands out from a sea of \"-AI\" brands.",
+  ["Name the helper, not the technology: words like mate, crew or pilot feel friendly.", "Skip \"AI\" in the name; every competitor already has it.", "Two short real words (like PromptCalm or BoldTask) are easy to say in a demo call."]),
+ ("dental-clinic", "Dental clinic", "dental clinic", ["Health"], ["dental", "smile", "care", "clinic", "calm", "vital", "heal"],
+  "Patients pick a dentist they trust, often from a map search, so the name should feel calm, clean and professional.",
+  ["Calm words reduce anxiety before the first visit.", "Keep it short enough for a sign, an appointment SMS and a Google Maps listing.", "Check your health authority's rules on clinic names before licensing."]),
+ ("solar-company", "Solar and clean energy", "solar or clean energy company", ["Green"], ["solar", "volt", "watt", "carbon", "grid", "leaf", "terra", "eco", "sun"],
+  "Solar and clean-energy companies sell a 20-year promise, so the name has to sound bright, solid and trustworthy.",
+  ["Mix an energy word (solar, volt) with a solid one (anchor, crest, dune).", "Avoid names tied to one product; you may add batteries or EV chargers later.", "A .com or .co reads well on a van and on a quote."]),
+ ("content-creator", "Content creator", "channel, podcast or creator brand", ["Creator"], ["studio", "reel", "lens", "frame", "clip", "cast", "ink", "stream"],
+  "A creator brand lives on YouTube, TikTok and Instagram, so the name must be short, easy to spell and free as a handle everywhere.",
+  ["Keep it under 12 letters so it fits in a handle and a thumbnail.", "Check YouTube, TikTok and Instagram handles together before you pick.", "A .studio or .co domain makes a neat link in bio."]),
 ]
 
 GUIDES = [
