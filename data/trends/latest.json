@@ -1,5 +1,5 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "geos": [
   "US",
   "GB",
@@ -19,226 +19,268 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "spanish train",
-   "geo": "GB",
+   "q": "flood watch",
+   "geo": "US",
+   "traffic": 60000
+  },
+  {
+   "q": "england vs sri lanka",
+   "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "jim boyd boston news",
-   "geo": "US",
-   "traffic": 5000
-  },
-  {
-   "q": "vaishnavi sharma",
-   "geo": "AE",
-   "traffic": 5000
-  },
-  {
-   "q": "دفاع مدني",
+   "q": "england vs sri lanka",
    "geo": "SA",
-   "traffic": 5000
+   "traffic": 20000
   },
   {
-   "q": "simon harmer",
-   "geo": "SA",
-   "traffic": 5000
-  },
-  {
-   "q": "guayaquil",
-   "geo": "BR",
-   "traffic": 5000
-  },
-  {
-   "q": "arby's deep fried turkey gobbler",
-   "geo": "US",
-   "traffic": 2000
-  },
-  {
-   "q": "liverpool vs chelsea",
+   "q": "england vs sri lanka",
    "geo": "GB",
-   "traffic": 2000
+   "traffic": 15000
+  },
+  {
+   "q": "bet 365",
+   "geo": "CA",
+   "traffic": 15000
+  },
+  {
+   "q": "israeli elections netanyahu",
+   "geo": "AU",
+   "traffic": 15000
+  },
+  {
+   "q": "fabian güstrow",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "stock market today",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "sl vs eng",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "chamari athapaththu",
+   "geo": "IN",
+   "traffic": 5000
   },
   {
    "q": "game",
-   "geo": "GB",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "ballon d’or",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "alles was zählt-vorschau",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "inter miami vs fc cincinnati standings",
+   "geo": "NG",
+   "traffic": 5000
+  },
+  {
+   "q": "us",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "tagenarine chanderpaul",
+   "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "october 30 2026 ott releases",
-   "geo": "IN",
+   "q": "oman vs uae",
+   "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "israeli elections exit polls",
+   "q": "نادي أربيل",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "alexandra eala",
-   "geo": "AU",
-   "traffic": 2000
-  },
-  {
-   "q": "gericht",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "byd",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "employeur",
+   "q": "course marseille-cassis",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "budget 2027",
-   "geo": "FR",
+   "q": "nigeria",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "grand theft auto vi",
-   "geo": "FR",
+   "q": "carabao cup quarter-final draw",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "crise financière",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "tax",
+   "q": "england vs sri lanka",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "cameron green",
+   "q": "carling knockout quarter final teams confirmed",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "mbekezeli mbokazi",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "rose elias a fazenda",
+   "q": "artilheiro",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "weather tomorrow",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "पंजाब नैशनल बैंक",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "महागाई भत्ता",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "ಬೆಳ್ಳಿ",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "simon harmer",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "alexandra eala",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "7 يناير",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "jio platforms",
+   "q": "sl vs eng",
    "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "weil law firm",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "when is black friday 2026",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "perth airport",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "കൊച്ചി അന്താരാഷ്ട്ര വിമാനത്താവളം",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "بين",
+   "geo": "SA",
    "traffic": 1000
   }
  ],
  "categories": [
   {
    "category": "Finance",
-   "score": 4000
-  },
-  {
-   "category": "Green",
-   "score": 2500
+   "score": 12600
   },
   {
    "category": "Gaming",
-   "score": 2100
+   "score": 7100
   },
   {
-   "category": "Local",
-   "score": 2100
+   "category": "SaaS",
+   "score": 3000
+  },
+  {
+   "category": "Education",
+   "score": 2000
+  },
+  {
+   "category": "Legal",
+   "score": 1500
+  },
+  {
+   "category": "Creator",
+   "score": 750
+  },
+  {
+   "category": "E-commerce",
+   "score": 650
   },
   {
    "category": "Travel",
-   "score": 1000
+   "score": 300
   },
   {
-   "category": "Real estate",
-   "score": 500
+   "category": "Local",
+   "score": 200
   }
  ],
  "words": [
   {
+   "word": "market",
+   "category": "Finance",
+   "score": 6150
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 6000
+  },
+  {
    "word": "game",
    "category": "Gaming",
+   "score": 5100
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 3000
+  },
+  {
+   "word": "course",
+   "category": "Education",
    "score": 2000
-  },
-  {
-   "word": "budget",
-   "category": "Finance",
-   "score": 2000
-  },
-  {
-   "word": "tax",
-   "category": "Finance",
-   "score": 2000
-  },
-  {
-   "word": "green",
-   "category": "Green",
-   "score": 2000
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 2000
-  },
-  {
-   "word": "flight",
-   "category": "Travel",
-   "score": 1000
-  },
-  {
-   "word": "house",
-   "category": "Real estate",
-   "score": 500
   },
   {
    "word": "cup",
    "category": "Gaming",
-   "score": 100
+   "score": 2000
   },
   {
-   "word": "town",
+   "word": "law",
+   "category": "Legal",
+   "score": 1500
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 650
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 500
+  },
+  {
+   "word": "beach",
+   "category": "Travel",
+   "score": 300
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "haze",
    "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "wage",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "show",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "art",
+   "category": "Creator",
    "score": 100
   }
  ]

@@ -1,0 +1,287 @@
+{
+ "date": "2026-10-29",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "flood watch",
+   "geo": "US",
+   "traffic": 60000
+  },
+  {
+   "q": "england vs sri lanka",
+   "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "england vs sri lanka",
+   "geo": "SA",
+   "traffic": 20000
+  },
+  {
+   "q": "england vs sri lanka",
+   "geo": "GB",
+   "traffic": 15000
+  },
+  {
+   "q": "bet 365",
+   "geo": "CA",
+   "traffic": 15000
+  },
+  {
+   "q": "israeli elections netanyahu",
+   "geo": "AU",
+   "traffic": 15000
+  },
+  {
+   "q": "fabian güstrow",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "stock market today",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "sl vs eng",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "chamari athapaththu",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "game",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "ballon d’or",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "alles was zählt-vorschau",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "inter miami vs fc cincinnati standings",
+   "geo": "NG",
+   "traffic": 5000
+  },
+  {
+   "q": "us",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "tagenarine chanderpaul",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "oman vs uae",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "نادي أربيل",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "course marseille-cassis",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "nigeria",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "carabao cup quarter-final draw",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "england vs sri lanka",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "carling knockout quarter final teams confirmed",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "artilheiro",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "sl vs eng",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "weil law firm",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "when is black friday 2026",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "perth airport",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "കൊച്ചി അന്താരാഷ്ട്ര വിമാനത്താവളം",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "بين",
+   "geo": "SA",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Finance",
+   "score": 12600
+  },
+  {
+   "category": "Gaming",
+   "score": 7100
+  },
+  {
+   "category": "SaaS",
+   "score": 3000
+  },
+  {
+   "category": "Education",
+   "score": 2000
+  },
+  {
+   "category": "Legal",
+   "score": 1500
+  },
+  {
+   "category": "Creator",
+   "score": 750
+  },
+  {
+   "category": "E-commerce",
+   "score": 650
+  },
+  {
+   "category": "Travel",
+   "score": 300
+  },
+  {
+   "category": "Local",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 6150
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 6000
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 5100
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 3000
+  },
+  {
+   "word": "course",
+   "category": "Education",
+   "score": 2000
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 2000
+  },
+  {
+   "word": "law",
+   "category": "Legal",
+   "score": 1500
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 650
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 500
+  },
+  {
+   "word": "beach",
+   "category": "Travel",
+   "score": 300
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "haze",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "wage",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "show",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "art",
+   "category": "Creator",
+   "score": 100
+  }
+ ]
+}
