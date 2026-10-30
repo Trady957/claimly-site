@@ -1,0 +1,255 @@
+{
+ "date": "2026-10-30",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "大阪 天気",
+   "geo": "JP",
+   "traffic": 200000
+  },
+  {
+   "q": "stock market today",
+   "geo": "US",
+   "traffic": 30000
+  },
+  {
+   "q": "ticketmaster uk",
+   "geo": "GB",
+   "traffic": 30000
+  },
+  {
+   "q": "nitish kumar reddy",
+   "geo": "IN",
+   "traffic": 20000
+  },
+  {
+   "q": "flysafair sale approval r7 billion",
+   "geo": "ZA",
+   "traffic": 20000
+  },
+  {
+   "q": "tabela do campeonato brasileiro",
+   "geo": "BR",
+   "traffic": 20000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "nz vs ind",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "అన్నదాత",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "new zealand vs india",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "cricbuzz live",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "الدكتور زهير فايز",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "stade toulousain",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "dawson hdb record price singapore",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "apple macbook pro proled xdr",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "matthew breetzke",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "influenciadora valéria diniz",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "大阪市天気",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "bangladesh vs west indies",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "mahomes",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "nintendo switch zelda edition",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "ebola virus",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "england vs papua new guinea",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "brisbane roar vs auckland fc",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "jackjumpers vs kings",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "ఢిల్లీ",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "al-khaleej vs al-hazem",
+   "geo": "SA",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Finance",
+   "score": 60500
+  },
+  {
+   "category": "E-commerce",
+   "score": 22300
+  },
+  {
+   "category": "Gaming",
+   "score": 2200
+  },
+  {
+   "category": "Local",
+   "score": 800
+  },
+  {
+   "category": "SaaS",
+   "score": 500
+  },
+  {
+   "category": "Legal",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 30000
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 30000
+  },
+  {
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 20000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 2300
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 600
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "pay",
+   "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "launch",
+   "category": "SaaS",
+   "score": 500
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 200
+  }
+ ]
+}

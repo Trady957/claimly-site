@@ -1,5 +1,5 @@
 {
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "geos": [
   "US",
   "GB",
@@ -19,152 +19,152 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "flood watch",
-   "geo": "US",
-   "traffic": 60000
-  },
-  {
-   "q": "england vs sri lanka",
-   "geo": "AE",
-   "traffic": 20000
-  },
-  {
-   "q": "england vs sri lanka",
-   "geo": "SA",
-   "traffic": 20000
-  },
-  {
-   "q": "england vs sri lanka",
-   "geo": "GB",
-   "traffic": 15000
-  },
-  {
-   "q": "bet 365",
-   "geo": "CA",
-   "traffic": 15000
-  },
-  {
-   "q": "israeli elections netanyahu",
-   "geo": "AU",
-   "traffic": 15000
-  },
-  {
-   "q": "fabian güstrow",
-   "geo": "DE",
-   "traffic": 10000
+   "q": "大阪 天気",
+   "geo": "JP",
+   "traffic": 200000
   },
   {
    "q": "stock market today",
    "geo": "US",
-   "traffic": 6000
+   "traffic": 30000
   },
   {
-   "q": "sl vs eng",
-   "geo": "US",
-   "traffic": 6000
+   "q": "ticketmaster uk",
+   "geo": "GB",
+   "traffic": 30000
   },
   {
-   "q": "chamari athapaththu",
+   "q": "nitish kumar reddy",
+   "geo": "IN",
+   "traffic": 20000
+  },
+  {
+   "q": "flysafair sale approval r7 billion",
+   "geo": "ZA",
+   "traffic": 20000
+  },
+  {
+   "q": "tabela do campeonato brasileiro",
+   "geo": "BR",
+   "traffic": 20000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "nz vs ind",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "అన్నదాత",
    "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "game",
-   "geo": "DE",
+   "q": "new zealand vs india",
+   "geo": "SG",
    "traffic": 5000
   },
   {
-   "q": "ballon d’or",
-   "geo": "DE",
+   "q": "new zealand vs india",
+   "geo": "ZA",
    "traffic": 5000
   },
   {
-   "q": "alles was zählt-vorschau",
-   "geo": "DE",
-   "traffic": 5000
-  },
-  {
-   "q": "inter miami vs fc cincinnati standings",
-   "geo": "NG",
-   "traffic": 5000
-  },
-  {
-   "q": "us",
+   "q": "alexandra eala",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "tagenarine chanderpaul",
-   "geo": "AE",
+   "q": "cricbuzz live",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "oman vs uae",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "نادي أربيل",
+   "q": "الدكتور زهير فايز",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "course marseille-cassis",
+   "q": "stade toulousain",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "nigeria",
+   "q": "dawson hdb record price singapore",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "apple macbook pro proled xdr",
    "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "carabao cup quarter-final draw",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "england vs sri lanka",
+   "q": "matthew breetzke",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "carling knockout quarter final teams confirmed",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "artilheiro",
+   "q": "influenciadora valéria diniz",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "sl vs eng",
+   "q": "大阪市天気",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "bangladesh vs west indies",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "mahomes",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "nintendo switch zelda edition",
    "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "weil law firm",
+   "q": "ebola virus",
    "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "when is black friday 2026",
+   "q": "alexandra eala",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "perth airport",
+   "q": "england vs papua new guinea",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "കൊച്ചി അന്താരാഷ്ട്ര വിമാനത്താവളം",
-   "geo": "AE",
+   "q": "brisbane roar vs auckland fc",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "jackjumpers vs kings",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "ఢిల్లీ",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "بين",
+   "q": "al-khaleej vs al-hazem",
    "geo": "SA",
    "traffic": 1000
   }
@@ -172,116 +172,84 @@
  "categories": [
   {
    "category": "Finance",
-   "score": 12600
-  },
-  {
-   "category": "Gaming",
-   "score": 7100
-  },
-  {
-   "category": "SaaS",
-   "score": 3000
-  },
-  {
-   "category": "Education",
-   "score": 2000
-  },
-  {
-   "category": "Legal",
-   "score": 1500
-  },
-  {
-   "category": "Creator",
-   "score": 750
+   "score": 60500
   },
   {
    "category": "E-commerce",
-   "score": 650
+   "score": 22300
   },
   {
-   "category": "Travel",
-   "score": 300
+   "category": "Gaming",
+   "score": 2200
   },
   {
    "category": "Local",
+   "score": 800
+  },
+  {
+   "category": "SaaS",
+   "score": 500
+  },
+  {
+   "category": "Legal",
    "score": 200
   }
  ],
  "words": [
   {
-   "word": "market",
-   "category": "Finance",
-   "score": 6150
-  },
-  {
    "word": "stock",
    "category": "Finance",
-   "score": 6000
+   "score": 30000
   },
   {
-   "word": "game",
-   "category": "Gaming",
-   "score": 5100
+   "word": "market",
+   "category": "Finance",
+   "score": 30000
   },
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 3000
-  },
-  {
-   "word": "course",
-   "category": "Education",
-   "score": 2000
-  },
-  {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 2000
-  },
-  {
-   "word": "law",
-   "category": "Legal",
-   "score": 1500
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 20000
   },
   {
    "word": "price",
    "category": "E-commerce",
-   "score": 650
+   "score": 2300
   },
   {
-   "word": "film",
-   "category": "Creator",
+   "word": "king",
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 600
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
    "score": 500
   },
   {
-   "word": "beach",
-   "category": "Travel",
-   "score": 300
-  },
-  {
-   "word": "bank",
+   "word": "pay",
    "category": "Finance",
-   "score": 300
+   "score": 500
   },
   {
-   "word": "haze",
-   "category": "Local",
+   "word": "launch",
+   "category": "SaaS",
+   "score": 500
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
    "score": 200
   },
   {
-   "word": "wage",
-   "category": "Finance",
-   "score": 150
-  },
-  {
-   "word": "show",
-   "category": "Creator",
-   "score": 150
-  },
-  {
-   "word": "art",
-   "category": "Creator",
-   "score": 100
+   "word": "city",
+   "category": "Local",
+   "score": 200
   }
  ]
 }
