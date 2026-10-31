@@ -1,5 +1,5 @@
 {
- "date": "2026-10-30",
+ "date": "2026-10-31",
  "geos": [
   "US",
   "GB",
@@ -19,237 +19,292 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "大阪 天気",
-   "geo": "JP",
-   "traffic": 200000
+   "q": "esportes",
+   "geo": "BR",
+   "traffic": 50000
   },
   {
-   "q": "stock market today",
+   "q": "pizza near me",
    "geo": "US",
    "traffic": 30000
   },
   {
-   "q": "ticketmaster uk",
-   "geo": "GB",
-   "traffic": 30000
-  },
-  {
-   "q": "nitish kumar reddy",
-   "geo": "IN",
+   "q": "sri lanka vs pakistan",
+   "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "flysafair sale approval r7 billion",
-   "geo": "ZA",
-   "traffic": 20000
+   "q": "sri lanka national cricket team vs pakistan national cricket team match scorecard",
+   "geo": "SA",
+   "traffic": 10000
   },
   {
-   "q": "tabela do campeonato brasileiro",
-   "geo": "BR",
-   "traffic": 20000
+   "q": "sri lanka vs pakistan",
+   "geo": "SA",
+   "traffic": 10000
   },
   {
-   "q": "ticketmaster",
-   "geo": "GB",
-   "traffic": 7500
+   "q": "hong kong vs pakistan",
+   "geo": "SA",
+   "traffic": 10000
   },
   {
-   "q": "nz vs ind",
+   "q": "mars meteorite",
    "geo": "CA",
    "traffic": 7500
   },
   {
-   "q": "అన్నదాత",
-   "geo": "IN",
-   "traffic": 5000
-  },
-  {
-   "q": "new zealand vs india",
-   "geo": "SG",
-   "traffic": 5000
-  },
-  {
-   "q": "new zealand vs india",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "alexandra eala",
+   "q": "ohio high school football scores",
    "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "pak vs sl",
+   "geo": "AE",
+   "traffic": 5000
+  },
+  {
+   "q": "pizza near me",
+   "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "cricbuzz live",
+   "q": "சைக்ளோன்",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "الدكتور زهير فايز",
-   "geo": "SA",
+   "q": "today bank is open or not",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "stade toulousain",
+   "q": "united arab emirates",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "generation z",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "voice of germany",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "vignette automobile",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "dawson hdb record price singapore",
-   "geo": "SG",
+   "q": "expulsion",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "apple macbook pro proled xdr",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "matthew breetzke",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "influenciadora valéria diniz",
+   "q": "aposentadoria",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "大阪市天気",
+   "q": "佐藤 航 太",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "bangladesh vs west indies",
+   "q": "sri lanka vs pakistan",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "mahomes",
+   "q": "housing development",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "nintendo switch zelda edition",
+   "q": "pak vs sl",
    "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "ebola virus",
+   "q": "mortgage",
    "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "alexandra eala",
+   "q": "hong kong vs pakistan",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "bank",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "macarthur vs western sydney wanderers fc",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "england vs papua new guinea",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "brisbane roar vs auckland fc",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "jackjumpers vs kings",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "ఢిల్లీ",
+   "q": "ఆంధ్ర ప్రదేశ్",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "al-khaleej vs al-hazem",
-   "geo": "SA",
+   "q": "bank of baroda",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "ವಿಜಯಲಕ್ಷ್ಮಿ ದರ್ಶನ್",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "qatar",
+   "geo": "AE",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Finance",
-   "score": 60500
-  },
-  {
-   "category": "E-commerce",
-   "score": 22300
-  },
-  {
-   "category": "Gaming",
-   "score": 2200
+   "category": "Food",
+   "score": 33700
   },
   {
    "category": "Local",
-   "score": 800
+   "score": 33500
   },
   {
    "category": "SaaS",
-   "score": 500
+   "score": 20000
   },
   {
-   "category": "Legal",
+   "category": "Education",
+   "score": 6600
+  },
+  {
+   "category": "Finance",
+   "score": 5100
+  },
+  {
+   "category": "Real estate",
+   "score": 1500
+  },
+  {
+   "category": "Fashion",
+   "score": 1000
+  },
+  {
+   "category": "Green",
+   "score": 800
+  },
+  {
+   "category": "E-commerce",
+   "score": 600
+  },
+  {
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "category": "AI",
    "score": 200
   }
  ],
  "words": [
   {
-   "word": "stock",
-   "category": "Finance",
-   "score": 30000
+   "word": "pizza",
+   "category": "Food",
+   "score": 33000
   },
   {
-   "word": "market",
-   "category": "Finance",
-   "score": 30000
+   "word": "near",
+   "category": "Local",
+   "score": 33000
   },
   {
-   "word": "sale",
-   "category": "E-commerce",
+   "word": "team",
+   "category": "SaaS",
    "score": 20000
   },
   {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 2300
+   "word": "school",
+   "category": "Education",
+   "score": 6000
   },
   {
-   "word": "king",
-   "category": "Gaming",
+   "word": "bank",
+   "category": "Finance",
+   "score": 4500
+  },
+  {
+   "word": "mortgage",
+   "category": "Real estate",
    "score": 1500
+  },
+  {
+   "word": "beauty",
+   "category": "Fashion",
+   "score": 1000
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 700
+  },
+  {
+   "word": "coffee",
+   "category": "Food",
+   "score": 600
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 600
   },
   {
    "word": "weather",
    "category": "Local",
-   "score": 600
-  },
-  {
-   "word": "game",
-   "category": "Gaming",
    "score": 500
   },
   {
-   "word": "pay",
+   "word": "league",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "salary",
    "category": "Finance",
-   "score": 500
+   "score": 300
   },
   {
-   "word": "launch",
-   "category": "SaaS",
-   "score": 500
-  },
-  {
-   "word": "cup",
-   "category": "Gaming",
+   "word": "trade",
+   "category": "Finance",
    "score": 200
   },
   {
-   "word": "city",
-   "category": "Local",
+   "word": "rocket",
+   "category": "AI",
    "score": 200
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "fern",
+   "category": "Green",
+   "score": 100
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 100
   }
  ]
 }

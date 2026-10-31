@@ -1,28 +1,28 @@
 {
- "date": "2026-10-30",
- "category": "Fashion",
- "title": "Names for your fashion label",
- "image_url": "https://claimly.ae/social/daily/2026-10-30.jpg",
+ "date": "2026-10-31",
+ "category": "Health",
+ "title": "Names for your health or wellness brand",
+ "image_url": "https://claimly.ae/social/daily/2026-10-31.jpg",
  "names": [
   {
-   "domain": "aurawise.co",
+   "domain": "lifely.co",
+   "price": 55
+  },
+  {
+   "domain": "goodlife.co",
+   "price": 40
+  },
+  {
+   "domain": "rehabkit.co",
+   "price": 45
+  },
+  {
+   "domain": "forgeheal.co",
    "price": 39
   },
   {
-   "domain": "luxesmart.co",
-   "price": 39
-  },
-  {
-   "domain": "swiftglow.co",
-   "price": 39
-  },
-  {
-   "domain": "forgestyle.co",
-   "price": 39
-  },
-  {
-   "domain": "weaveworks.co",
-   "price": 39
+   "domain": "lanecalm.com",
+   "price": 45
   }
  ]
 }
