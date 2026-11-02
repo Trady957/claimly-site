@@ -841,10 +841,12 @@ def _ideas_names(t, n=24):
 def idea_page(t):
     slug_, label, phrase, cats, kws, intro, tips = t
     canon = f"{SITE}/business-name-ideas/{slug_}/"
-    names = _ideas_names(t)
+    names = _ideas_names(t, n=60)
+    nn = len(names)
     lo = min(x["price"] for x in names) if names else 15
-    title = f"{label} Name Ideas with Available Domains | Claimly"
-    desc = f"Name ideas for your {phrase}, each with an available domain from ${lo}. Plus practical tips for choosing a {phrase} name that customers remember."
+    tl = " ".join(w if w.isupper() else w[:1].upper() + w[1:] for w in label.split())
+    title = (f"{nn} {tl} Names & Ideas (Domains Available) | Claimly" if nn >= 20 else f"{label} Name Ideas with Available Domains | Claimly")
+    desc = f"{nn} {phrase} name ideas, each with an available .com or similar domain from ${lo}. Plus words to use and tips for picking a {phrase} name customers remember."
     faqs = [(f"How do I choose a name for my {phrase}?", f"Write down what makes your {phrase} different and how you want customers to feel, list 30+ ideas, cut anything hard to say or spell, then check the domain and social handles before you decide."),
             (f"Are these {phrase} names really available?", "Yes. Every name on this page is checked as unregistered before it is listed, and the list refreshes daily. Prices include the first year of registration, and you get a full refund if a name can't be delivered."),
             (f"Can someone name my {phrase} for me?", f"Yes. With the Claimly naming package you describe your {phrase} and get 10 checked names with available domains within 48 hours, from ${PKG_FROM}. We register the one you pick.")]
@@ -856,7 +858,16 @@ def idea_page(t):
           {"@context": "https://schema.org", "@type": "ItemList", "name": f"{label} name ideas", "itemListElement": [
               {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/d/{x['fqdn']}/", "name": x["fqdn"]} for i, x in enumerate(names)]}]
     ldh = "".join('<script type="application/ld+json">' + json.dumps(o) + '</script>' for o in ld)
-    grid = "".join(f'<a href="/d/{x["fqdn"]}/">{x["fqdn"]}<span>${x["price"]}</span></a>' for x in names)
+    cell = lambda x: f'<a href="/d/{x["fqdn"]}/">{x["fqdn"]}<span>${x["price"]}</span></a>'
+    grid = "".join(cell(x) for x in names[:24])
+    short = [x for x in names[24:] if len(x["fqdn"].split(".")[0]) <= 8]
+    longer = [x for x in names[24:] if x not in short]
+    more_h = ""
+    if short:
+        more_h += f'<h2 style="font-family:\'Schibsted Grotesk\';font-size:22px;margin:34px 0 4px">Short {esc(phrase)} names</h2><p style="color:var(--muted);margin:0">Eight letters or fewer: easy to fit on a sign, a cup or an app icon.</p><div class="namegrid">' + "".join(cell(x) for x in short) + '</div>'
+    if longer:
+        more_h += f'<h2 style="font-family:\'Schibsted Grotesk\';font-size:22px;margin:34px 0 4px">More {esc(phrase)} name ideas</h2><p style="color:var(--muted);margin:0">Two-word and descriptive names that say what you do.</p><div class="namegrid">' + "".join(cell(x) for x in longer) + '</div>'
+    words_h = " ".join(f'<span style="display:inline-block;border:1px solid var(--line);border-radius:99px;padding:5px 12px;margin:0 6px 8px 0;background:var(--bone2);font-weight:600">{esc(k)}</span>' for k in kws)
     tips_h = "".join(f"<div><b>Tip {i}</b>{esc(tip)}</div>" for i, tip in enumerate(tips, 1))
     faq_h = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faqs)
     others = [o for o in SC.IDEAS if o[0] != slug_ and set(o[3]) & set(cats)][:6] or SC.IDEAS[:6]
@@ -865,10 +876,15 @@ def idea_page(t):
     return head(title, desc, canon, ldh) + SEO_CSS + f"""
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; <a href="/business-name-ideas/">Business name ideas</a> &rsaquo; {esc(label)}</div>
-<h1>{esc(label)} name ideas</h1>
-<p class="idea-intro">{esc(intro)} Here are names that fit, each with the domain still available to register today.</p>
+<h1>{esc(label)} names: {nn} ideas with available domains</h1>
+<p class="idea-intro">{esc(intro)} Here are {nn} names that fit, each with the domain still available to register today.</p>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:26px 0 0">Top picks</h2>
 <div class="namegrid">{grid}</div>
+{more_h}
 <p style="color:var(--muted);font-size:14px">Prices include the first year of registration. Updated {datetime.date.today().strftime('%-d %B %Y')}. See {cat_links}.</p>
+<h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:38px 0 6px">Words to use in a {esc(phrase)} name</h2>
+<p style="max-width:68ch;margin:0 0 12px">Mix one of these with a short, friendly word, a place name or your own name. Try each one out loud and in a sentence like &ldquo;I ordered from ___ today&rdquo;.</p>
+<div>{words_h}</div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:38px 0 6px">How to name your {esc(phrase)}</h2>
 <div class="tips">{tips_h}</div>
 <div class="cta-band"><div><h2>Want names made for your {esc(phrase)}?</h2><p>Describe your business and get 10 checked names with available domains in 48 hours. We register the one you pick.</p></div>

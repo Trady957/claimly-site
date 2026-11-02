@@ -207,6 +207,13 @@ def main():
     json.dump(inv, open(os.path.join(DATA, "inventory.json"), "w"), indent=0, separators=(",", ":"))
     urls = [f"{SITE}/", f"{SITE}/new/", f"{SITE}/sitemap.xml"] + [f"{SITE}/d/{a['d']}/" for a in inv if a.get("a") == TODAY] + \
            sorted({f"{SITE}/domains/{a['c'].lower().replace(' ', '-')}/" for a in inv if a.get("a") == TODAY})
+    try:                                            # idea pages refresh daily: ping them too
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import seo_content as _SC
+        urls += [f"{SITE}/business-name-ideas/"] + [f"{SITE}/business-name-ideas/{t[0]}/" for t in _SC.IDEAS] + \
+                [f"{SITE}/guides/"] + [f"{SITE}/guides/{g[0]}/" for g in _SC.GUIDES]
+    except Exception as e:
+        log.append(f"Idea pages not added to ping list: {e}")
     open(os.path.join(DATA, "new_urls.txt"), "w").write("\n".join(urls) + "\n")
     report_stats({"run_date": TODAY, "shop_size": len(inv), "added": len(added), "removed_taken": len(gone),
                   "removed_sold": removed_sold, "trending_categories": ", ".join(hot)[:500],
