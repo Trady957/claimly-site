@@ -1,5 +1,5 @@
 {
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "geos": [
   "US",
   "GB",
@@ -19,279 +19,212 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "jackpot result",
-   "geo": "IN",
+   "q": "susan st james",
+   "geo": "US",
+   "traffic": 150000
+  },
+  {
+   "q": "rennen",
+   "geo": "DE",
    "traffic": 20000
   },
   {
-   "q": "décimo terceiro salário",
-   "geo": "BR",
-   "traffic": 20000
-  },
-  {
-   "q": "nyc marathon start time",
+   "q": "lionel messi",
    "geo": "US",
    "traffic": 15000
   },
   {
-   "q": "photos",
-   "geo": "US",
-   "traffic": 15000
-  },
-  {
-   "q": "nrl",
-   "geo": "AU",
-   "traffic": 15000
-  },
-  {
-   "q": "7+",
-   "geo": "AU",
-   "traffic": 15000
-  },
-  {
-   "q": "australia vs afghanistan",
-   "geo": "ZA",
+   "q": "new england vs inter miami",
+   "geo": "NG",
    "traffic": 10000
   },
   {
-   "q": "fazenda",
-   "geo": "BR",
-   "traffic": 10000
-  },
-  {
-   "q": "ind vs nz",
-   "geo": "CA",
-   "traffic": 7500
-  },
-  {
-   "q": "when is black friday 2026",
+   "q": "susan saint james cause of death",
    "geo": "US",
    "traffic": 6000
   },
   {
-   "q": "arshdeep singh",
-   "geo": "IN",
+   "q": "new england vs inter miami",
+   "geo": "AE",
    "traffic": 5000
   },
   {
-   "q": "multichoice",
-   "geo": "ZA",
+   "q": "donald trump mi mandat",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "novembro",
+   "q": "pitty",
    "geo": "BR",
    "traffic": 5000
   },
   {
-   "q": "feeding our future",
+   "q": "桂川 有人 小 祝 さくら",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "dave bautista kratos casting update",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "latest news",
+   "q": "makai lemon",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "india vs new zealand",
+   "q": "houston dynamo vs portland",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "warriors vs clippers",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "young musicians",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "mls",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "pakistan vs oman",
+   "q": "eagles",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "david jones",
+   "q": "airlines affected by amadeus breach",
    "geo": "AU",
    "traffic": 3000
   },
   {
-   "q": "sport1",
-   "geo": "DE",
+   "q": "lakers vs raptors",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "محمد صلاح",
+   "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "felix neureuther",
-   "geo": "DE",
+   "q": "new england vs inter miami",
+   "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "nantes",
+   "q": "new england – inter miami",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "traffic",
+   "q": "new england vs inter miami",
    "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "india vs new zealand",
-   "geo": "SG",
+   "q": "athletic bilbao vs real sociedad standings",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "india national cricket team vs new zealand national cricket team match scorecard",
-   "geo": "SG",
+   "q": "new england vs inter miami",
+   "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "アメリカ 中間選挙",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "technology news",
+   "q": "adam hamilton",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "car accident attorney",
+   "q": "diggs",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "lilli tagger",
+   "q": "odell beckham jr",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "la voix",
-   "geo": "GB",
+   "q": "lionel messi",
+   "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "australia vs afghanistan",
-   "geo": "CA",
+   "q": "commanders vs eagles",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "juan atkins death",
+   "geo": "AU",
    "traffic": 1500
   }
  ],
  "categories": [
   {
-   "category": "Creator",
-   "score": 15000
+   "category": "Real estate",
+   "score": 4000
   },
   {
    "category": "SaaS",
-   "score": 4800
-  },
-  {
-   "category": "Gaming",
-   "score": 4500
-  },
-  {
-   "category": "Legal",
-   "score": 1500
-  },
-  {
-   "category": "Education",
    "score": 1000
   },
   {
-   "category": "Green",
-   "score": 600
+   "category": "E-commerce",
+   "score": 500
   },
   {
-   "category": "Food",
-   "score": 300
+   "category": "Finance",
+   "score": 400
   },
   {
    "category": "Local",
    "score": 300
   },
   {
-   "category": "Travel",
+   "category": "Gaming",
    "score": 200
-  },
-  {
-   "category": "E-commerce",
-   "score": 150
-  },
-  {
-   "category": "Finance",
-   "score": 150
-  },
-  {
-   "category": "Crypto",
-   "score": 100
-  },
-  {
-   "category": "Fashion",
-   "score": 100
-  },
-  {
-   "category": "Real estate",
-   "score": 100
   }
  ],
  "words": [
   {
-   "word": "photo",
-   "category": "Creator",
-   "score": 15000
-  },
-  {
-   "word": "team",
+   "word": "build",
    "category": "SaaS",
-   "score": 4800
-  },
-  {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 3750
-  },
-  {
-   "word": "exam",
-   "category": "Education",
    "score": 1000
   },
   {
-   "word": "league",
-   "category": "Gaming",
-   "score": 750
-  },
-  {
-   "word": "sun",
-   "category": "Green",
-   "score": 600
-  },
-  {
-   "word": "pizza",
-   "category": "Food",
-   "score": 300
-  },
-  {
-   "word": "near",
-   "category": "Local",
-   "score": 300
-  },
-  {
-   "word": "flight",
-   "category": "Travel",
-   "score": 200
+   "word": "rent",
+   "category": "Real estate",
+   "score": 1000
   },
   {
    "word": "price",
    "category": "E-commerce",
-   "score": 150
+   "score": 500
   },
   {
-   "word": "bank",
+   "word": "gold",
    "category": "Finance",
-   "score": 150
+   "score": 400
   },
   {
-   "word": "crypto",
-   "category": "Crypto",
-   "score": 100
+   "word": "city",
+   "category": "Local",
+   "score": 300
   },
   {
-   "word": "fashion",
-   "category": "Fashion",
-   "score": 100
+   "word": "cup",
+   "category": "Gaming",
+   "score": 200
   }
  ]
 }

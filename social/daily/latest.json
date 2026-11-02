@@ -1,27 +1,27 @@
 {
- "date": "2026-11-01",
- "category": "AI",
- "title": "Names for your AI or tech startup",
- "image_url": "https://claimly.ae/social/daily/2026-11-01.jpg",
+ "date": "2026-11-02",
+ "category": "Legal",
+ "title": "Names for your law or consulting firm",
+ "image_url": "https://claimly.ae/social/daily/2026-11-02.jpg",
  "names": [
   {
-   "domain": "byteery.co",
+   "domain": "briefio.co",
+   "price": 45
+  },
+  {
+   "domain": "caseery.co",
+   "price": 55
+  },
+  {
+   "domain": "caselaw.co",
    "price": 60
   },
   {
-   "domain": "datasync.co",
-   "price": 40
+   "domain": "legally.co",
+   "price": 55
   },
   {
-   "domain": "databrain.co",
-   "price": 50
-  },
-  {
-   "domain": "dataworks.co",
-   "price": 50
-  },
-  {
-   "domain": "havenmind.co",
+   "domain": "caseary.com",
    "price": 45
   }
  ]
