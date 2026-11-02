@@ -150,6 +150,9 @@ def footer():
 <a href="mailto:{EMAIL}">{EMAIL}</a>
 <a href="/#how">How it works</a>
 <a href="/#faq">FAQ</a>
+<h4 style="margin-top:18px">Our other shops</h4>
+<a href="https://planandbloom.netlify.app/" rel="noopener">Plan &amp; Bloom planners</a>
+<a href="https://sellforge-academy.netlify.app/" rel="noopener">SellForge Academy courses</a>
 </div>
 <div class="policy">
 <h4>Policies</h4>
