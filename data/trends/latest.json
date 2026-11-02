@@ -19,212 +19,252 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "susan st james",
-   "geo": "US",
-   "traffic": 150000
+   "q": "clima",
+   "geo": "BR",
+   "traffic": 200000
   },
   {
-   "q": "rennen",
+   "q": "martha stewart halloween costume",
    "geo": "DE",
    "traffic": 20000
   },
   {
-   "q": "lionel messi",
-   "geo": "US",
+   "q": "flo film florence arthaud",
+   "geo": "FR",
+   "traffic": 20000
+  },
+  {
+   "q": "aurora borealis",
+   "geo": "GB",
    "traffic": 15000
   },
   {
-   "q": "new england vs inter miami",
-   "geo": "NG",
+   "q": "tanker",
+   "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "susan saint james cause of death",
+   "q": "halloween süssigkeiten nadeln",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "fuvest vestibular 2027",
+   "geo": "BR",
+   "traffic": 10000
+  },
+  {
+   "q": "delaware",
    "geo": "US",
    "traffic": 6000
   },
   {
-   "q": "new england vs inter miami",
+   "q": "oman vs netherlands",
    "geo": "AE",
    "traffic": 5000
   },
   {
-   "q": "donald trump mi mandat",
+   "q": "fredi bobic",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "ashley hinson",
    "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "pitty",
-   "geo": "BR",
+   "q": "didier deschamps",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "桂川 有人 小 祝 さくら",
-   "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "dave bautista kratos casting update",
+   "q": "orlando weather",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "makai lemon",
+   "q": "grambling vs northern illinois",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "houston dynamo vs portland",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "warriors vs clippers",
+   "q": "nationwide",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "young musicians",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "mls",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "eagles",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "airlines affected by amadeus breach",
+   "q": "united vs breakers",
    "geo": "AU",
    "traffic": 3000
   },
   {
-   "q": "lakers vs raptors",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "محمد صلاح",
+   "q": "gold",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "new england vs inter miami",
-   "geo": "SA",
+   "q": "commerzbank unicredit",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "new england – inter miami",
+   "q": "black friday",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "new england vs inter miami",
+   "q": "les echos",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "changi airport self service issue",
    "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "athletic bilbao vs real sociedad standings",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "new england vs inter miami",
+   "q": "lewis hamilton charles leclerc mexico gp",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "adam hamilton",
+   "q": "nhlanhla mkhwanazi",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "町田商店 ラーメン",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "三の丸尚蔵館",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "nws winter storm warning snow winds",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "diggs",
-   "geo": "US",
+   "q": "la voix",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "odell beckham jr",
-   "geo": "US",
+   "q": "ftse 250",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "lionel messi",
+   "q": "nbl",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "commanders vs eagles",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "juan atkins death",
+   "q": "nbl scores",
    "geo": "AU",
    "traffic": 1500
   }
  ],
  "categories": [
   {
-   "category": "Real estate",
-   "score": 4000
-  },
-  {
-   "category": "SaaS",
-   "score": 1000
-  },
-  {
-   "category": "E-commerce",
-   "score": 500
-  },
-  {
-   "category": "Finance",
-   "score": 400
+   "category": "Creator",
+   "score": 20150
   },
   {
    "category": "Local",
-   "score": 300
+   "score": 4100
   },
   {
-   "category": "Gaming",
-   "score": 200
+   "category": "Finance",
+   "score": 3250
+  },
+  {
+   "category": "E-commerce",
+   "score": 1700
+  },
+  {
+   "category": "AI",
+   "score": 1150
+  },
+  {
+   "category": "Green",
+   "score": 750
   }
  ],
  "words": [
   {
-   "word": "build",
-   "category": "SaaS",
-   "score": 1000
+   "word": "film",
+   "category": "Creator",
+   "score": 20000
   },
   {
-   "word": "rent",
-   "category": "Real estate",
-   "score": 1000
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 500
+   "word": "weather",
+   "category": "Local",
+   "score": 4000
   },
   {
    "word": "gold",
    "category": "Finance",
-   "score": 400
+   "score": 2100
   },
   {
-   "word": "city",
-   "category": "Local",
+   "word": "price",
+   "category": "E-commerce",
+   "score": 1400
+  },
+  {
+   "word": "data",
+   "category": "AI",
+   "score": 1000
+  },
+  {
+   "word": "capital",
+   "category": "Finance",
+   "score": 750
+  },
+  {
+   "word": "earth",
+   "category": "Green",
+   "score": 750
+  },
+  {
+   "word": "order",
+   "category": "E-commerce",
    "score": 300
   },
   {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 200
+   "word": "stock",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "space",
+   "category": "AI",
+   "score": 150
+  },
+  {
+   "word": "rain",
+   "category": "Local",
+   "score": 100
+  },
+  {
+   "word": "loan",
+   "category": "Finance",
+   "score": 100
   }
  ]
 }
