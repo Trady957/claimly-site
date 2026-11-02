@@ -334,3 +334,120 @@ IDEAS += [
      "Honey buyers want purity and origin, so the name should feel natural, golden and trustworthy.",
      ["Hive and nectar words make the product obvious.", "Mention origin (Yemeni, Sidr, Manuka) on the label, not in the name.", "A short .com supports gift orders."]),
 ]
+
+# Extra words for pages that had few matching names (2 Nov 2026)
+EXTRA_KWS = {
+ "pizza-shop": [
+  "pizza",
+  "stone",
+  "ember",
+  "mozza"
+ ],
+ "event-planning": [
+  "gala",
+  "party",
+  "fiesta",
+  "venue"
+ ],
+ "chocolate-brand": [
+  "cacao",
+  "bonbon",
+  "ganache"
+ ],
+ "cybersecurity": [
+  "secure",
+  "firewall",
+  "trust",
+  "defend"
+ ],
+ "music-studio": [
+  "rhythm",
+  "tempo",
+  "melody",
+  "studio"
+ ],
+ "florist": [
+  "blossom",
+  "floral",
+  "posy",
+  "fleur"
+ ],
+ "security-company": [
+  "defend",
+  "patrol",
+  "armor",
+  "trust"
+ ],
+ "laundry": [
+  "wash",
+  "rinse",
+  "steam",
+  "fresh"
+ ],
+ "nonprofit": [
+  "give",
+  "hand",
+  "kindred",
+  "hope"
+ ],
+ "oud-brand": [
+  "attar",
+  "incense",
+  "resin"
+ ],
+ "physiotherapy": [
+  "rehab",
+  "heal",
+  "joint",
+  "posture"
+ ],
+ "barbershop": [
+  "clipper",
+  "trim",
+  "shave",
+  "mane"
+ ],
+ "car-wash": [
+  "foam",
+  "rinse",
+  "glow",
+  "detail"
+ ],
+ "phone-repair": [
+  "mend",
+  "device",
+  "gadget",
+  "pixel"
+ ],
+ "toy-store": [
+  "toybox",
+  "kite",
+  "marble",
+  "doll"
+ ],
+ "auto-repair": [
+  "wrench",
+  "brake",
+  "engine",
+  "tune"
+ ],
+ "podcast": [
+  "episode",
+  "listen",
+  "radio",
+  "audio"
+ ],
+ "wedding-planner": [
+  "wed",
+  "ring",
+  "bridal",
+  "vows"
+ ],
+ "printing-company": [
+  "printer",
+  "label",
+  "poster",
+  "sign"
+ ]
+}
+IDEAS = [t[:4] + (t[4] + [k for k in EXTRA_KWS.get(t[0], []) if k not in t[4]],) + t[5:] for t in IDEAS]
