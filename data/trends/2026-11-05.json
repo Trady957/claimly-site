@@ -1,0 +1,280 @@
+{
+ "date": "2026-11-05",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "cvs breakup",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "rheinmetall aktien",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "鳥羽 水族館 ラッコ 死亡",
+   "geo": "JP",
+   "traffic": 10000
+  },
+  {
+   "q": "prince george aston villa match",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "india result",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "brian bennett",
+   "geo": "AE",
+   "traffic": 5000
+  },
+  {
+   "q": "brian bennett",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "prosieben",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "paul gallen vs nelson",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "veto",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "pakistan vs india",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "the emirates group",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "pakistan vs india",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "the taste kandidaten",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "kätzchen",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "mère",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "congé",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "george yeo wilmar share purchase",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "榊英雄",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "余命一年男をかう",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "nxt results",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "garth brooks",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "tesla",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "cra",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "மூக்குத்தி அம்மன்",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "geran-5",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "grand frais",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "evreux",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "matthieu jalibert",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "anthony lim dbs chairman",
+   "geo": "SG",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Food",
+   "score": 2300
+  },
+  {
+   "category": "AI",
+   "score": 1200
+  },
+  {
+   "category": "Legal",
+   "score": 800
+  },
+  {
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "category": "Creator",
+   "score": 500
+  },
+  {
+   "category": "E-commerce",
+   "score": 450
+  },
+  {
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "category": "SaaS",
+   "score": 300
+  },
+  {
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "category": "Health",
+   "score": 150
+  },
+  {
+   "category": "Travel",
+   "score": 150
+  }
+ ],
+ "words": [
+  {
+   "word": "taste",
+   "category": "Food",
+   "score": 2000
+  },
+  {
+   "word": "space",
+   "category": "AI",
+   "score": 1000
+  },
+  {
+   "word": "court",
+   "category": "Legal",
+   "score": 500
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 500
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 450
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 300
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "board",
+   "category": "SaaS",
+   "score": 300
+  },
+  {
+   "word": "home",
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 200
+  },
+  {
+   "word": "route",
+   "category": "Travel",
+   "score": 150
+  }
+ ]
+}

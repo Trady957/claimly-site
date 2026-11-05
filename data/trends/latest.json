@@ -1,5 +1,5 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-05",
  "geos": [
   "US",
   "GB",
@@ -19,242 +19,221 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "scott parker",
-   "geo": "GB",
-   "traffic": 30000
+   "q": "cvs breakup",
+   "geo": "US",
+   "traffic": 15000
   },
   {
-   "q": "sbi bank quarterly results",
-   "geo": "IN",
+   "q": "rheinmetall aktien",
+   "geo": "DE",
    "traffic": 10000
   },
   {
-   "q": "logan cadwallader all blacks",
-   "geo": "ZA",
-   "traffic": 10000
-  },
-  {
-   "q": "ゴジラ 1.0 ゴジラ 0.0",
+   "q": "鳥羽 水族館 ラッコ 死亡",
    "geo": "JP",
    "traffic": 10000
   },
   {
-   "q": "linda fruhvirtova",
+   "q": "prince george aston villa match",
    "geo": "US",
    "traffic": 6000
   },
   {
-   "q": "hardik pandya arshdeep singh",
+   "q": "india result",
    "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "school holiday",
+   "q": "brian bennett",
    "geo": "AE",
    "traffic": 5000
   },
   {
-   "q": "victimes accident train espagne",
-   "geo": "FR",
+   "q": "brian bennett",
+   "geo": "SA",
    "traffic": 5000
   },
   {
-   "q": "結婚発表",
-   "geo": "JP",
+   "q": "prosieben",
+   "geo": "DE",
    "traffic": 5000
   },
   {
-   "q": "日経トレンディ ヒット商品 2026",
-   "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "jesús de miguel",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "austin weather",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "kimi",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "cd tenerife",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "championship table",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "jesus de miguel",
+   "q": "paul gallen vs nelson",
    "geo": "AU",
    "traffic": 3000
   },
   {
-   "q": "न्यूज़ीलैंड क्रिकेट टीम",
+   "q": "veto",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "us elections",
+   "q": "pakistan vs india",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "uae extra vehicle registration fee",
+   "q": "the emirates group",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "helen sharp",
+   "q": "pakistan vs india",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "julian nagelsmann",
+   "q": "the taste kandidaten",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "nico legat",
+   "q": "kätzchen",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "jesus owono",
-   "geo": "DE",
+   "q": "mère",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "jesus de miguel",
-   "geo": "NG",
+   "q": "congé",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "柏 対 大田",
+   "q": "george yeo wilmar share purchase",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "榊英雄",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "神戸 対 ラーチャブリー",
+   "q": "余命一年男をかう",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "are schools closed on election day",
+   "q": "nxt results",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "supermarket",
-   "geo": "AU",
+   "q": "garth brooks",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "real estate bubble",
-   "geo": "AU",
+   "q": "tesla",
+   "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "सोने चांदी का",
+   "q": "cra",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "மூக்குத்தி அம்மன்",
    "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "geran-5",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "grand frais",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "evreux",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "matthieu jalibert",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "anthony lim dbs chairman",
+   "geo": "SG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Finance",
-   "score": 11500
+   "category": "Food",
+   "score": 2300
   },
   {
-   "category": "Education",
-   "score": 6800
+   "category": "AI",
+   "score": 1200
   },
   {
-   "category": "Travel",
-   "score": 5500
+   "category": "Legal",
+   "score": 800
   },
   {
    "category": "Local",
-   "score": 4100
+   "score": 500
   },
   {
-   "category": "Real estate",
-   "score": 3000
-  },
-  {
-   "category": "Green",
-   "score": 800
+   "category": "Creator",
+   "score": 500
   },
   {
    "category": "E-commerce",
    "score": 450
   },
   {
-   "category": "Pets",
+   "category": "Gaming",
    "score": 300
   },
   {
-   "category": "Creator",
-   "score": 250
+   "category": "SaaS",
+   "score": 300
   },
   {
-   "category": "Gaming",
-   "score": 200
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "category": "Health",
+   "score": 150
+  },
+  {
+   "category": "Travel",
+   "score": 150
   }
  ],
  "words": [
   {
-   "word": "bank",
-   "category": "Finance",
-   "score": 10000
+   "word": "taste",
+   "category": "Food",
+   "score": 2000
   },
   {
-   "word": "school",
-   "category": "Education",
-   "score": 6800
+   "word": "space",
+   "category": "AI",
+   "score": 1000
   },
   {
-   "word": "holiday",
-   "category": "Travel",
-   "score": 5500
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 3100
-  },
-  {
-   "word": "estate",
-   "category": "Real estate",
-   "score": 1500
-  },
-  {
-   "word": "stock",
-   "category": "Finance",
-   "score": 750
-  },
-  {
-   "word": "market",
-   "category": "Finance",
-   "score": 750
-  },
-  {
-   "word": "metro",
-   "category": "Local",
+   "word": "court",
+   "category": "Legal",
    "score": 500
   },
   {
-   "word": "sun",
-   "category": "Green",
+   "word": "movie",
+   "category": "Creator",
    "score": 500
   },
   {
@@ -263,34 +242,39 @@
    "score": 450
   },
   {
-   "word": "water",
-   "category": "Green",
-   "score": 300
-  },
-  {
-   "word": "dog",
-   "category": "Pets",
-   "score": 300
-  },
-  {
-   "word": "port",
+   "word": "city",
    "category": "Local",
    "score": 300
   },
   {
-   "word": "movie",
-   "category": "Creator",
-   "score": 250
-  },
-  {
-   "word": "king",
+   "word": "league",
    "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "board",
+   "category": "SaaS",
+   "score": 300
+  },
+  {
+   "word": "home",
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "word": "weather",
+   "category": "Local",
    "score": 200
   },
   {
-   "word": "rain",
-   "category": "Local",
+   "word": "rocket",
+   "category": "AI",
    "score": 200
+  },
+  {
+   "word": "route",
+   "category": "Travel",
+   "score": 150
   }
  ]
 }
