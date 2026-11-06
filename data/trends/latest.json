@@ -1,5 +1,5 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "geos": [
   "US",
   "GB",
@@ -19,262 +19,283 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "cvs breakup",
-   "geo": "US",
-   "traffic": 15000
-  },
-  {
-   "q": "rheinmetall aktien",
-   "geo": "DE",
-   "traffic": 10000
-  },
-  {
-   "q": "鳥羽 水族館 ラッコ 死亡",
-   "geo": "JP",
-   "traffic": 10000
-  },
-  {
-   "q": "prince george aston villa match",
-   "geo": "US",
-   "traffic": 6000
-  },
-  {
-   "q": "india result",
-   "geo": "IN",
-   "traffic": 5000
-  },
-  {
-   "q": "brian bennett",
+   "q": "dubai run",
    "geo": "AE",
-   "traffic": 5000
+   "traffic": 20000
   },
   {
-   "q": "brian bennett",
+   "q": "gefahrgutunfall in krefeld",
+   "geo": "DE",
+   "traffic": 20000
+  },
+  {
+   "q": "zimbabwe vs afghanistan",
    "geo": "SA",
    "traffic": 5000
   },
   {
-   "q": "prosieben",
-   "geo": "DE",
+   "q": "accident car",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "paul gallen vs nelson",
+   "q": "sassa",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "sorana cirstea",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "jingle bell ball tickets",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "sydney fc vs central coast mariners",
    "geo": "AU",
    "traffic": 3000
   },
   {
-   "q": "veto",
-   "geo": "IN",
-   "traffic": 2000
+   "q": "qantas sydney cape town direct flight",
+   "geo": "AU",
+   "traffic": 3000
   },
   {
-   "q": "pakistan vs india",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "the emirates group",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "pakistan vs india",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "the taste kandidaten",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "kätzchen",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "mère",
+   "q": "russie",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "congé",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "george yeo wilmar share purchase",
+   "q": "city hall mrt escalator signs",
    "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "榊英雄",
-   "geo": "JP",
+   "q": "warriors vs heat",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "余命一年男をかう",
-   "geo": "JP",
+   "q": "television",
+   "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "nxt results",
+   "q": "pieter-steph du toit",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "copa do brasil de futebol sub-20",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "zac affleck",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "garth brooks",
+   "q": "baltimore ravens lamar jackson negotiations",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "john healey hmrc bank account powers",
    "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "tesla",
-   "geo": "CA",
+   "q": "jackjumpers vs breakers",
+   "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "cra",
-   "geo": "CA",
+   "q": "mobland season 2",
+   "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "மூக்குத்தி அம்மன்",
-   "geo": "IN",
+   "q": "acc u-19 asia cup",
+   "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "geran-5",
+   "q": "نادي فرايبورغ",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "weiße weihnachten",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "grand frais",
+   "q": "ilia topuria",
    "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "evreux",
+   "q": "24h du mans",
    "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "matthieu jalibert",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "anthony lim dbs chairman",
+   "q": "west indies vs bangladesh",
    "geo": "SG",
    "traffic": 1000
+  },
+  {
+   "q": "zimbabwe vs afghanistan",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "exportação",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "ruth madeley",
+   "geo": "GB",
+   "traffic": 750
+  },
+  {
+   "q": "housing",
+   "geo": "GB",
+   "traffic": 750
   }
  ],
  "categories": [
   {
-   "category": "Food",
-   "score": 2300
-  },
-  {
-   "category": "AI",
-   "score": 1200
-  },
-  {
-   "category": "Legal",
-   "score": 800
+   "category": "Health",
+   "score": 20600
   },
   {
    "category": "Local",
-   "score": 500
-  },
-  {
-   "category": "Creator",
-   "score": 500
-  },
-  {
-   "category": "E-commerce",
-   "score": 450
-  },
-  {
-   "category": "Gaming",
-   "score": 300
-  },
-  {
-   "category": "SaaS",
-   "score": 300
-  },
-  {
-   "category": "Real estate",
-   "score": 300
-  },
-  {
-   "category": "Health",
-   "score": 150
+   "score": 6200
   },
   {
    "category": "Travel",
+   "score": 6100
+  },
+  {
+   "category": "Finance",
+   "score": 1700
+  },
+  {
+   "category": "Gaming",
+   "score": 1200
+  },
+  {
+   "category": "E-commerce",
+   "score": 650
+  },
+  {
+   "category": "Creator",
+   "score": 400
+  },
+  {
+   "category": "SaaS",
+   "score": 200
+  },
+  {
+   "category": "Education",
    "score": 150
+  },
+  {
+   "category": "Green",
+   "score": 100
   }
  ],
  "words": [
   {
-   "word": "taste",
-   "category": "Food",
-   "score": 2000
+   "word": "run",
+   "category": "Health",
+   "score": 20000
   },
   {
-   "word": "space",
-   "category": "AI",
-   "score": 1000
+   "word": "coast",
+   "category": "Travel",
+   "score": 3100
   },
   {
-   "word": "court",
-   "category": "Legal",
-   "score": 500
+   "word": "town",
+   "category": "Local",
+   "score": 3000
   },
   {
-   "word": "movie",
-   "category": "Creator",
-   "score": 500
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 450
+   "word": "flight",
+   "category": "Travel",
+   "score": 3000
   },
   {
    "word": "city",
    "category": "Local",
-   "score": 300
+   "score": 2200
   },
   {
-   "word": "league",
+   "word": "bank",
+   "category": "Finance",
+   "score": 1700
+  },
+  {
+   "word": "cup",
    "category": "Gaming",
-   "score": 300
-  },
-  {
-   "word": "board",
-   "category": "SaaS",
-   "score": 300
-  },
-  {
-   "word": "home",
-   "category": "Real estate",
-   "score": 300
+   "score": 1000
   },
   {
    "word": "weather",
    "category": "Local",
+   "score": 700
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 650
+  },
+  {
+   "word": "body",
+   "category": "Health",
+   "score": 600
+  },
+  {
+   "word": "county",
+   "category": "Local",
+   "score": 300
+  },
+  {
+   "word": "canvas",
+   "category": "Creator",
    "score": 200
   },
   {
-   "word": "rocket",
-   "category": "AI",
+   "word": "edit",
+   "category": "Creator",
    "score": 200
   },
   {
-   "word": "route",
-   "category": "Travel",
+   "word": "league",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "board",
+   "category": "SaaS",
+   "score": 200
+  },
+  {
+   "word": "school",
+   "category": "Education",
    "score": 150
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 100
   }
  ]
 }

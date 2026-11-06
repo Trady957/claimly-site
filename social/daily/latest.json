@@ -1,28 +1,28 @@
 {
- "date": "2026-11-05",
- "category": "Green",
- "title": "Names for your eco brand",
- "image_url": "https://claimly.ae/social/daily/2026-11-05.jpg",
+ "date": "2026-11-06",
+ "category": "Finance",
+ "title": "Names for your finance or fintech brand",
+ "image_url": "https://claimly.ae/social/daily/2026-11-06.jpg",
  "names": [
   {
-   "domain": "ecobay.co",
+   "domain": "bankevo.co",
+   "price": 55
+  },
+  {
+   "domain": "bankfox.co",
+   "price": 55
+  },
+  {
+   "domain": "paywise.co",
    "price": 50
   },
   {
-   "domain": "hubeco.co",
-   "price": 55
+   "domain": "goodbank.co",
+   "price": 40
   },
   {
-   "domain": "cleanai.co",
-   "price": 55
-  },
-  {
-   "domain": "evereco.co",
-   "price": 55
-  },
-  {
-   "domain": "fernevo.co",
-   "price": 55
+   "domain": "payswift.co",
+   "price": 39
   }
  ]
 }
