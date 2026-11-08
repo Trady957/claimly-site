@@ -1,0 +1,296 @@
+{
+ "date": "2026-11-08",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "scotland rugby new zealand",
+   "geo": "GB",
+   "traffic": 75000
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "play gta 6 before launch date",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "arjun rajput",
+   "geo": "AE",
+   "traffic": 10000
+  },
+  {
+   "q": "clima hoje",
+   "geo": "BR",
+   "traffic": 10000
+  },
+  {
+   "q": "pix",
+   "geo": "BR",
+   "traffic": 10000
+  },
+  {
+   "q": "college gameday",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "erdbeben japan aktuell",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "singapore islandwide vice operation arrests",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "カナリア諸島",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "australia vs samoa",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "newport county a.f.c.",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "nyt connections hints",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "paul langmack",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "oneplus coloros 17 update schedule",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "zimbabwe vs afghanistan",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "مبنى ارامكو الرياض",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "faillite bancaire",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "n oubliez pas les paroles finale masters",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "the diplomat",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "tom dearden",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "ali raza",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "alexandra eala",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "eishockey",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "michel sardou",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "propriété",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "tampines expressway",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "ciclone",
+   "geo": "BR",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Gaming",
+   "score": 15800
+  },
+  {
+   "category": "SaaS",
+   "score": 15500
+  },
+  {
+   "category": "Local",
+   "score": 3200
+  },
+  {
+   "category": "Education",
+   "score": 3000
+  },
+  {
+   "category": "E-commerce",
+   "score": 1750
+  },
+  {
+   "category": "Finance",
+   "score": 350
+  },
+  {
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "category": "Pets",
+   "score": 200
+  },
+  {
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "category": "AI",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "play",
+   "category": "Gaming",
+   "score": 15000
+  },
+  {
+   "word": "launch",
+   "category": "SaaS",
+   "score": 15000
+  },
+  {
+   "word": "county",
+   "category": "Local",
+   "score": 3000
+  },
+  {
+   "word": "hint",
+   "category": "Education",
+   "score": 3000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 1750
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "board",
+   "category": "SaaS",
+   "score": 500
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "land",
+   "category": "Real estate",
+   "score": 200
+  },
+  {
+   "word": "rover",
+   "category": "Pets",
+   "score": 200
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 200
+  },
+  {
+   "word": "local",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 150
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 150
+  }
+ ]
+}

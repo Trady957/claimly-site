@@ -1,5 +1,5 @@
 {
- "date": "2026-11-07",
+ "date": "2026-11-08",
  "geos": [
   "US",
   "GB",
@@ -19,14 +19,9 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "artificial intelligence news",
-   "geo": "US",
-   "traffic": 60000
-  },
-  {
-   "q": "cottbus",
-   "geo": "DE",
-   "traffic": 20000
+   "q": "scotland rugby new zealand",
+   "geo": "GB",
+   "traffic": 75000
   },
   {
    "q": "alexandra eala",
@@ -34,34 +29,74 @@
    "traffic": 15000
   },
   {
-   "q": "la",
+   "q": "play gta 6 before launch date",
    "geo": "US",
    "traffic": 15000
   },
   {
-   "q": "naman dhir",
-   "geo": "IN",
+   "q": "arjun rajput",
+   "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "asse",
-   "geo": "FR",
+   "q": "clima hoje",
+   "geo": "BR",
    "traffic": 10000
   },
   {
-   "q": "gta release date",
+   "q": "pix",
+   "geo": "BR",
+   "traffic": 10000
+  },
+  {
+   "q": "college gameday",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "erdbeben japan aktuell",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "singapore islandwide vice operation arrests",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "カナリア諸島",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "australia vs samoa",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "kate smurthwaite",
+   "q": "newport county a.f.c.",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "school bus",
+   "q": "alexandra eala",
    "geo": "CA",
    "traffic": 3000
+  },
+  {
+   "q": "nyt connections hints",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "paul langmack",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "oneplus coloros 17 update schedule",
+   "geo": "IN",
+   "traffic": 2000
   },
   {
    "q": "zimbabwe vs afghanistan",
@@ -69,205 +104,193 @@
    "traffic": 2000
   },
   {
-   "q": "focus",
-   "geo": "DE",
+   "q": "مبنى ارامكو الرياض",
+   "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "wadersloh",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "kassovitz",
+   "q": "faillite bancaire",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "huile olive espagne",
+   "q": "n oubliez pas les paroles finale masters",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "singapore banks outlook 2027 analysts",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "frank lampard post match reaction",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "prisão perpétua",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "carminha",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "alexandra eala",
-   "geo": "GB",
+   "q": "the diplomat",
+   "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "gta vi",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "maria sakkari",
-   "geo": "CA",
-   "traffic": 1500
-  },
-  {
-   "q": "channel 7",
+   "q": "tom dearden",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "rahmat shah",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "மடிக்கணினி",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "matthew fisher",
+   "q": "alexandra eala",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "ഓഹരി വിപണി",
+   "q": "ali raza",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "هجرة",
+   "q": "alexandra eala",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "boris becker",
+   "q": "eishockey",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "west indies vs bangladesh",
+   "q": "michel sardou",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "propriété",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "tampines expressway",
    "geo": "SG",
    "traffic": 1000
   },
   {
-   "q": "rugby today south africa",
-   "geo": "ZA",
+   "q": "ciclone",
+   "geo": "BR",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Education",
-   "score": 5000
-  },
-  {
    "category": "Gaming",
-   "score": 2600
-  },
-  {
-   "category": "Finance",
-   "score": 2000
-  },
-  {
-   "category": "AI",
-   "score": 500
-  },
-  {
-   "category": "Local",
-   "score": 450
-  },
-  {
-   "category": "Creator",
-   "score": 350
-  },
-  {
-   "category": "Real estate",
-   "score": 200
+   "score": 15800
   },
   {
    "category": "SaaS",
-   "score": 100
-  }
- ],
- "words": [
+   "score": 15500
+  },
   {
-   "word": "school",
+   "category": "Local",
+   "score": 3200
+  },
+  {
    "category": "Education",
    "score": 3000
   },
   {
-   "word": "focus",
-   "category": "Education",
-   "score": 2000
+   "category": "E-commerce",
+   "score": 1750
   },
   {
-   "word": "bank",
    "category": "Finance",
-   "score": 2000
+   "score": 350
   },
   {
-   "word": "league",
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "category": "Pets",
+   "score": 200
+  },
+  {
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "category": "AI",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "play",
    "category": "Gaming",
-   "score": 1050
+   "score": 15000
   },
   {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 1050
+   "word": "launch",
+   "category": "SaaS",
+   "score": 15000
   },
   {
-   "word": "king",
+   "word": "county",
+   "category": "Local",
+   "score": 3000
+  },
+  {
+   "word": "hint",
+   "category": "Education",
+   "score": 3000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 1750
+  },
+  {
+   "word": "game",
    "category": "Gaming",
    "score": 500
   },
   {
-   "word": "movie",
-   "category": "Creator",
-   "score": 350
+   "word": "board",
+   "category": "SaaS",
+   "score": 500
   },
   {
-   "word": "orbit",
-   "category": "AI",
-   "score": 300
-  },
-  {
-   "word": "city",
-   "category": "Local",
-   "score": 300
-  },
-  {
-   "word": "data",
-   "category": "AI",
+   "word": "bank",
+   "category": "Finance",
    "score": 200
   },
   {
-   "word": "house",
+   "word": "land",
    "category": "Real estate",
    "score": 200
   },
   {
-   "word": "weather",
+   "word": "rover",
+   "category": "Pets",
+   "score": 200
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 200
+  },
+  {
+   "word": "local",
    "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
    "score": 150
   },
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 100
+   "word": "league",
+   "category": "Gaming",
+   "score": 150
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 150
   }
  ]
 }
