@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "geos": [
   "US",
   "GB",
@@ -19,278 +19,292 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "scotland rugby new zealand",
-   "geo": "GB",
-   "traffic": 75000
+   "q": "nfl football",
+   "geo": "US",
+   "traffic": 600000
   },
   {
-   "q": "alexandra eala",
+   "q": "jonathan taylor trade",
+   "geo": "US",
+   "traffic": 60000
+  },
+  {
+   "q": "weather forecast snow storm",
+   "geo": "US",
+   "traffic": 30000
+  },
+  {
+   "q": "alerta meteorológico",
+   "geo": "BR",
+   "traffic": 20000
+  },
+  {
+   "q": "hospital",
    "geo": "US",
    "traffic": 15000
   },
   {
-   "q": "play gta 6 before launch date",
-   "geo": "US",
-   "traffic": 15000
-  },
-  {
-   "q": "arjun rajput",
-   "geo": "AE",
-   "traffic": 10000
-  },
-  {
-   "q": "clima hoje",
-   "geo": "BR",
-   "traffic": 10000
-  },
-  {
-   "q": "pix",
-   "geo": "BR",
-   "traffic": 10000
-  },
-  {
-   "q": "college gameday",
-   "geo": "US",
-   "traffic": 6000
-  },
-  {
-   "q": "erdbeben japan aktuell",
+   "q": "bauernregel martinstag",
    "geo": "DE",
    "traffic": 5000
   },
   {
-   "q": "singapore islandwide vice operation arrests",
-   "geo": "SG",
-   "traffic": 5000
-  },
-  {
-   "q": "カナリア諸島",
-   "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "australia vs samoa",
+   "q": "the gilded age season 4",
    "geo": "US",
    "traffic": 3000
   },
   {
-   "q": "newport county a.f.c.",
+   "q": "russell brand sentence",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "alexandra eala",
+   "q": "boeing 787 dreamliner",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "possible james bond actors",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "hospital",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "amanda owen",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "blue angels",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "nyt connections hints",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "paul langmack",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "oneplus coloros 17 update schedule",
+   "q": "latest ott releases",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "zimbabwe vs afghanistan",
-   "geo": "AE",
+   "q": "दामाद",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "مبنى ارامكو الرياض",
-   "geo": "SA",
+   "q": "zigarette",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "faillite bancaire",
+   "q": "maxime lucu",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "n oubliez pas les paroles finale masters",
+   "q": "laurent blanc",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "the diplomat",
-   "geo": "US",
-   "traffic": 1500
+   "q": "sarah knafo",
+   "geo": "FR",
+   "traffic": 2000
   },
   {
-   "q": "tom dearden",
+   "q": "singapore fraudulent mortgage scheme charges",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "madlanga commission today",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "seleção brasileira",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "muji アプリ 無印 良品",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "josiah karapani drink driving penalty",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "alexandra eala",
+   "q": "കാലാവസ്ഥ",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "ali raza",
+   "q": "flydubai saudi arabia flight cancellations",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "alexandra eala",
+   "q": "مبنى",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "eishockey",
+   "q": "سلمان بن عبد العزيز آل سعود",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "pietro lombardi",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "michel sardou",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "propriété",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "tampines expressway",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "ciclone",
-   "geo": "BR",
+   "q": "unicredit",
+   "geo": "DE",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Gaming",
-   "score": 15800
-  },
-  {
-   "category": "SaaS",
-   "score": 15500
+   "category": "Finance",
+   "score": 61300
   },
   {
    "category": "Local",
-   "score": 3200
+   "score": 30750
   },
   {
-   "category": "Education",
+   "category": "Marketing",
    "score": 3000
   },
   {
-   "category": "E-commerce",
-   "score": 1750
-  },
-  {
-   "category": "Finance",
-   "score": 350
+   "category": "Travel",
+   "score": 2000
   },
   {
    "category": "Real estate",
+   "score": 2000
+  },
+  {
+   "category": "Creator",
+   "score": 1100
+  },
+  {
+   "category": "Gaming",
+   "score": 900
+  },
+  {
+   "category": "E-commerce",
+   "score": 500
+  },
+  {
+   "category": "Health",
+   "score": 500
+  },
+  {
+   "category": "Legal",
    "score": 300
   },
   {
-   "category": "Pets",
-   "score": 200
-  },
-  {
-   "category": "Green",
-   "score": 200
-  },
-  {
-   "category": "AI",
+   "category": "SaaS",
    "score": 200
   }
  ],
  "words": [
   {
-   "word": "play",
-   "category": "Gaming",
-   "score": 15000
+   "word": "trade",
+   "category": "Finance",
+   "score": 60000
   },
   {
-   "word": "launch",
-   "category": "SaaS",
-   "score": 15000
-  },
-  {
-   "word": "county",
+   "word": "weather",
    "category": "Local",
+   "score": 30550
+  },
+  {
+   "word": "brand",
+   "category": "Marketing",
    "score": 3000
   },
   {
-   "word": "hint",
-   "category": "Education",
-   "score": 3000
+   "word": "mortgage",
+   "category": "Real estate",
+   "score": 2000
+  },
+  {
+   "word": "flight",
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "word": "muse",
+   "category": "Creator",
+   "score": 750
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 700
   },
   {
    "word": "price",
    "category": "E-commerce",
-   "score": 1750
-  },
-  {
-   "word": "game",
-   "category": "Gaming",
    "score": 500
   },
   {
-   "word": "board",
-   "category": "SaaS",
+   "word": "tennis",
+   "category": "Health",
    "score": 500
   },
   {
    "word": "bank",
    "category": "Finance",
-   "score": 200
+   "score": 500
   },
   {
-   "word": "land",
-   "category": "Real estate",
-   "score": 200
+   "word": "movie",
+   "category": "Creator",
+   "score": 350
   },
   {
-   "word": "rover",
-   "category": "Pets",
-   "score": 200
+   "word": "stock",
+   "category": "Finance",
+   "score": 300
   },
   {
-   "word": "sun",
-   "category": "Green",
-   "score": 200
+   "word": "market",
+   "category": "Finance",
+   "score": 300
   },
   {
-   "word": "rocket",
-   "category": "AI",
-   "score": 200
-  },
-  {
-   "word": "local",
+   "word": "rain",
    "category": "Local",
    "score": 200
   },
   {
-   "word": "gold",
+   "word": "money",
    "category": "Finance",
-   "score": 150
+   "score": 200
   },
   {
-   "word": "league",
-   "category": "Gaming",
-   "score": 150
+   "word": "ship",
+   "category": "SaaS",
+   "score": 200
   },
   {
-   "word": "cup",
+   "word": "legend",
    "category": "Gaming",
-   "score": 150
+   "score": 200
   }
  ]
 }

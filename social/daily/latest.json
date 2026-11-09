@@ -1,28 +1,28 @@
 {
- "date": "2026-11-08",
- "category": "SaaS",
- "title": "Names for your software startup",
- "image_url": "https://claimly.ae/social/daily/2026-11-08.jpg",
+ "date": "2026-11-09",
+ "category": "E-commerce",
+ "title": "Names for your online store",
+ "image_url": "https://claimly.ae/social/daily/2026-11-09.jpg",
  "names": [
   {
-   "domain": "boardfox.co",
-   "price": 50
-  },
-  {
-   "domain": "buildery.co",
-   "price": 39
-  },
-  {
-   "domain": "deployix.co",
-   "price": 40
-  },
-  {
-   "domain": "orbitops.co",
+   "domain": "shoply.co",
    "price": 45
   },
   {
-   "domain": "shipgrid.co",
-   "price": 40
+   "domain": "mallkit.co",
+   "price": 55
+  },
+  {
+   "domain": "tryplay.co",
+   "price": 45
+  },
+  {
+   "domain": "shelfora.co",
+   "price": 39
+  },
+  {
+   "domain": "shopbase.co",
+   "price": 45
   }
  ]
 }

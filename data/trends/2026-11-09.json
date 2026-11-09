@@ -1,0 +1,310 @@
+{
+ "date": "2026-11-09",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "nfl football",
+   "geo": "US",
+   "traffic": 600000
+  },
+  {
+   "q": "jonathan taylor trade",
+   "geo": "US",
+   "traffic": 60000
+  },
+  {
+   "q": "weather forecast snow storm",
+   "geo": "US",
+   "traffic": 30000
+  },
+  {
+   "q": "alerta meteorológico",
+   "geo": "BR",
+   "traffic": 20000
+  },
+  {
+   "q": "hospital",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "bauernregel martinstag",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "the gilded age season 4",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "russell brand sentence",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "boeing 787 dreamliner",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "possible james bond actors",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "hospital",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "amanda owen",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "blue angels",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "latest ott releases",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "दामाद",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "zigarette",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "maxime lucu",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "laurent blanc",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "sarah knafo",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "singapore fraudulent mortgage scheme charges",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "madlanga commission today",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "seleção brasileira",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "muji アプリ 無印 良品",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "josiah karapani drink driving penalty",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "കാലാവസ്ഥ",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "flydubai saudi arabia flight cancellations",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "مبنى",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "سلمان بن عبد العزيز آل سعود",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "pietro lombardi",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "unicredit",
+   "geo": "DE",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Finance",
+   "score": 61300
+  },
+  {
+   "category": "Local",
+   "score": 30750
+  },
+  {
+   "category": "Marketing",
+   "score": 3000
+  },
+  {
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "category": "Real estate",
+   "score": 2000
+  },
+  {
+   "category": "Creator",
+   "score": 1100
+  },
+  {
+   "category": "Gaming",
+   "score": 900
+  },
+  {
+   "category": "E-commerce",
+   "score": 500
+  },
+  {
+   "category": "Health",
+   "score": 500
+  },
+  {
+   "category": "Legal",
+   "score": 300
+  },
+  {
+   "category": "SaaS",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "trade",
+   "category": "Finance",
+   "score": 60000
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 30550
+  },
+  {
+   "word": "brand",
+   "category": "Marketing",
+   "score": 3000
+  },
+  {
+   "word": "mortgage",
+   "category": "Real estate",
+   "score": 2000
+  },
+  {
+   "word": "flight",
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "word": "holiday",
+   "category": "Travel",
+   "score": 1000
+  },
+  {
+   "word": "muse",
+   "category": "Creator",
+   "score": 750
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 700
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 500
+  },
+  {
+   "word": "tennis",
+   "category": "Health",
+   "score": 500
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 350
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "rain",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "money",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "ship",
+   "category": "SaaS",
+   "score": 200
+  },
+  {
+   "word": "legend",
+   "category": "Gaming",
+   "score": 200
+  }
+ ]
+}
