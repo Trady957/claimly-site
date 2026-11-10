@@ -1,5 +1,5 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "geos": [
   "US",
   "GB",
@@ -19,271 +19,239 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "nfl football",
-   "geo": "US",
-   "traffic": 600000
-  },
-  {
-   "q": "jonathan taylor trade",
-   "geo": "US",
-   "traffic": 60000
-  },
-  {
-   "q": "weather forecast snow storm",
-   "geo": "US",
-   "traffic": 30000
-  },
-  {
-   "q": "alerta meteorológico",
-   "geo": "BR",
+   "q": "steuer",
+   "geo": "DE",
    "traffic": 20000
   },
   {
-   "q": "hospital",
-   "geo": "US",
-   "traffic": 15000
+   "q": "qantas job cuts",
+   "geo": "AU",
+   "traffic": 7500
   },
   {
-   "q": "bauernregel martinstag",
+   "q": "mohit ulva",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "schüsse hafencity",
    "geo": "DE",
    "traffic": 5000
   },
   {
-   "q": "the gilded age season 4",
-   "geo": "US",
-   "traffic": 3000
+   "q": "fc bayern münchen fußball",
+   "geo": "DE",
+   "traffic": 5000
   },
   {
-   "q": "russell brand sentence",
-   "geo": "GB",
-   "traffic": 3000
+   "q": "duck meat",
+   "geo": "SG",
+   "traffic": 5000
   },
   {
-   "q": "boeing 787 dreamliner",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "possible james bond actors",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "hospital",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "amanda owen",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "blue angels",
+   "q": "stock market news",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "latest ott releases",
+   "q": "citizenship",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "jockey izzy neale",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "new playstation handheld",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "weather kolkata",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "दामाद",
-   "geo": "IN",
+   "q": "aryavir sehwag",
+   "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "zigarette",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "maxime lucu",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "laurent blanc",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "sarah knafo",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "singapore fraudulent mortgage scheme charges",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "madlanga commission today",
+   "q": "dylan perumal",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "seleção brasileira",
+   "q": "reestruturação",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "muji アプリ 無印 良品",
-   "geo": "JP",
-   "traffic": 2000
+   "q": "movie times",
+   "geo": "US",
+   "traffic": 1500
   },
   {
-   "q": "josiah karapani drink driving penalty",
+   "q": "week 10 fantasy rankings",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "steelers news",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "mundella foods",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "കാലാവസ്ഥ",
+   "q": "రిజర్వేషన్లు",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "arpita singh",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "محكمة",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "flydubai saudi arabia flight cancellations",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "مبنى",
+   "q": "pak u19 vs nep u19",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "سلمان بن عبد العزيز آل سعود",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "pietro lombardi",
+   "q": "hartmut engler",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "unicredit",
+   "q": "bundeswehr online shop",
    "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "enzo zidane",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "brigitte macron",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "nvidia jensen huang",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "oil prices",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "jeremy ward",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "dupla sena 3030",
+   "geo": "BR",
    "traffic": 1000
   }
  ],
  "categories": [
   {
    "category": "Finance",
-   "score": 61300
+   "score": 6500
   },
   {
    "category": "Local",
-   "score": 30750
-  },
-  {
-   "category": "Marketing",
-   "score": 3000
-  },
-  {
-   "category": "Travel",
-   "score": 2000
-  },
-  {
-   "category": "Real estate",
-   "score": 2000
-  },
-  {
-   "category": "Creator",
-   "score": 1100
-  },
-  {
-   "category": "Gaming",
-   "score": 900
+   "score": 3300
   },
   {
    "category": "E-commerce",
-   "score": 500
+   "score": 3000
   },
   {
-   "category": "Health",
-   "score": 500
+   "category": "Creator",
+   "score": 1600
   },
   {
-   "category": "Legal",
+   "category": "Food",
+   "score": 1600
+  },
+  {
+   "category": "Real estate",
    "score": 300
   },
   {
-   "category": "SaaS",
-   "score": 200
+   "category": "Travel",
+   "score": 150
+  },
+  {
+   "category": "AI",
+   "score": 100
   }
  ],
  "words": [
   {
-   "word": "trade",
-   "category": "Finance",
-   "score": 60000
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 30550
-  },
-  {
-   "word": "brand",
-   "category": "Marketing",
-   "score": 3000
-  },
-  {
-   "word": "mortgage",
-   "category": "Real estate",
-   "score": 2000
-  },
-  {
-   "word": "flight",
-   "category": "Travel",
-   "score": 1000
-  },
-  {
-   "word": "holiday",
-   "category": "Travel",
-   "score": 1000
-  },
-  {
-   "word": "muse",
-   "category": "Creator",
-   "score": 750
-  },
-  {
-   "word": "king",
-   "category": "Gaming",
-   "score": 700
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 500
-  },
-  {
-   "word": "tennis",
-   "category": "Health",
-   "score": 500
-  },
-  {
-   "word": "bank",
-   "category": "Finance",
-   "score": 500
-  },
-  {
-   "word": "movie",
-   "category": "Creator",
-   "score": 350
-  },
-  {
    "word": "stock",
    "category": "Finance",
-   "score": 300
+   "score": 3000
   },
   {
    "word": "market",
    "category": "Finance",
+   "score": 3000
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 2100
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 1500
+  },
+  {
+   "word": "food",
+   "category": "Food",
+   "score": 1500
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 1000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 1000
+  },
+  {
+   "word": "ward",
+   "category": "Local",
+   "score": 1000
+  },
+  {
+   "word": "loan",
+   "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "house",
+   "category": "Real estate",
    "score": 300
   },
   {
@@ -292,19 +260,24 @@
    "score": 200
   },
   {
-   "word": "money",
-   "category": "Finance",
-   "score": 200
+   "word": "jet",
+   "category": "Travel",
+   "score": 150
   },
   {
-   "word": "ship",
-   "category": "SaaS",
-   "score": 200
+   "word": "film",
+   "category": "Creator",
+   "score": 100
   },
   {
-   "word": "legend",
-   "category": "Gaming",
-   "score": 200
+   "word": "rocket",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 100
   }
  ]
 }

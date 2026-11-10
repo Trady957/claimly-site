@@ -1,0 +1,283 @@
+{
+ "date": "2026-11-10",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "steuer",
+   "geo": "DE",
+   "traffic": 20000
+  },
+  {
+   "q": "qantas job cuts",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "mohit ulva",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "schüsse hafencity",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "fc bayern münchen fußball",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "duck meat",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "stock market news",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "citizenship",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "jockey izzy neale",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "new playstation handheld",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "weather kolkata",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "aryavir sehwag",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "dylan perumal",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "reestruturação",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "movie times",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "week 10 fantasy rankings",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "steelers news",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "mundella foods",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "రిజర్వేషన్లు",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "arpita singh",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "محكمة",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "pak u19 vs nep u19",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "hartmut engler",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "bundeswehr online shop",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "enzo zidane",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "brigitte macron",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "nvidia jensen huang",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "oil prices",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "jeremy ward",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "dupla sena 3030",
+   "geo": "BR",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Finance",
+   "score": 6500
+  },
+  {
+   "category": "Local",
+   "score": 3300
+  },
+  {
+   "category": "E-commerce",
+   "score": 3000
+  },
+  {
+   "category": "Creator",
+   "score": 1600
+  },
+  {
+   "category": "Food",
+   "score": 1600
+  },
+  {
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "category": "Travel",
+   "score": 150
+  },
+  {
+   "category": "AI",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 3000
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 3000
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 2100
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 1500
+  },
+  {
+   "word": "food",
+   "category": "Food",
+   "score": 1500
+  },
+  {
+   "word": "shop",
+   "category": "E-commerce",
+   "score": 1000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 1000
+  },
+  {
+   "word": "ward",
+   "category": "Local",
+   "score": 1000
+  },
+  {
+   "word": "loan",
+   "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "house",
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "word": "rain",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "jet",
+   "category": "Travel",
+   "score": 150
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 100
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 100
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 100
+  }
+ ]
+}
