@@ -1,5 +1,5 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "geos": [
   "US",
   "GB",
@@ -19,265 +19,249 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "steuer",
-   "geo": "DE",
-   "traffic": 20000
+   "q": "clima",
+   "geo": "BR",
+   "traffic": 200000
   },
   {
-   "q": "qantas job cuts",
-   "geo": "AU",
-   "traffic": 7500
+   "q": "side effect",
+   "geo": "US",
+   "traffic": 15000
   },
   {
-   "q": "mohit ulva",
-   "geo": "IN",
+   "q": "kusal mendis",
+   "geo": "AE",
+   "traffic": 10000
+  },
+  {
+   "q": "new york times",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "guerre",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "schüsse hafencity",
-   "geo": "DE",
+   "q": "boulanger",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "fc bayern münchen fußball",
-   "geo": "DE",
+   "q": "powerball results powerball plus",
+   "geo": "ZA",
    "traffic": 5000
   },
   {
-   "q": "duck meat",
-   "geo": "SG",
-   "traffic": 5000
+   "q": "cj daniels",
+   "geo": "US",
+   "traffic": 3000
   },
   {
-   "q": "stock market news",
+   "q": "yellow warning - rainfall",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "citizenship",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "jockey izzy neale",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "new playstation handheld",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "weather kolkata",
-   "geo": "IN",
+   "q": "jean luc mélenchon ukraine",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "aryavir sehwag",
-   "geo": "AE",
+   "q": "business class",
+   "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "dylan perumal",
+   "q": "pochettino",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "reestruturação",
-   "geo": "BR",
+   "q": "太田光 楽天",
+   "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "movie times",
+   "q": "when is black friday 2026",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "week 10 fantasy rankings",
-   "geo": "US",
+   "q": "sarah payne",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "steelers news",
-   "geo": "US",
+   "q": "david ornstein",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "mundella foods",
+   "q": "cfmeu",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "రిజర్వేషన్లు",
+   "q": "kulgam",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "arpita singh",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "محكمة",
+   "q": "india vs maldives",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "pak u19 vs nep u19",
+   "q": "india vs maldives",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "hartmut engler",
+   "q": "جورجوس دونيس",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "طايس الجميلي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "wdr",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "bundeswehr online shop",
+   "q": "remmo-clan",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "enzo zidane",
+   "q": "véhicule électrique",
    "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "brigitte macron",
-   "geo": "FR",
+   "q": "dangote",
+   "geo": "NG",
    "traffic": 1000
   },
   {
-   "q": "nvidia jensen huang",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "oil prices",
-   "geo": "ZA",
-   "traffic": 1000
-  },
-  {
-   "q": "jeremy ward",
-   "geo": "ZA",
-   "traffic": 1000
-  },
-  {
-   "q": "dupla sena 3030",
+   "q": "tiempo",
    "geo": "BR",
    "traffic": 1000
+  },
+  {
+   "q": "weather",
+   "geo": "BR",
+   "traffic": 1000
+  },
+  {
+   "q": "m6 traffic",
+   "geo": "GB",
+   "traffic": 750
+  },
+  {
+   "q": "ps5",
+   "geo": "CA",
+   "traffic": 750
   }
  ],
  "categories": [
   {
-   "category": "Finance",
-   "score": 6500
+   "category": "Education",
+   "score": 2000
   },
   {
    "category": "Local",
-   "score": 3300
-  },
-  {
-   "category": "E-commerce",
-   "score": 3000
-  },
-  {
-   "category": "Creator",
-   "score": 1600
-  },
-  {
-   "category": "Food",
-   "score": 1600
-  },
-  {
-   "category": "Real estate",
-   "score": 300
+   "score": 1000
   },
   {
    "category": "Travel",
-   "score": 150
+   "score": 550
   },
   {
-   "category": "AI",
-   "score": 100
+   "category": "Health",
+   "score": 450
+  },
+  {
+   "category": "SaaS",
+   "score": 200
+  },
+  {
+   "category": "Creator",
+   "score": 200
+  },
+  {
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "category": "Legal",
+   "score": 150
   }
  ],
  "words": [
   {
-   "word": "stock",
-   "category": "Finance",
-   "score": 3000
-  },
-  {
-   "word": "market",
-   "category": "Finance",
-   "score": 3000
+   "word": "class",
+   "category": "Education",
+   "score": 2000
   },
   {
    "word": "weather",
    "category": "Local",
-   "score": 2100
-  },
-  {
-   "word": "movie",
-   "category": "Creator",
-   "score": 1500
-  },
-  {
-   "word": "food",
-   "category": "Food",
-   "score": 1500
-  },
-  {
-   "word": "shop",
-   "category": "E-commerce",
    "score": 1000
   },
   {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 1000
+   "word": "body",
+   "category": "Health",
+   "score": 450
   },
   {
-   "word": "ward",
-   "category": "Local",
-   "score": 1000
-  },
-  {
-   "word": "loan",
-   "category": "Finance",
-   "score": 500
-  },
-  {
-   "word": "house",
-   "category": "Real estate",
-   "score": 300
-  },
-  {
-   "word": "rain",
-   "category": "Local",
+   "word": "team",
+   "category": "SaaS",
    "score": 200
   },
   {
-   "word": "jet",
+   "word": "show",
+   "category": "Creator",
+   "score": 200
+  },
+  {
+   "word": "holiday",
    "category": "Travel",
+   "score": 200
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 200
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 200
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "justice",
+   "category": "Legal",
    "score": 150
   },
   {
-   "word": "film",
-   "category": "Creator",
-   "score": 100
-  },
-  {
-   "word": "rocket",
-   "category": "AI",
-   "score": 100
-  },
-  {
-   "word": "nugget",
-   "category": "Food",
-   "score": 100
+   "word": "island",
+   "category": "Travel",
+   "score": 150
   }
  ]
 }
