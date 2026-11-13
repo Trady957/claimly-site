@@ -1,5 +1,5 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "geos": [
   "US",
   "GB",
@@ -19,272 +19,257 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "clima",
-   "geo": "BR",
-   "traffic": 500000
+   "q": "new zealand vs india",
+   "geo": "US",
+   "traffic": 60000
   },
   {
-   "q": "malaise garde républicain",
-   "geo": "FR",
+   "q": "طقس",
+   "geo": "SA",
+   "traffic": 50000
+  },
+  {
+   "q": "eid al etihad 2026",
+   "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "carrick",
-   "geo": "GB",
-   "traffic": 7500
-  },
-  {
-   "q": "alexander darchiev",
+   "q": "freeze warning",
    "geo": "US",
    "traffic": 6000
   },
   {
-   "q": "bangladesh vs pakistan",
-   "geo": "AE",
-   "traffic": 5000
-  },
-  {
-   "q": "bangladesh vs pakistan",
-   "geo": "SA",
-   "traffic": 5000
-  },
-  {
-   "q": "un ehpad saccagé",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "effondrement de bâtiment",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "sia new business class design",
+   "q": "matt henry",
    "geo": "SG",
    "traffic": 5000
   },
   {
-   "q": "new york times",
-   "geo": "US",
-   "traffic": 3000
+   "q": "侍ジャパンメンバー",
+   "geo": "JP",
+   "traffic": 5000
   },
   {
-   "q": "when will fortnite servers be back up",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "today wordle hints",
+   "q": "microsoft xbox playback",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "cibc class action lawsuit mutual funds",
+   "q": "new zealand vs india",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "lakshya raichandani",
+   "q": "बंगाल की खाड़ी",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "صاروخ",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "السعودية",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "razzia gremium mc",
+   "q": "wetten, dass..?",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "kiev",
+   "q": "new zealand vs india",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "jetstream",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "avion",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "tony leung ka-fai",
+   "q": "toa payoh",
    "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "michael carrick",
-   "geo": "CA",
+   "q": "treasury bill",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "michael carrick manchester united dismissal",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "lamar odom",
+   "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "ato unpaid super recovery 1.1 billion",
-   "geo": "AU",
+   "q": "akira santillan",
+   "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "powerball",
-   "geo": "AU",
+   "q": "avengers endgame encore",
+   "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "wildcats vs jackjumpers",
-   "geo": "AU",
+   "q": "student loan",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "carrick",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "michael carrick",
+   "q": "gta vi",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "bangladesh women's national cricket team vs pakistan women's national cricket team match scorecard",
-   "geo": "AE",
+   "q": "video games xbox playback",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "bangladesh women's national cricket team vs pakistan women's national cricket team match scorecard",
+   "q": "ಕರ್ನಾಟಕ",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "مباراة السعودية وكوريا الجنوبية",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "botschafter",
+   "q": "محمد بن سلمان",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "erling haaland",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "zulieferer",
+   "q": "bodensee",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "ambassade de russie aux états-unis",
+   "q": "syndicat",
    "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "reverse vending machine",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "maduka okoye super eagles omission",
+   "geo": "NG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Education",
-   "score": 11150
-  },
-  {
-   "category": "Creator",
-   "score": 5500
-  },
-  {
-   "category": "SaaS",
-   "score": 4200
-  },
-  {
-   "category": "Local",
-   "score": 2200
-  },
-  {
-   "category": "Real estate",
-   "score": 1000
-  },
-  {
-   "category": "Travel",
-   "score": 300
-  },
-  {
-   "category": "Marketing",
-   "score": 300
-  },
-  {
    "category": "Finance",
-   "score": 300
-  },
-  {
-   "category": "AI",
-   "score": 100
+   "score": 1500
   },
   {
    "category": "Gaming",
+   "score": 1200
+  },
+  {
+   "category": "Creator",
+   "score": 1000
+  },
+  {
+   "category": "AI",
+   "score": 1000
+  },
+  {
+   "category": "E-commerce",
+   "score": 950
+  },
+  {
+   "category": "Education",
+   "score": 600
+  },
+  {
+   "category": "Local",
+   "score": 400
+  },
+  {
+   "category": "Green",
+   "score": 250
+  },
+  {
+   "category": "Fashion",
+   "score": 200
+  },
+  {
+   "category": "Pets",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "class",
-   "category": "Education",
-   "score": 8000
+   "word": "loan",
+   "category": "Finance",
+   "score": 1500
   },
   {
-   "word": "design",
+   "word": "video",
    "category": "Creator",
-   "score": 5000
+   "score": 1000
   },
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 4200
+   "word": "game",
+   "category": "Gaming",
+   "score": 1000
   },
   {
-   "word": "hint",
+   "word": "price",
+   "category": "E-commerce",
+   "score": 650
+  },
+  {
+   "word": "school",
    "category": "Education",
-   "score": 3000
+   "score": 600
   },
   {
    "word": "weather",
    "category": "Local",
-   "score": 1200
-  },
-  {
-   "word": "land",
-   "category": "Real estate",
-   "score": 1000
-  },
-  {
-   "word": "place",
-   "category": "Local",
-   "score": 1000
-  },
-  {
-   "word": "pixel",
-   "category": "Creator",
-   "score": 500
-  },
-  {
-   "word": "viral",
-   "category": "Marketing",
    "score": 300
   },
   {
-   "word": "flight",
-   "category": "Travel",
-   "score": 200
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 300
   },
   {
-   "word": "loan",
-   "category": "Finance",
-   "score": 200
-  },
-  {
-   "word": "tour",
-   "category": "Travel",
-   "score": 100
-  },
-  {
-   "word": "bank",
-   "category": "Finance",
-   "score": 100
-  },
-  {
-   "word": "data",
-   "category": "AI",
-   "score": 100
-  },
-  {
-   "word": "league",
+   "word": "arena",
    "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "atelier",
+   "category": "Fashion",
+   "score": 200
+  },
+  {
+   "word": "climate",
+   "category": "Green",
+   "score": 150
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 100
+  },
+  {
+   "word": "welfare",
+   "category": "Local",
    "score": 100
   }
  ]
