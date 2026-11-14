@@ -1,0 +1,237 @@
+{
+ "date": "2026-11-14",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "aryavir sehwag",
+   "geo": "IN",
+   "traffic": 10000
+  },
+  {
+   "q": "business",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "lakshya raichandani",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "maison",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "coalition",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "south africa household financial pressure 2027",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "andy serkis",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "india vs bhutan",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "india vs bhutan",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "console nintendo switch 2 black friday",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "zahidi zainul abidin",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "spurs vs warriors",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "timothee chalamet",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "ashley jensen",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "microsoft playback",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "ontario",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "latrell mitchell",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "independence day",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "rockstar games gta vi",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "japan vs brazil",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "br live",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "starlink",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "eau",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "wang shuiming",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "harmony chidi nigeria u17 captain",
+   "geo": "NG",
+   "traffic": 1000
+  },
+  {
+   "q": "菊池 風磨",
+   "geo": "JP",
+   "traffic": 1000
+  },
+  {
+   "q": "u19 asia cup",
+   "geo": "CA",
+   "traffic": 750
+  },
+  {
+   "q": "japan vs brazil",
+   "geo": "AU",
+   "traffic": 750
+  },
+  {
+   "q": "u19 asia cup",
+   "geo": "US",
+   "traffic": 600
+  },
+  {
+   "q": "वकील",
+   "geo": "IN",
+   "traffic": 500
+  }
+ ],
+ "categories": [
+  {
+   "category": "Gaming",
+   "score": 3200
+  },
+  {
+   "category": "Creator",
+   "score": 700
+  },
+  {
+   "category": "Health",
+   "score": 300
+  },
+  {
+   "category": "SaaS",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 1650
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 1350
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 350
+  },
+  {
+   "word": "swim",
+   "category": "Health",
+   "score": 300
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 200
+  },
+  {
+   "word": "show",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 100
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 100
+  }
+ ]
+}

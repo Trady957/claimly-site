@@ -1,5 +1,5 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "geos": [
   "US",
   "GB",
@@ -19,257 +19,218 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "new zealand vs india",
-   "geo": "US",
-   "traffic": 60000
-  },
-  {
-   "q": "طقس",
-   "geo": "SA",
-   "traffic": 50000
-  },
-  {
-   "q": "eid al etihad 2026",
-   "geo": "AE",
+   "q": "aryavir sehwag",
+   "geo": "IN",
    "traffic": 10000
   },
   {
-   "q": "freeze warning",
-   "geo": "US",
-   "traffic": 6000
+   "q": "business",
+   "geo": "AU",
+   "traffic": 7500
   },
   {
-   "q": "matt henry",
-   "geo": "SG",
+   "q": "lakshya raichandani",
+   "geo": "IN",
    "traffic": 5000
   },
   {
-   "q": "侍ジャパンメンバー",
-   "geo": "JP",
+   "q": "maison",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "microsoft xbox playback",
+   "q": "coalition",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "south africa household financial pressure 2027",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "andy serkis",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "new zealand vs india",
+   "q": "india vs bhutan",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "india vs bhutan",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "console nintendo switch 2 black friday",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "zahidi zainul abidin",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "spurs vs warriors",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "timothee chalamet",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "ashley jensen",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "microsoft playback",
    "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "बंगाल की खाड़ी",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "wetten, dass..?",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "new zealand vs india",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "jetstream",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "avion",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "toa payoh",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "treasury bill",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "michael carrick manchester united dismissal",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "lamar odom",
-   "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "akira santillan",
-   "geo": "US",
+   "q": "ontario",
+   "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "avengers endgame encore",
-   "geo": "US",
+   "q": "latrell mitchell",
+   "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "student loan",
-   "geo": "GB",
+   "q": "independence day",
+   "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "gta vi",
+   "q": "rockstar games gta vi",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "video games xbox playback",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "ಕರ್ನಾಟಕ",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "مباراة السعودية وكوريا الجنوبية",
+   "q": "japan vs brazil",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "محمد بن سلمان",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "erling haaland",
+   "q": "br live",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "bodensee",
+   "q": "starlink",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "syndicat",
+   "q": "eau",
    "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "reverse vending machine",
+   "q": "wang shuiming",
    "geo": "SG",
    "traffic": 1000
   },
   {
-   "q": "maduka okoye super eagles omission",
+   "q": "harmony chidi nigeria u17 captain",
    "geo": "NG",
    "traffic": 1000
+  },
+  {
+   "q": "菊池 風磨",
+   "geo": "JP",
+   "traffic": 1000
+  },
+  {
+   "q": "u19 asia cup",
+   "geo": "CA",
+   "traffic": 750
+  },
+  {
+   "q": "japan vs brazil",
+   "geo": "AU",
+   "traffic": 750
+  },
+  {
+   "q": "u19 asia cup",
+   "geo": "US",
+   "traffic": 600
+  },
+  {
+   "q": "वकील",
+   "geo": "IN",
+   "traffic": 500
   }
  ],
  "categories": [
   {
-   "category": "Finance",
-   "score": 1500
-  },
-  {
    "category": "Gaming",
-   "score": 1200
+   "score": 3200
   },
   {
    "category": "Creator",
-   "score": 1000
+   "score": 700
   },
   {
-   "category": "AI",
-   "score": 1000
+   "category": "Health",
+   "score": 300
   },
   {
-   "category": "E-commerce",
-   "score": 950
-  },
-  {
-   "category": "Education",
-   "score": 600
-  },
-  {
-   "category": "Local",
-   "score": 400
-  },
-  {
-   "category": "Green",
-   "score": 250
-  },
-  {
-   "category": "Fashion",
-   "score": 200
-  },
-  {
-   "category": "Pets",
+   "category": "SaaS",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "loan",
-   "category": "Finance",
-   "score": 1500
-  },
-  {
-   "word": "video",
-   "category": "Creator",
-   "score": 1000
-  },
-  {
    "word": "game",
    "category": "Gaming",
-   "score": 1000
+   "score": 1650
   },
   {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 650
-  },
-  {
-   "word": "school",
-   "category": "Education",
-   "score": 600
-  },
-  {
-   "word": "weather",
-   "category": "Local",
-   "score": 300
-  },
-  {
-   "word": "sale",
-   "category": "E-commerce",
-   "score": 300
-  },
-  {
-   "word": "arena",
+   "word": "cup",
    "category": "Gaming",
+   "score": 1350
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 350
+  },
+  {
+   "word": "swim",
+   "category": "Health",
+   "score": 300
+  },
+  {
+   "word": "film",
+   "category": "Creator",
    "score": 200
   },
   {
-   "word": "atelier",
-   "category": "Fashion",
-   "score": 200
-  },
-  {
-   "word": "climate",
-   "category": "Green",
+   "word": "show",
+   "category": "Creator",
    "score": 150
   },
   {
-   "word": "sun",
-   "category": "Green",
+   "word": "team",
+   "category": "SaaS",
    "score": 100
   },
   {
-   "word": "welfare",
-   "category": "Local",
+   "word": "score",
+   "category": "Gaming",
+   "score": 100
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
    "score": 100
   }
  ]
