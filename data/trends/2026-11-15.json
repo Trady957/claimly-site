@@ -1,0 +1,295 @@
+{
+ "date": "2026-11-15",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "clima",
+   "geo": "BR",
+   "traffic": 200000
+  },
+  {
+   "q": "ban vs sa",
+   "geo": "ZA",
+   "traffic": 20000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "AE",
+   "traffic": 10000
+  },
+  {
+   "q": "beauden barrett",
+   "geo": "ZA",
+   "traffic": 10000
+  },
+  {
+   "q": "live cricket score",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "winter storm",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "dp world tour championship",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "alan milburn",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "crime",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "m",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "new zealand national cricket team vs india national cricket team",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "sri lanka women's national cricket team vs papua new guinea women's national cricket team match scorecard",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "donald trump iran war",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "australia vs new zealand",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "when does im a celebrity start",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "dom joly",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "stephanie rice",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "bradman best",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "iran attacks bahrain",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "sri lanka vs papua new guinea",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "dean foxcroft",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "sri lanka vs papua new guinea",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "juweliergeschäft",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "putin news",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "emmanuel macron au cambodge",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "gagnant euromillions",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "sadio mané",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "lekki international airport",
+   "geo": "NG",
+   "traffic": 1000
+  },
+  {
+   "q": "ford ranger",
+   "geo": "ZA",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "SaaS",
+   "score": 11150
+  },
+  {
+   "category": "Gaming",
+   "score": 7500
+  },
+  {
+   "category": "Travel",
+   "score": 3200
+  },
+  {
+   "category": "Local",
+   "score": 650
+  },
+  {
+   "category": "Real estate",
+   "score": 500
+  },
+  {
+   "category": "Food",
+   "score": 300
+  },
+  {
+   "category": "Creator",
+   "score": 300
+  },
+  {
+   "category": "Green",
+   "score": 300
+  },
+  {
+   "category": "AI",
+   "score": 150
+  },
+  {
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "category": "Legal",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 10400
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 7500
+  },
+  {
+   "word": "tour",
+   "category": "Travel",
+   "score": 3100
+  },
+  {
+   "word": "launch",
+   "category": "SaaS",
+   "score": 750
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 650
+  },
+  {
+   "word": "home",
+   "category": "Real estate",
+   "score": 500
+  },
+  {
+   "word": "green",
+   "category": "Green",
+   "score": 300
+  },
+  {
+   "word": "film",
+   "category": "Creator",
+   "score": 200
+  },
+  {
+   "word": "data",
+   "category": "AI",
+   "score": 150
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "baker",
+   "category": "Food",
+   "score": 100
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 100
+  },
+  {
+   "word": "roast",
+   "category": "Food",
+   "score": 100
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 100
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 100
+  }
+ ]
+}

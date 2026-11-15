@@ -1,5 +1,5 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-15",
  "geos": [
   "US",
   "GB",
@@ -19,193 +19,236 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "aryavir sehwag",
-   "geo": "IN",
+   "q": "clima",
+   "geo": "BR",
+   "traffic": 200000
+  },
+  {
+   "q": "ban vs sa",
+   "geo": "ZA",
+   "traffic": 20000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "AE",
    "traffic": 10000
   },
   {
-   "q": "business",
-   "geo": "AU",
+   "q": "beauden barrett",
+   "geo": "ZA",
+   "traffic": 10000
+  },
+  {
+   "q": "live cricket score",
+   "geo": "CA",
    "traffic": 7500
   },
   {
-   "q": "lakshya raichandani",
-   "geo": "IN",
-   "traffic": 5000
+   "q": "winter storm",
+   "geo": "US",
+   "traffic": 6000
   },
   {
-   "q": "maison",
-   "geo": "FR",
-   "traffic": 5000
+   "q": "dp world tour championship",
+   "geo": "US",
+   "traffic": 3000
   },
   {
-   "q": "coalition",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "south africa household financial pressure 2027",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "andy serkis",
+   "q": "alan milburn",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "india vs bhutan",
-   "geo": "AE",
+   "q": "crime",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "m",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "new zealand national cricket team vs india national cricket team",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "india vs bhutan",
-   "geo": "SA",
+   "q": "sri lanka women's national cricket team vs papua new guinea women's national cricket team match scorecard",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "console nintendo switch 2 black friday",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "zahidi zainul abidin",
+   "q": "bangladesh vs south africa",
    "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "spurs vs warriors",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "timothee chalamet",
+   "q": "donald trump iran war",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "ashley jensen",
+   "q": "australia vs new zealand",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "when does im a celebrity start",
    "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "microsoft playback",
-   "geo": "CA",
+   "q": "dom joly",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "ontario",
-   "geo": "CA",
-   "traffic": 1500
-  },
-  {
-   "q": "latrell mitchell",
+   "q": "stephanie rice",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "independence day",
+   "q": "bradman best",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "rockstar games gta vi",
-   "geo": "IN",
+   "q": "iran attacks bahrain",
+   "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "japan vs brazil",
+   "q": "sri lanka vs papua new guinea",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "dean foxcroft",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "sri lanka vs papua new guinea",
    "geo": "SA",
    "traffic": 1000
   },
   {
-   "q": "br live",
+   "q": "juweliergeschäft",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "starlink",
+   "q": "putin news",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "eau",
+   "q": "emmanuel macron au cambodge",
    "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "wang shuiming",
+   "q": "gagnant euromillions",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "sadio mané",
    "geo": "SG",
    "traffic": 1000
   },
   {
-   "q": "harmony chidi nigeria u17 captain",
+   "q": "lekki international airport",
    "geo": "NG",
    "traffic": 1000
   },
   {
-   "q": "菊池 風磨",
-   "geo": "JP",
+   "q": "ford ranger",
+   "geo": "ZA",
    "traffic": 1000
-  },
-  {
-   "q": "u19 asia cup",
-   "geo": "CA",
-   "traffic": 750
-  },
-  {
-   "q": "japan vs brazil",
-   "geo": "AU",
-   "traffic": 750
-  },
-  {
-   "q": "u19 asia cup",
-   "geo": "US",
-   "traffic": 600
-  },
-  {
-   "q": "वकील",
-   "geo": "IN",
-   "traffic": 500
   }
  ],
  "categories": [
   {
+   "category": "SaaS",
+   "score": 11150
+  },
+  {
    "category": "Gaming",
+   "score": 7500
+  },
+  {
+   "category": "Travel",
    "score": 3200
   },
   {
-   "category": "Creator",
-   "score": 700
+   "category": "Local",
+   "score": 650
   },
   {
-   "category": "Health",
+   "category": "Real estate",
+   "score": 500
+  },
+  {
+   "category": "Food",
    "score": 300
   },
   {
-   "category": "SaaS",
+   "category": "Creator",
+   "score": 300
+  },
+  {
+   "category": "Green",
+   "score": 300
+  },
+  {
+   "category": "AI",
+   "score": 150
+  },
+  {
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "category": "Legal",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "game",
+   "word": "team",
+   "category": "SaaS",
+   "score": 10400
+  },
+  {
+   "word": "score",
    "category": "Gaming",
-   "score": 1650
+   "score": 7500
   },
   {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 1350
+   "word": "tour",
+   "category": "Travel",
+   "score": 3100
   },
   {
-   "word": "movie",
-   "category": "Creator",
-   "score": 350
+   "word": "launch",
+   "category": "SaaS",
+   "score": 750
   },
   {
-   "word": "swim",
-   "category": "Health",
+   "word": "weather",
+   "category": "Local",
+   "score": 650
+  },
+  {
+   "word": "home",
+   "category": "Real estate",
+   "score": 500
+  },
+  {
+   "word": "green",
+   "category": "Green",
    "score": 300
   },
   {
@@ -214,23 +257,38 @@
    "score": 200
   },
   {
-   "word": "show",
-   "category": "Creator",
+   "word": "data",
+   "category": "AI",
    "score": 150
   },
   {
-   "word": "team",
-   "category": "SaaS",
+   "word": "stock",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "baker",
+   "category": "Food",
    "score": 100
   },
   {
-   "word": "score",
-   "category": "Gaming",
+   "word": "movie",
+   "category": "Creator",
    "score": 100
   },
   {
-   "word": "league",
-   "category": "Gaming",
+   "word": "roast",
+   "category": "Food",
+   "score": 100
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 100
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
    "score": 100
   }
  ]
