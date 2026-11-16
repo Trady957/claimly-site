@@ -1,0 +1,292 @@
+{
+ "date": "2026-11-16",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "clima",
+   "geo": "BR",
+   "traffic": 2000000
+  },
+  {
+   "q": "arnaud sncf",
+   "geo": "FR",
+   "traffic": 10000
+  },
+  {
+   "q": "gta 6 ps5 frame rate",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "foo fighters tour",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "pakistan vs zimbabwe",
+   "geo": "AE",
+   "traffic": 5000
+  },
+  {
+   "q": "les 8 salopards tarantino arte",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "首脳会談",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "crimean bridge",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "mark carney",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "sarah snook",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "vulcan rocket failure",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "helen haines hospital",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "kfc funeral",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "grand theft auto vi",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "mütterrente",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "gérard depardieu",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "solar eclipse",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "sun today",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "the sun today",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "simulador",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "meteorologia",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "ban vs sa",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "sharad kapoor",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "immigration",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "steps tour 2027",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "gta vi",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "ao3 website fanfiction",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "syed mushtaq ali trophy scorecard",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "zubayr hamza",
+   "geo": "AE",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Travel",
+   "score": 9500
+  },
+  {
+   "category": "Creator",
+   "score": 8250
+  },
+  {
+   "category": "Green",
+   "score": 7700
+  },
+  {
+   "category": "AI",
+   "score": 3000
+  },
+  {
+   "category": "Local",
+   "score": 1800
+  },
+  {
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "category": "SaaS",
+   "score": 1100
+  },
+  {
+   "category": "E-commerce",
+   "score": 300
+  },
+  {
+   "category": "Finance",
+   "score": 150
+  }
+ ],
+ "words": [
+  {
+   "word": "tour",
+   "category": "Travel",
+   "score": 9000
+  },
+  {
+   "word": "frame",
+   "category": "Creator",
+   "score": 7500
+  },
+  {
+   "word": "sun",
+   "category": "Green",
+   "score": 5700
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 3000
+  },
+  {
+   "word": "solar",
+   "category": "Green",
+   "score": 2000
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 1600
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 1000
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 1000
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 600
+  },
+  {
+   "word": "boss",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "road",
+   "category": "Travel",
+   "score": 500
+  },
+  {
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 300
+  },
+  {
+   "word": "zone",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "wealth",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "grid",
+   "category": "SaaS",
+   "score": 100
+  }
+ ]
+}

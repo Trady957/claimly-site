@@ -1,5 +1,5 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "geos": [
   "US",
   "GB",
@@ -21,274 +21,271 @@
   {
    "q": "clima",
    "geo": "BR",
-   "traffic": 200000
+   "traffic": 2000000
   },
   {
-   "q": "ban vs sa",
-   "geo": "ZA",
-   "traffic": 20000
-  },
-  {
-   "q": "bangladesh vs south africa",
-   "geo": "AE",
+   "q": "arnaud sncf",
+   "geo": "FR",
    "traffic": 10000
   },
   {
-   "q": "beauden barrett",
-   "geo": "ZA",
-   "traffic": 10000
-  },
-  {
-   "q": "live cricket score",
-   "geo": "CA",
+   "q": "gta 6 ps5 frame rate",
+   "geo": "GB",
    "traffic": 7500
   },
   {
-   "q": "winter storm",
-   "geo": "US",
-   "traffic": 6000
+   "q": "foo fighters tour",
+   "geo": "GB",
+   "traffic": 7500
   },
   {
-   "q": "dp world tour championship",
-   "geo": "US",
-   "traffic": 3000
+   "q": "pakistan vs zimbabwe",
+   "geo": "AE",
+   "traffic": 5000
   },
   {
-   "q": "alan milburn",
+   "q": "les 8 salopards tarantino arte",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "首脳会談",
+   "geo": "JP",
+   "traffic": 5000
+  },
+  {
+   "q": "crimean bridge",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "crime",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "m",
+   "q": "bangladesh vs south africa",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "new zealand national cricket team vs india national cricket team",
+   "q": "mark carney",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "sarah snook",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "vulcan rocket failure",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "helen haines hospital",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "kfc funeral",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "grand theft auto vi",
    "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "sri lanka women's national cricket team vs papua new guinea women's national cricket team match scorecard",
-   "geo": "IN",
+   "q": "mütterrente",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "bangladesh vs south africa",
-   "geo": "SG",
+   "q": "gérard depardieu",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "donald trump iran war",
-   "geo": "US",
-   "traffic": 1500
-  },
-  {
-   "q": "australia vs new zealand",
-   "geo": "US",
-   "traffic": 1500
-  },
-  {
-   "q": "when does im a celebrity start",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "dom joly",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "stephanie rice",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "bradman best",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "iran attacks bahrain",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "sri lanka vs papua new guinea",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "dean foxcroft",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "sri lanka vs papua new guinea",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "juweliergeschäft",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "putin news",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "emmanuel macron au cambodge",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "gagnant euromillions",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "sadio mané",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "lekki international airport",
-   "geo": "NG",
-   "traffic": 1000
-  },
-  {
-   "q": "ford ranger",
+   "q": "solar eclipse",
    "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "sun today",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "the sun today",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "simulador",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "meteorologia",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "ban vs sa",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "sharad kapoor",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "immigration",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "steps tour 2027",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "gta vi",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "ao3 website fanfiction",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "syed mushtaq ali trophy scorecard",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "zubayr hamza",
+   "geo": "AE",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "SaaS",
-   "score": 11150
-  },
-  {
-   "category": "Gaming",
-   "score": 7500
-  },
-  {
    "category": "Travel",
-   "score": 3200
-  },
-  {
-   "category": "Local",
-   "score": 650
-  },
-  {
-   "category": "Real estate",
-   "score": 500
-  },
-  {
-   "category": "Food",
-   "score": 300
+   "score": 9500
   },
   {
    "category": "Creator",
-   "score": 300
+   "score": 8250
   },
   {
    "category": "Green",
-   "score": 300
+   "score": 7700
   },
   {
    "category": "AI",
-   "score": 150
+   "score": 3000
+  },
+  {
+   "category": "Local",
+   "score": 1800
+  },
+  {
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "category": "SaaS",
+   "score": 1100
+  },
+  {
+   "category": "E-commerce",
+   "score": 300
   },
   {
    "category": "Finance",
    "score": 150
-  },
-  {
-   "category": "Legal",
-   "score": 100
   }
  ],
  "words": [
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 10400
+   "word": "tour",
+   "category": "Travel",
+   "score": 9000
   },
   {
-   "word": "score",
-   "category": "Gaming",
+   "word": "frame",
+   "category": "Creator",
    "score": 7500
   },
   {
-   "word": "tour",
-   "category": "Travel",
-   "score": 3100
+   "word": "sun",
+   "category": "Green",
+   "score": 5700
   },
   {
-   "word": "launch",
-   "category": "SaaS",
-   "score": 750
+   "word": "rocket",
+   "category": "AI",
+   "score": 3000
+  },
+  {
+   "word": "solar",
+   "category": "Green",
+   "score": 2000
   },
   {
    "word": "weather",
    "category": "Local",
-   "score": 650
+   "score": 1600
   },
   {
-   "word": "home",
-   "category": "Real estate",
-   "score": 500
+   "word": "team",
+   "category": "SaaS",
+   "score": 1000
   },
   {
-   "word": "green",
-   "category": "Green",
-   "score": 300
-  },
-  {
-   "word": "film",
-   "category": "Creator",
-   "score": 200
-  },
-  {
-   "word": "data",
-   "category": "AI",
-   "score": 150
-  },
-  {
-   "word": "stock",
-   "category": "Finance",
-   "score": 150
-  },
-  {
-   "word": "baker",
-   "category": "Food",
-   "score": 100
+   "word": "league",
+   "category": "Gaming",
+   "score": 1000
   },
   {
    "word": "movie",
    "category": "Creator",
-   "score": 100
+   "score": 600
   },
   {
-   "word": "roast",
-   "category": "Food",
-   "score": 100
+   "word": "boss",
+   "category": "Gaming",
+   "score": 500
   },
   {
-   "word": "travel",
+   "word": "road",
    "category": "Travel",
-   "score": 100
+   "score": 500
   },
   {
-   "word": "nugget",
-   "category": "Food",
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 300
+  },
+  {
+   "word": "zone",
+   "category": "Local",
+   "score": 200
+  },
+  {
+   "word": "wealth",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "grid",
+   "category": "SaaS",
    "score": 100
   }
  ]
