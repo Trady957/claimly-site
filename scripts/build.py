@@ -148,6 +148,9 @@ def footer():
 <div>
 <h4>Contact</h4>
 <a href="mailto:{EMAIL}">{EMAIL}</a>
+<a href="{SOCIAL['instagram']}" rel="noopener me" target="_blank">Instagram</a>
+<a href="{SOCIAL['pinterest']}" rel="noopener me" target="_blank">Pinterest</a>
+<a href="/ar/" hreflang="ar" lang="ar">العربية</a>
 <a href="/#how">How it works</a>
 <a href="/#faq">FAQ</a>
 <h4 style="margin-top:18px">Our other shops</h4>
@@ -176,6 +179,18 @@ function claimlyNews(e){{e.preventDefault();var f=e.target;if(!f['bot-field'].va
 </script>
 """
 
+SOCIAL = {"instagram": "https://www.instagram.com/claimlydomains/", "pinterest": "https://www.pinterest.com/ClaimlyDomains/"}
+
+def floaters_html():
+    """Three real, buyable names in the hero (best-priced premium .com / .io / .co), linked to their pages."""
+    out = []
+    for cls, ext in (("fa", "com"), ("fb", "io"), ("fc", "co")):
+        pool = sorted([d for d in D if d["ext"] == ext], key=lambda d: (d["tier"] != "premium", -d["price"]))
+        if pool:
+            d = pool[0]
+            out.append(f'<a class="float {cls}" href="/d/{d["fqdn"]}/">{esc(d["name"])}.{d["ext"]} <small>${d["price"]}</small></a>')
+    return "\n".join(out)
+
 # ───────────────────────── home page ─────────────────────────
 def home():
     featured = D[:12]
@@ -191,13 +206,13 @@ def home():
      ("Can I get a custom name suggestion?","Yes. Email us what you&rsquo;re building and we&rsquo;ll reply with a shortlist of available names that fit."),
     ]
     faq_ld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":html.unescape(re.sub('<[^>]+>','',a))}} for q,a in faqs]}
-    ld = ('<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"Organization","name":"Claimly","url":SITE+"/","logo":SITE+"/og-image.png","email":EMAIL})+'</script>\n'
+    ld = ('<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"Organization","name":"Claimly","url":SITE+"/","logo":SITE+"/og-image.png","email":EMAIL,"sameAs":list(SOCIAL.values())})+'</script>\n'
           '<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"WebSite","name":"Claimly","url":SITE+"/"})+'</script>\n'
           '<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"ItemList","name":"Featured brandable domains","itemListElement":items})+'</script>\n'
           '<script type="application/ld+json">'+json.dumps(faq_ld)+'</script>')
     title = f"Brandable Domain Names from ${MINP} | Claimly"
     desc = f"Short, brandable domain names from ${MINP}. Describe your business and our AI finds names that fit. Pay by card or PayPal, same-day delivery, full refund if not delivered."
-    h = head(title, desc, SITE+"/", ld)
+    h = head(title, desc, SITE+"/", HREFLANG + ld)
     catchips = '<a class="chip active" href="/new/">New this week</a>' + "".join(f'<a class="chip" href="/domains/{slug(c)}/">{esc(c)}</a>' for c in CATS)
     faqhtml = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q,a in faqs)
     data = json.dumps(RAW, separators=(",",":"))
@@ -205,10 +220,8 @@ def home():
 <section class="hero" id="finder"><div class="wrap">
 <div class="hero-top"><span class="eyebrow"><span class="spark"></span>AI domain finder</span><span class="hero-counter">New names added daily</span></div>
 <h1 class="giant">Domains<span class="sr"> &mdash; brandable domain names for your business</span></h1>
-<div class="floaters" aria-hidden="true">
-<span class="float fa">VaultMint.com <small>$129</small></span>
-<span class="float fb">NeuralFig.ai <small>$139</small></span>
-<span class="float fc">BrewQuarter.com <small>$69</small></span>
+<div class="floaters">
+{floaters_html()}
 </div>
 <div class="hero-bottom">
 <div class="hero-pitch"><div class="price-hook">from ${MINP}</div><p class="lede">Short, brandable domain names for founders and small businesses. Describe what you&rsquo;re building and our AI suggests names that fit &mdash; registered in your name, usually the same day.</p></div>
@@ -442,7 +455,11 @@ def domain_page(d, idx):
     prod = {"@context":"https://schema.org","@type":"Product","name":d["fqdn"],"description":html.unescape(re.sub('<[^>]+>','',describe(d))),
             "image":SITE+"/og-image.png","url":canon,"category":d["cat"]+" domain names","brand":{"@type":"Brand","name":"Claimly"},
             "offers":{"@type":"Offer","price":str(d["price"]),"priceCurrency":"USD","availability":"https://schema.org/InStock","url":canon,"priceValidUntil":("2026-11-01" if SALE_ON else "2027-12-31"),
-                      "seller":{"@type":"Organization","name":"Claimly"}}}
+                      "seller":{"@type":"Organization","name":"Claimly","url":SITE+"/"},
+                      "shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"USD"},
+                          "shippingDestination":{"@type":"DefinedRegion","addressCountry":"AE"},
+                          "deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":1,"unitCode":"DAY"},"transitTime":{"@type":"QuantitativeValue","minValue":0,"maxValue":2,"unitCode":"DAY"}}},
+                      "hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"AE","returnPolicyCategory":"https://schema.org/MerchantReturnNotPermitted"}}}
     crumbs = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Claimly","item":SITE+"/"},
         {"@type":"ListItem","position":2,"name":f"{d['cat']} domains","item":f"{SITE}/domains/{slug(d['cat'])}/"},
@@ -954,8 +971,75 @@ def notfound():
 <a class="btn btn-cta" href="/#shop">Browse available names</a>
 </div></main>""" + footer() + "</body></html>"
 
+# ───────────────────────── Arabic landing page (/ar/) ─────────────────────────
+AR_CATS = [("E-commerce", "متاجر إلكترونية"), ("Food", "مطاعم ومقاهي وأطعمة"), ("Fashion", "أزياء وعطور"),
+           ("Real estate", "عقارات"), ("Health", "عيادات وصحة وجمال"), ("Finance", "مالية وتقنية مالية"),
+           ("AI", "ذكاء اصطناعي"), ("Travel", "سفر وسياحة")]
+HREFLANG = (f'<link rel="alternate" hreflang="en" href="{SITE}/">'
+            f'<link rel="alternate" hreflang="ar" href="{SITE}/ar/">'
+            f'<link rel="alternate" hreflang="x-default" href="{SITE}/">')
+
+def ar_page():
+    canon = f"{SITE}/ar/"
+    title = f"أسماء دومين للبيع تبدأ من ${MINP} | اسم مشروعك ونطاقه في 48 ساعة | Claimly"
+    desc = (f"متجر Claimly لأسماء الدومين: {NFMT} اسم نطاق قصير ومميز ومتاح للتسجيل تبدأ من ${MINP}، "
+            f"أو نختار لك اسم مشروعك ونسجّل الدومين خلال 48 ساعة. الدفع بالبطاقة أو PayPal، واسترداد كامل إن لم يُسلَّم النطاق.")
+    faqs = [("كيف أشتري اسم الدومين؟", "اختر الاسم، أدخل بريدك الإلكتروني، ثم ادفع بالبطاقة أو عبر PayPal. نسجّل النطاق باسمك أو ننقله إلى حسابك لدى مسجّل النطاقات، ونراسلك عند كل خطوة."),
+            ("هل السعر يشمل التسجيل؟", "نعم. السعر بالدولار الأمريكي ويشمل السنة الأولى من التسجيل. التجديد بعد ذلك يكون لدى مسجّل النطاقات الخاص بك."),
+            ("ماذا لو كان الاسم محجوزًا عند الطلب؟", "نتحقق من توفر الأسماء يوميًا، لكن إن سُجِّل الاسم قبل طلبك تسترد المبلغ كاملًا فورًا أو تختار اسمًا آخر بالسعر نفسه."),
+            ("هل تعملون مع الشركات في الإمارات والسعودية؟", "نعم. نساعد المؤسسين في الإمارات والسعودية ودول الخليج، ونقترح أسماء تناسب السوقين العربي والإنجليزي، مع باقة ثنائية اللغة تشمل شعارًا بالعربية والإنجليزية."),
+            ("لم أجد اسمًا مناسبًا، ماذا أفعل؟", "اطلب 3 أفكار أسماء مجانية عبر النموذج في هذه الصفحة، أو اختر باقة التسمية ونرسل لك 10 أسماء مع نطاقات متاحة خلال 48 ساعة.")]
+    faq_ld = {"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ar","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]}
+    ld = HREFLANG + '<script type="application/ld+json">' + json.dumps(faq_ld, ensure_ascii=False) + '</script>'
+    blocks = ""
+    for c, label in AR_CATS:
+        picks = sorted(BYCAT.get(c, []), key=lambda d: (d["tier"] != "premium", -d["price"]))[:8]
+        if not picks: continue
+        links = "".join(f'<a href="/d/{d["fqdn"]}/" dir="ltr">{d["fqdn"]}<span>${d["price"]}</span></a>' for d in picks)
+        blocks += (f'<h2 style="font-size:22px;margin:30px 0 12px">أسماء دومين لـ{label}</h2><div class="linkgrid">{links}</div>'
+                   f'<p style="margin-top:8px"><a href="/domains/{slug(c)}/" style="color:var(--cobalt);font-weight:600">عرض كل الأسماء &larr;</a></p>')
+    faq_html = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)
+    pk = (f'باقة التسمية: 10 أسماء مختارة لمشروعك مع نطاقات متاحة وتسجيل النطاق الذي تختاره، خلال 48 ساعة، من ${PKG_FROM}'
+          + (' <b style="background:#E0231C;color:#fff;border-radius:99px;padding:2px 9px;font-size:13px">سعر الإطلاق حتى 30 نوفمبر</b>' if OFFER_ON else ''))
+    h = head(title, desc, canon, ld).replace('<html lang="en">', '<html lang="ar" dir="rtl">', 1)
+    return h + f"""
+<style>.ar{{font-family:'Hanken Grotesk',Tahoma,Arial,sans-serif;line-height:1.75}}.ar .linkgrid a{{direction:ltr}}.ar .faq summary{{text-align:right}}</style>
+<main class="page ar"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &lsaquo; العربية</div>
+<h1>أسماء دومين للبيع لمشروعك في الإمارات والخليج</h1>
+<p class="section-sub">أكثر من {NFMT} اسم نطاق قصير وسهل التذكّر ومتاح للتسجيل، تبدأ من ${MINP} شاملة السنة الأولى. اختر الاسم، ادفع بالبطاقة أو PayPal، ونسلّمك النطاق عادةً في اليوم نفسه، مع استرداد كامل إن لم يُسلَّم.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px">
+<a class="btn btn-cta" href="/?utm_source=ar#finder">ابحث عن اسم بالذكاء الاصطناعي</a>
+<a class="btn" style="border:1px solid var(--ink)" href="/name-my-business/?utm_source=ar">اختاروا لي اسم مشروعي</a>
+</div>
+<div style="background:var(--ink);color:var(--bone);border-radius:18px;padding:22px 24px;margin:26px 0">
+<h2 style="font-size:22px;margin:0 0 6px;color:var(--bone)">لا تعرف ماذا تسمّي مشروعك؟</h2>
+<p style="margin:0 0 14px;opacity:.85">{pk}. باقة &laquo;العلامة الثنائية اللغة&raquo; تتحقق من نطق كل اسم ومعناه بالعربية، وتشمل شعارًا بالعربية والإنجليزية.</p>
+<a class="btn btn-cta" href="/name-my-business/?utm_source=ar">شاهد الباقات &larr;</a>
+</div>
+{blocks}
+<div class="pk-form" id="free" style="background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:24px;margin:34px 0;max-width:620px">
+<div id="arFields">
+<h2 style="font-size:22px;margin:0 0 6px">احصل على 3 أفكار أسماء مجانًا</h2>
+<p style="margin:0 0 14px;color:var(--muted)">أخبرنا عن مشروعك، ونرسل لك 3 أسماء مع نطاقات متاحة خلال 24 ساعة. مجانًا ودون بطاقة.</p>
+<form onsubmit="return arSubmit(event)">
+<p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+<div class="field"><label for="arEmail">بريدك الإلكتروني</label><input type="email" id="arEmail" name="email" required dir="ltr" placeholder="you@company.com" autocomplete="email" maxlength="200"></div>
+<div class="field"><label for="arBiz">ما هو نشاط مشروعك؟</label><textarea id="arBiz" name="details" required maxlength="1400" style="font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bone);min-height:90px;width:100%;box-sizing:border-box" placeholder="مثال: مخبز منزلي في دبي للكيك والحلويات"></textarea></div>
+<button class="btn btn-cta wide" type="submit">أرسلوا لي 3 أسماء &larr;</button>
+</form></div>
+<div id="arDone" style="display:none"><h3>تم! ستصلك الأسماء خلال 24 ساعة.</h3><p>تحقق من بريدك (ومجلد الرسائل غير المرغوب فيها).</p></div>
+</div>
+<h2 style="font-size:24px">الأسئلة الشائعة</h2>
+<div class="faq">{faq_html}</div>
+</div></main>""" + footer() + """<script>
+function arSubmit(e){e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;var a=claimlyAttr();
+ claimlySave('claimly_leads',{kind:'free_names',email:f.email.value.trim().slice(0,200),details:('[AR] '+f.details.value.trim()).slice(0,1400),consent:true,page:location.pathname.slice(0,300),utm_source:(a.us||'ar').slice(0,100)});
+ document.getElementById('arFields').style.display='none';document.getElementById('arDone').style.display='block';return false;}
+</script></body></html>"""
+
 def sitemap():
-    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
+    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/ar/", "0.9", "weekly", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
     body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
 
@@ -981,6 +1065,7 @@ def build():
         os.makedirs(os.path.join(OUT, "guides", g[0])); open(os.path.join(OUT, "guides", g[0], "index.html"), "w").write(guide_page(g))
     for slug_, fn in (("launch", launch_page), ("partners", partners_page)):
         os.makedirs(os.path.join(OUT, slug_)); open(os.path.join(OUT, slug_, "index.html"), "w").write(fn())
+    os.makedirs(os.path.join(OUT, "ar")); open(os.path.join(OUT, "ar", "index.html"), "w").write(ar_page())
     os.makedirs(os.path.join(OUT, "name-my-business")); open(os.path.join(OUT, "name-my-business", "index.html"), "w").write(package_page())
     for i, d in enumerate(D):
         p = os.path.join(OUT, "d", d["fqdn"]); os.makedirs(p)
@@ -991,6 +1076,8 @@ def build():
     open(os.path.join(OUT, "sitemap.xml"), "w").write(sitemap())
     open(os.path.join(OUT, "CNAME"), "w").write("claimly.ae\n")   # GitHub Pages custom domain
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
+    # Netlify builds the same repo at claimly-ae.netlify.app; send that copy to claimly.ae so Google sees one site.
+    open(os.path.join(OUT, "_redirects"), "w").write("https://claimly-ae.netlify.app/* https://claimly.ae/:splat 301!\n")
     open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nDisallow: /.netlify/\n\nSitemap: {SITE}/sitemap.xml\n")
     print(f"built {N} domain pages ({len(recent())} new this week), {len(CATS)} category pages into {OUT}")
 
