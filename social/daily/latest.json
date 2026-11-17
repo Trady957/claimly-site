@@ -1,28 +1,28 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "category": "Finance",
  "title": "Names for your finance or fintech brand",
- "image_url": "https://claimly.ae/social/daily/2026-11-16.jpg",
+ "image_url": "https://claimly.ae/social/daily/2026-11-17.jpg",
  "names": [
   {
-   "domain": "loanora.co",
-   "price": 50
+   "domain": "fundable.co",
+   "price": 45
   },
   {
-   "domain": "banklane.co",
-   "price": 50
-  },
-  {
-   "domain": "clearbank.co",
-   "price": 40
-  },
-  {
-   "domain": "coinswift.co",
+   "domain": "fundgrid.co",
    "price": 39
   },
   {
-   "domain": "stockbase.co",
+   "domain": "cashpulse.co",
+   "price": 39
+  },
+  {
+   "domain": "fundcraft.co",
    "price": 40
+  },
+  {
+   "domain": "financebase.co",
+   "price": 39
   }
  ]
 }

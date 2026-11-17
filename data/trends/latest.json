@@ -1,5 +1,5 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "geos": [
   "US",
   "GB",
@@ -19,176 +19,168 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "clima",
-   "geo": "BR",
-   "traffic": 2000000
+   "q": "singapore vs brazil",
+   "geo": "AE",
+   "traffic": 20000
   },
   {
-   "q": "arnaud sncf",
-   "geo": "FR",
+   "q": "singapore vs brazil",
+   "geo": "SA",
+   "traffic": 20000
+  },
+  {
+   "q": "singapore vs brazil",
+   "geo": "NG",
+   "traffic": 20000
+  },
+  {
+   "q": "singapore vs brazil",
+   "geo": "ZA",
+   "traffic": 20000
+  },
+  {
+   "q": "singapore vs brazil",
+   "geo": "GB",
+   "traffic": 15000
+  },
+  {
+   "q": "singapore vs brazil",
+   "geo": "AU",
+   "traffic": 15000
+  },
+  {
+   "q": "واتساب",
+   "geo": "SA",
    "traffic": 10000
   },
   {
-   "q": "gta 6 ps5 frame rate",
-   "geo": "GB",
-   "traffic": 7500
+   "q": "sorteio loteria federal",
+   "geo": "BR",
+   "traffic": 10000
   },
   {
-   "q": "foo fighters tour",
-   "geo": "GB",
-   "traffic": 7500
-  },
-  {
-   "q": "pakistan vs zimbabwe",
-   "geo": "AE",
+   "q": "weather singapore",
+   "geo": "SG",
    "traffic": 5000
   },
   {
-   "q": "les 8 salopards tarantino arte",
+   "q": "temba bavuma",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "mindhunter",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "tony mowbray",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "canadiens",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "neet",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "महेंद्र सिंह धोनी",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "aréna cholet",
    "geo": "FR",
-   "traffic": 5000
+   "traffic": 2000
   },
   {
-   "q": "首脳会談",
+   "q": "œuf",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "tarn-et-garonne",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "wissam ben yedder",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "chine",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "brazil vs singapore",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "brazil",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "jimmy odukoya",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "近藤真彦",
    "geo": "JP",
-   "traffic": 5000
-  },
-  {
-   "q": "crimean bridge",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "bangladesh vs south africa",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "mark carney",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "sarah snook",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "vulcan rocket failure",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "helen haines hospital",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "kfc funeral",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "grand theft auto vi",
-   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "mütterrente",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "gérard depardieu",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "solar eclipse",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "sun today",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "the sun today",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "simulador",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "meteorologia",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "ban vs sa",
+   "q": "school delays",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "sharad kapoor",
-   "geo": "US",
+   "q": "hungarian authorities buried cash find",
+   "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "immigration",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "steps tour 2027",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "gta vi",
-   "geo": "CA",
-   "traffic": 1500
-  },
-  {
-   "q": "ao3 website fanfiction",
+   "q": "ss546 lottery result",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "syed mushtaq ali trophy scorecard",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "zubayr hamza",
+   "q": "ഇറാന്",
    "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "الحرس الثوري الإيراني",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "stricken",
+   "geo": "DE",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Travel",
-   "score": 9500
-  },
-  {
-   "category": "Creator",
-   "score": 8250
-  },
-  {
-   "category": "Green",
-   "score": 7700
-  },
-  {
-   "category": "AI",
-   "score": 3000
-  },
-  {
    "category": "Local",
-   "score": 1800
+   "score": 5300
+  },
+  {
+   "category": "Finance",
+   "score": 1700
+  },
+  {
+   "category": "Education",
+   "score": 1500
   },
   {
    "category": "Gaming",
@@ -196,96 +188,61 @@
   },
   {
    "category": "SaaS",
-   "score": 1100
+   "score": 650
   },
   {
-   "category": "E-commerce",
-   "score": 300
+   "category": "Travel",
+   "score": 600
   },
   {
-   "category": "Finance",
-   "score": 150
+   "category": "Food",
+   "score": 100
   }
  ],
  "words": [
   {
-   "word": "tour",
-   "category": "Travel",
-   "score": 9000
-  },
-  {
-   "word": "frame",
-   "category": "Creator",
-   "score": 7500
-  },
-  {
-   "word": "sun",
-   "category": "Green",
-   "score": 5700
-  },
-  {
-   "word": "rocket",
-   "category": "AI",
-   "score": 3000
-  },
-  {
-   "word": "solar",
-   "category": "Green",
-   "score": 2000
-  },
-  {
    "word": "weather",
    "category": "Local",
-   "score": 1600
+   "score": 5300
+  },
+  {
+   "word": "school",
+   "category": "Education",
+   "score": 1500
+  },
+  {
+   "word": "cash",
+   "category": "Finance",
+   "score": 1500
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 750
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 750
   },
   {
    "word": "team",
    "category": "SaaS",
-   "score": 1000
+   "score": 650
   },
   {
-   "word": "league",
-   "category": "Gaming",
-   "score": 1000
-  },
-  {
-   "word": "movie",
-   "category": "Creator",
+   "word": "summit",
+   "category": "Travel",
    "score": 600
   },
   {
-   "word": "boss",
-   "category": "Gaming",
-   "score": 500
-  },
-  {
-   "word": "road",
-   "category": "Travel",
-   "score": 500
-  },
-  {
-   "word": "sale",
-   "category": "E-commerce",
-   "score": 300
-  },
-  {
-   "word": "zone",
-   "category": "Local",
+   "word": "fund",
+   "category": "Finance",
    "score": 200
   },
   {
-   "word": "wealth",
-   "category": "Finance",
-   "score": 150
-  },
-  {
-   "word": "star",
-   "category": "Creator",
-   "score": 150
-  },
-  {
-   "word": "grid",
-   "category": "SaaS",
+   "word": "pizza",
+   "category": "Food",
    "score": 100
   }
  ]
