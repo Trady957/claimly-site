@@ -101,7 +101,7 @@ footer{padding:0 0 30px;border-top:1px solid var(--line);margin-top:30px}
 .field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field label{font-size:13px;font-weight:600;color:var(--muted)}
 .field input,.field select{font-family:'Hanken Grotesk';font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bone);color:var(--ink);width:100%}
 .field input:focus,.field select:focus{outline:none;border-color:var(--cobalt);box-shadow:0 0 0 3px var(--lilac)}
-.hp{position:absolute;left:-9999px}
+.hp{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .reassure{font-size:12.5px;color:var(--muted);text-align:center;margin:12px 0 0}.modal h3{font-family:'Schibsted Grotesk';margin:10px 0 6px}
 .m-done{display:none}.m-done.on{display:block}
 .m-done p{font-size:14.5px;color:var(--muted)}
