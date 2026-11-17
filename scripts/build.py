@@ -4,7 +4,7 @@
 Reads data/inventory.json minus data/sold.txt and data/taken.txt.
 Outputs: index.html, /d/<domain>/, /domains/<category>/, /new/, sitemap.xml, robots.txt, 404.html.
 """
-import json, os, shutil, html, datetime, random, re
+import json, os, shutil, html, datetime, random, re, hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -17,6 +17,7 @@ SB_URL = "https://bbjreybvwqdzsfbcunlm.supabase.co"
 SB_KEY = "sb_publishable_JeEACKfWsGaFXTat1B-WVw_uWkUR8ZK"
 EMAIL = "hello@claimly.ae"
 TODAY = datetime.date.today().isoformat()
+CSS_V = hashlib.md5(open(os.path.join(ROOT, "site", "site.css"), "rb").read()).hexdigest()[:8]   # cache-buster
 
 CATS = ["Finance","AI","SaaS","E-commerce","Local","Health","Creator","Education","Travel","Real estate","Food","Pets","Crypto","Marketing","Legal","Fashion","Gaming","Green"]
 EXTS = ["com","ai","io","co","app","dev","xyz","shop","store","studio","tech","eco"]
@@ -106,7 +107,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <meta name="p:domain_verify" content="a499319593d2ca67933886e9969ee4c6"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {FONTS}
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">
 {extra_ld}
 <script>function loadScript(a){{var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}}loadScript(function(){{beTracker.t({{hash:"8ba47d0fd40dc1413af50dcb436aff42"}})}});</script>
 </head>
