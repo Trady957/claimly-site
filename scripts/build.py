@@ -876,20 +876,21 @@ def generator_widget(phrase, kws, slug_):
 const GEN_KW={json.dumps([k.lower() for k in kws])};
 const GEN_PRE=["get","my","go","the","true","prime","bright","nova","blue","golden","urban","first","smart","next","alpha"],GEN_SUF=["hq","hub","co","works","lab","ly","pro","nest","point","wise","line","craft","way","box","base","spot","zone","link","now","house"],GEN_BLEND=["ora","ia","io","ix","ova","ify","era","eo"];
 function genPick(a){{return a[Math.floor(Math.random()*a.length)];}}
-function genName(u){{const k=genPick(GEN_KW),k2=genPick(GEN_KW),w=u||genPick(GEN_KW),r=Math.random();
- if(u&&r<.35)return Math.random()<.5?u+k:k+u; if(r<.5)return k+genPick(GEN_SUF); if(r<.65)return genPick(GEN_PRE)+k;
- if(r<.8&&k!==k2)return k+k2; if(r<.9)return w.slice(0,Math.max(3,Math.min(5,w.length-1)))+genPick(GEN_BLEND); return genPick(GEN_PRE)+w;}}
+function genName(u){{const k=genPick(GEN_KW),k2=genPick(GEN_KW),w=u||genPick(GEN_KW),r=Math.random(),cut=x=>x.slice(0,Math.max(3,Math.min(5,x.length-1)));
+ if(u&&r<.25)return Math.random()<.5?u+genPick(GEN_SUF):cut(u)+genPick(GEN_BLEND);
+ if(r<.45)return cut(k)+genPick(GEN_BLEND); if(r<.6)return k+genPick(GEN_SUF); if(r<.7)return genPick(GEN_PRE)+k+genPick(["hq","co","ly","ify","io"]);
+ if(r<.8&&k!==k2)return cut(k)+cut(k2); if(r<.9)return cut(w)+genPick(GEN_BLEND)+genPick(["","","x","n"]); return genPick(GEN_PRE)+cut(w)+genPick(GEN_BLEND);}}
 async function genRun(e){{if(e)e.preventDefault();const u=ckSlug(document.getElementById('genIn').value).slice(0,14),out=document.getElementById('genOut');
- const set=new Set();let n=0;while(set.size<12&&n++<200){{const x=genName(u);if(x.length>=4&&x.length<=16)set.add(x);}}
- const list=[...set];out.innerHTML=list.map(b=>`<div class="ck-res" id="g_${{b}}"><span>${{b}}.com</span><span style="font-size:12px;color:var(--muted)">checking…</span></div>`).join('');
+ const set=new Set();let n=0;while(set.size<36&&n++<400){{const x=genName(u);if(x.length>=5&&x.length<=14)set.add(x);}}
+ const list=[...set],res={{}};let done=0,i=0;out.innerHTML='<p style="grid-column:1/-1">Checking '+list.length+' names&hellip; <span id="genN">0</span>/'+list.length+'</p>';
+ const worker=async()=>{{while(i<list.length){{const b=list[i++];res[b]=await ckOne(b+'.com','https://rdap.verisign.com/com/v1/domain/');const c=document.getElementById('genN');if(c)c.textContent=++done;}}}};
+ await Promise.all([worker(),worker(),worker(),worker(),worker(),worker()]);
+ const free=list.filter(b=>res[b]==='free'),taken=list.filter(b=>res[b]==='taken');
+ out.innerHTML=free.slice(0,12).map(b=>`<div class="ck-res ck-ok"><span>${{b}}.com <b>free</b></span><button class="btn btn-cta" type="button" onclick="ckBuy('${{b}}.com',35)">Claim $35</button></div>`).join('')
+  +taken.slice(0,Math.max(0,4-free.length)).map(b=>`<div class="ck-res ck-no"><span>${{b}}.com <b>taken</b></span></div>`).join('')
+  +(free.length?'':'<p style="grid-column:1/-1">All taken this round. Try again, add your own word, or pick a ready-to-buy name above.</p>');
  document.getElementById('genMore').style.display='block';
- let i=0;const worker=async()=>{{while(i<list.length){{const b=list[i++],st=await ckOne(b+'.com','https://rdap.verisign.com/com/v1/domain/'),el=document.getElementById('g_'+b);if(!el)continue;
-  if(st==='free'){{el.className='ck-res ck-ok';el.innerHTML=`<span>${{b}}.com <b>free</b></span><button class="btn btn-cta" type="button" onclick="ckBuy('${{b}}.com',35)">Claim $35</button>`;}}
-  else if(st==='taken'){{el.className='ck-res ck-no';el.innerHTML=`<span>${{b}}.com <b>taken</b></span>`;}}
-  else el.lastElementChild.textContent='try later';}}}};
- await Promise.all([worker(),worker(),worker(),worker()]);
- const ok=out.querySelectorAll('.ck-ok').length;
- try{{claimlySave('claimly_leads',{{kind:'name_check',email:'',details:('[generator {slug_}] '+(u||'-')+' -> '+ok+'/'+list.length+' free').slice(0,300),consent:false,page:location.pathname.slice(0,300),utm_source:(claimlyAttr().us||'generator').slice(0,100)}});}}catch(_){{}}
+ try{{claimlySave('claimly_leads',{{kind:'name_check',email:'',details:('[generator {slug_}] '+(u||'-')+' -> '+free.length+'/'+list.length+' free').slice(0,300),consent:false,page:location.pathname.slice(0,300),utm_source:(claimlyAttr().us||'generator').slice(0,100)}});}}catch(_){{}}
  return false;}}
 </script>"""
 
