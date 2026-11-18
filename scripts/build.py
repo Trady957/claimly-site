@@ -86,7 +86,9 @@ CAT_BLURB = {
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;900&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">')
 
-OFFER_BAR = """<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Launch offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; until 30 Nov <u>See how &rarr;</u></a>"""
+_DL = (datetime.date(2026, 11, 30) - datetime.date.today()).days
+_DAYS_LEFT = "last day today" if _DL <= 0 else ("ends tomorrow" if _DL == 1 else f"ends in {_DL} days (30 Nov)")
+OFFER_BAR = f"""<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Launch offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; {_DAYS_LEFT} <u>See how &rarr;</u></a>"""
 
 SALE_BAR = f"""<a href="/#shop" style="display:block;background:#E0231C;color:#fff;text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>This week only: 20% off every domain</b> &middot; ends Sunday night (US time) <span id="saleLeft"></span> &middot; <u>Shop now &rarr;</u></a><script>(function(){{var e=new Date("2026-11-02T03:00:00Z"),el=document.getElementById("saleLeft");function t(){{var m=Math.max(0,e-new Date()),d=Math.floor(m/864e5),h=Math.floor(m%864e5/36e5);if(el)el.textContent=m?"· "+(d?d+"d ":"")+h+"h left":"";}}t();setInterval(t,6e4);}})();</script>"""
 
@@ -909,6 +911,8 @@ def idea_page(t):
 <div>{words_h}</div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:38px 0 6px">How to name your {esc(phrase)}</h2>
 <div class="tips">{tips_h}</div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:34px 0 0">Have your own {esc(phrase)} name in mind?</h2>
+{checker_widget("ideas-" + slug_)}
 <div class="cta-band"><div><h2>Want names made for your {esc(phrase)}?</h2><p>Describe your business and get 10 checked names with available domains in 48 hours. We register the one you pick.</p></div>
 <a class="btn btn-cta" href="/name-my-business/?utm_source=ideas&amp;utm_medium={slug_}">Get my 10 names{f" &middot; ${PKG_FROM}" if OFFER_ON else ""} &rarr;</a></div>
 {FREE_FORM}
@@ -917,7 +921,7 @@ def idea_page(t):
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:36px 0 10px">More name ideas</h2>
 <div class="ideas-list">{oth}</div>
 <p><a href="/guides/how-to-name-a-business/">Read: how to name a business in 7 steps &rarr;</a></p>
-</div></main>""" + footer() + "</body></html>"
+</div></main>""" + footer() + modal() + "</body></html>"
 
 def ideas_hub():
     canon = f"{SITE}/business-name-ideas/"
