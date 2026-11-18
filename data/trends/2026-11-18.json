@@ -1,0 +1,244 @@
+{
+ "date": "2026-11-18",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "snow uk",
+   "geo": "GB",
+   "traffic": 75000
+  },
+  {
+   "q": "cameron green",
+   "geo": "AU",
+   "traffic": 30000
+  },
+  {
+   "q": "nyt connections answers",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "rente",
+   "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "dl78",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "twitch",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "gelsenkirchen",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "retirement",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "yash dayal",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "uae national day",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "boiry becquerelle tornade",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "louis bielle-biarrey",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "logiciel malveillant",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "coe bidding",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "quentin grimes",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "proteas",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "gauteng thunderstorm warning saws",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "kick",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "twitch",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "neige",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "test",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "twitch",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "gold",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "സഞ്ജു സാംസണ്",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "josh o’connor",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "wetterwarnung",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "brenda patea alexander zverev",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "trapping",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "SG",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Green",
+   "score": 30850
+  },
+  {
+   "category": "Finance",
+   "score": 1300
+  },
+  {
+   "category": "Education",
+   "score": 500
+  },
+  {
+   "category": "SaaS",
+   "score": 400
+  },
+  {
+   "category": "E-commerce",
+   "score": 300
+  },
+  {
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "category": "Creator",
+   "score": 150
+  }
+ ],
+ "words": [
+  {
+   "word": "green",
+   "category": "Green",
+   "score": 30850
+  },
+  {
+   "word": "gold",
+   "category": "Finance",
+   "score": 1300
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 400
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 300
+  },
+  {
+   "word": "hint",
+   "category": "Education",
+   "score": 300
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "school",
+   "category": "Education",
+   "score": 200
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 150
+  }
+ ]
+}

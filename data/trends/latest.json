@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "geos": [
   "US",
   "GB",
@@ -19,231 +19,226 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "singapore vs brazil",
-   "geo": "AE",
-   "traffic": 20000
-  },
-  {
-   "q": "singapore vs brazil",
-   "geo": "SA",
-   "traffic": 20000
-  },
-  {
-   "q": "singapore vs brazil",
-   "geo": "NG",
-   "traffic": 20000
-  },
-  {
-   "q": "singapore vs brazil",
-   "geo": "ZA",
-   "traffic": 20000
-  },
-  {
-   "q": "singapore vs brazil",
+   "q": "snow uk",
    "geo": "GB",
+   "traffic": 75000
+  },
+  {
+   "q": "cameron green",
+   "geo": "AU",
+   "traffic": 30000
+  },
+  {
+   "q": "nyt connections answers",
+   "geo": "US",
    "traffic": 15000
   },
   {
-   "q": "singapore vs brazil",
-   "geo": "AU",
-   "traffic": 15000
-  },
-  {
-   "q": "واتساب",
-   "geo": "SA",
-   "traffic": 10000
-  },
-  {
-   "q": "sorteio loteria federal",
-   "geo": "BR",
-   "traffic": 10000
-  },
-  {
-   "q": "weather singapore",
-   "geo": "SG",
-   "traffic": 5000
-  },
-  {
-   "q": "temba bavuma",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "mindhunter",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "tony mowbray",
-   "geo": "GB",
-   "traffic": 3000
-  },
-  {
-   "q": "canadiens",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "neet",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "महेंद्र सिंह धोनी",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "aréna cholet",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "œuf",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "tarn-et-garonne",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "wissam ben yedder",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "chine",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "brazil vs singapore",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "brazil",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "jimmy odukoya",
-   "geo": "NG",
-   "traffic": 2000
-  },
-  {
-   "q": "近藤真彦",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "school delays",
-   "geo": "US",
-   "traffic": 1500
-  },
-  {
-   "q": "hungarian authorities buried cash find",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "ss546 lottery result",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "ഇറാന്",
-   "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "الحرس الثوري الإيراني",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "stricken",
+   "q": "rente",
    "geo": "DE",
+   "traffic": 10000
+  },
+  {
+   "q": "dl78",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "twitch",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "gelsenkirchen",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "retirement",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "ticketmaster",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "yash dayal",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "uae national day",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "boiry becquerelle tornade",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "louis bielle-biarrey",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "logiciel malveillant",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "coe bidding",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "quentin grimes",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "proteas",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "gauteng thunderstorm warning saws",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "kick",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "twitch",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "neige",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "test",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "twitch",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "gold",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "സഞ്ജു സാംസണ്",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "josh o’connor",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "wetterwarnung",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "brenda patea alexander zverev",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "trapping",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "SG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Local",
-   "score": 5300
+   "category": "Green",
+   "score": 30850
   },
   {
    "category": "Finance",
-   "score": 1700
+   "score": 1300
   },
   {
    "category": "Education",
-   "score": 1500
-  },
-  {
-   "category": "Gaming",
-   "score": 1500
+   "score": 500
   },
   {
    "category": "SaaS",
-   "score": 650
+   "score": 400
   },
   {
-   "category": "Travel",
-   "score": 600
+   "category": "E-commerce",
+   "score": 300
   },
   {
-   "category": "Food",
-   "score": 100
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "category": "Creator",
+   "score": 150
   }
  ],
  "words": [
   {
-   "word": "weather",
-   "category": "Local",
-   "score": 5300
+   "word": "green",
+   "category": "Green",
+   "score": 30850
   },
   {
-   "word": "school",
-   "category": "Education",
-   "score": 1500
-  },
-  {
-   "word": "cash",
+   "word": "gold",
    "category": "Finance",
-   "score": 1500
-  },
-  {
-   "word": "game",
-   "category": "Gaming",
-   "score": 750
-  },
-  {
-   "word": "score",
-   "category": "Gaming",
-   "score": 750
+   "score": 1300
   },
   {
    "word": "team",
    "category": "SaaS",
-   "score": 650
+   "score": 400
   },
   {
-   "word": "summit",
-   "category": "Travel",
-   "score": 600
+   "word": "price",
+   "category": "E-commerce",
+   "score": 300
   },
   {
-   "word": "fund",
-   "category": "Finance",
+   "word": "hint",
+   "category": "Education",
+   "score": 300
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "school",
+   "category": "Education",
    "score": 200
   },
   {
-   "word": "pizza",
-   "category": "Food",
-   "score": 100
+   "word": "movie",
+   "category": "Creator",
+   "score": 150
   }
  ]
 }
