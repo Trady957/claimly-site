@@ -1004,6 +1004,7 @@ async function ckRun(e){{e.preventDefault();const raw=document.getElementById('c
   if(st==='free')return `<div class="ck-res ck-ok"><span>${{f}} <b>available</b></span><button class="btn btn-cta" type="button" onclick="ckBuy('${{f}}',${{p}})">Claim it for $${{p}} &rarr;</button></div>`;
   if(st==='taken')return `<div class="ck-res ck-no"><span>${{f}} <b>taken</b></span><span style="font-size:13px">registered by someone else</span></div>`;
   return `<div class="ck-res"><span>${{f}}</span><span style="font-size:13px">couldn&rsquo;t check right now, <a href="mailto:{EMAIL}?subject=Check%20${{f}}" style="color:var(--cobalt)">ask us</a></span></div>`;}}).join('');
+ try{{claimlySave('claimly_leads',{{kind:'name_check',email:'',details:(raw.slice(0,200)+' -> '+res.map(r=>r[0]+':'+r[2]).join(' ')),consent:false,page:location.pathname.slice(0,300),utm_source:(claimlyAttr().us||'{src}').slice(0,100)}});}}catch(_){{}}
  ckAlts(base,res.every(r=>r[2]!=='free'));return false;}}
 async function ckAlts(base,allTaken){{const el=document.getElementById('ckAlt');
  if(!CK_NAMES){{try{{CK_NAMES=await fetch('/assets/names.json').then(r=>r.json());}}catch(e){{CK_NAMES=[];}}}}
