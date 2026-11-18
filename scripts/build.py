@@ -862,6 +862,37 @@ def _ideas_names(t, n=24):
     pick.sort(key=lambda x: (x["fqdn"] not in hit, x["fqdn"].split(".")[1] != "com", len(x["fqdn"])))   # names that fit the business first
     return pick
 
+def generator_widget(phrase, kws, slug_):
+    """Free name generator for an industry: mixes the industry's words with prefixes/suffixes,
+    then checks each .com live with Verisign RDAP (404 = free). Free names can be claimed at $35."""
+    return f"""<div class="ck gen" id="gen">
+<h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:0 0 4px">Free {esc(phrase)} name generator</h2>
+<p style="margin:0 0 12px;color:var(--muted)">Add a word you like (your name, your city, a feeling) or leave it empty. We mix it with {esc(phrase)} words and check every .com for you.</p>
+<form class="ck-row" onsubmit="return genRun(event)"><input id="genIn" maxlength="20" placeholder="Optional word, e.g. Dubai, Nova, Sara" autocomplete="off"><button class="btn btn-cta" type="submit">Generate names</button></form>
+<div id="genOut" class="gen-grid"></div><p id="genMore" style="display:none;margin:12px 0 0"><button class="btn" style="border:1px solid var(--ink)" type="button" onclick="genRun()">More names &#8635;</button></p>
+</div>
+<style>.gen-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:14px}}.gen-grid .ck-res{{margin:0}}.gen-grid .ck-res .btn{{padding:7px 12px;font-size:13px}}</style>
+<script>
+const GEN_KW={json.dumps([k.lower() for k in kws])};
+const GEN_PRE=["get","my","go","the","true","prime","bright","nova","blue","golden","urban","first","smart","next","alpha"],GEN_SUF=["hq","hub","co","works","lab","ly","pro","nest","point","wise","line","craft","way","box","base","spot","zone","link","now","house"],GEN_BLEND=["ora","ia","io","ix","ova","ify","era","eo"];
+function genPick(a){{return a[Math.floor(Math.random()*a.length)];}}
+function genName(u){{const k=genPick(GEN_KW),k2=genPick(GEN_KW),w=u||genPick(GEN_KW),r=Math.random();
+ if(u&&r<.35)return Math.random()<.5?u+k:k+u; if(r<.5)return k+genPick(GEN_SUF); if(r<.65)return genPick(GEN_PRE)+k;
+ if(r<.8&&k!==k2)return k+k2; if(r<.9)return w.slice(0,Math.max(3,Math.min(5,w.length-1)))+genPick(GEN_BLEND); return genPick(GEN_PRE)+w;}}
+async function genRun(e){{if(e)e.preventDefault();const u=ckSlug(document.getElementById('genIn').value).slice(0,14),out=document.getElementById('genOut');
+ const set=new Set();let n=0;while(set.size<12&&n++<200){{const x=genName(u);if(x.length>=4&&x.length<=16)set.add(x);}}
+ const list=[...set];out.innerHTML=list.map(b=>`<div class="ck-res" id="g_${{b}}"><span>${{b}}.com</span><span style="font-size:12px;color:var(--muted)">checking…</span></div>`).join('');
+ document.getElementById('genMore').style.display='block';
+ let i=0;const worker=async()=>{{while(i<list.length){{const b=list[i++],st=await ckOne(b+'.com','https://rdap.verisign.com/com/v1/domain/'),el=document.getElementById('g_'+b);if(!el)continue;
+  if(st==='free'){{el.className='ck-res ck-ok';el.innerHTML=`<span>${{b}}.com <b>free</b></span><button class="btn btn-cta" type="button" onclick="ckBuy('${{b}}.com',35)">Claim $35</button>`;}}
+  else if(st==='taken'){{el.className='ck-res ck-no';el.innerHTML=`<span>${{b}}.com <b>taken</b></span>`;}}
+  else el.lastElementChild.textContent='try later';}}}};
+ await Promise.all([worker(),worker(),worker(),worker()]);
+ const ok=out.querySelectorAll('.ck-ok').length;
+ try{{claimlySave('claimly_leads',{{kind:'name_check',email:'',details:('[generator {slug_}] '+(u||'-')+' -> '+ok+'/'+list.length+' free').slice(0,300),consent:false,page:location.pathname.slice(0,300),utm_source:(claimlyAttr().us||'generator').slice(0,100)}});}}catch(_){{}}
+ return false;}}
+</script>"""
+
 def idea_page(t):
     slug_, label, phrase, cats, kws, intro, tips = t
     canon = f"{SITE}/business-name-ideas/{slug_}/"
@@ -869,10 +900,11 @@ def idea_page(t):
     nn = len(names)
     lo = min(x["price"] for x in names) if names else 15
     tl = " ".join(w if w.isupper() else w[:1].upper() + w[1:] for w in label.split())
-    title = (f"{nn} {tl} Names & Ideas (Domains Available) | Claimly" if nn >= 20 else f"{label} Name Ideas with Available Domains | Claimly")
-    desc = f"{nn} {phrase} name ideas, each with an available .com or similar domain from ${lo}. Plus words to use and tips for picking a {phrase} name customers remember."
+    title = (f"{nn} {tl} Names + Free Name Generator (Domains Available) | Claimly" if nn >= 20 else f"{tl} Name Ideas + Name Generator | Claimly")
+    desc = f"{nn} {phrase} name ideas with available domains from ${lo}, plus a free {phrase} name generator that checks the .com instantly. Tips for a name customers remember."
     faqs = [(f"How do I choose a name for my {phrase}?", f"Write down what makes your {phrase} different and how you want customers to feel, list 30+ ideas, cut anything hard to say or spell, then check the domain and social handles before you decide."),
             (f"Are these {phrase} names really available?", "Yes. Every name on this page is checked as unregistered before it is listed, and the list refreshes daily. Prices include the first year of registration, and you get a full refund if a name can't be delivered."),
+            (f"Is there a free {phrase} name generator?", f"Yes. The generator on this page mixes {phrase} words with your own word and checks every .com live. If a name is free you can claim it for $35, first year included."),
             (f"Can someone name my {phrase} for me?", f"Yes. With the Claimly naming package you describe your {phrase} and get 10 checked names with available domains within 48 hours, from ${PKG_FROM}. We register the one you pick.")]
     ld = [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
           {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -900,10 +932,11 @@ def idea_page(t):
     return head(title, desc, canon, ldh) + SEO_CSS + f"""
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; <a href="/business-name-ideas/">Business name ideas</a> &rsaquo; {esc(label)}</div>
-<h1>{esc(label)} names: {nn} ideas with available domains</h1>
+<h1>{esc(label)} names: {nn} ideas + a free name generator</h1>
 <p class="idea-intro">{esc(intro)} Here are {nn} names that fit, each with the domain still available to register today.</p>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:26px 0 0">Top picks</h2>
 <div class="namegrid">{grid}</div>
+{generator_widget(phrase, kws, slug_)}
 {more_h}
 <p style="color:var(--muted);font-size:14px">Prices include the first year of registration. Updated {datetime.date.today().strftime('%-d %B %Y')}. See {cat_links}.</p>
 <h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:38px 0 6px">Words to use in a {esc(phrase)} name</h2>
@@ -925,20 +958,22 @@ def idea_page(t):
 
 def ideas_hub():
     canon = f"{SITE}/business-name-ideas/"
-    title = "Business Name Ideas by Industry, with Available Domains | Claimly"
-    desc = "Business name ideas for bakeries, cafés, salons, agencies, startups and more. Every name comes with an available domain, from $15."
+    title = "Business Name Generator + Name Ideas by Industry (Free, .com Checked) | Claimly"
+    desc = "Free business name generator that checks every .com live, plus name ideas for 90+ types of business. Every name comes with an available domain, from $15."
     items = "".join(f'<a href="/business-name-ideas/{t[0]}/">{esc(t[1])} names<small>{esc(t[2].capitalize())}</small></a>' for t in SC.IDEAS)
     ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Business name ideas by industry", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/business-name-ideas/{t[0]}/", "name": f"{t[1]} name ideas"} for i, t in enumerate(SC.IDEAS)]}
     return head(title, desc, canon, '<script type="application/ld+json">' + json.dumps(ld) + '</script>') + SEO_CSS + f"""
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; Business name ideas</div>
-<h1>Business name ideas</h1>
-<p class="idea-intro">Pick your type of business to see name ideas that fit, each with an available domain you can register today. Every list refreshes daily with newly checked names.</p>
+<h1>Business name generator &amp; name ideas</h1>
+<p class="idea-intro">Generate business names and see instantly which .com is free, or pick your type of business below for name ideas that fit, each with an available domain you can register today.</p>
+{generator_widget("business", ["brand","bright","nova","craft","bloom","peak","harbor","spark","true","nest","prime","swift","haven","vivid","north"], "hub")}
+<div style="display:none">{checker_widget("hub")}</div>
 <div class="ideas-list">{items}</div>
 <div class="cta-band"><div><h2>Still stuck?</h2><p>Tell us what you do and get 10 names made for your business, with domains checked, in 48 hours.</p></div><a class="btn btn-cta" href="/name-my-business/?utm_source=ideas-hub">See the naming package &rarr;</a></div>
 <p><a href="/guides/">Naming guides &rarr;</a></p>
-</div></main>""" + footer() + "</body></html>"
+</div></main>""" + footer() + modal() + "</body></html>"
 
 def guide_page(g):
     slug_, title_, summary, sections = g
