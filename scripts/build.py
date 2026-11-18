@@ -115,7 +115,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <div class="bg" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 <header><div class="wrap nav">
 <a class="brand" href="/">Claimly<span class="reg">&reg;</span></a>
-<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/business-name-ideas/">Name ideas</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
+<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/business-name-ideas/">Name ideas</a><a href="/check-business-name/">Name checker</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
 </div></header>
 {SALE_BAR if SALE_ON else ""}{OFFER_BAR if OFFER_ON else ""}
 """
@@ -139,6 +139,7 @@ def footer():
 <a href="/#finder">AI finder</a>
 <a href="/#shop">Browse names</a>
 <a href="/new/">New this week</a>
+<a href="/check-business-name/">Business name checker</a>
 <a href="/name-my-business/">Name my business</a>
 <a href="/business-name-ideas/">Business name ideas</a>
 <a href="/guides/">Naming guides</a>
@@ -637,8 +638,8 @@ function frSubmit(e){e.preventDefault();var f=e.target;if(f['bot-field'].value)r
 
 def package_page():
     canon = f"{SITE}/name-my-business/"
-    title = "Name My Business: Business Name + Domain Package | Claimly"
-    desc = "Struggling to name your business? Get 10 checked, available brand names and your domain registered for you, from ${PKG_FROM}. Optional logo and brand kit."
+    title = "Business Naming Service: 10 Names + Your Domain in 48 Hours | Claimly"
+    desc = f"Struggling to name your business? Get 10 checked, available brand names and your domain registered for you, from ${PKG_FROM}. Optional logo and brand kit."
     ld = {"@context":"https://schema.org","@type":"Service","name":"Business naming package","provider":{"@type":"Organization","name":"Claimly","url":SITE+"/"},
           "areaServed":"Worldwide","offers":[{"@type":"Offer","name":n,"price":str(pr),"priceCurrency":"USD","url":canon} for _,n,pr,_,_ in PACKAGES]}
     cards = "".join(f"""<div class="pk{' pk-hi' if badge else ''}">
@@ -947,11 +948,11 @@ def guide_page(g):
     return head(f"{title_} | Claimly", summary, canon, '<script type="application/ld+json">' + json.dumps(ld) + '</script>') + SEO_CSS + f"""
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; {esc(title_)}</div>
-<article class="guide"><h1>{esc(title_)}</h1><p class="idea-intro" style="margin-top:8px">{esc(summary)}</p>{body}</article>
+<article class="guide"><h1>{esc(title_)}</h1><p class="idea-intro" style="margin-top:8px">{esc(summary)}</p>{(checker_widget("guide") if slug_ == "check-business-name-availability" else "")}{body}</article>
 <div class="cta-band"><div><h2>Find a name with the domain ready</h2><p>Browse checked, available names from $15, or get 10 names made for your business in 48 hours.</p></div><a class="btn btn-cta" href="/name-my-business/?utm_source=guide&amp;utm_medium={slug_}">Get 10 names &rarr;</a></div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px">Name ideas by business</h2><div class="ideas-list">{ideas}</div>
 <h2 style="font-family:'Schibsted Grotesk';font-size:22px">More guides</h2><div class="ideas-list">{more}</div>
-</div></main>""" + footer() + "</body></html>"
+</div></main>""" + footer() + (modal() if slug_ == "check-business-name-availability" else "") + "</body></html>"
 
 def guides_hub():
     canon = f"{SITE}/guides/"
@@ -971,6 +972,69 @@ def notfound():
 <p class="section-sub" style="margin:0 auto 24px">The name may have been sold, or the link is wrong.</p>
 <a class="btn btn-cta" href="/#shop">Browse available names</a>
 </div></main>""" + footer() + "</body></html>"
+
+# ───────────────────────── name & domain availability checker ─────────────────────────
+# Checks .com/.co/.io live with the registries' public RDAP (200 = taken, 404 = free).
+# A free name can be bought on the spot through the normal order modal; a taken one shows
+# similar names already in stock. Prices match the shop's usual price per extension.
+CHECK_EXT = [("com", "https://rdap.verisign.com/com/v1/domain/", 35),
+             ("co", "https://rdap.registry.co/co/domain/", 39),
+             ("io", "https://rdap.identitydigital.services/rdap/domain/", 59)]
+
+def checker_widget(src):
+    exts = json.dumps([[e, u, p] for e, u, p in CHECK_EXT])
+    return f"""<div class="ck" id="checker">
+<label for="ckIn" style="font-weight:700;display:block;margin-bottom:8px">Type a business name to check its domain</label>
+<form class="ck-row" onsubmit="return ckRun(event)"><input id="ckIn" required maxlength="40" placeholder="e.g. Bright Harbor" autocomplete="off"><button class="btn btn-cta" type="submit">Check availability</button></form>
+<p class="ck-note">Live check of .com, .co and .io with the official registries. Free, no sign-up.</p>
+<div id="ckOut"></div><div id="ckAlt"></div>
+</div>
+<style>.ck{{background:var(--bone2);border:1px solid var(--line);border-radius:18px;padding:22px;margin:22px 0 30px}}.ck-row{{display:flex;gap:10px;flex-wrap:wrap}}.ck-row input{{flex:1;min-width:200px;font-size:17px;padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:var(--bone)}}.ck-note{{color:var(--muted);font-size:13px;margin:8px 0 0}}
+.ck-res{{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 14px;margin-top:10px;font-family:'JetBrains Mono';font-weight:700}}.ck-ok{{border-color:#1a7f37}}.ck-ok b{{color:#1a7f37}}.ck-no{{opacity:.7}}.ck-no b{{color:#E0231C}}</style>
+<script>
+const CK_EXT={exts};let CK_NAMES=null;
+function ckSlug(t){{return t.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'').slice(0,40);}}
+async function ckOne(base,url){{try{{const r=await fetch(url+base,{{headers:{{Accept:'application/rdap+json'}}}});return r.status===404?'free':(r.ok?'taken':'?');}}catch(e){{return '?';}}}}
+function ckBuy(f,p){{window.CLAIMLY_D={{fqdn:f,price:p}};openModal(f);}}
+async function ckRun(e){{e.preventDefault();const raw=document.getElementById('ckIn').value,base=ckSlug(raw),out=document.getElementById('ckOut');
+ if(base.length<2){{out.innerHTML='<p>Please type a longer name.</p>';return false;}}
+ out.innerHTML='<p>Checking '+base+'.com, .co and .io…</p>';
+ const res=await Promise.all(CK_EXT.map(async([x,u,p])=>[x,p,await ckOne(base+'.'+x,u)]));
+ out.innerHTML=res.map(([x,p,st])=>{{const f=base+'.'+x;
+  if(st==='free')return `<div class="ck-res ck-ok"><span>${{f}} <b>available</b></span><button class="btn btn-cta" type="button" onclick="ckBuy('${{f}}',${{p}})">Claim it for $${{p}} &rarr;</button></div>`;
+  if(st==='taken')return `<div class="ck-res ck-no"><span>${{f}} <b>taken</b></span><span style="font-size:13px">registered by someone else</span></div>`;
+  return `<div class="ck-res"><span>${{f}}</span><span style="font-size:13px">couldn&rsquo;t check right now, <a href="mailto:{EMAIL}?subject=Check%20${{f}}" style="color:var(--cobalt)">ask us</a></span></div>`;}}).join('');
+ ckAlts(base,res.every(r=>r[2]!=='free'));return false;}}
+async function ckAlts(base,allTaken){{const el=document.getElementById('ckAlt');
+ if(!CK_NAMES){{try{{CK_NAMES=await fetch('/assets/names.json').then(r=>r.json());}}catch(e){{CK_NAMES=[];}}}}
+ const parts=[];for(let n=Math.min(6,base.length);n>=4;n--)for(let i=0;i+n<=base.length;i++)parts.push(base.slice(i,i+n));
+ let hits=CK_NAMES.filter(([f])=>parts.some(t=>f.split('.')[0].includes(t))).slice(0,12);
+ if(hits.length<6)hits=hits.concat(CK_NAMES.filter(([f])=>f.split('.')[0].length<=7&&!hits.some(h=>h[0]===f)).sort(()=>Math.random()-.5).slice(0,12-hits.length));
+ el.innerHTML='<h3 style="margin:24px 0 4px">'+(allTaken?'Taken? These similar names are ready to buy':'Also available, ready to buy')+'</h3><div class="linkgrid">'+hits.map(([f,p])=>`<a href="/d/${{f}}/">${{f}}<span>$${{p}}</span></a>`).join('')+'</div><p style="margin-top:12px">Or <a href="/name-my-business/?utm_source=checker" style="color:var(--cobalt);font-weight:700">get 10 checked names made for your business in 48 hours &rarr;</a></p>';}}
+</script>"""
+
+def checker_page():
+    canon = f"{SITE}/check-business-name/"
+    title = "Business Name Availability Checker: Free .com Domain Check | Claimly"
+    desc = "Check if your business name is available as a .com, .co or .io domain, live and free. If it's free, claim it in one step. If it's taken, see similar names ready to buy."
+    faqs = [("How do I check if a business name is available?", "Check four things: the domain (type the name above), your country's company register, the trademark database for your market, and the social handles. The domain is usually the hardest to get, so start there."),
+            ("Is this domain check accurate?", "It asks the official registries (Verisign for .com, .CO Internet for .co, Identity Digital for .io) in real time. A few names are registry premium names; if that happens after you order, you get a full refund or another name at the same price."),
+            ("What does it cost to claim an available name?", "From $35 for a .com, including the first year of registration. We register it in your name and email you when it's done, usually the same day."),
+            ("How do I check a company name in the UAE?", "Search the trade name on your emirate's economic department portal (for example Dubai DET or Abu Dhabi ADDED), or with your free-zone authority. Then check the domain here so your website matches your licence.")]
+    ld = ('<script type="application/ld+json">' + json.dumps({"@context":"https://schema.org","@type":"WebApplication","name":"Business name availability checker","url":canon,"applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Claimly","url":SITE+"/"}}) + '</script>'
+          '<script type="application/ld+json">' + json.dumps({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]}) + '</script>')
+    faq_h = "".join(f"<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q, a in faqs)
+    return head(title, desc, canon, ld) + SEO_CSS + f"""
+<main class="page"><div class="wrap">
+<div class="crumbs"><a href="/">Claimly</a> &rsaquo; Business name checker</div>
+<h1>Business name availability checker</h1>
+<p class="idea-intro">Found a name you like? Check in seconds if the matching .com, .co and .io domains are free, and claim yours before someone else does.</p>
+{checker_widget("checker")}
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px">Before you commit to a name</h2>
+<p style="max-width:70ch">A name is only really yours when the domain, the company registration, the trademark and the social handles all line up. Our step-by-step guide covers each check: <a href="/guides/check-business-name-availability/" style="color:var(--cobalt);font-weight:600">how to check if a business name is available &rarr;</a></p>
+<div class="cta-band"><div><h2>No name yet?</h2><p>Browse name ideas by industry, or get 10 checked names made for your business in 48 hours.</p></div><a class="btn btn-cta" href="/business-name-ideas/">Browse name ideas &rarr;</a></div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px">Questions</h2><div class="faq">{faq_h}</div>
+</div></main>""" + footer() + modal() + "</body></html>"
 
 # ───────────────────────── Arabic landing page (/ar/) ─────────────────────────
 AR_CATS = [("E-commerce", "متاجر إلكترونية"), ("Food", "مطاعم ومقاهي وأطعمة"), ("Fashion", "أزياء وعطور"),
@@ -1040,9 +1104,16 @@ function arSubmit(e){e.preventDefault();var f=e.target;if(f['bot-field'].value)r
 </script></body></html>"""
 
 def sitemap():
-    urls = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/ar/", "0.9", "weekly", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS] + [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
-    body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
-    return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
+    core = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/check-business-name/", "0.9", "weekly", TODAY), (SITE+"/ar/", "0.9", "weekly", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS]
+    doms = [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
+    def urlset(urls):
+        body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
+        return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}</urlset>\n'
+    open(os.path.join(OUT, "sitemap-pages.xml"), "w").write(urlset(core))
+    open(os.path.join(OUT, "sitemap-domains.xml"), "w").write(urlset(doms))
+    return (f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            f'<sitemap><loc>{SITE}/sitemap-pages.xml</loc><lastmod>{TODAY}</lastmod></sitemap>\n'
+            f'<sitemap><loc>{SITE}/sitemap-domains.xml</loc><lastmod>{TODAY}</lastmod></sitemap>\n</sitemapindex>\n')
 
 
 
@@ -1066,6 +1137,8 @@ def build():
         os.makedirs(os.path.join(OUT, "guides", g[0])); open(os.path.join(OUT, "guides", g[0], "index.html"), "w").write(guide_page(g))
     for slug_, fn in (("launch", launch_page), ("partners", partners_page)):
         os.makedirs(os.path.join(OUT, slug_)); open(os.path.join(OUT, slug_, "index.html"), "w").write(fn())
+    os.makedirs(os.path.join(OUT, "check-business-name")); open(os.path.join(OUT, "check-business-name", "index.html"), "w").write(checker_page())
+    json.dump([[d["fqdn"], d["price"]] for d in D], open(os.path.join(OUT, "assets", "names.json"), "w"), separators=(",", ":"))
     os.makedirs(os.path.join(OUT, "ar")); open(os.path.join(OUT, "ar", "index.html"), "w").write(ar_page())
     os.makedirs(os.path.join(OUT, "name-my-business")); open(os.path.join(OUT, "name-my-business", "index.html"), "w").write(package_page())
     for i, d in enumerate(D):
