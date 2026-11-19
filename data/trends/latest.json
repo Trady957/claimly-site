@@ -1,5 +1,5 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "geos": [
   "US",
   "GB",
@@ -19,83 +19,83 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "snow uk",
-   "geo": "GB",
-   "traffic": 75000
-  },
-  {
-   "q": "cameron green",
-   "geo": "AU",
-   "traffic": 30000
-  },
-  {
-   "q": "nyt connections answers",
+   "q": "palm beach county schools",
    "geo": "US",
-   "traffic": 15000
+   "traffic": 60000
   },
   {
-   "q": "rente",
+   "q": "black friday rabatte",
    "geo": "DE",
+   "traffic": 20000
+  },
+  {
+   "q": "poutine",
+   "geo": "FR",
    "traffic": 10000
   },
   {
-   "q": "dl78",
-   "geo": "IN",
-   "traffic": 5000
+   "q": "primeira parcela do décimo terceiro",
+   "geo": "BR",
+   "traffic": 10000
   },
   {
-   "q": "twitch",
+   "q": "wilsberg",
    "geo": "DE",
    "traffic": 5000
   },
   {
-   "q": "gelsenkirchen",
-   "geo": "DE",
+   "q": "larry poindexter",
+   "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "retirement",
-   "geo": "US",
-   "traffic": 3000
+   "q": "south africa december 2026 fuel price",
+   "geo": "ZA",
+   "traffic": 5000
   },
   {
-   "q": "ticketmaster",
+   "q": "teko modise",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "boardmasters",
    "geo": "GB",
    "traffic": 3000
   },
   {
-   "q": "yash dayal",
-   "geo": "IN",
-   "traffic": 2000
+   "q": "powerball results",
+   "geo": "AU",
+   "traffic": 3000
   },
   {
-   "q": "uae national day",
+   "q": "public holiday",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "boiry becquerelle tornade",
+   "q": "sonal dinusha",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "public investment fund tower",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "radar",
    "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "louis bielle-biarrey",
-   "geo": "FR",
+   "q": "international mens day",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "logiciel malveillant",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "coe bidding",
-   "geo": "SG",
-   "traffic": 2000
-  },
-  {
-   "q": "quentin grimes",
-   "geo": "SG",
+   "q": "lagos-ibadan expressway",
+   "geo": "NG",
    "traffic": 2000
   },
   {
@@ -104,18 +104,33 @@
    "traffic": 2000
   },
   {
-   "q": "gauteng thunderstorm warning saws",
+   "q": "david campese",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "kick",
+   "q": "dia 20 de novembro é feriado do quê",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "twitch",
-   "geo": "GB",
+   "q": "松井秀喜",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "スター",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "sri lanka vs pakistan",
+   "geo": "US",
+   "traffic": 1500
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "US",
    "traffic": 1500
   },
   {
@@ -124,121 +139,151 @@
    "traffic": 1500
   },
   {
-   "q": "test",
-   "geo": "CA",
-   "traffic": 1500
-  },
-  {
-   "q": "twitch",
+   "q": "george dimer",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "gold",
+   "q": "dempo sc vs shillong lajong",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "international men's day",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "സഞ്ജു സാംസണ്",
+   "q": "iran attacks",
    "geo": "AE",
    "traffic": 1000
   },
   {
-   "q": "josh o’connor",
+   "q": "manchester united",
    "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "wetterwarnung",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "brenda patea alexander zverev",
-   "geo": "DE",
-   "traffic": 1000
-  },
-  {
-   "q": "trapping",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "bangladesh vs south africa",
-   "geo": "SG",
+   "q": "toilettes",
+   "geo": "FR",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Green",
-   "score": 30850
+   "category": "Travel",
+   "score": 62300
   },
   {
-   "category": "Finance",
-   "score": 1300
+   "category": "Local",
+   "score": 61100
   },
   {
    "category": "Education",
-   "score": 500
-  },
-  {
-   "category": "SaaS",
-   "score": 400
+   "score": 60650
   },
   {
    "category": "E-commerce",
-   "score": 300
+   "score": 5750
+  },
+  {
+   "category": "Finance",
+   "score": 2400
   },
   {
    "category": "Gaming",
-   "score": 300
+   "score": 750
   },
   {
-   "category": "Creator",
-   "score": 150
+   "category": "Food",
+   "score": 200
   }
  ],
  "words": [
   {
-   "word": "green",
-   "category": "Green",
-   "score": 30850
+   "word": "school",
+   "category": "Education",
+   "score": 60150
   },
   {
-   "word": "gold",
-   "category": "Finance",
-   "score": 1300
+   "word": "beach",
+   "category": "Travel",
+   "score": 60000
   },
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 400
+   "word": "county",
+   "category": "Local",
+   "score": 60000
   },
   {
    "word": "price",
    "category": "E-commerce",
-   "score": 300
+   "score": 5000
   },
   {
-   "word": "hint",
-   "category": "Education",
-   "score": 300
+   "word": "holiday",
+   "category": "Travel",
+   "score": 2000
+  },
+  {
+   "word": "fund",
+   "category": "Finance",
+   "score": 2000
+  },
+  {
+   "word": "deal",
+   "category": "E-commerce",
+   "score": 750
   },
   {
    "word": "game",
    "category": "Gaming",
+   "score": 750
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "class",
+   "category": "Education",
+   "score": 500
+  },
+  {
+   "word": "near",
+   "category": "Local",
    "score": 300
   },
   {
-   "word": "school",
-   "category": "Education",
+   "word": "summit",
+   "category": "Travel",
+   "score": 300
+  },
+  {
+   "word": "save",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "zone",
+   "category": "Local",
    "score": 200
   },
   {
-   "word": "movie",
-   "category": "Creator",
-   "score": 150
+   "word": "nugget",
+   "category": "Food",
+   "score": 200
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "port",
+   "category": "Local",
+   "score": 100
   }
  ]
 }
