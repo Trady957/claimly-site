@@ -1,5 +1,5 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "geos": [
   "US",
   "GB",
@@ -19,271 +19,280 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "palm beach county schools",
-   "geo": "US",
-   "traffic": 60000
+   "q": "amazon.ca",
+   "geo": "CA",
+   "traffic": 30000
   },
   {
-   "q": "black friday rabatte",
-   "geo": "DE",
+   "q": "dubai gold price drop",
+   "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "poutine",
+   "q": "chasseur",
    "geo": "FR",
-   "traffic": 10000
+   "traffic": 20000
   },
   {
-   "q": "primeira parcela do décimo terceiro",
-   "geo": "BR",
-   "traffic": 10000
-  },
-  {
-   "q": "wilsberg",
-   "geo": "DE",
-   "traffic": 5000
-  },
-  {
-   "q": "larry poindexter",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "south africa december 2026 fuel price",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "teko modise",
-   "geo": "ZA",
-   "traffic": 5000
-  },
-  {
-   "q": "boardmasters",
+   "q": "ticketmaster",
    "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "national hurricane center",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "guinée",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "coach",
+   "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "powerball results",
-   "geo": "AU",
+   "q": "vescio funeral homes",
+   "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "public holiday",
+   "q": "ind-a vs nep",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "sonal dinusha",
+   "q": "dubai",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "public investment fund tower",
+   "q": "pakw vs irew",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "ind-a vs nep",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "radar",
-   "geo": "FR",
+   "q": "pakistan women's national cricket team vs ireland women's national cricket team match scorecard",
+   "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "international mens day",
-   "geo": "NG",
+   "q": "stefan bradl",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "lagos-ibadan expressway",
-   "geo": "NG",
+   "q": "a7",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "proteas",
+   "q": "diesel fuel",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "david campese",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "dia 20 de novembro é feriado do quê",
+   "q": "classificações de orlando city x fc cincinnati",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "松井秀喜",
+   "q": "tupanciretã",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "declaração de paz",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "三井住友銀行",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "スター",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "sri lanka vs pakistan",
+   "q": "cruise ship",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "bangladesh vs south africa",
+   "q": "sandisk stock",
    "geo": "US",
    "traffic": 1500
   },
   {
-   "q": "neige",
-   "geo": "CA",
+   "q": "ticketmaster uk",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "george dimer",
+   "q": "ind-a vs nep",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "dempo sc vs shillong lajong",
+   "q": "hong kong badminton",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "international men's day",
-   "geo": "AE",
+   "q": "doha",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "iran attacks",
-   "geo": "AE",
+   "q": "sk78",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "manchester united",
-   "geo": "DE",
+   "q": "emerging asia cup 2026",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "toilettes",
-   "geo": "FR",
+   "q": "tina ambani",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "موعد اذان العشاء",
+   "geo": "SA",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Travel",
-   "score": 62300
-  },
-  {
-   "category": "Local",
-   "score": 61100
-  },
-  {
-   "category": "Education",
-   "score": 60650
+   "category": "Finance",
+   "score": 22500
   },
   {
    "category": "E-commerce",
-   "score": 5750
+   "score": 22100
   },
   {
-   "category": "Finance",
-   "score": 2400
+   "category": "SaaS",
+   "score": 5900
+  },
+  {
+   "category": "Local",
+   "score": 3400
+  },
+  {
+   "category": "Real estate",
+   "score": 3200
   },
   {
    "category": "Gaming",
-   "score": 750
+   "score": 2750
+  },
+  {
+   "category": "Legal",
+   "score": 1000
   },
   {
    "category": "Food",
-   "score": 200
+   "score": 500
   }
  ],
  "words": [
   {
-   "word": "school",
-   "category": "Education",
-   "score": 60150
-  },
-  {
-   "word": "beach",
-   "category": "Travel",
-   "score": 60000
-  },
-  {
-   "word": "county",
-   "category": "Local",
-   "score": 60000
-  },
-  {
    "word": "price",
    "category": "E-commerce",
-   "score": 5000
+   "score": 21350
   },
   {
-   "word": "holiday",
-   "category": "Travel",
-   "score": 2000
-  },
-  {
-   "word": "fund",
+   "word": "gold",
    "category": "Finance",
-   "score": 2000
+   "score": 20000
   },
   {
-   "word": "deal",
-   "category": "E-commerce",
-   "score": 750
+   "word": "team",
+   "category": "SaaS",
+   "score": 4400
   },
   {
-   "word": "game",
-   "category": "Gaming",
-   "score": 750
+   "word": "home",
+   "category": "Real estate",
+   "score": 3200
   },
   {
-   "word": "weather",
+   "word": "city",
    "category": "Local",
-   "score": 500
-  },
-  {
-   "word": "class",
-   "category": "Education",
-   "score": 500
-  },
-  {
-   "word": "near",
-   "category": "Local",
-   "score": 300
-  },
-  {
-   "word": "summit",
-   "category": "Travel",
-   "score": 300
-  },
-  {
-   "word": "save",
-   "category": "Finance",
-   "score": 300
-  },
-  {
-   "word": "zone",
-   "category": "Local",
-   "score": 200
-  },
-  {
-   "word": "nugget",
-   "category": "Food",
-   "score": 200
+   "score": 3200
   },
   {
    "word": "stock",
    "category": "Finance",
-   "score": 100
+   "score": 1800
   },
   {
-   "word": "port",
+   "word": "ship",
+   "category": "SaaS",
+   "score": 1500
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 1000
+  },
+  {
+   "word": "case",
+   "category": "Legal",
+   "score": 1000
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 950
+  },
+  {
+   "word": "play",
+   "category": "Gaming",
+   "score": 600
+  },
+  {
+   "word": "kitchen",
+   "category": "Food",
+   "score": 500
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "capital",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "place",
    "category": "Local",
-   "score": 100
+   "score": 200
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "deal",
+   "category": "E-commerce",
+   "score": 150
   }
  ]
 }
