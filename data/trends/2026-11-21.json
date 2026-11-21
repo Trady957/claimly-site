@@ -1,0 +1,301 @@
+{
+ "date": "2026-11-21",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "england vs australia",
+   "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "england vs australia",
+   "geo": "SA",
+   "traffic": 20000
+  },
+  {
+   "q": "julie tkach",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "argentine france en rugby à xv",
+   "geo": "FR",
+   "traffic": 10000
+  },
+  {
+   "q": "fbi hacked again",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "pancreatic cancer drug daraxonrasib",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "earthquake darwin",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "mise en examen",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "impôt",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "england vs australia",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "gta 6 kingpin bowling safe code",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "gta vi",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "aus vs eng",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "mitchell marsh",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "kr777",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "gurgl",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "airbus a350",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "pre epidemie grippe",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "factory",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "airbnb",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "岩田絵里奈",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "prisoner",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "visa mastercard cyberattack",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "afghanistan a vs bangladesh a",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "gta vi xbox series s",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "motorola edge 70 neo",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "afghanistan a vs bangladesh a",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "موعد اذان الظهر",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "الدفاع المدني السعودي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "angleterre - nouvelle-zélande",
+   "geo": "FR",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Gaming",
+   "score": 2000
+  },
+  {
+   "category": "Real estate",
+   "score": 1300
+  },
+  {
+   "category": "Creator",
+   "score": 1150
+  },
+  {
+   "category": "Marketing",
+   "score": 1000
+  },
+  {
+   "category": "Travel",
+   "score": 800
+  },
+  {
+   "category": "Finance",
+   "score": 650
+  },
+  {
+   "category": "E-commerce",
+   "score": 500
+  },
+  {
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "category": "Food",
+   "score": 400
+  },
+  {
+   "category": "AI",
+   "score": 300
+  }
+ ],
+ "words": [
+  {
+   "word": "viral",
+   "category": "Marketing",
+   "score": 1000
+  },
+  {
+   "word": "photo",
+   "category": "Creator",
+   "score": 1000
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 1000
+  },
+  {
+   "word": "hotel",
+   "category": "Travel",
+   "score": 500
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 500
+  },
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "raid",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "jet",
+   "category": "Travel",
+   "score": 300
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 300
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 300
+  },
+  {
+   "word": "house",
+   "category": "Real estate",
+   "score": 300
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "tax",
+   "category": "Finance",
+   "score": 150
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "juice",
+   "category": "Food",
+   "score": 100
+  }
+ ]
+}

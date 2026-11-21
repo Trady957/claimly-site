@@ -1,5 +1,5 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "geos": [
   "US",
   "GB",
@@ -19,254 +19,262 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "amazon.ca",
-   "geo": "CA",
-   "traffic": 30000
-  },
-  {
-   "q": "dubai gold price drop",
+   "q": "england vs australia",
    "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "chasseur",
-   "geo": "FR",
+   "q": "england vs australia",
+   "geo": "SA",
    "traffic": 20000
   },
   {
-   "q": "ticketmaster",
-   "geo": "GB",
+   "q": "julie tkach",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "argentine france en rugby à xv",
+   "geo": "FR",
+   "traffic": 10000
+  },
+  {
+   "q": "fbi hacked again",
+   "geo": "CA",
    "traffic": 7500
   },
   {
-   "q": "national hurricane center",
-   "geo": "US",
-   "traffic": 6000
+   "q": "pancreatic cancer drug daraxonrasib",
+   "geo": "CA",
+   "traffic": 7500
   },
   {
-   "q": "guinée",
+   "q": "earthquake darwin",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "mise en examen",
    "geo": "FR",
    "traffic": 5000
   },
   {
-   "q": "coach",
+   "q": "impôt",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "england vs australia",
+   "geo": "ZA",
+   "traffic": 5000
+  },
+  {
+   "q": "gta 6 kingpin bowling safe code",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "gta vi",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "vescio funeral homes",
+   "q": "aus vs eng",
    "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "ind-a vs nep",
-   "geo": "AE",
+   "q": "mitchell marsh",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "dubai",
-   "geo": "AE",
+   "q": "kr777",
+   "geo": "IN",
    "traffic": 2000
   },
   {
-   "q": "pakw vs irew",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "ind-a vs nep",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "pakistan women's national cricket team vs ireland women's national cricket team match scorecard",
-   "geo": "SA",
-   "traffic": 2000
-  },
-  {
-   "q": "stefan bradl",
+   "q": "gurgl",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "a7",
+   "q": "airbus a350",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "diesel fuel",
+   "q": "pre epidemie grippe",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "factory",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "classificações de orlando city x fc cincinnati",
+   "q": "airbnb",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "tupanciretã",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "declaração de paz",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "三井住友銀行",
+   "q": "岩田絵里奈",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "cruise ship",
-   "geo": "US",
-   "traffic": 1500
-  },
-  {
-   "q": "sandisk stock",
-   "geo": "US",
-   "traffic": 1500
-  },
-  {
-   "q": "ticketmaster uk",
+   "q": "prisoner",
    "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "ind-a vs nep",
+   "q": "visa mastercard cyberattack",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "hong kong badminton",
+   "q": "afghanistan a vs bangladesh a",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "doha",
+   "q": "gta vi xbox series s",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "sk78",
+   "q": "motorola edge 70 neo",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "emerging asia cup 2026",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "tina ambani",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "موعد اذان العشاء",
+   "q": "afghanistan a vs bangladesh a",
    "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "موعد اذان الظهر",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "الدفاع المدني السعودي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "angleterre - nouvelle-zélande",
+   "geo": "FR",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Finance",
-   "score": 22500
-  },
-  {
-   "category": "E-commerce",
-   "score": 22100
-  },
-  {
-   "category": "SaaS",
-   "score": 5900
-  },
-  {
-   "category": "Local",
-   "score": 3400
+   "category": "Gaming",
+   "score": 2000
   },
   {
    "category": "Real estate",
-   "score": 3200
+   "score": 1300
   },
   {
-   "category": "Gaming",
-   "score": 2750
+   "category": "Creator",
+   "score": 1150
   },
   {
-   "category": "Legal",
+   "category": "Marketing",
    "score": 1000
   },
   {
-   "category": "Food",
+   "category": "Travel",
+   "score": 800
+  },
+  {
+   "category": "Finance",
+   "score": 650
+  },
+  {
+   "category": "E-commerce",
    "score": 500
+  },
+  {
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "category": "Food",
+   "score": 400
+  },
+  {
+   "category": "AI",
+   "score": 300
   }
  ],
  "words": [
   {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 21350
+   "word": "viral",
+   "category": "Marketing",
+   "score": 1000
   },
   {
-   "word": "gold",
-   "category": "Finance",
-   "score": 20000
+   "word": "photo",
+   "category": "Creator",
+   "score": 1000
   },
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 4400
-  },
-  {
-   "word": "home",
-   "category": "Real estate",
-   "score": 3200
-  },
-  {
-   "word": "city",
-   "category": "Local",
-   "score": 3200
-  },
-  {
-   "word": "stock",
-   "category": "Finance",
-   "score": 1800
-  },
-  {
-   "word": "ship",
-   "category": "SaaS",
-   "score": 1500
-  },
-  {
-   "word": "cup",
+   "word": "king",
    "category": "Gaming",
    "score": 1000
   },
   {
-   "word": "case",
-   "category": "Legal",
-   "score": 1000
+   "word": "hotel",
+   "category": "Travel",
+   "score": 500
   },
   {
    "word": "game",
    "category": "Gaming",
-   "score": 950
-  },
-  {
-   "word": "play",
-   "category": "Gaming",
-   "score": 600
-  },
-  {
-   "word": "kitchen",
-   "category": "Food",
    "score": 500
   },
   {
-   "word": "market",
+   "word": "price",
+   "category": "E-commerce",
+   "score": 500
+  },
+  {
+   "word": "bank",
    "category": "Finance",
+   "score": 500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "raid",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "jet",
+   "category": "Travel",
+   "score": 300
+  },
+  {
+   "word": "nugget",
+   "category": "Food",
+   "score": 300
+  },
+  {
+   "word": "rocket",
+   "category": "AI",
+   "score": 300
+  },
+  {
+   "word": "house",
+   "category": "Real estate",
    "score": 300
   },
   {
@@ -275,24 +283,19 @@
    "score": 200
   },
   {
-   "word": "capital",
+   "word": "tax",
    "category": "Finance",
-   "score": 200
-  },
-  {
-   "word": "place",
-   "category": "Local",
-   "score": 200
-  },
-  {
-   "word": "bank",
-   "category": "Finance",
-   "score": 200
-  },
-  {
-   "word": "deal",
-   "category": "E-commerce",
    "score": 150
+  },
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 150
+  },
+  {
+   "word": "juice",
+   "category": "Food",
+   "score": 100
   }
  ]
 }
