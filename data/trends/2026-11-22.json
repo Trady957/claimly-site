@@ -1,0 +1,290 @@
+{
+ "date": "2026-11-22",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "rassie erasmus springboks final selections",
+   "geo": "ZA",
+   "traffic": 50000
+  },
+  {
+   "q": "pakistan a vs india a",
+   "geo": "AE",
+   "traffic": 10000
+  },
+  {
+   "q": "bank",
+   "geo": "ZA",
+   "traffic": 10000
+  },
+  {
+   "q": "宮川大輔",
+   "geo": "JP",
+   "traffic": 10000
+  },
+  {
+   "q": "alex burghart",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "grand theft auto gta vi",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "sports",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "harshit rana",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "pakistan a vs india a",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "formel 1 news",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "byd folding steering wheel",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "zimbabwe vs ireland",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "gasoline",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "zimbabwe vs ireland",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "hamburg",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "barcelona vs villarreal prediction",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "pakistan a vs india a",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "paredes argentina",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "test",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "saskatoon police service",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "robert de niro",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "india a vs pakistan a",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "recipe of the year",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "franca lehfeldt",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "de gennaro gianni",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "nachzahlung",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "f1 las vegas 2026",
+   "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "gta v",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "miley cyrus wedding",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "楽天 証券 訴訟",
+   "geo": "JP",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Finance",
+   "score": 10300
+  },
+  {
+   "category": "Food",
+   "score": 1500
+  },
+  {
+   "category": "SaaS",
+   "score": 1200
+  },
+  {
+   "category": "Travel",
+   "score": 800
+  },
+  {
+   "category": "Green",
+   "score": 750
+  },
+  {
+   "category": "Gaming",
+   "score": 700
+  },
+  {
+   "category": "Real estate",
+   "score": 600
+  },
+  {
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "category": "Legal",
+   "score": 500
+  },
+  {
+   "category": "AI",
+   "score": 200
+  },
+  {
+   "category": "Health",
+   "score": 200
+  }
+ ],
+ "words": [
+  {
+   "word": "bank",
+   "category": "Finance",
+   "score": 10000
+  },
+  {
+   "word": "recipe",
+   "category": "Food",
+   "score": 1500
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 1000
+  },
+  {
+   "word": "tree",
+   "category": "Green",
+   "score": 750
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 600
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 500
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 500
+  },
+  {
+   "word": "money",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "board",
+   "category": "SaaS",
+   "score": 200
+  },
+  {
+   "word": "signal",
+   "category": "AI",
+   "score": 200
+  },
+  {
+   "word": "king",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "life",
+   "category": "Health",
+   "score": 200
+  },
+  {
+   "word": "flight",
+   "category": "Travel",
+   "score": 200
+  },
+  {
+   "word": "terra",
+   "category": "Real estate",
+   "score": 200
+  }
+ ]
+}

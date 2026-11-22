@@ -1,5 +1,5 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "geos": [
   "US",
   "GB",
@@ -19,283 +19,272 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "england vs australia",
+   "q": "rassie erasmus springboks final selections",
+   "geo": "ZA",
+   "traffic": 50000
+  },
+  {
+   "q": "pakistan a vs india a",
    "geo": "AE",
-   "traffic": 20000
-  },
-  {
-   "q": "england vs australia",
-   "geo": "SA",
-   "traffic": 20000
-  },
-  {
-   "q": "julie tkach",
-   "geo": "US",
-   "traffic": 15000
-  },
-  {
-   "q": "argentine france en rugby à xv",
-   "geo": "FR",
    "traffic": 10000
   },
   {
-   "q": "fbi hacked again",
-   "geo": "CA",
-   "traffic": 7500
-  },
-  {
-   "q": "pancreatic cancer drug daraxonrasib",
-   "geo": "CA",
-   "traffic": 7500
-  },
-  {
-   "q": "earthquake darwin",
-   "geo": "AU",
-   "traffic": 7500
-  },
-  {
-   "q": "mise en examen",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "impôt",
-   "geo": "FR",
-   "traffic": 5000
-  },
-  {
-   "q": "england vs australia",
+   "q": "bank",
    "geo": "ZA",
-   "traffic": 5000
+   "traffic": 10000
   },
   {
-   "q": "gta 6 kingpin bowling safe code",
-   "geo": "US",
-   "traffic": 3000
-  },
-  {
-   "q": "gta vi",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "aus vs eng",
-   "geo": "CA",
-   "traffic": 3000
-  },
-  {
-   "q": "mitchell marsh",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "kr777",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "gurgl",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "airbus a350",
-   "geo": "DE",
-   "traffic": 2000
-  },
-  {
-   "q": "pre epidemie grippe",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "factory",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "airbnb",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "岩田絵里奈",
+   "q": "宮川大輔",
    "geo": "JP",
+   "traffic": 10000
+  },
+  {
+   "q": "alex burghart",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "grand theft auto gta vi",
+   "geo": "CA",
+   "traffic": 7500
+  },
+  {
+   "q": "sports",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "harshit rana",
+   "geo": "IN",
+   "traffic": 5000
+  },
+  {
+   "q": "pakistan a vs india a",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "formel 1 news",
+   "geo": "DE",
+   "traffic": 5000
+  },
+  {
+   "q": "byd folding steering wheel",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "zimbabwe vs ireland",
+   "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "prisoner",
+   "q": "gasoline",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "zimbabwe vs ireland",
+   "geo": "SA",
+   "traffic": 2000
+  },
+  {
+   "q": "hamburg",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "barcelona vs villarreal prediction",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "pakistan a vs india a",
    "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "visa mastercard cyberattack",
+   "q": "paredes argentina",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "test",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "saskatoon police service",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "robert de niro",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "afghanistan a vs bangladesh a",
-   "geo": "IN",
+   "q": "india a vs pakistan a",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "recipe of the year",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "franca lehfeldt",
+   "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "gta vi xbox series s",
-   "geo": "IN",
+   "q": "de gennaro gianni",
+   "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "motorola edge 70 neo",
-   "geo": "IN",
+   "q": "nachzahlung",
+   "geo": "DE",
    "traffic": 1000
   },
   {
-   "q": "afghanistan a vs bangladesh a",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "موعد اذان الظهر",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "الدفاع المدني السعودي",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "angleterre - nouvelle-zélande",
+   "q": "f1 las vegas 2026",
    "geo": "FR",
+   "traffic": 1000
+  },
+  {
+   "q": "gta v",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "miley cyrus wedding",
+   "geo": "ZA",
+   "traffic": 1000
+  },
+  {
+   "q": "楽天 証券 訴訟",
+   "geo": "JP",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "Gaming",
-   "score": 2000
+   "category": "Finance",
+   "score": 10300
   },
   {
-   "category": "Real estate",
-   "score": 1300
+   "category": "Food",
+   "score": 1500
   },
   {
-   "category": "Creator",
-   "score": 1150
-  },
-  {
-   "category": "Marketing",
-   "score": 1000
+   "category": "SaaS",
+   "score": 1200
   },
   {
    "category": "Travel",
    "score": 800
   },
   {
-   "category": "Finance",
-   "score": 650
+   "category": "Green",
+   "score": 750
   },
   {
-   "category": "E-commerce",
-   "score": 500
+   "category": "Gaming",
+   "score": 700
+  },
+  {
+   "category": "Real estate",
+   "score": 600
   },
   {
    "category": "Local",
    "score": 500
   },
   {
-   "category": "Food",
-   "score": 400
+   "category": "Legal",
+   "score": 500
   },
   {
    "category": "AI",
-   "score": 300
+   "score": 200
+  },
+  {
+   "category": "Health",
+   "score": 200
   }
  ],
  "words": [
   {
-   "word": "viral",
-   "category": "Marketing",
-   "score": 1000
-  },
-  {
-   "word": "photo",
-   "category": "Creator",
-   "score": 1000
-  },
-  {
-   "word": "king",
-   "category": "Gaming",
-   "score": 1000
-  },
-  {
-   "word": "hotel",
-   "category": "Travel",
-   "score": 500
-  },
-  {
-   "word": "game",
-   "category": "Gaming",
-   "score": 500
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 500
-  },
-  {
    "word": "bank",
    "category": "Finance",
+   "score": 10000
+  },
+  {
+   "word": "recipe",
+   "category": "Food",
+   "score": 1500
+  },
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 1000
+  },
+  {
+   "word": "tree",
+   "category": "Green",
+   "score": 750
+  },
+  {
+   "word": "travel",
+   "category": "Travel",
+   "score": 600
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
    "score": 500
   },
   {
-   "word": "weather",
+   "word": "city",
    "category": "Local",
    "score": 500
   },
   {
-   "word": "raid",
-   "category": "Gaming",
+   "word": "money",
+   "category": "Finance",
    "score": 300
   },
   {
-   "word": "jet",
-   "category": "Travel",
-   "score": 300
+   "word": "board",
+   "category": "SaaS",
+   "score": 200
   },
   {
-   "word": "nugget",
-   "category": "Food",
-   "score": 300
-  },
-  {
-   "word": "rocket",
+   "word": "signal",
    "category": "AI",
-   "score": 300
+   "score": 200
   },
   {
-   "word": "house",
-   "category": "Real estate",
-   "score": 300
-  },
-  {
-   "word": "league",
+   "word": "king",
    "category": "Gaming",
    "score": 200
   },
   {
-   "word": "tax",
-   "category": "Finance",
-   "score": 150
+   "word": "life",
+   "category": "Health",
+   "score": 200
   },
   {
-   "word": "movie",
-   "category": "Creator",
-   "score": 150
+   "word": "flight",
+   "category": "Travel",
+   "score": 200
   },
   {
-   "word": "juice",
-   "category": "Food",
-   "score": 100
+   "word": "terra",
+   "category": "Real estate",
+   "score": 200
   }
  ]
 }
