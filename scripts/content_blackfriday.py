@@ -22,32 +22,32 @@ def lines(f):
 # date, cats, title on the names slide, cover kicker, cover headline, cover sub, caption hook, landing page, hashtags
 DAYS = [
  ("2026-11-24", None, "Black Friday picks: .com names on sale", "Black Friday at Claimly",
-  "Up to 30% off brand names.", "Every name is checked as available. First year included. Until Cyber Monday.",
-  "Black Friday starts today at Claimly. Brandable domain names are up to 30% off until Monday 30 Nov, and every price includes the first year of registration.",
+  "Up to 50% off brand names.", "Every name is checked as available. First year included. Through 15 Jan.",
+  "Black Friday starts today at Claimly. Brandable domain names are up to 50% off from today through 15 January, and every price includes the first year of registration.",
   "/", "#blackfriday #domainnames #businessname #startup #smallbusiness #branding #entrepreneur #dubai #uae"),
  ("2026-11-25", ["Marketing", "Creator"], "Names for your agency", "Black Friday · agencies",
-  "Starting an agency? Get the name first.", "Short names with the .com or .co free, up to 30% off.",
-  "Starting a marketing, ad or creative agency? Your name is the first thing a client judges. These are free to register today, at Black Friday prices.",
+  "Starting an agency? Get the name first.", "Short names with the .com or .co free, up to 50% off.",
+  "Starting a marketing, ad or creative agency? Your name is the first thing a client judges. These are free to register today, at up to 50% off.",
   "/business-name-ideas/agency/", "#agency #marketingagency #creativeagency #adagency #businessname #branding #blackfriday #dubaibusiness"),
  ("2026-11-26", ["Food"], "Names for your café or food brand", "Black Friday · food & café",
-  "Your café needs a name people remember.", "Names with the domain ready, up to 30% off until Monday.",
-  "Opening a café, bakery or food brand? A name people can say across the counter and find on Instagram. These ones come with the domain, at Black Friday prices.",
+  "Your café needs a name people remember.", "Names with the domain ready, up to 50% off.",
+  "Opening a café, bakery or food brand? A name people can say across the counter and find on Instagram. These ones come with the domain, at up to 50% off.",
   "/business-name-ideas/coffee-shop/", "#cafe #coffeeshop #foodbusiness #bakery #businessname #smallbusiness #blackfriday #uaefood"),
  ("2026-11-27", None, "A .com for less than lunch", "Today is Black Friday",
-  "A .com for less than lunch.", "Real brandable names from $15, first year included. Ends Monday.",
-  "It's Black Friday. A brand name with the .com costs less than lunch this week: from $15, first year of registration included, and we register it for you the same day.",
+  "A .com for less than lunch.", "Real brandable names from $15, first year included.",
+  "It's Black Friday. A brand name with the .com costs less than lunch right now: from $15, first year of registration included, and we register it for you the same day.",
   "/", "#blackfriday #blackfriday2026 #domainnames #dotcom #startup #businessname #sidehustle #entrepreneur"),
  ("2026-11-28", ["Fashion", "Health"], "Names for beauty, fashion & wellness", "Black Friday · beauty & fashion",
   "Launching a beauty or fashion brand?", "Names that look good on a label, with the domain free.",
-  "Launching a skincare line, a boutique or a wellness studio? These names look good on a label and a bio link, and they're on sale until Monday.",
+  "Launching a skincare line, a boutique or a wellness studio? These names look good on a label and a bio link, and they're on sale through the holidays.",
   "/business-name-ideas/skincare-brand/", "#beautybrand #fashionbrand #skincare #boutique #wellness #businessname #blackfriday #smallbusinessuae"),
  ("2026-11-29", ["AI", "SaaS"], "Names for your AI or software startup", "Weekend sale · startups",
-  "Building an AI startup?", "Short, brandable .com and .co names, up to 30% off until tomorrow.",
-  "Building an AI tool or a software startup? Short brand names with the .com or .co free, on sale until Cyber Monday.",
+  "Building an AI startup?", "Short, brandable .com and .co names, up to 50% off.",
+  "Building an AI tool or a software startup? Short brand names with the .com or .co free, on sale through the holidays.",
   "/business-name-ideas/ai-startup/", "#aistartup #saas #startup #founder #techstartup #businessname #domainnames #blackfriday"),
- ("2026-11-30", None, "Last day: Cyber Monday names", "Cyber Monday · last day",
-  "Last day for sale prices.", "Prices go back tonight. Up to 30% off, first year included.",
-  "Cyber Monday is the last day. Black Friday prices on every brandable name end tonight, so if you've had one in mind, today is the day.",
+ ("2026-11-30", None, "Cyber Monday names", "Cyber Monday",
+  "Cyber Monday: half price names.", "Up to 50% off, first year included, through 15 Jan.",
+  "Happy Cyber Monday. Every brandable name is up to 50% off, and from tomorrow you can also buy one as a Christmas gift for someone starting a business.",
   "/", "#cybermonday #lastchance #domainnames #businessname #startup #smallbusiness #entrepreneur #uae"),
 ]
 
@@ -78,7 +78,7 @@ def main():
         used |= {x["d"] for x in names}
         folder = os.path.join(OUT, date); os.makedirs(folder, exist_ok=True)
         S.statement(os.path.join(folder, "1.jpg"), kicker, head, sub)
-        S.names(os.path.join(folder, "2.jpg"), f"Black Friday prices · until 30 Nov", title,
+        S.names(os.path.join(folder, "2.jpg"), f"Black Friday · up to 50% off", title,
                 [(x["d"], SALE.price(x["d"], x["p"], day)) for x in names], "Was " + ", ".join(f"${x['p']}" for x in names) + ". First year included. Link in bio.")
         lst = "\n".join(f"• {x['d']}: ${SALE.price(x['d'], x['p'], day)} (was ${x['p']})" for x in names)
         link = f"{SITE}{page}?utm_source=instagram&utm_medium=social&utm_campaign=blackfriday"
@@ -86,7 +86,7 @@ def main():
         md += [f"## {day.strftime('%a %-d %b')}: {title}\n",
                f"Images: social/blackfriday/{date}/1.jpg, 2.jpg  \nLink in bio / story link: {link}\n",
                "**Instagram caption**\n", f"{hook}\n\n{lst}\n\nTap the link in bio to claim yours. We register it in your name, usually the same day.\n\n{tags}\n",
-               "**Story:** post 2.jpg with a link sticker to the link above, text: \"Black Friday prices until Monday\".\n",
+               "**Story:** post 2.jpg with a link sticker to the link above, text: \"Up to 50% off, first year included\".\n",
                "**Pinterest pin** (image 2.jpg, board: Business name ideas)  ",
                f"Title: {title} | Black Friday domain sale  ",
                f"Description: {hook} {', '.join(x['d'] for x in names)}.  ",

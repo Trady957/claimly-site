@@ -12,13 +12,13 @@ Link in bio / story link: https://claimly.ae/?utm_source=instagram&utm_medium=so
 
 **Instagram caption**
 
-Our Christmas sale starts today: brandable names with the .com are up to 50% off until December 25, and the price includes the first year of registration.
+Our Christmas sale starts today: brandable names with the .com are up to 50% off, and the price includes the first year of registration.
 
-• foamden.com: $22 (was $45)
 • jarpeak.com: $28 (was $55)
-• nestpit.com: $25 (was $50)
+• pathpit.com: $22 (was $45)
 • wagpalm.com: $22 (was $45)
-• crewacre.com: $15 (was $25)
+• basemaid.com: $15 (was $30)
+• chictrue.com: $18 (was $35)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -26,7 +26,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Christmas sale: names at half price | Christmas sale, up to 50% off  
-Description: Our Christmas sale starts today: brandable names with the .com are up to 50% off until December 25, and the price includes the first year of registration. foamden.com, jarpeak.com, nestpit.com, wagpalm.com, crewacre.com.  
+Description: Our Christmas sale starts today: brandable names with the .com are up to 50% off, and the price includes the first year of registration. jarpeak.com, pathpit.com, wagpalm.com, basemaid.com, chictrue.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Thu Dec 3: Names for your Etsy shop
@@ -36,9 +36,9 @@ Link in bio / story link: https://claimly.ae/business-name-ideas/etsy-shop/?utm_
 
 **Instagram caption**
 
-Busy Etsy season? Lock in the .com for your shop name now, so you can move to your own website in the new year. These are up to 50% off until Christmas.
+Busy Etsy season? Lock in the .com for your shop name now, so you can move to your own website in the new year. These are up to 50% off.
 
-• pathclay.com: $20 (was $40)
+• nestload.com: $15 (was $25)
 • wickcalm.com: $20 (was $40)
 • arrowknit.com: $15 (was $30)
 • bloompave.com: $18 (was $35)
@@ -50,7 +50,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for your Etsy shop | Christmas sale, up to 50% off  
-Description: Busy Etsy season? Lock in the .com for your shop name now, so you can move to your own website in the new year. These are up to 50% off until Christmas. pathclay.com, wickcalm.com, arrowknit.com, bloompave.com, cargokind.com.  
+Description: Busy Etsy season? Lock in the .com for your shop name now, so you can move to your own website in the new year. These are up to 50% off. nestload.com, wickcalm.com, arrowknit.com, bloompave.com, cargokind.com.  
 Link: https://claimly.ae/business-name-ideas/etsy-shop/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Sat Dec 5: Gift a business name
@@ -64,9 +64,9 @@ Got a friend, sister or partner who keeps talking about starting a business? Giv
 
 • amberpit.com: $20 (was $40)
 • atlasjar.com: $20 (was $40)
-• basemaid.com: $15 (was $30)
 • cedarwag.com: $15 (was $25)
-• dermyard.com: $18 (was $35)
+• coralrig.com: $15 (was $30)
+• crewacre.com: $15 (was $25)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -74,7 +74,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Gift a business name | Christmas sale, up to 50% off  
-Description: Got a friend, sister or partner who keeps talking about starting a business? Give them the name and the .com this Christmas. We register it in their name. amberpit.com, atlasjar.com, basemaid.com, cedarwag.com, dermyard.com.  
+Description: Got a friend, sister or partner who keeps talking about starting a business? Give them the name and the .com this Christmas. We register it in their name. amberpit.com, atlasjar.com, cedarwag.com, coralrig.com, crewacre.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Tue Dec 8: Names for your Shopify store
@@ -108,13 +108,13 @@ Link in bio / story link: https://claimly.ae/business-name-ideas/llc/?utm_source
 
 **Instagram caption**
 
-Planning to file your LLC in January? Choose a name that's free as a .com first, then check your state's registry. Up to 50% off until Christmas.
+Planning to file your LLC in January? Choose a name that's free as a .com first, then check your state's registry. Up to 50% off.
 
 • fleetnoble.com: $15 (was $25)
 • foldharbor.com: $22 (was $45)
 • worksleads.com: $15 (was $30)
-• pavetrue.com: $15 (was $25)
 • maidpeak.com: $15 (was $25)
+• pavetrue.com: $15 (was $25)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -122,7 +122,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for your LLC | Christmas sale, up to 50% off  
-Description: Planning to file your LLC in January? Choose a name that's free as a .com first, then check your state's registry. Up to 50% off until Christmas. fleetnoble.com, foldharbor.com, worksleads.com, pavetrue.com, maidpeak.com.  
+Description: Planning to file your LLC in January? Choose a name that's free as a .com first, then check your state's registry. Up to 50% off. fleetnoble.com, foldharbor.com, worksleads.com, maidpeak.com, pavetrue.com.  
 Link: https://claimly.ae/business-name-ideas/llc/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Sat Dec 12: Names for your bakery or food brand
@@ -136,9 +136,9 @@ Selling cookies, cakes or candy this holiday season? Turn it into a brand with a
 
 • biteroyal.com: $20 (was $40)
 • worksbite.com: $15 (was $30)
+• crestpit.com: $15 (was $25)
 • crustrow.com: $22 (was $45)
 • dateslab.com: $18 (was $35)
-• pitmaple.com: $20 (was $40)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -146,7 +146,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for your bakery or food brand | Christmas sale, up to 50% off  
-Description: Selling cookies, cakes or candy this holiday season? Turn it into a brand with a name people remember and a .com to order from. biteroyal.com, worksbite.com, crustrow.com, dateslab.com, pitmaple.com.  
+Description: Selling cookies, cakes or candy this holiday season? Turn it into a brand with a name people remember and a .com to order from. biteroyal.com, worksbite.com, crestpit.com, crustrow.com, dateslab.com.  
 Link: https://claimly.ae/business-name-ideas/bakery/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Tue Dec 15: Names for your side hustle
@@ -156,7 +156,7 @@ Link in bio / story link: https://claimly.ae/business-name-ideas/side-hustle/?ut
 
 **Instagram caption**
 
-Side hustle getting real? Give it a name you can grow into and an email on your own .com. Up to 50% off until December 25.
+Side hustle getting real? Give it a name you can grow into and an email on your own .com. Up to 50% off.
 
 • labelguild.com: $22 (was $45)
 • haulbold.com: $18 (was $35)
@@ -170,7 +170,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for your side hustle | Christmas sale, up to 50% off  
-Description: Side hustle getting real? Give it a name you can grow into and an email on your own .com. Up to 50% off until December 25. labelguild.com, haulbold.com, riglab.co, deckspark.co, hopecraft.co.  
+Description: Side hustle getting real? Give it a name you can grow into and an email on your own .com. Up to 50% off. labelguild.com, haulbold.com, riglab.co, deckspark.co, hopecraft.co.  
 Link: https://claimly.ae/business-name-ideas/side-hustle/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Thu Dec 17: Names for beauty & wellness brands
@@ -182,11 +182,11 @@ Link in bio / story link: https://claimly.ae/business-name-ideas/skincare-brand/
 
 Launching skincare, candles or a wellness brand next year? These names look good on a label, and the .com is free today.
 
+• dermnorth.com: $18 (was $35)
 • dripclear.com: $18 (was $35)
 • cleardenim.com: $15 (was $20)
+• meadowderm.com: $15 (was $25)
 • denimcalm.com: $15 (was $30)
-• dermnorth.com: $18 (was $35)
-• calmlittle.com: $15 (was $30)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -194,7 +194,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for beauty & wellness brands | Christmas sale, up to 50% off  
-Description: Launching skincare, candles or a wellness brand next year? These names look good on a label, and the .com is free today. dripclear.com, cleardenim.com, denimcalm.com, dermnorth.com, calmlittle.com.  
+Description: Launching skincare, candles or a wellness brand next year? These names look good on a label, and the .com is free today. dermnorth.com, dripclear.com, cleardenim.com, meadowderm.com, denimcalm.com.  
 Link: https://claimly.ae/business-name-ideas/skincare-brand/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Sat Dec 19: Last-minute gift: a business name
@@ -206,7 +206,7 @@ Link in bio / story link: https://claimly.ae/?utm_source=instagram&utm_medium=so
 
 Need a last-minute gift? A business name doesn't need shipping. Pick one, and we register the .com in their name, usually the same day.
 
-• coralrig.com: $15 (was $30)
+• crisprow.com: $22 (was $45)
 • forgejar.com: $15 (was $30)
 • hivedeed.com: $20 (was $40)
 • hubtutor.com: $15 (was $30)
@@ -218,7 +218,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Last-minute gift: a business name | Christmas sale, up to 50% off  
-Description: Need a last-minute gift? A business name doesn't need shipping. Pick one, and we register the .com in their name, usually the same day. coralrig.com, forgejar.com, hivedeed.com, hubtutor.com, lababode.com.  
+Description: Need a last-minute gift? A business name doesn't need shipping. Pick one, and we register the .com in their name, usually the same day. crisprow.com, forgejar.com, hivedeed.com, hubtutor.com, lababode.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Tue Dec 22: Names for your 2027 startup
@@ -228,7 +228,7 @@ Link in bio / story link: https://claimly.ae/business-name-ideas/ai-startup/?utm
 
 **Instagram caption**
 
-Spending the holidays on your startup idea? Grab a short, brandable .com for it now. Up to 50% off until Christmas Day.
+Spending the holidays on your startup idea? Grab a short, brandable .com for it now. Up to 50% off.
 
 • hubagent.co: $20 (was $40)
 • agentmate.co: $20 (was $39)
@@ -242,31 +242,31 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for your 2027 startup | Christmas sale, up to 50% off  
-Description: Spending the holidays on your startup idea? Grab a short, brandable .com for it now. Up to 50% off until Christmas Day. hubagent.co, agentmate.co, havenmind.co, mindarrow.co, flowamber.com.  
+Description: Spending the holidays on your startup idea? Grab a short, brandable .com for it now. Up to 50% off. hubagent.co, agentmate.co, havenmind.co, mindarrow.co, flowamber.com.  
 Link: https://claimly.ae/business-name-ideas/ai-startup/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
-## Thu Dec 24: Last day of the Christmas sale
+## Thu Dec 24: A gift you can still give tonight
 
 Images: social/holidays/2026-12-24/1.jpg, 2.jpg  
 Link in bio / story link: https://claimly.ae/?utm_source=instagram&utm_medium=social&utm_campaign=christmas
 
 **Instagram caption**
 
-Merry Christmas Eve! The Christmas sale ends tomorrow, so it's the last chance to get a name at up to 50% off before the New Year sale.
+Merry Christmas Eve! Still missing a gift for someone who wants to start a business? Order tonight, tick 'This is a gift', and we'll email you a printable gift card with their domain.
 
-• crisprow.com: $22 (was $45)
+• feteyard.com: $22 (was $45)
 • jarcedar.com: $20 (was $40)
 • labcloth.com: $18 (was $35)
 • loopwoof.com: $15 (was $30)
-• pitswift.com: $18 (was $35)
+• pitmaple.com: $20 (was $40)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
 #christmaseve #merrychristmas #christmassale #smallbusiness #smallbusinessowner #entrepreneur #startup #businessname #domainname #shopsmall #usa
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
-Title: Last day of the Christmas sale | Christmas sale, up to 50% off  
-Description: Merry Christmas Eve! The Christmas sale ends tomorrow, so it's the last chance to get a name at up to 50% off before the New Year sale. crisprow.com, jarcedar.com, labcloth.com, loopwoof.com, pitswift.com.  
+Title: A gift you can still give tonight | Christmas sale, up to 50% off  
+Description: Merry Christmas Eve! Still missing a gift for someone who wants to start a business? Order tonight, tick 'This is a gift', and we'll email you a printable gift card with their domain. feteyard.com, jarcedar.com, labcloth.com, loopwoof.com, pitmaple.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=christmas
 
 ## Sat Dec 26: New year, new business
@@ -276,13 +276,13 @@ Link in bio / story link: https://claimly.ae/?utm_source=instagram&utm_medium=so
 
 **Instagram caption**
 
-Our New Year sale starts today. If 2027 is the year you start the business, start with the name: up to 50% off until January 15.
+If 2027 is the year you start the business, start with the name: up to 50% off until January 15.
 
+• pitswift.com: $18 (was $35)
 • puplucky.com: $20 (was $40)
 • righappy.com: $15 (was $25)
 • riverjar.com: $20 (was $40)
 • stonetee.com: $15 (was $30)
-• trychoco.com: $22 (was $45)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -290,7 +290,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: New year, new business | New Year sale, up to 50% off  
-Description: Our New Year sale starts today. If 2027 is the year you start the business, start with the name: up to 50% off until January 15. puplucky.com, righappy.com, riverjar.com, stonetee.com, trychoco.com.  
+Description: If 2027 is the year you start the business, start with the name: up to 50% off until January 15. pitswift.com, puplucky.com, righappy.com, riverjar.com, stonetee.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=newyear
 
 ## Tue Dec 29: Names for your online store
@@ -326,11 +326,11 @@ Link in bio / story link: https://claimly.ae/?utm_source=instagram&utm_medium=so
 
 Happy New Year! If starting a business is on your resolution list, the name is step one. These are free to register today.
 
+• trychoco.com: $22 (was $45)
 • attarnook.com: $22 (was $45)
 • beaconeco.com: $20 (was $40)
-• cacaostop.com: $22 (was $45)
-• crestload.com: $18 (was $35)
 • cubtheory.com: $22 (was $45)
+• falconpup.com: $15 (was $30)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
 
@@ -338,7 +338,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names to start 2027 with | New Year sale, up to 50% off  
-Description: Happy New Year! If starting a business is on your resolution list, the name is step one. These are free to register today. attarnook.com, beaconeco.com, cacaostop.com, crestload.com, cubtheory.com.  
+Description: Happy New Year! If starting a business is on your resolution list, the name is step one. These are free to register today. trychoco.com, attarnook.com, beaconeco.com, cubtheory.com, falconpup.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=newyear
 
 ## Tue Jan 5: Names for your LLC
@@ -399,9 +399,9 @@ Link in bio / story link: https://claimly.ae/business-name-ideas/fitness/?utm_so
 January is when people search for a coach, a gym or a wellness brand. Launch yours with a name and a .com that's easy to find.
 
 • oasisgrit.com: $22 (was $45)
+• flexlittle.com: $18 (was $35)
 • orbitsweat.com: $15 (was $30)
 • coachdune.com: $15 (was $30)
-• flexmaple.com: $18 (was $35)
 • griturban.com: $20 (was $40)
 
 Tap the link in bio to claim yours. We register it in your name, usually the same day. Prices in USD, first year included.
@@ -410,7 +410,7 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Names for fitness & wellness | New Year sale, up to 50% off  
-Description: January is when people search for a coach, a gym or a wellness brand. Launch yours with a name and a .com that's easy to find. oasisgrit.com, orbitsweat.com, coachdune.com, flexmaple.com, griturban.com.  
+Description: January is when people search for a coach, a gym or a wellness brand. Launch yours with a name and a .com that's easy to find. oasisgrit.com, flexlittle.com, orbitsweat.com, coachdune.com, griturban.com.  
 Link: https://claimly.ae/business-name-ideas/fitness/?utm_source=pinterest&utm_medium=social&utm_campaign=newyear
 
 ## Thu Jan 14: Last days of the New Year sale
@@ -422,9 +422,9 @@ Link in bio / story link: https://claimly.ae/?utm_source=instagram&utm_medium=so
 
 The New Year sale ends tomorrow, January 15. After that, prices go back to normal, so if a name caught your eye, now is the time.
 
-• eatsorbit.com: $15 (was $30)
-• falconpup.com: $15 (was $30)
+• cacaostop.com: $22 (was $45)
 • jarmeadow.com: $15 (was $30)
+• mapletail.com: $20 (was $40)
 • oudparlor.com: $22 (was $45)
 • pilotleaf.com: $18 (was $35)
 
@@ -434,5 +434,5 @@ Tap the link in bio to claim yours. We register it in your name, usually the sam
 
 **Pinterest pin** (image 2.jpg, board: Business name ideas)  
 Title: Last days of the New Year sale | New Year sale, up to 50% off  
-Description: The New Year sale ends tomorrow, January 15. After that, prices go back to normal, so if a name caught your eye, now is the time. eatsorbit.com, falconpup.com, jarmeadow.com, oudparlor.com, pilotleaf.com.  
+Description: The New Year sale ends tomorrow, January 15. After that, prices go back to normal, so if a name caught your eye, now is the time. cacaostop.com, jarmeadow.com, mapletail.com, oudparlor.com, pilotleaf.com.  
 Link: https://claimly.ae/?utm_source=pinterest&utm_medium=social&utm_campaign=newyear

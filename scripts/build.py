@@ -384,6 +384,13 @@ def modal():
 <div class="field"><label for="fEmail">Your email (for delivery)</label><input type="email" name="email" id="fEmail" required placeholder="you@company.com" autocomplete="email"></div>
 <div class="field"><label for="fHeard">How did you find Claimly?</label>
 <select name="heard_about" id="fHeard" required><option value="">Choose one</option><option>Google search</option><option>Reddit</option><option>X / Twitter</option><option>LinkedIn</option><option>Instagram</option><option>Facebook</option><option>Indie Hackers / Product Hunt</option><option>Friend or colleague</option><option>Domain marketplace (Afternic, Dan, Sedo)</option><option>AI assistant (ChatGPT, Claude…)</option><option>Other</option></select></div>
+<label style="display:flex;gap:8px;align-items:center;font-size:14px;font-weight:600;margin:2px 0 12px;cursor:pointer"><input type="checkbox" id="fGift" onchange="document.getElementById('giftBox').style.display=this.checked?'block':'none';document.getElementById('fGName').required=this.checked"> This is a gift &#127873;</label>
+<div id="giftBox" style="display:none;border:1px dashed var(--line);border-radius:12px;padding:12px 12px 2px;margin-bottom:12px">
+<div class="field"><label for="fGName">Recipient&rsquo;s full name (we register the domain in this name)</label><input name="gift_name" id="fGName" maxlength="120" placeholder="e.g. Sarah Miller"></div>
+<div class="field"><label for="fGEmail">Recipient&rsquo;s email (optional; leave empty to keep it a surprise and we&rsquo;ll send everything to you)</label><input type="email" name="gift_email" id="fGEmail" maxlength="200" placeholder="sarah@example.com"></div>
+<div class="field"><label for="fGMsg">Gift message (optional)</label><input name="gift_msg" id="fGMsg" maxlength="300" placeholder="Merry Christmas! Here's the name for your bakery."></div>
+<p class="reassure" style="margin:0 0 10px">We send a printable gift card with the domain to you (or to them on the date you ask for in the message).</p>
+</div>
 <input type="hidden" name="referrer" id="fRef"><input type="hidden" name="landing_page" id="fLand">
 <input type="hidden" name="utm_source" id="fUs"><input type="hidden" name="utm_medium" id="fUm"><input type="hidden" name="utm_campaign" id="fUc">
 <p class="reassure" style="margin:0 0 10px">By placing your order, you confirm this information is correct and you authorize this purchase right now.</p>
@@ -409,7 +416,7 @@ function openModal(f){{const d=findD(f);if(!d)return;CUR=d;
  document.getElementById('mName').textContent=d.fqdn;document.getElementById('mPrice').textContent=d.price;
  document.getElementById('fDomain').value=d.fqdn;document.getElementById('fPrice').value=d.price;
  const a=claimlyAttr();document.getElementById('fRef').value=a.ref||'(direct)';document.getElementById('fLand').value=a.land||'';document.getElementById('fUs').value=a.us||'';document.getElementById('fUm').value=a.um||'';document.getElementById('fUc').value=a.uc||'';
- document.getElementById('mForm').style.display='block';document.getElementById('mDone').classList.remove('on');
+ document.getElementById('mForm').style.display='block';document.getElementById('mDone').classList.remove('on');document.getElementById('fGift').checked=false;document.getElementById('giftBox').style.display='none';document.getElementById('fGName').required=false;
  document.getElementById('modalBg').classList.add('open');setTimeout(()=>document.getElementById('fEmail').focus(),50);}}
 function closeModal(){{document.getElementById('modalBg').classList.remove('open');}}
 document.addEventListener('keydown',e=>{{if(e.key==='Escape')closeModal();}});
@@ -418,6 +425,7 @@ document.getElementById('orderForm').addEventListener('submit',function(e){{
  const link=PAY_BASE+'/'+CUR.price+'USD';
  const w=window.open(link,'_blank');try{{if(w)w.opener=null;}}catch(_){{}}
  if(!f['bot-field'].value){{const v=n=>(f[n]&&f[n].value||'').trim().slice(0,480);
+  if(document.getElementById('fGift').checked)claimlySave('claimly_leads',{{kind:'gift',email:v('email').slice(0,200),name:v('gift_name').slice(0,200),details:('GIFT '+CUR.fqdn+' $'+CUR.price+' for '+v('gift_name')+(v('gift_email')?' <'+v('gift_email')+'>':' (surprise, send to buyer)')+(v('gift_msg')?' | message: '+v('gift_msg'):'')).slice(0,1500),consent:true,page:location.pathname.slice(0,300),utm_source:v('utm_source').slice(0,100)}});
   claimlySave('claimly_orders',{{domain:CUR.fqdn,price:Number(CUR.price),email:v('email'),heard_about:v('heard_about'),referrer:v('referrer'),landing_page:v('landing_page'),utm_source:v('utm_source').slice(0,100),utm_medium:v('utm_medium').slice(0,100),utm_campaign:v('utm_campaign').slice(0,100)}});}}
  document.getElementById('dName').textContent=CUR.fqdn;document.getElementById('dPrice').textContent=CUR.price;
  document.getElementById('dNote').textContent=CUR.fqdn;document.getElementById('dEmail').textContent=document.getElementById('fEmail').value;

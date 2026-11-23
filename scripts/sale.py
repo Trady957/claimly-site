@@ -1,7 +1,9 @@
 """One place for domain sales, used by build.py (site), catalog.py (Pinterest) and daily_social.py (Instagram).
 
-Holiday season 2026-27 (each sale switches on and off by itself with the daily build):
-  23-30 Nov   Black Friday         30% off
+Holiday season 2026-27: one 50% sale from 23 Nov to 15 Jan, shown under three names. Because the
+discount is the same all season, the only deadline we ever state is the real one, 15 Jan
+(no "ends Monday" countdowns that would restart the next day).
+  23-30 Nov   Black Friday         50% off
    1-25 Dec   Christmas sale       50% off   ("gift a business name")
   26 Dec-15 Jan  New Year sale     50% off   ("New year, new business")
 .eco is never discounted, and no price drops below the floor for its extension
@@ -11,8 +13,8 @@ import datetime
 
 SALES = [
     # start, end (inclusive), name, %, until text, countdown target (UTC), short tagline
-    ("2026-11-23", "2026-11-30", "Black Friday", 30, "until Cyber Monday (30 Nov)", "2026-12-01T03:00:00Z", ""),
-    ("2026-12-01", "2026-12-25", "Christmas sale", 50, "until Christmas Day (25 Dec)", "2026-12-26T03:00:00Z", "Gift a business name"),
+    ("2026-11-23", "2026-11-30", "Black Friday", 50, "through 15 Jan", "2027-01-16T03:00:00Z", "Christmas & New Year prices start now"),
+    ("2026-12-01", "2026-12-25", "Christmas sale", 50, "through 15 Jan", "2027-01-16T03:00:00Z", "Gift a business name"),
     ("2026-12-26", "2027-01-15", "New Year sale", 50, "until 15 Jan", "2027-01-16T03:00:00Z", "New year, new business"),
 ]
 
