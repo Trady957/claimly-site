@@ -47,3 +47,14 @@ def price(domain, p, today=None):
 # Names used by build.py / catalog.py / daily_social.py for today's sale (empty when none is running)
 _s = current()
 SALE_START, SALE_END, SALE_NAME, SALE_PCT, SALE_UNTIL, SALE_ENDS_UTC, SALE_TAG = _s if _s else ("", "", "", 0, "", "", "")
+
+# Naming packages (/name-my-business/): regular prices and the holiday offer prices
+OFFER_END = "2027-01-15"                   # offer prices end after this date
+OFFER_TXT = "Holiday price until 15 Jan"
+PKG_REG = {"naming_quick": 69, "naming_starter": 149, "naming_shield": 189, "naming_duo": 298,
+           "naming_brand": 299, "naming_bilingual": 349, "naming_launch": 499}
+PKG_OFFER = {"naming_quick": 49, "naming_starter": 99, "naming_shield": 139, "naming_duo": 159,
+             "naming_brand": 199, "naming_bilingual": 249, "naming_launch": 349}
+
+def pkg_price(key, today=None):
+    return PKG_OFFER[key] if (today or datetime.date.today()).isoformat() <= OFFER_END else PKG_REG[key]

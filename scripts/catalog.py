@@ -60,6 +60,45 @@ def pin_image(path, domain, price, cat):
     d.text((PW - 80 - d.textlength("claimly.ae", font=fs), PH - 117), "claimly.ae", font=fs, fill=S.INK)
     im.save(path, "JPEG", quality=74, optimize=True)
 
+# Naming packages as Pinterest products (same prices as /name-my-business/, see scripts/sale.py)
+PKG_PINS = [
+    ("naming_starter", "Business naming service: 10 names + your .com", "Stuck on a business name?", "10 names made for your business. Your .com registered.", "10 brandable names made for your business, each with the .com checked and free, delivered in 48 hours. Pick one and we register the domain for you, first year included."),
+    ("naming_quick", "Quick business name: 3 names in 24 hours", "Need a name by tomorrow?", "3 names in 24 hours. Your .com registered.", "3 names made for your business in 24 hours, each with the .com checked. We register your favourite, first year included."),
+    ("naming_brand", "Brand kit: name, domain, logo, colors", "Starting from zero?", "Name, .com, logo concept, colors and fonts.", "10 names, your domain registered, a wordmark logo concept, color palette, font pairing and taglines, ready in 3 days."),
+    ("naming_shield", "Business name + .com, .co and .net", "Found the name? Protect it.", "Your name as .com, .co and .net.", "10 names made for your business, then your favourite registered as .com, .co and .net so no one can copy it, with a social handle check."),
+    ("naming_duo", "Naming gift for two businesses", "Starting up with a friend?", "Two businesses named. Two domains.", "Two naming packages in one: 10 names and a registered domain for each business. A great gift for a friend who is starting up."),
+]
+
+def pkg_image(path, kicker, head, sub, now, was):
+    im = Image.new("RGB", (PW, PH), S.INK); d = ImageDraw.Draw(im)
+    d.rectangle((80, 120, 200, 132), fill=S.RED)
+    d.text((80, 170), kicker.upper(), font=S.font("Bold", 30, False), fill="#BDB8B5")
+    y = S.block(d, 80, 300, head, S.font("Black", 96), S.WHITE, PW - 160, 1.04)
+    y = S.block(d, 80, y + 40, sub, S.font("Medium", 44, False), "#DAD6D3", PW - 160, 1.3)
+    fp = S.font("Black", 80); pt = f"${now}"; pw = d.textlength(pt, font=fp)
+    d.rounded_rectangle((80, 1060, 80 + pw + 80, 1190), 65, fill=S.RED); d.text((120, 1080), pt, font=fp, fill=S.WHITE)
+    if was != now:
+        fo = S.font("Bold", 48, False); ot = f"${was}"; ow = d.textlength(ot, font=fo)
+        ox = 80 + pw + 120; d.text((ox, 1100), ot, font=fo, fill="#8C8784"); d.line((ox - 4, 1130, ox + ow + 4, 1130), fill="#8C8784", width=4)
+        d.text((80, 1000), "HOLIDAY PRICE · GIFT IT", font=S.font("Bold", 30, False), fill="#F7D9D6")
+    S.wordmark(d, 80, PH - 130, S.WHITE, dot=S.RED)
+    fs = S.font("SemiBold", 32, False)
+    d.text((PW - 80 - d.textlength("claimly.ae", font=fs), PH - 117), "claimly.ae", font=fs, fill=S.WHITE)
+    im.save(path, "JPEG", quality=80, optimize=True)
+
+def pkg_rows():
+    rows = []
+    for key, title, kicker, sub, desc in PKG_PINS:
+        now, was = SALE.pkg_price(key), SALE.PKG_REG[key]
+        pkg_image(os.path.join(DIST, "pins", key + ".jpg"), kicker, title.split(":")[0], sub, now, was)
+        rows.append({"id": key, "title": title,
+                     "description": desc + (f" Holiday price ${now} (normally ${was}) until 15 Jan. Can be given as a gift." if now != was else ""),
+                     "link": f"{SITE}/name-my-business/?utm_source=pinterest&utm_medium=catalog&utm_content={key}",
+                     "image_link": f"{SITE}/pins/{key}.jpg", "price": f"{was:.2f} USD",
+                     "sale_price": f"{now:.2f} USD" if now != was else "", "availability": "in stock", "condition": "new",
+                     "brand": "Claimly", "product_type": "Business services > Naming", "google_product_category": "Software > Digital Goods & Currency"})
+    return rows
+
 def main():
     inv = json.load(open(os.path.join(ROOT, "data", "inventory.json")))
     gone = lines("sold.txt") | lines("taken.txt")
@@ -91,6 +130,7 @@ def main():
             "product_type": f"Domain names > {cat}",
             "google_product_category": "Software > Digital Goods & Currency",
         })
+    rows = pkg_rows() + rows                  # naming packages first
     with open(os.path.join(DIST, "catalog", "pinterest.csv"), "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), quoting=csv.QUOTE_ALL)
         w.writeheader(); w.writerows(rows)

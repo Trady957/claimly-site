@@ -606,13 +606,9 @@ def segments_html():
 </div></section>"""
 
 # ───────────────────────── naming package page ─────────────────────────
-OFFER_END = "2027-01-15"                       # holiday price ends after this date
+# Naming package prices and the holiday offer live in scripts/sale.py (shared with the Pinterest catalog)
+OFFER_END, OFFER_TXT, REG, LAUNCH = SALE.OFFER_END, SALE.OFFER_TXT, SALE.PKG_REG, SALE.PKG_OFFER
 OFFER_ON = TODAY <= OFFER_END
-OFFER_TXT = "Holiday price until 15 Jan"
-REG = {"naming_quick": 69, "naming_starter": 149, "naming_shield": 189, "naming_duo": 298,
-       "naming_brand": 299, "naming_bilingual": 349, "naming_launch": 499}
-LAUNCH = {"naming_quick": 49, "naming_starter": 99, "naming_shield": 139, "naming_duo": 159,
-          "naming_brand": 199, "naming_bilingual": 249, "naming_launch": 349}
 PKG_FROM = LAUNCH["naming_starter"] if OFFER_ON else REG["naming_starter"]
 def _pp(k): return LAUNCH[k] if OFFER_ON else REG[k]
 # key, name, price, features, badge
@@ -646,6 +642,25 @@ function frSubmit(e){e.preventDefault();var f=e.target;if(f['bot-field'].value)r
  document.getElementById('frFields').style.display='none';document.getElementById('frDone').style.display='block';return false;}
 </script>"""
 
+PK_RIBBON = ('<div style="background:#E0231C;color:#fff;border-radius:14px;padding:14px 18px;margin:0 0 6px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">'
+             '<span><b>Holiday offer:</b> Starter $99 <s style="opacity:.7">$149</s>, Brand kit $199 <s style="opacity:.7">$299</s>, until 15 Jan.</span>'
+             '<span>&#127873; Give it as a gift: tick &ldquo;This is a gift&rdquo; when you order.</span></div>')
+
+def pk_example():
+    """A worked example of what the Starter package delivers, using real names from the shop."""
+    pool = [d for d in D if d["cat"] == "Food" and d["ext"] == "com" and d["fqdn"] in SEGMENT_NAMES and len(d["name"]) <= 9]
+    kws = ("bake", "crumb", "oven", "dough", "loaf", "rise", "sugar", "honey", "bite", "batch", "golden", "taste", "sweet", "cake", "crust")
+    pick = [d for d in pool if any(k in d["name"].lower() for k in kws)][:10]
+    pick += [d for d in pool if d not in pick][:10 - len(pick)]
+    if len(pick) < 6:
+        return ""
+    cells = "".join(f'<a href="/d/{d["fqdn"]}/">{d["fqdn"]}<span>${d["price"]}</span></a>' for d in pick)
+    return f"""<div style="border:1px solid var(--line);border-radius:18px;padding:22px;margin:0 0 34px;background:#fff">
+<div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Example of a Starter delivery</div>
+<h2 style="font-family:'Schibsted Grotesk';font-size:22px;margin:6px 0 6px">&ldquo;A home bakery in Austin, cozy and a little playful&rdquo;</h2>
+<p style="margin:0 0 6px;color:var(--muted)">This is the kind of list you get: 10 short names that fit the brief, each with the .com checked and free. Yours are made for your business and sent by email, with a note on why each one works.</p>
+<div class="namegrid">{cells}</div></div>"""
+
 def package_page():
     canon = f"{SITE}/name-my-business/"
     title = "Business Naming Service: 10 Names + Your Domain in 48 Hours | Claimly"
@@ -662,6 +677,8 @@ def package_page():
     faq = [("How does it work?","Tell us about your business. Within 48 hours you get 10 names that fit it, each with an available domain. Pick your favourite and we register it for you."),
            ("What if I don’t like any of the names?","Reply and tell us why. We send a second set of names at no extra cost."),
            ("Which domain extensions are included?",".com, .co, .io, .app and similar are included in the price. Premium or already-owned names are not."),
+           ("Can I give it as a gift?","Yes. Tick \u201cThis is a gift\u201d, describe their business and tell us who it is for. We email you a printable gift card straight away, and send the names to them (or to you) within 48 hours. They pick the name, and we register the domain in their name."),
+           ("Do you work with US businesses and LLCs?","Yes. Most of our customers are founders in the US, the UK and the Gulf. If you are forming an LLC, we check that each name is free as a .com; you then confirm it with your state's business registry before you file."),
            ("Do you work with businesses in the UAE and Saudi Arabia?","Yes. We work with founders everywhere, and we can suggest names that work in both English and Arabic markets.")]
     faq_html = "".join(f"<details class='pk-faq'><summary>{esc(q)}</summary><p>{esc(a)}</p></details>" for q,a in faq)
     return head(title, desc, canon, '<script type="application/ld+json">'+json.dumps(ld)+'</script>') + f"""
@@ -685,17 +702,21 @@ def package_page():
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; Name my business</div>
 <h1>Name your business in 48 hours</h1>
 <p class="section-sub">Stuck on a name? Tell us what you do. We send you 10 brandable names with available domains, then register your favourite for you.</p>
+{PK_RIBBON if OFFER_ON else ""}
 <div class="pk-steps"><div><b>1. Tell us about it</b>What you do, who it&rsquo;s for, the feel you want.</div><div><b>2. Get 10 names</b>Checked and available, delivered by email.</div><div><b>3. Pick and launch</b>We register your domain. You start building.</div></div>
 <div class="pk-wrap">{cards}</div>
+{pk_example()}
 <form class="pk-form" id="pkForm" onsubmit="return pkSubmit(event)">
 <div id="pkFields">
 <h2 style="font-family:'Schibsted Grotesk';margin:0 0 14px;font-size:22px">Start your order</h2>
 <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
 <div class="field"><label for="pkKind">Package</label><select id="pkKind" name="kind" required>{opts}</select></div>
 <div class="field"><label for="pkEmail">Your email</label><input type="email" id="pkEmail" name="email" required placeholder="you@company.com" autocomplete="email" maxlength="200"></div>
-<div class="field"><label for="pkBiz">What does your business do?</label><textarea id="pkBiz" name="business" required maxlength="1500" placeholder="e.g. A home cleaning service in Dubai for busy families. Friendly, trustworthy, modern."></textarea></div>
+<div class="field"><label for="pkBiz">What does your business do?</label><textarea id="pkBiz" name="business" required maxlength="1500" placeholder="e.g. A home cleaning service in Austin for busy families. Friendly, trustworthy, modern."></textarea></div>
 <div class="field"><label for="pkCountry">Country</label><input id="pkCountry" name="country" maxlength="80" placeholder="e.g. United States"></div>
 <div class="field"><label for="pkNotes">Names or words you like or dislike (optional)</label><input id="pkNotes" name="notes" maxlength="1500"></div>
+<label style="display:flex;gap:8px;align-items:center;font-size:14px;font-weight:600;margin:2px 0 12px;cursor:pointer"><input type="checkbox" id="pkGift" onchange="document.getElementById('pkGiftBox').style.display=this.checked?'block':'none'"> This is a gift &#127873;</label>
+<div id="pkGiftBox" style="display:none" class="field"><label for="pkGName">Who is it for? (name, and their email if we should send the names to them)</label><input id="pkGName" maxlength="300" placeholder="e.g. Sarah Miller, sarah@example.com"><p class="reassure" style="margin:6px 0 0">Describe their business above. We email you a printable gift card right away, and the names go to them (or you) within 48 hours.</p></div>
 <div class="field"><label for="pkHeard">How did you find Claimly?</label><select id="pkHeard" name="heard_about" required><option value="">Choose one</option><option>Google search</option><option>LinkedIn</option><option>X / Twitter</option><option>Reddit</option><option>Instagram</option><option>Friend or colleague</option><option>AI assistant (ChatGPT, Claude…)</option><option>Other</option></select></div>
 <p class="reassure" style="margin:0 0 10px">By placing your order, you confirm this information is correct and you authorize this purchase right now.</p>
 <button class="btn btn-cta wide" type="submit">Continue to secure payment &rarr;</button>
@@ -712,7 +733,7 @@ def package_page():
 function pickPk(k){{document.getElementById('pkKind').value=k;var f=document.getElementById('pkForm');f.scrollIntoView({{behavior:'smooth'}});setTimeout(function(){{document.getElementById('pkEmail').focus()}},400);}}
 function pkSubmit(e){{e.preventDefault();var f=e.target;if(f['bot-field'].value)return false;
  var sel=document.getElementById('pkKind'),price=Number(sel.options[sel.selectedIndex].dataset.price),a=claimlyAttr(),v=function(n){{return (f[n].value||'').trim();}};
- claimlySave('claimly_orders',{{kind:sel.value,domain:('Naming package: '+sel.options[sel.selectedIndex].text.split(' \u00b7')[0]).slice(0,80),price:price,email:v('email').slice(0,200),business:v('business').slice(0,1500),country:v('country').slice(0,80),notes:v('notes').slice(0,1500),heard_about:v('heard_about'),referrer:(a.ref||'').slice(0,500),landing_page:(a.land||location.pathname).slice(0,500),utm_source:a.us||'',utm_medium:a.um||'',utm_campaign:a.uc||''}});
+ claimlySave('claimly_orders',{{kind:sel.value,domain:('Naming package: '+sel.options[sel.selectedIndex].text.split(' \u00b7')[0]).slice(0,80),price:price,email:v('email').slice(0,200),business:v('business').slice(0,1500),country:v('country').slice(0,80),notes:((document.getElementById('pkGift').checked?'GIFT for '+(document.getElementById('pkGName').value||'').trim()+' | ':'')+v('notes')).slice(0,1500),heard_about:v('heard_about'),referrer:(a.ref||'').slice(0,500),landing_page:(a.land||location.pathname).slice(0,500),utm_source:a.us||'',utm_medium:a.um||'',utm_campaign:a.uc||''}});
  var url='{PAY_BASE}/'+price+'USD';window.open(url,'_blank','noopener');
  document.getElementById('pkPrice').textContent=price;document.getElementById('pkLink').href=url;
  document.getElementById('pkFields').style.display='none';document.getElementById('pkDone').style.display='block';return false;}}
@@ -1065,7 +1086,7 @@ async function ckAlts(base,allTaken){{const el=document.getElementById('ckAlt');
  const parts=[];for(let n=Math.min(6,base.length);n>=4;n--)for(let i=0;i+n<=base.length;i++)parts.push(base.slice(i,i+n));
  let hits=CK_NAMES.filter(([f])=>parts.some(t=>f.split('.')[0].includes(t))).slice(0,12);
  if(hits.length<6)hits=hits.concat(CK_NAMES.filter(([f])=>f.split('.')[0].length<=7&&!hits.some(h=>h[0]===f)).sort(()=>Math.random()-.5).slice(0,12-hits.length));
- el.innerHTML='<h3 style="margin:24px 0 4px">'+(allTaken?'Taken? These similar names are ready to buy':'Also available, ready to buy')+'</h3><div class="linkgrid">'+hits.map(([f,p])=>`<a href="/d/${{f}}/">${{f}}<span>$${{p}}</span></a>`).join('')+'</div><p style="margin-top:12px">Or <a href="/name-my-business/?utm_source=checker" style="color:var(--cobalt);font-weight:700">get 10 checked names made for your business in 48 hours &rarr;</a></p>';}}
+ el.innerHTML='<h3 style="margin:24px 0 4px">'+(allTaken?'Taken? These similar names are ready to buy':'Also available, ready to buy')+'</h3><div class="linkgrid">'+hits.map(([f,p])=>`<a href="/d/${{f}}/">${{f}}<span>$${{p}}</span></a>`).join('')+'</div>'+(allTaken?'<div style="background:var(--ink);color:var(--bone);border-radius:14px;padding:18px;margin-top:16px"><b style="font-size:18px">Your name is taken. Let us find one that isn&rsquo;t.</b><p style="margin:6px 0 12px;opacity:.85">Tell us about your business and get 10 names made for it, each with the .com checked and free, in 48 hours. We register the one you pick.</p><a class="btn btn-cta" href="/name-my-business/?utm_source=checker-taken">Get my 10 names{f" &middot; ${PKG_FROM}" if OFFER_ON else ""} &rarr;</a></div>':'<p style="margin-top:12px">Or <a href="/name-my-business/?utm_source=checker" style="color:var(--cobalt);font-weight:700">get 10 checked names made for your business in 48 hours &rarr;</a></p>');}}
 </script>"""
 
 def checker_page():
