@@ -29,16 +29,16 @@ _GONE = _lines("sold.txt") | _lines("taken.txt")
 INV = [x for x in json.load(open(os.path.join(DATA, "inventory.json"))) if x["d"] not in _GONE]
 # newest additions first, otherwise keep the curated order
 INV = sorted(INV, key=lambda x: x["a"], reverse=True)
-# Week-one sale: 20% off every domain (not .eco) until Sunday 1 Nov 2026. The daily build on
-# Monday 2 Nov (03:00 UTC, Sunday night in the US) puts prices back by itself.
-SALE_END = "2026-11-01"
-SALE_ON = datetime.date.today().isoformat() <= SALE_END
-SALE_PCT = 20
+# Domain sale (dates and % in scripts/sale.py). Prices go back by themselves after SALE_END.
+import sale as SALE
+SALE_END, SALE_PCT = SALE.SALE_END, SALE.SALE_PCT
+SALE_ON = SALE.on()
 WAS = {}
 if SALE_ON:
     for x in INV:
-        if x["d"].rsplit(".", 1)[1] != "eco":
-            WAS[x["d"]] = x["p"]; x["p"] = max(10, round(x["p"] * (100 - SALE_PCT) / 100))
+        new = SALE.price(x["d"], x["p"])
+        if new != x["p"]:
+            WAS[x["d"]] = x["p"]; x["p"] = new
 ADDED = {x["d"]: x["a"] for x in INV}
 CHECKED = {x["d"]: x.get("k", x["a"]) for x in INV}
 RAW = [[x["d"].rsplit(".",1)[0].capitalize(), EXTS.index(x["d"].rsplit(".",1)[1]), x["p"], CATS.index(x["c"]), TIERS.index(x["t"]), ""] for x in INV]
@@ -90,7 +90,7 @@ _DL = (datetime.date(2026, 11, 30) - datetime.date.today()).days
 _DAYS_LEFT = "last day today" if _DL <= 0 else ("ends tomorrow" if _DL == 1 else f"ends in {_DL} days (30 Nov)")
 OFFER_BAR = f"""<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Launch offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; {_DAYS_LEFT} <u>See how &rarr;</u></a>"""
 
-SALE_BAR = f"""<a href="/#shop" style="display:block;background:#E0231C;color:#fff;text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>This week only: 20% off every domain</b> &middot; ends Sunday night (US time) <span id="saleLeft"></span> &middot; <u>Shop now &rarr;</u></a><script>(function(){{var e=new Date("2026-11-02T03:00:00Z"),el=document.getElementById("saleLeft");function t(){{var m=Math.max(0,e-new Date()),d=Math.floor(m/864e5),h=Math.floor(m%864e5/36e5);if(el)el.textContent=m?"· "+(d?d+"d ":"")+h+"h left":"";}}t();setInterval(t,6e4);}})();</script>"""
+SALE_BAR = f"""<a href="/#shop" style="display:block;background:#E0231C;color:#fff;text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>{SALE.SALE_NAME}: up to {SALE_PCT}% off domains</b> &middot; {SALE.SALE_UNTIL} <span id="saleLeft"></span> &middot; <u>Shop now &rarr;</u></a><script>(function(){{var e=new Date("{SALE.SALE_ENDS_UTC}"),el=document.getElementById("saleLeft");function t(){{var m=Math.max(0,e-new Date()),d=Math.floor(m/864e5),h=Math.floor(m%864e5/36e5);if(el)el.textContent=m?"· "+(d?d+"d ":"")+h+"h left":"";}}t();setInterval(t,6e4);}})();</script>"""
 
 def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview:large"):
     return f"""<!DOCTYPE html>
@@ -458,7 +458,7 @@ def domain_page(d, idx):
     desc = f"Buy {d['fqdn']}, a brandable {d['cat'].lower()} domain name, for ${d['price']}. First year included, delivered same day, full refund if not delivered."
     prod = {"@context":"https://schema.org","@type":"Product","name":d["fqdn"],"description":html.unescape(re.sub('<[^>]+>','',describe(d))),
             "image":SITE+"/og-image.png","url":canon,"category":d["cat"]+" domain names","brand":{"@type":"Brand","name":"Claimly"},
-            "offers":{"@type":"Offer","price":str(d["price"]),"priceCurrency":"USD","availability":"https://schema.org/InStock","url":canon,"priceValidUntil":("2026-11-01" if SALE_ON else "2027-12-31"),
+            "offers":{"@type":"Offer","price":str(d["price"]),"priceCurrency":"USD","availability":"https://schema.org/InStock","url":canon,"priceValidUntil":(SALE_END if SALE_ON else "2027-12-31"),
                       "seller":{"@type":"Organization","name":"Claimly","url":SITE+"/"},
                       "shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"USD"},
                           "shippingDestination":{"@type":"DefinedRegion","addressCountry":"AE"},
@@ -482,7 +482,7 @@ def domain_page(d, idx):
 <p class="prose" style="margin:0">{describe(d)}</p>
 </div>
 <div class="dside">
-<div class="dprice"><small>$</small>{d['price']}{f' <s style="font-size:.45em;opacity:.5">${WAS[d["fqdn"]]}</s>' if d['fqdn'] in WAS else ''}</div>{f'<p style="color:#E0231C;font-weight:700;margin:4px 0 0">{SALE_PCT}% off until Sunday night</p>' if d['fqdn'] in WAS else ''}
+<div class="dprice"><small>$</small>{d['price']}{f' <s style="font-size:.45em;opacity:.5">${WAS[d["fqdn"]]}</s>' if d['fqdn'] in WAS else ''}</div>{f'<p style="color:#E0231C;font-weight:700;margin:4px 0 0">{SALE.SALE_NAME} price {SALE.SALE_UNTIL}</p>' if d['fqdn'] in WAS else ''}
 <p>One-time price &middot; first year of registration included</p>
 <button class="btn btn-cta wide" style="margin-top:14px" onclick="openModal('{d['fqdn']}')">Buy {d['fqdn']} &rarr;</button>
 <p>Card or PayPal &middot; usually delivered same day &middot; full refund if not delivered</p>
@@ -976,6 +976,8 @@ def ideas_hub():
 <p><a href="/guides/">Naming guides &rarr;</a></p>
 </div></main>""" + footer() + modal() + "</body></html>"
 
+GUIDE_IDEAS = {"niche-domain-extensions": ["yoga-studio", "clothing-brand", "jewelry", "gaming", "law-firm"]}
+
 def guide_page(g):
     slug_, title_, summary, sections = g
     canon = f"{SITE}/guides/{slug_}/"
@@ -984,7 +986,11 @@ def guide_page(g):
           "publisher": {"@type": "Organization", "name": "Claimly", "logo": {"@type": "ImageObject", "url": SITE + "/og-image.png"}}, "image": SITE + "/og-image.png"}
     body = "".join(f"<h2>{esc(h)}</h2><p>{esc(p)}</p>" for h, p in sections)
     more = "".join(f'<a href="/guides/{o[0]}/">{esc(o[1])}</a>' for o in SC.GUIDES if o[0] != slug_)
-    ideas = "".join(f'<a href="/business-name-ideas/{t[0]}/">{esc(t[1])} names</a>' for t in SC.IDEAS[:8])
+    rel = GUIDE_IDEAS.get(slug_)
+    picks = [t for t in SC.IDEAS if t[0] in rel] if rel else SC.IDEAS[:8]
+    ideas = "".join(f'<a href="/business-name-ideas/{t[0]}/">{esc(t[1])} names</a>' for t in picks)
+    if rel:   # show a few available names for each industry the guide talks about
+        body += "".join(f'<h2>Available {esc(t[2])} names</h2><div class="namegrid">' + "".join(f'<a href="/d/{x["fqdn"]}/">{x["fqdn"]}<span>${x["price"]}</span></a>' for x in _ideas_names(t, n=6)) + f'</div><p><a href="/business-name-ideas/{t[0]}/">More {esc(t[2])} names &rarr;</a></p>' for t in picks)
     return head(f"{title_} | Claimly", summary, canon, '<script type="application/ld+json">' + json.dumps(ld) + '</script>') + SEO_CSS + f"""
 <main class="page"><div class="wrap">
 <div class="crumbs"><a href="/">Claimly</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; {esc(title_)}</div>

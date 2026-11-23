@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from PIL import Image, ImageDraw
 import social as S
 import daily_social as DS
+import sale as SALE
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
@@ -42,9 +43,16 @@ def pin_image(path, domain, price, cat):
     tw = d.textlength(domain, font=f)
     d.text(((PW - tw) / 2, 710 - f.size * 0.62), domain, font=f, fill=S.INK)
     # price
-    fp = S.font("Black", 64); pt = f"${price}"; pw = d.textlength(pt, font=fp)
+    now = SALE.price(domain, price)
+    fp = S.font("Black", 64); pt = f"${now}"; pw = d.textlength(pt, font=fp)
     d.rounded_rectangle(((PW - pw) / 2 - 50, 920, (PW + pw) / 2 + 50, 1030), 55, fill=S.RED)
     d.text(((PW - pw) / 2, 935), pt, font=fp, fill="#FFFFFF")
+    if now != price:   # sale: old price struck through and a badge
+        fo = S.font("Bold", 44, False); ot = f"${price}"; ow = d.textlength(ot, font=fo)
+        ox = (PW + pw) / 2 + 80
+        d.text((ox, 950), ot, font=fo, fill=S.MUTED); d.line((ox - 4, 978, ox + ow + 4, 978), fill=S.MUTED, width=4)
+        bt = f"{SALE.SALE_NAME.upper()} PRICE"; fb = S.font("Bold", 30, False); bw = d.textlength(bt, font=fb)
+        d.rounded_rectangle((80, 470, 80 + bw + 48, 528), 29, fill=S.INK); d.text((104, 482), bt, font=fb, fill="#FFFFFF")
     S.block(d, 80, 1090, "First year of registration included. We register it for you, usually the same day.",
             S.font("Medium", 36, False), S.MUTED, PW - 160, 1.35)
     S.wordmark(d, 80, PH - 130, S.INK)
@@ -70,14 +78,13 @@ def main():
             "id": dom,
             "title": f"{dom} domain name",
             "description": (f"{dom} is a short, brandable domain name for {'an' if phrase[0] in 'aeiou' else 'a'} {phrase}. Available to register today for "
-                            f"${price}, including the first year of registration. Claimly registers it for you and hands it "
+                            f"${SALE.price(dom, price)}{f' ({SALE.SALE_NAME} price, was ${price})' if SALE.price(dom, price) != price else ''}, including the first year of registration. Claimly registers it for you and hands it "
                             f"over, usually the same day, with a full refund if it can't be delivered."),
             "link": f"{SITE}/d/{dom}/?utm_source=pinterest&utm_medium=catalog",
             "image_link": f"{SITE}/pins/{dom}.jpg",
             "price": f"{price:.2f} USD",
-            # week-one sale (same rule as build.py): 20% off until Sunday 1 Nov 2026, not .eco
-            "sale_price": (f"{max(10, round(price * 0.8)):.2f} USD"
-                           if datetime.date.today().isoformat() <= "2026-11-01" and not dom.endswith(".eco") else ""),
+            # domain sale (same rule as build.py, see scripts/sale.py)
+            "sale_price": (f"{SALE.price(dom, price):.2f} USD" if SALE.price(dom, price) != price else ""),
             "availability": "in stock",
             "condition": "new",
             "brand": "Claimly",

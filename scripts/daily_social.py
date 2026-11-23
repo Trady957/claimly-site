@@ -9,6 +9,7 @@ import datetime, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import social as S
 import names as G
+import sale as SALE
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "social", "daily")
@@ -53,11 +54,13 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     stem = TODAY.isoformat()
     title = f"Names for your {PHRASE.get(cat, cat.lower() + ' brand')}"
-    S.names(os.path.join(OUT, stem + ".jpg"), f"Available today · {cat}", title,
-            [(x["d"], x["p"]) for x in pick], "Prices include the first year. Link in bio.")
+    sale = any(SALE.price(x["d"], x["p"]) != x["p"] for x in pick)
+    S.names(os.path.join(OUT, stem + ".jpg"), (f"{SALE.SALE_NAME} prices · {cat}" if sale else f"Available today · {cat}"), title,
+            [(x["d"], SALE.price(x["d"], x["p"])) for x in pick],
+            (f"{SALE.SALE_NAME} prices {SALE.SALE_UNTIL}. First year included. Link in bio." if sale else "Prices include the first year. Link in bio."))
     meta = {"date": stem, "category": cat, "title": title,
             "image_url": f"https://claimly.ae/social/daily/{stem}.jpg",
-            "names": [{"domain": x["d"], "price": x["p"]} for x in pick]}
+            "names": [{"domain": x["d"], "price": SALE.price(x["d"], x["p"]), "was": x["p"]} for x in pick]}
     for name in (stem + ".json", "latest.json"):
         json.dump(meta, open(os.path.join(OUT, name), "w"), indent=1, ensure_ascii=False)
     print("Social post:", cat, ", ".join(x["d"] for x in pick))

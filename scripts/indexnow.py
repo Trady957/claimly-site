@@ -5,6 +5,9 @@ import json, os, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 key = open(os.path.join(ROOT, "data", "indexnow_key.txt")).read().strip()
 urls = [u.strip() for u in open(os.path.join(ROOT, "data", "new_urls.txt")) if u.strip()]
+extra = os.path.join(ROOT, "data", "indexnow_extra.txt")     # pages to keep re-submitting for a while
+if os.path.exists(extra):
+    urls += [u.strip() for u in open(extra) if u.strip().startswith("http") and u.strip() not in urls]
 body = json.dumps({"host": "claimly.ae", "key": key, "keyLocation": f"https://claimly.ae/{key}.txt", "urlList": urls}).encode()
 req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
 try:

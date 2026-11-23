@@ -335,6 +335,35 @@ IDEAS += [
      ["Hive and nectar words make the product obvious.", "Mention origin (Yemeni, Sidr, Manuka) on the label, not in the name.", "A short .com supports gift orders."]),
 ]
 
+# Pages added 23 Nov 2026 for queries Google already shows Claimly for ("agency name", "ad agency name")
+IDEAS += [
+    ("agency", "Agency", "agency", ["Marketing", "Creator", "SaaS"], ["agency", "studio", "craft", "spark", "pitch", "reach", "brand", "bold", "works", "lab", "house"],
+     "An agency name is the first piece of work a client sees, so it has to look confident on a pitch deck, an invoice and a LinkedIn page.",
+     ["Pick a name that survives a change of services: a design agency often becomes a branding or marketing agency.", "Short names with a strong sound (Bold, Spark, Pitch) read well in a client's inbox.", "Get the .com or .co: clients check an agency's own website before they reply."]),
+    ("ad-agency", "Ad agency", "ad agency", ["Marketing", "Creator"], ["pitch", "reach", "click", "buzz", "spark", "bold", "loud", "amplify", "boost", "media", "spot"],
+     "Advertising agencies sell attention, so the name itself should be catchy, short and easy to remember after one meeting.",
+     ["Say it like a slogan. If it sounds good in a radio spot, it works.", "Avoid naming the channel (TV, social, Google); media changes, your agency stays.", "Check the Instagram and LinkedIn handles together with the domain."]),
+    ("creative-agency", "Creative agency", "creative agency", ["Creator", "Marketing"], ["studio", "craft", "canvas", "ink", "pixel", "frame", "muse", "bold", "form", "hue", "lab"],
+     "A creative agency name should show taste: simple, a little unexpected and good-looking in your logo.",
+     ["One unusual word beats two ordinary ones.", "Try the name in black on white first; if it looks good plain, it will look good designed.", "Make sure it works as a short email address, like hello@name.com."]),
+]
+
+# Guide added 23 Nov 2026: Google shows Claimly for ".yoga/.fashion/.jewelry/.game/.lawyer domain names"
+GUIDES += [
+ ("niche-domain-extensions", "Niche Domain Extensions: .yoga, .fashion, .jewelry, .game and .lawyer Explained",
+  "Should you use a niche extension like .yoga, .fashion, .jewelry, .game or .lawyer for your business? Prices, pros and cons, and when a .com or .co is the better choice.",
+  [("What are niche domain extensions?", "Niche extensions (also called new gTLDs) are domain endings made for one industry: .yoga for studios and teachers, .fashion for labels and stylists, .jewelry for jewellers, .game for game studios and .lawyer for law firms. They became available after 2014 and there are now more than a thousand of them."),
+   ("The good part: the name says what you do", "A niche extension tells people your industry before they click. lotus.yoga or atelier.fashion are short and clear, and the exact word you want is often still free when the .com was taken years ago."),
+   ("The catch: price and trust", "Most niche extensions cost far more than a .com. A .lawyer or .jewelry domain is often $40 to $90 a year to register and can renew at a similar price, while .game can cost several hundred dollars a year. Many customers also still type .com by habit, so some visitors and emails end up at someone else's site."),
+   (".yoga domain names", ".yoga works well for teachers and small studios that live on Instagram and want a short, memorable link. If you plan to open more studios, sell products or run retreats, a brandable .com or .co gives you more room. Browse yoga studio names with available domains on Claimly's yoga studio name ideas page."),
+   (".fashion domain names", ".fashion suits labels and stylists with a strong visual brand. Shoppers trust .com and .shop more at checkout, so many fashion brands keep a .com for the store and use the niche domain as a short link. See clothing brand and boutique name ideas for names with the .com free."),
+   (".jewelry domain names", ".jewelry is clear but long, and the British spelling .jewellery is a different extension, which confuses customers. A short brandable .com or .shop is usually easier to say and print on packaging. See jewelry brand name ideas for checked, available names."),
+   (".game domain names", ".game is one of the most expensive extensions to register and renew. Indie studios and streamers usually do better with a short .com, .gg, .io or .studio and spend the difference on the game itself. See gaming name ideas for available names."),
+   (".lawyer domain names", ".lawyer, .law and .attorney look professional, but clients mostly find law firms through Google and referrals, where a clear firm name matters more than the extension. A .com with your firm's name is still the safest choice for email and letterheads. See law firm name ideas."),
+   ("Quick rule: when to pick a niche extension", "Pick a niche extension when the exact word you want is free there, the yearly price is fine for you, and most of your customers will come from a link rather than typing the address. Otherwise choose a short .com, or .co, .shop or .studio, and register the niche domain as well later if you like it."),
+   ("Find a name with the domain already checked", "Every name on Claimly is checked as available before it is listed, with prices from $15 including the first year. Use the free checker to see whether your name is free as .com, .co and .io at once.")]),
+]
+
 # Extra words for pages that had few matching names (2 Nov 2026)
 EXTRA_KWS = {
  "pizza-shop": [
