@@ -1,26 +1,47 @@
-"""One place for the domain sale, used by build.py (site), catalog.py (Pinterest) and daily_social.py (Instagram).
+"""One place for domain sales, used by build.py (site), catalog.py (Pinterest) and daily_social.py (Instagram).
 
-Black Friday / Cyber Monday 2026: 30% off every domain (not .eco) until Monday 30 Nov.
-The daily build on Tuesday 1 Dec (03:00 UTC) puts prices back by itself.
+Holiday season 2026-27 (each sale switches on and off by itself with the daily build):
+  23-30 Nov   Black Friday         30% off
+   1-25 Dec   Christmas sale       50% off   ("gift a business name")
+  26 Dec-15 Jan  New Year sale     50% off   ("New year, new business")
+.eco is never discounted, and no price drops below the floor for its extension
+(what the first year of registration costs, plus a small margin).
 """
 import datetime
 
-SALE_END = "2026-11-30"
-SALE_PCT = 30
-SALE_NAME = "Black Friday"
-SALE_UNTIL = "until Cyber Monday (30 Nov)"
-FLOOR = 15                                 # lowest sale price in USD
-SALE_ENDS_UTC = "2026-12-01T03:00:00Z"     # countdown target on the site
+SALES = [
+    # start, end (inclusive), name, %, until text, countdown target (UTC), short tagline
+    ("2026-11-23", "2026-11-30", "Black Friday", 30, "until Cyber Monday (30 Nov)", "2026-12-01T03:00:00Z", ""),
+    ("2026-12-01", "2026-12-25", "Christmas sale", 50, "until Christmas Day (25 Dec)", "2026-12-26T03:00:00Z", "Gift a business name"),
+    ("2026-12-26", "2027-01-15", "New Year sale", 50, "until 15 Jan", "2027-01-16T03:00:00Z", "New year, new business"),
+]
+
+FLOOR = {"io": 45, "studio": 30, "tech": 30, "store": 25, "shop": 20, "co": 18, "app": 18, "dev": 18}
+FLOOR_DEFAULT = 15                         # .com, .xyz and anything else
+
+def current(today=None):
+    t = (today or datetime.date.today()).isoformat()
+    for s in SALES:
+        if s[0] <= t <= s[1]:
+            return s
+    return None
 
 def on(today=None):
-    return (today or datetime.date.today()).isoformat() <= SALE_END
+    return current(today) is not None
 
 def applies(domain):
     return not domain.endswith(".eco")
 
+def floor(domain):
+    return FLOOR.get(domain.rsplit(".", 1)[-1], FLOOR_DEFAULT)
+
 def price(domain, p, today=None):
     """Sale price for a domain, or the normal price when no sale is running."""
-    if not (on(today) and applies(domain)):
+    s = current(today)
+    if not s or not applies(domain):
         return p
-    # never below FLOOR: a .com costs about $10-11 to register, so the cheapest names keep their price
-    return max(round(p * (100 - SALE_PCT) / 100), min(p, FLOOR))
+    return max(round(p * (100 - s[3]) / 100), min(p, floor(domain)))
+
+# Names used by build.py / catalog.py / daily_social.py for today's sale (empty when none is running)
+_s = current()
+SALE_START, SALE_END, SALE_NAME, SALE_PCT, SALE_UNTIL, SALE_ENDS_UTC, SALE_TAG = _s if _s else ("", "", "", 0, "", "", "")

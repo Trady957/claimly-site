@@ -86,11 +86,11 @@ CAT_BLURB = {
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;900&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">')
 
-_DL = (datetime.date(2026, 11, 30) - datetime.date.today()).days
-_DAYS_LEFT = "last day today" if _DL <= 0 else ("ends tomorrow" if _DL == 1 else f"ends in {_DL} days (30 Nov)")
-OFFER_BAR = f"""<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Launch offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; {_DAYS_LEFT} <u>See how &rarr;</u></a>"""
+_DL = (datetime.date(2027, 1, 15) - datetime.date.today()).days
+_DAYS_LEFT = "last day today" if _DL <= 0 else ("ends tomorrow" if _DL == 1 else f"until 15 Jan")
+OFFER_BAR = f"""<a href="/name-my-business/?utm_source=offer-bar" style="display:block;background:var(--ink);color:var(--bone);text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>Holiday offer:</b> we name your business for $99 <s style="opacity:.6">$149</s> &middot; {_DAYS_LEFT} <u>See how &rarr;</u></a>"""
 
-SALE_BAR = f"""<a href="/#shop" style="display:block;background:#E0231C;color:#fff;text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>{SALE.SALE_NAME}: up to {SALE_PCT}% off domains</b> &middot; {SALE.SALE_UNTIL} <span id="saleLeft"></span> &middot; <u>Shop now &rarr;</u></a><script>(function(){{var e=new Date("{SALE.SALE_ENDS_UTC}"),el=document.getElementById("saleLeft");function t(){{var m=Math.max(0,e-new Date()),d=Math.floor(m/864e5),h=Math.floor(m%864e5/36e5);if(el)el.textContent=m?"· "+(d?d+"d ":"")+h+"h left":"";}}t();setInterval(t,6e4);}})();</script>"""
+SALE_BAR = f"""<a href="/#shop" style="display:block;background:#E0231C;color:#fff;text-align:center;font-size:14px;padding:9px 16px;text-decoration:none;position:relative;z-index:5"><b>{SALE.SALE_NAME}: up to {SALE_PCT}% off domains</b>{(" &middot; " + SALE.SALE_TAG) if SALE.SALE_TAG else ""} &middot; {SALE.SALE_UNTIL} <span id="saleLeft"></span> &middot; <u>Shop now &rarr;</u></a><script>(function(){{var e=new Date("{SALE.SALE_ENDS_UTC}"),el=document.getElementById("saleLeft");function t(){{var m=Math.max(0,e-new Date()),d=Math.floor(m/864e5),h=Math.floor(m%864e5/36e5);if(el)el.textContent=m?"· "+(d?d+"d ":"")+h+"h left":"";}}t();setInterval(t,6e4);}})();</script>"""
 
 def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview:large"):
     return f"""<!DOCTYPE html>
@@ -598,9 +598,9 @@ def segments_html():
 </div></section>"""
 
 # ───────────────────────── naming package page ─────────────────────────
-OFFER_END = "2026-11-30"                       # launch price ends after this date
+OFFER_END = "2027-01-15"                       # holiday price ends after this date
 OFFER_ON = TODAY <= OFFER_END
-OFFER_TXT = "Launch price until 30 Nov"
+OFFER_TXT = "Holiday price until 15 Jan"
 REG = {"naming_quick": 69, "naming_starter": 149, "naming_shield": 189, "naming_duo": 298,
        "naming_brand": 299, "naming_bilingual": 349, "naming_launch": 499}
 LAUNCH = {"naming_quick": 49, "naming_starter": 99, "naming_shield": 139, "naming_duo": 159,
@@ -686,7 +686,7 @@ def package_page():
 <div class="field"><label for="pkKind">Package</label><select id="pkKind" name="kind" required>{opts}</select></div>
 <div class="field"><label for="pkEmail">Your email</label><input type="email" id="pkEmail" name="email" required placeholder="you@company.com" autocomplete="email" maxlength="200"></div>
 <div class="field"><label for="pkBiz">What does your business do?</label><textarea id="pkBiz" name="business" required maxlength="1500" placeholder="e.g. A home cleaning service in Dubai for busy families. Friendly, trustworthy, modern."></textarea></div>
-<div class="field"><label for="pkCountry">Country</label><input id="pkCountry" name="country" maxlength="80" placeholder="e.g. UAE"></div>
+<div class="field"><label for="pkCountry">Country</label><input id="pkCountry" name="country" maxlength="80" placeholder="e.g. United States"></div>
 <div class="field"><label for="pkNotes">Names or words you like or dislike (optional)</label><input id="pkNotes" name="notes" maxlength="1500"></div>
 <div class="field"><label for="pkHeard">How did you find Claimly?</label><select id="pkHeard" name="heard_about" required><option value="">Choose one</option><option>Google search</option><option>LinkedIn</option><option>X / Twitter</option><option>Reddit</option><option>Instagram</option><option>Friend or colleague</option><option>AI assistant (ChatGPT, Claude…)</option><option>Other</option></select></div>
 <p class="reassure" style="margin:0 0 10px">By placing your order, you confirm this information is correct and you authorize this purchase right now.</p>
@@ -868,7 +868,7 @@ def generator_widget(phrase, kws, slug_):
     return f"""<div class="ck gen" id="gen">
 <h2 style="font-family:'Schibsted Grotesk';font-size:24px;margin:0 0 4px">Free {esc(phrase)} name generator</h2>
 <p style="margin:0 0 12px;color:var(--muted)">Add a word you like (your name, your city, a feeling) or leave it empty. We mix it with {esc(phrase)} words and check every .com for you.</p>
-<form class="ck-row" onsubmit="return genRun(event)"><input id="genIn" maxlength="20" placeholder="Optional word, e.g. Dubai, Nova, Sara" autocomplete="off"><button class="btn btn-cta" type="submit">Generate names</button></form>
+<form class="ck-row" onsubmit="return genRun(event)"><input id="genIn" maxlength="20" placeholder="Optional word, e.g. Nova, Austin, Sara" autocomplete="off"><button class="btn btn-cta" type="submit">Generate names</button></form>
 <div id="genOut" class="gen-grid"></div><p id="genMore" style="display:none;margin:12px 0 0"><button class="btn" style="border:1px solid var(--ink)" type="button" onclick="genRun()">More names &#8635;</button></p>
 </div>
 <style>.gen-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:14px}}.gen-grid .ck-res{{margin:0}}.gen-grid .ck-res .btn{{padding:7px 12px;font-size:13px}}</style>

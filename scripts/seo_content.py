@@ -348,6 +348,25 @@ IDEAS += [
      ["One unusual word beats two ordinary ones.", "Try the name in black on white first; if it looks good plain, it will look good designed.", "Make sure it works as a short email address, like hello@name.com."]),
 ]
 
+# US-market pages added 23 Nov 2026 (high-volume US searches: LLC, Etsy, Shopify, side hustle, gift shop)
+IDEAS += [
+    ("llc", "LLC", "LLC", ["Local", "E-commerce", "SaaS", "Finance", "Marketing"], ["true", "north", "summit", "peak", "harbor", "bright", "noble", "craft", "works", "path", "stone", "oak"],
+     "Before you file your LLC, you need a name that's free in your state, free as a .com, and that you'd be happy to see on a bank account and a W-9.",
+     ["Search your state's Secretary of State business database first; your LLC name must be unique there.", "Check the USPTO trademark search (TESS) so you don't build a brand on someone else's mark.", "Pick a name that still works if you add products or move states, then grab the .com before you file."]),
+    ("etsy-shop", "Etsy shop", "Etsy shop", ["E-commerce", "Fashion", "Creator", "Local"], ["craft", "knit", "maple", "loom", "thread", "clay", "wick", "petal", "nest", "kind", "cozy", "honey"],
+     "An Etsy shop name has to stand out in search results next to thousands of other sellers, and it should still work when you move to your own website.",
+     ["Etsy shop names are one word up to 20 characters with no spaces, so short two-word names like MapleLoom work best.", "Get the matching .com now; most Etsy sellers open their own store later.", "Avoid naming only one product (Candles, Mugs); your shop will grow."]),
+    ("shopify-store", "Shopify store", "Shopify store", ["E-commerce", "Fashion", "Health", "Pets"], ["cart", "shop", "crate", "basket", "goods", "supply", "kind", "bloom", "lane", "nest"],
+     "Your Shopify store name is also your brand on ads, packaging and Instagram, so it needs a .com that customers trust at checkout.",
+     ["A brandable .com converts better at checkout than a long descriptive domain.", "Say it out loud in a TikTok or ad voice-over; if it's easy to hear, it's easy to find.", "Check that the Instagram and TikTok handles are free before you pay for the domain."]),
+    ("side-hustle", "Side hustle", "side hustle", ["Local", "Creator", "E-commerce", "Marketing"], ["hustle", "spark", "side", "craft", "lab", "studio", "works", "bright", "bold", "next", "launch"],
+     "A side hustle name should be quick to set up and serious enough that it can become your main business one day.",
+     ["Don't use your own name if you might sell the business or bring in a partner.", "Pick a .com you can use for a professional email from day one.", "Keep it broad enough to cover the next idea, not just this one."]),
+    ("gift-shop", "Gift shop", "gift shop", ["E-commerce", "Local", "Fashion"], ["gift", "wrap", "box", "bow", "joy", "merry", "treat", "charm", "crate", "kind", "petal"],
+     "Gift shops sell a feeling, so the name should sound warm, a little playful and easy to remember when someone needs a present fast.",
+     ["Words like joy, wrap and charm work for gifts all year, not just at Christmas.", "Avoid seasonal names (Santa, Xmas) unless you only sell in December.", "A short .com looks better on gift tags and packaging."]),
+]
+
 # Guide added 23 Nov 2026: Google shows Claimly for ".yoga/.fashion/.jewelry/.game/.lawyer domain names"
 GUIDES += [
  ("niche-domain-extensions", "Niche Domain Extensions: .yoga, .fashion, .jewelry, .game and .lawyer Explained",
