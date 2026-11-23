@@ -1,5 +1,5 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "geos": [
   "US",
   "GB",
@@ -19,272 +19,254 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "rassie erasmus springboks final selections",
-   "geo": "ZA",
-   "traffic": 50000
+   "q": "jack campbell",
+   "geo": "US",
+   "traffic": 30000
   },
   {
-   "q": "pakistan a vs india a",
-   "geo": "AE",
-   "traffic": 10000
+   "q": "david lisnard maire de cannes",
+   "geo": "FR",
+   "traffic": 20000
   },
   {
-   "q": "bank",
-   "geo": "ZA",
-   "traffic": 10000
-  },
-  {
-   "q": "宮川大輔",
-   "geo": "JP",
-   "traffic": 10000
-  },
-  {
-   "q": "alex burghart",
+   "q": "pip assessments",
    "geo": "GB",
-   "traffic": 7500
+   "traffic": 15000
   },
   {
-   "q": "grand theft auto gta vi",
-   "geo": "CA",
-   "traffic": 7500
-  },
-  {
-   "q": "sports",
+   "q": "november december economic calendar gold",
    "geo": "IN",
-   "traffic": 5000
+   "traffic": 10000
   },
   {
-   "q": "harshit rana",
+   "q": "விஜய்",
    "geo": "IN",
-   "traffic": 5000
+   "traffic": 10000
   },
   {
-   "q": "pakistan a vs india a",
-   "geo": "SA",
-   "traffic": 5000
+   "q": "hulu black friday deal 2026",
+   "geo": "US",
+   "traffic": 6000
   },
   {
-   "q": "formel 1 news",
+   "q": "motorsport",
    "geo": "DE",
    "traffic": 5000
   },
   {
-   "q": "byd folding steering wheel",
-   "geo": "AU",
-   "traffic": 3000
-  },
-  {
-   "q": "zimbabwe vs ireland",
+   "q": "bangladesh a vs sri lanka a",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "gasoline",
-   "geo": "AE",
-   "traffic": 2000
-  },
-  {
-   "q": "zimbabwe vs ireland",
+   "q": "bangladesh a vs sri lanka a",
    "geo": "SA",
    "traffic": 2000
   },
   {
-   "q": "hamburg",
-   "geo": "DE",
+   "q": "mohd shuhaily mohd zain",
+   "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "barcelona vs villarreal prediction",
+   "q": "south africa vs bangladesh",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "federal competition and consumer protection commission",
    "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "pakistan a vs india a",
+   "q": "south africa fuel price forecast",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "manufacturing",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "concurso miss universe brasil 2026",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "flamengo campeonato brasileiro",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "exército dos estados unidos",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "ネプリーグ",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "gta 6 update",
    "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "paredes argentina",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "test",
+   "q": "stock market today",
    "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "saskatoon police service",
-   "geo": "CA",
-   "traffic": 1500
-  },
-  {
-   "q": "robert de niro",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "india a vs pakistan a",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "recipe of the year",
-   "geo": "AU",
-   "traffic": 1500
-  },
-  {
-   "q": "franca lehfeldt",
-   "geo": "DE",
+   "q": "latest ott releases",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "de gennaro gianni",
-   "geo": "DE",
+   "q": "bhagyathara lottery result today",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "nachzahlung",
-   "geo": "DE",
+   "q": "ಟೆಸ್ಟ್ ಕ್ರಿಕೆಟ್",
+   "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "f1 las vegas 2026",
+   "q": "क्रिकेट पिच",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "scotland vs zimbabwe",
+   "geo": "AE",
+   "traffic": 1000
+  },
+  {
+   "q": "ميناء بنغازي",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "rockstar games",
    "geo": "FR",
    "traffic": 1000
   },
   {
-   "q": "gta v",
-   "geo": "ZA",
+   "q": "singapore imports hainan poultry pork eggs",
+   "geo": "SG",
    "traffic": 1000
   },
   {
-   "q": "miley cyrus wedding",
-   "geo": "ZA",
+   "q": "atiku abubakar",
+   "geo": "NG",
    "traffic": 1000
   },
   {
-   "q": "楽天 証券 訴訟",
-   "geo": "JP",
+   "q": "cardoso ecowas monetary union governance",
+   "geo": "NG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
    "category": "Finance",
-   "score": 10300
+   "score": 13450
   },
   {
-   "category": "Food",
-   "score": 1500
+   "category": "E-commerce",
+   "score": 8000
   },
   {
-   "category": "SaaS",
-   "score": 1200
+   "category": "AI",
+   "score": 1050
   },
   {
-   "category": "Travel",
-   "score": 800
+   "category": "Gaming",
+   "score": 1000
+  },
+  {
+   "category": "Real estate",
+   "score": 1000
   },
   {
    "category": "Green",
    "score": 750
   },
   {
-   "category": "Gaming",
-   "score": 700
-  },
-  {
-   "category": "Real estate",
-   "score": 600
-  },
-  {
    "category": "Local",
    "score": 500
   },
   {
-   "category": "Legal",
-   "score": 500
+   "category": "Travel",
+   "score": 100
   },
   {
-   "category": "AI",
-   "score": 200
-  },
-  {
-   "category": "Health",
-   "score": 200
+   "category": "Food",
+   "score": 100
   }
  ],
  "words": [
   {
-   "word": "bank",
+   "word": "gold",
    "category": "Finance",
    "score": 10000
   },
   {
-   "word": "recipe",
-   "category": "Food",
+   "word": "deal",
+   "category": "E-commerce",
+   "score": 6000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 2000
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 1950
+  },
+  {
+   "word": "market",
+   "category": "Finance",
    "score": 1500
   },
   {
-   "word": "team",
-   "category": "SaaS",
+   "word": "space",
+   "category": "AI",
+   "score": 1050
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
    "score": 1000
   },
   {
-   "word": "tree",
+   "word": "water",
    "category": "Green",
    "score": 750
   },
   {
-   "word": "travel",
-   "category": "Travel",
-   "score": 600
-  },
-  {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 500
-  },
-  {
-   "word": "city",
+   "word": "weather",
    "category": "Local",
-   "score": 500
-  },
-  {
-   "word": "money",
-   "category": "Finance",
    "score": 300
   },
   {
-   "word": "board",
-   "category": "SaaS",
+   "word": "place",
+   "category": "Local",
    "score": 200
   },
   {
-   "word": "signal",
-   "category": "AI",
-   "score": 200
-  },
-  {
-   "word": "king",
-   "category": "Gaming",
-   "score": 200
-  },
-  {
-   "word": "life",
-   "category": "Health",
-   "score": 200
-  },
-  {
-   "word": "flight",
+   "word": "travel",
    "category": "Travel",
-   "score": 200
+   "score": 100
   },
   {
-   "word": "terra",
-   "category": "Real estate",
-   "score": 200
+   "word": "nugget",
+   "category": "Food",
+   "score": 100
   }
  ]
 }
