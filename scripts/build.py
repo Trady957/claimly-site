@@ -117,7 +117,7 @@ def head(title, desc, canon, extra_ld="", robots="index,follow,max-image-preview
 <div class="bg" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
 <header><div class="wrap nav">
 <a class="brand" href="/">Claimly<span class="reg">&reg;</span></a>
-<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/business-name-ideas/">Name ideas</a><a href="/check-business-name/">Name checker</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
+<nav class="nav-links"><a href="/#finder">AI finder</a><a href="/#shop">Browse</a><a href="/#how">How it works</a><a href="/#faq">FAQ</a><a href="/clinics/">Claimly AI</a><a href="/business-name-ideas/">Name ideas</a><a href="/check-business-name/">Name checker</a><a href="/name-my-business/">Name my business</a><a class="btn btn-cta" href="/#finder">Find a domain</a></nav>
 </div></header>
 {SALE_BAR if SALE_ON else ""}{OFFER_BAR if OFFER_ON else ""}
 """
@@ -146,6 +146,7 @@ def footer():
 <a href="/business-name-ideas/">Business name ideas</a>
 <a href="/guides/">Naming guides</a>
 <a href="/launch/">Launch your business</a>
+<a href="/clinics/">Claimly AI for clinics</a>
 <a href="/partners/">For agencies</a>
 {cats}
 </div>
@@ -270,6 +271,9 @@ def home():
 <section class="section-pad" style="padding-top:0"><div class="wrap"><div style="background:var(--ink);color:var(--bone);border-radius:22px;padding:30px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
 <div><div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7">Can&rsquo;t decide?</div><h2 style="font-family:'Schibsted Grotesk';font-size:clamp(22px,3vw,30px);margin:6px 0 6px">We&rsquo;ll name your business for you</h2><p style="margin:0;opacity:.8;max-width:52ch">10 checked names made for your business, plus your domain registered. Delivered in 48 hours, from ${PKG_FROM}{(' <b style="background:var(--red,#E0231C);color:#fff;border-radius:99px;padding:2px 9px;font-size:13px;margin-left:4px">' + OFFER_TXT + '</b>') if OFFER_ON else ''}.</p></div>
 <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-cta" href="/name-my-business/">See the naming package &rarr;</a><a class="btn" style="border:1px solid var(--bone);color:var(--bone)" href="/name-my-business/#free">Get 3 free ideas</a></div></div></div></section>
+<section class="section-pad" style="padding-top:0"><div class="wrap"><div style="border:1.5px solid var(--ink);border-radius:22px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+<div style="max-width:640px"><div style="font-family:'JetBrains Mono';font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7">New &middot; Claimly AI</div><h2 style="font-family:'Schibsted Grotesk';font-size:clamp(22px,3vw,30px);margin:6px 0 6px">Got the name? Get the customers.</h2><p style="margin:0">A website with online booking, an AI receptionist that answers calls and WhatsApp 24/7, and the Google, reviews and ads work that brings customers every month. Plans from $129/month. <b>Every Claimly AI website comes with a free domain from this shop.</b></p></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-cta" href="/clinics/">See Claimly AI &rarr;</a><a class="btn btn-ghost" href="/clinics/#calc">Free growth report</a></div></div></div></section>
 <section class="section-pad" id="how"><div class="wrap">
 <h2>How it works</h2>
 <p class="section-sub">From finding a name to owning it &mdash; usually the same day.</p>
@@ -769,7 +773,8 @@ def launch_page():
     for x in PARTNERS:
         visit = ""
         if x.get("url"):
-            visit = f'<a class="btn btn-ghost" href="{esc(x["url"])}" target="_blank" rel="sponsored noopener" onclick="lpClick(\'{x["id"]}\')">Visit {esc(x["partner"])} &rarr;</a>'
+            ext = '' if x["url"].startswith("/") else ' target="_blank" rel="sponsored noopener"'
+            visit = f'<a class="btn btn-ghost" href="{esc(x["url"])}"{ext} onclick="lpClick(\'{x["id"]}\')">Visit {esc(x["partner"])} &rarr;</a>'
         by = f'<div class="by">Partner: {esc(x["partner"])}</div>' if x.get("partner") else ""
         cards += (f'<div class="lp"><h2>{esc(x["title"])}</h2>{by}<p>{esc(x["blurb"])}</p>'
                   f'<div class="lp-btns"><button class="btn btn-cta" type="button" onclick="lpPick(\'{x["id"]}\')">{esc(x["cta"])}</button>{visit}</div></div>')
@@ -1180,7 +1185,7 @@ function arSubmit(e){e.preventDefault();var f=e.target;if(f['bot-field'].value)r
 </script></body></html>"""
 
 def sitemap():
-    core = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/check-business-name/", "0.9", "weekly", TODAY), (SITE+"/ar/", "0.9", "weekly", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS]
+    core = [(SITE+"/", "1.0", "daily", TODAY), (SITE+"/new/", "0.9", "daily", TODAY), (SITE+"/clinics/", "0.9", "weekly", TODAY), (SITE+"/check-business-name/", "0.9", "weekly", TODAY), (SITE+"/ar/", "0.9", "weekly", TODAY), (SITE+"/name-my-business/", "0.9", "weekly", TODAY), (SITE+"/launch/", "0.7", "weekly", TODAY), (SITE+"/partners/", "0.6", "monthly", TODAY), (SITE+"/business-name-ideas/", "0.9", "daily", TODAY), (SITE+"/guides/", "0.7", "weekly", TODAY)] + [(f"{SITE}/business-name-ideas/{t[0]}/", "0.8", "daily", TODAY) for t in SC.IDEAS] + [(f"{SITE}/guides/{g[0]}/", "0.7", "monthly", TODAY) for g in SC.GUIDES] + [(f"{SITE}/domains/{slug(c)}/", "0.8", "weekly", TODAY) for c in CATS]
     doms = [(f"{SITE}/d/{d['fqdn']}/", "0.6", "monthly", ADDED.get(d["fqdn"], TODAY)) for d in D]
     def urlset(urls):
         body = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>\n" for u,p,f,m in urls)
@@ -1202,6 +1207,10 @@ def build():
         shutil.copy(os.path.join(SITE_DIR, f), dst)
     if os.path.isdir(os.path.join(ROOT, "social")):   # Instagram images, used by Metricool
         shutil.copytree(os.path.join(ROOT, "social"), os.path.join(OUT, "social"))
+    PAGES = os.path.join(ROOT, "pages")   # hand-made pages copied as-is (e.g. /clinics/ for Claimly AI)
+    if os.path.isdir(PAGES):
+        for name in os.listdir(PAGES):
+            shutil.copytree(os.path.join(PAGES, name), os.path.join(OUT, name))
     open(os.path.join(OUT, "index.html"), "w").write(home())
     open(os.path.join(OUT, "404.html"), "w").write(notfound())
     os.makedirs(os.path.join(OUT, "new")); open(os.path.join(OUT, "new", "index.html"), "w").write(new_page())

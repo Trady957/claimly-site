@@ -1,6 +1,34 @@
 [
-  {"id": "company_setup", "title": "Company license in the UAE", "blurb": "Free-zone trade license, visas and bank account help. We introduce you to a licensed setup partner and you get their best package.", "partner": "", "url": "", "cta": "Get a free intro"},
-  {"id": "website", "title": "Website & hosting", "blurb": "Put your new domain to work: a fast website with a builder, SSL and email included.", "partner": "", "url": "", "cta": "Get a free recommendation"},
-  {"id": "email", "title": "Professional email", "blurb": "you@yourbusiness.com on your new domain, set up in minutes.", "partner": "", "url": "", "cta": "Get set up"},
-  {"id": "store", "title": "Online store", "blurb": "Selling products? Launch a store on your domain with payments and shipping built in.", "partner": "", "url": "", "cta": "Get a free recommendation"}
+ {
+  "id": "company_setup",
+  "title": "Company license in the UAE",
+  "blurb": "Free-zone trade license, visas and bank account help. We introduce you to a licensed setup partner and you get their best package.",
+  "partner": "",
+  "url": "",
+  "cta": "Get a free intro"
+ },
+ {
+  "id": "website",
+  "title": "Website, booking & AI receptionist — by Claimly AI",
+  "blurb": "Our own team builds your website with online booking, adds an AI receptionist that answers calls and WhatsApp 24/7, and runs Google, reviews and ads. Your domain from this shop is free with any website.",
+  "partner": "Claimly AI",
+  "url": "/clinics/",
+  "cta": "Get a free growth report"
+ },
+ {
+  "id": "email",
+  "title": "Professional email",
+  "blurb": "you@yourbusiness.com on your new domain, set up in minutes.",
+  "partner": "",
+  "url": "",
+  "cta": "Get set up"
+ },
+ {
+  "id": "store",
+  "title": "Online store",
+  "blurb": "Selling products? Launch a store on your domain with payments and shipping built in.",
+  "partner": "",
+  "url": "",
+  "cta": "Get a free recommendation"
+ }
 ]
