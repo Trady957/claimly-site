@@ -1,0 +1,258 @@
+{
+ "date": "2026-11-24",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "AE",
+   "traffic": 20000
+  },
+  {
+   "q": "electrek",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "sandisk stock price",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "st bonaventure basketball",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "kyle sandilands manager bruno bouchet",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "sarfaraz khan",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "uae bus accident",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "george russell",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "notruf hafenkante",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "démarchage téléphonique",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "pleine lune 24 novembre 2026",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "elina svitolina",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "équipe d'afrique du sud de rugby à xv",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "julius malema lawsuit helen zille",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "roger waters",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "mc ryan",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "a fazenda 18 enquete",
+   "geo": "BR",
+   "traffic": 2000
+  },
+  {
+   "q": "大越健介",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "rizin 引退",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "堂本 光一",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "anmer hall break in news",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "freddie potts",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "陈吉宁",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "damien martyn",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "ind vs wi",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "cricinfo",
+   "geo": "AE",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "SaaS",
+   "score": 101000
+  },
+  {
+   "category": "Finance",
+   "score": 15000
+  },
+  {
+   "category": "E-commerce",
+   "score": 15000
+  },
+  {
+   "category": "Green",
+   "score": 2000
+  },
+  {
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "category": "Creator",
+   "score": 800
+  },
+  {
+   "category": "Local",
+   "score": 150
+  },
+  {
+   "category": "Pets",
+   "score": 100
+  }
+ ],
+ "words": [
+  {
+   "word": "team",
+   "category": "SaaS",
+   "score": 101000
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 15000
+  },
+  {
+   "word": "price",
+   "category": "E-commerce",
+   "score": 15000
+  },
+  {
+   "word": "water",
+   "category": "Green",
+   "score": 2000
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 800
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 800
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 150
+  }
+ ]
+}

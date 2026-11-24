@@ -1,5 +1,5 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "geos": [
   "US",
   "GB",
@@ -19,254 +19,240 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "jack campbell",
-   "geo": "US",
-   "traffic": 30000
-  },
-  {
-   "q": "david lisnard maire de cannes",
-   "geo": "FR",
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "AE",
    "traffic": 20000
   },
   {
-   "q": "pip assessments",
-   "geo": "GB",
+   "q": "electrek",
+   "geo": "US",
    "traffic": 15000
   },
   {
-   "q": "november december economic calendar gold",
-   "geo": "IN",
-   "traffic": 10000
-  },
-  {
-   "q": "விஜய்",
-   "geo": "IN",
-   "traffic": 10000
-  },
-  {
-   "q": "hulu black friday deal 2026",
+   "q": "sandisk stock price",
    "geo": "US",
-   "traffic": 6000
+   "traffic": 15000
   },
   {
-   "q": "motorsport",
-   "geo": "DE",
-   "traffic": 5000
+   "q": "st bonaventure basketball",
+   "geo": "US",
+   "traffic": 15000
   },
   {
-   "q": "bangladesh a vs sri lanka a",
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "GB",
+   "traffic": 7500
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "geo": "CA",
+   "traffic": 3000
+  },
+  {
+   "q": "kyle sandilands manager bruno bouchet",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "sarfaraz khan",
+   "geo": "IN",
+   "traffic": 2000
+  },
+  {
+   "q": "uae bus accident",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "bangladesh a vs sri lanka a",
-   "geo": "SA",
+   "q": "george russell",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "mohd shuhaily mohd zain",
-   "geo": "SG",
+   "q": "notruf hafenkante",
+   "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "south africa vs bangladesh",
-   "geo": "SG",
+   "q": "démarchage téléphonique",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "federal competition and consumer protection commission",
-   "geo": "NG",
+   "q": "pleine lune 24 novembre 2026",
+   "geo": "FR",
    "traffic": 2000
   },
   {
-   "q": "south africa fuel price forecast",
+   "q": "elina svitolina",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "équipe d'afrique du sud de rugby à xv",
+   "geo": "FR",
+   "traffic": 2000
+  },
+  {
+   "q": "julius malema lawsuit helen zille",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "manufacturing",
-   "geo": "ZA",
-   "traffic": 2000
-  },
-  {
-   "q": "concurso miss universe brasil 2026",
+   "q": "roger waters",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "flamengo campeonato brasileiro",
+   "q": "mc ryan",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "exército dos estados unidos",
+   "q": "a fazenda 18 enquete",
    "geo": "BR",
    "traffic": 2000
   },
   {
-   "q": "ネプリーグ",
+   "q": "大越健介",
    "geo": "JP",
    "traffic": 2000
   },
   {
-   "q": "gta 6 update",
+   "q": "rizin 引退",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "堂本 光一",
+   "geo": "JP",
+   "traffic": 2000
+  },
+  {
+   "q": "anmer hall break in news",
    "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "stock market today",
-   "geo": "CA",
+   "q": "freddie potts",
+   "geo": "GB",
    "traffic": 1500
   },
   {
-   "q": "latest ott releases",
+   "q": "陈吉宁",
+   "geo": "GB",
+   "traffic": 1500
+  },
+  {
+   "q": "damien martyn",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "ind vs wi",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "bhagyathara lottery result today",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "ಟೆಸ್ಟ್ ಕ್ರಿಕೆಟ್",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "क्रिकेट पिच",
-   "geo": "IN",
-   "traffic": 1000
-  },
-  {
-   "q": "scotland vs zimbabwe",
+   "q": "cricinfo",
    "geo": "AE",
-   "traffic": 1000
-  },
-  {
-   "q": "ميناء بنغازي",
-   "geo": "SA",
-   "traffic": 1000
-  },
-  {
-   "q": "rockstar games",
-   "geo": "FR",
-   "traffic": 1000
-  },
-  {
-   "q": "singapore imports hainan poultry pork eggs",
-   "geo": "SG",
-   "traffic": 1000
-  },
-  {
-   "q": "atiku abubakar",
-   "geo": "NG",
-   "traffic": 1000
-  },
-  {
-   "q": "cardoso ecowas monetary union governance",
-   "geo": "NG",
    "traffic": 1000
   }
  ],
  "categories": [
   {
+   "category": "SaaS",
+   "score": 101000
+  },
+  {
    "category": "Finance",
-   "score": 13450
+   "score": 15000
   },
   {
    "category": "E-commerce",
-   "score": 8000
-  },
-  {
-   "category": "AI",
-   "score": 1050
-  },
-  {
-   "category": "Gaming",
-   "score": 1000
-  },
-  {
-   "category": "Real estate",
-   "score": 1000
+   "score": 15000
   },
   {
    "category": "Green",
-   "score": 750
+   "score": 2000
+  },
+  {
+   "category": "Gaming",
+   "score": 1500
+  },
+  {
+   "category": "Creator",
+   "score": 800
   },
   {
    "category": "Local",
-   "score": 500
+   "score": 150
   },
   {
-   "category": "Travel",
-   "score": 100
-  },
-  {
-   "category": "Food",
+   "category": "Pets",
    "score": 100
   }
  ],
  "words": [
   {
-   "word": "gold",
-   "category": "Finance",
-   "score": 10000
-  },
-  {
-   "word": "deal",
-   "category": "E-commerce",
-   "score": 6000
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 2000
+   "word": "team",
+   "category": "SaaS",
+   "score": 101000
   },
   {
    "word": "stock",
    "category": "Finance",
-   "score": 1950
+   "score": 15000
   },
   {
-   "word": "market",
-   "category": "Finance",
-   "score": 1500
-  },
-  {
-   "word": "space",
-   "category": "AI",
-   "score": 1050
-  },
-  {
-   "word": "game",
-   "category": "Gaming",
-   "score": 1000
+   "word": "price",
+   "category": "E-commerce",
+   "score": 15000
   },
   {
    "word": "water",
    "category": "Green",
-   "score": 750
+   "score": 2000
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 800
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 800
+  },
+  {
+   "word": "league",
+   "category": "Gaming",
+   "score": 300
+  },
+  {
+   "word": "score",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "game",
+   "category": "Gaming",
+   "score": 200
   },
   {
    "word": "weather",
    "category": "Local",
-   "score": 300
-  },
-  {
-   "word": "place",
-   "category": "Local",
-   "score": 200
-  },
-  {
-   "word": "travel",
-   "category": "Travel",
-   "score": 100
-  },
-  {
-   "word": "nugget",
-   "category": "Food",
-   "score": 100
+   "score": 150
   }
  ]
 }
