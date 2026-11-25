@@ -1,0 +1,269 @@
+{
+ "date": "2026-11-25",
+ "geos": [
+  "US",
+  "GB",
+  "IN",
+  "AE",
+  "SA",
+  "CA",
+  "AU",
+  "DE",
+  "FR",
+  "SG",
+  "NG",
+  "ZA",
+  "BR",
+  "JP"
+ ],
+ "failed": [],
+ "top_searches": [
+  {
+   "q": "clima",
+   "geo": "US",
+   "traffic": 60000
+  },
+  {
+   "q": "michael skubala",
+   "geo": "GB",
+   "traffic": 30000
+  },
+  {
+   "q": "precio del dolar en mexico",
+   "geo": "US",
+   "traffic": 15000
+  },
+  {
+   "q": "ميناء الحديدة",
+   "geo": "SA",
+   "traffic": 10000
+  },
+  {
+   "q": "sassa december 2026 grant amounts",
+   "geo": "ZA",
+   "traffic": 10000
+  },
+  {
+   "q": "coca-cola zero sugar",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "melbourne victory fc vs viettel fc standings",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "tariffs",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "david lisnard",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "civil service bonus",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "kroger",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "eurostar unannounced rail strike",
+   "geo": "GB",
+   "traffic": 3000
+  },
+  {
+   "q": "simon thuijs",
+   "geo": "AU",
+   "traffic": 3000
+  },
+  {
+   "q": "വിമാനം",
+   "geo": "AE",
+   "traffic": 2000
+  },
+  {
+   "q": "fc schalke 04",
+   "geo": "DE",
+   "traffic": 2000
+  },
+  {
+   "q": "miss universe",
+   "geo": "SG",
+   "traffic": 2000
+  },
+  {
+   "q": "allowance",
+   "geo": "NG",
+   "traffic": 2000
+  },
+  {
+   "q": "pieter-steph du toit",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "laboratory",
+   "geo": "ZA",
+   "traffic": 2000
+  },
+  {
+   "q": "canada us defense memo response",
+   "geo": "CA",
+   "traffic": 1500
+  },
+  {
+   "q": "mick doohan",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "molly meldrum movie",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "రేషన్ కార్డు",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "aneurin donald cricket",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "كريستيانو رونالدو",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "die bergretter",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "fc bayern transfer news",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "chow yun fat",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "electricity",
+   "geo": "ZA",
+   "traffic": 1000
+  }
+ ],
+ "categories": [
+  {
+   "category": "Creator",
+   "score": 2000
+  },
+  {
+   "category": "Local",
+   "score": 1500
+  },
+  {
+   "category": "E-commerce",
+   "score": 1050
+  },
+  {
+   "category": "Finance",
+   "score": 600
+  },
+  {
+   "category": "Legal",
+   "score": 300
+  },
+  {
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "category": "Travel",
+   "score": 150
+  }
+ ],
+ "words": [
+  {
+   "word": "movie",
+   "category": "Creator",
+   "score": 1500
+  },
+  {
+   "word": "weather",
+   "category": "Local",
+   "score": 1200
+  },
+  {
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 750
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 300
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 300
+  },
+  {
+   "word": "silver",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "case",
+   "category": "Legal",
+   "score": 300
+  },
+  {
+   "word": "scene",
+   "category": "Creator",
+   "score": 200
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "island",
+   "category": "Travel",
+   "score": 150
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "sell",
+   "category": "E-commerce",
+   "score": 100
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "geos": [
   "US",
   "GB",
@@ -19,240 +19,251 @@
  "failed": [],
  "top_searches": [
   {
-   "q": "united arab emirates national cricket team vs india a cricket team standings",
-   "geo": "AE",
-   "traffic": 20000
+   "q": "clima",
+   "geo": "US",
+   "traffic": 60000
   },
   {
-   "q": "electrek",
+   "q": "michael skubala",
+   "geo": "GB",
+   "traffic": 30000
+  },
+  {
+   "q": "precio del dolar en mexico",
    "geo": "US",
    "traffic": 15000
   },
   {
-   "q": "sandisk stock price",
-   "geo": "US",
-   "traffic": 15000
-  },
-  {
-   "q": "st bonaventure basketball",
-   "geo": "US",
-   "traffic": 15000
-  },
-  {
-   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "q": "ميناء الحديدة",
    "geo": "SA",
    "traffic": 10000
   },
   {
-   "q": "united arab emirates national cricket team vs india a cricket team standings",
+   "q": "sassa december 2026 grant amounts",
+   "geo": "ZA",
+   "traffic": 10000
+  },
+  {
+   "q": "coca-cola zero sugar",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "melbourne victory fc vs viettel fc standings",
+   "geo": "AU",
+   "traffic": 7500
+  },
+  {
+   "q": "tariffs",
+   "geo": "US",
+   "traffic": 6000
+  },
+  {
+   "q": "bangladesh vs south africa",
+   "geo": "SA",
+   "traffic": 5000
+  },
+  {
+   "q": "david lisnard",
+   "geo": "FR",
+   "traffic": 5000
+  },
+  {
+   "q": "civil service bonus",
+   "geo": "SG",
+   "traffic": 5000
+  },
+  {
+   "q": "kroger",
+   "geo": "US",
+   "traffic": 3000
+  },
+  {
+   "q": "eurostar unannounced rail strike",
    "geo": "GB",
-   "traffic": 7500
-  },
-  {
-   "q": "united arab emirates national cricket team vs india a cricket team standings",
-   "geo": "AU",
-   "traffic": 7500
-  },
-  {
-   "q": "united arab emirates national cricket team vs india a cricket team standings",
-   "geo": "CA",
    "traffic": 3000
   },
   {
-   "q": "kyle sandilands manager bruno bouchet",
+   "q": "simon thuijs",
    "geo": "AU",
    "traffic": 3000
   },
   {
-   "q": "sarfaraz khan",
-   "geo": "IN",
-   "traffic": 2000
-  },
-  {
-   "q": "uae bus accident",
+   "q": "വിമാനം",
    "geo": "AE",
    "traffic": 2000
   },
   {
-   "q": "george russell",
+   "q": "fc schalke 04",
    "geo": "DE",
    "traffic": 2000
   },
   {
-   "q": "notruf hafenkante",
-   "geo": "DE",
+   "q": "miss universe",
+   "geo": "SG",
    "traffic": 2000
   },
   {
-   "q": "démarchage téléphonique",
-   "geo": "FR",
+   "q": "allowance",
+   "geo": "NG",
    "traffic": 2000
   },
   {
-   "q": "pleine lune 24 novembre 2026",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "elina svitolina",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "équipe d'afrique du sud de rugby à xv",
-   "geo": "FR",
-   "traffic": 2000
-  },
-  {
-   "q": "julius malema lawsuit helen zille",
+   "q": "pieter-steph du toit",
    "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "roger waters",
-   "geo": "BR",
+   "q": "laboratory",
+   "geo": "ZA",
    "traffic": 2000
   },
   {
-   "q": "mc ryan",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "a fazenda 18 enquete",
-   "geo": "BR",
-   "traffic": 2000
-  },
-  {
-   "q": "大越健介",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "rizin 引退",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "堂本 光一",
-   "geo": "JP",
-   "traffic": 2000
-  },
-  {
-   "q": "anmer hall break in news",
-   "geo": "GB",
+   "q": "canada us defense memo response",
+   "geo": "CA",
    "traffic": 1500
   },
   {
-   "q": "freddie potts",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "陈吉宁",
-   "geo": "GB",
-   "traffic": 1500
-  },
-  {
-   "q": "damien martyn",
+   "q": "mick doohan",
    "geo": "AU",
    "traffic": 1500
   },
   {
-   "q": "ind vs wi",
+   "q": "molly meldrum movie",
+   "geo": "AU",
+   "traffic": 1500
+  },
+  {
+   "q": "రేషన్ కార్డు",
    "geo": "IN",
    "traffic": 1000
   },
   {
-   "q": "cricinfo",
-   "geo": "AE",
+   "q": "aneurin donald cricket",
+   "geo": "IN",
+   "traffic": 1000
+  },
+  {
+   "q": "كريستيانو رونالدو",
+   "geo": "SA",
+   "traffic": 1000
+  },
+  {
+   "q": "die bergretter",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "fc bayern transfer news",
+   "geo": "DE",
+   "traffic": 1000
+  },
+  {
+   "q": "chow yun fat",
+   "geo": "SG",
+   "traffic": 1000
+  },
+  {
+   "q": "electricity",
+   "geo": "ZA",
    "traffic": 1000
   }
  ],
  "categories": [
   {
-   "category": "SaaS",
-   "score": 101000
-  },
-  {
-   "category": "Finance",
-   "score": 15000
-  },
-  {
-   "category": "E-commerce",
-   "score": 15000
-  },
-  {
-   "category": "Green",
+   "category": "Creator",
    "score": 2000
   },
   {
-   "category": "Gaming",
+   "category": "Local",
    "score": 1500
   },
   {
-   "category": "Creator",
-   "score": 800
+   "category": "E-commerce",
+   "score": 1050
   },
   {
-   "category": "Local",
+   "category": "Finance",
+   "score": 600
+  },
+  {
+   "category": "Legal",
+   "score": 300
+  },
+  {
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "category": "Travel",
    "score": 150
-  },
-  {
-   "category": "Pets",
-   "score": 100
   }
  ],
  "words": [
   {
-   "word": "team",
-   "category": "SaaS",
-   "score": 101000
-  },
-  {
-   "word": "stock",
-   "category": "Finance",
-   "score": 15000
-  },
-  {
-   "word": "price",
-   "category": "E-commerce",
-   "score": 15000
-  },
-  {
-   "word": "water",
-   "category": "Green",
-   "score": 2000
-  },
-  {
-   "word": "cup",
-   "category": "Gaming",
-   "score": 800
-  },
-  {
-   "word": "star",
+   "word": "movie",
    "category": "Creator",
-   "score": 800
-  },
-  {
-   "word": "league",
-   "category": "Gaming",
-   "score": 300
-  },
-  {
-   "word": "score",
-   "category": "Gaming",
-   "score": 200
-  },
-  {
-   "word": "game",
-   "category": "Gaming",
-   "score": 200
+   "score": 1500
   },
   {
    "word": "weather",
    "category": "Local",
+   "score": 1200
+  },
+  {
+   "word": "sale",
+   "category": "E-commerce",
+   "score": 750
+  },
+  {
+   "word": "star",
+   "category": "Creator",
+   "score": 300
+  },
+  {
+   "word": "city",
+   "category": "Local",
+   "score": 300
+  },
+  {
+   "word": "silver",
+   "category": "Finance",
+   "score": 300
+  },
+  {
+   "word": "case",
+   "category": "Legal",
+   "score": 300
+  },
+  {
+   "word": "scene",
+   "category": "Creator",
+   "score": 200
+  },
+  {
+   "word": "cup",
+   "category": "Gaming",
+   "score": 200
+  },
+  {
+   "word": "stock",
+   "category": "Finance",
+   "score": 200
+  },
+  {
+   "word": "island",
+   "category": "Travel",
    "score": 150
+  },
+  {
+   "word": "market",
+   "category": "Finance",
+   "score": 100
+  },
+  {
+   "word": "sell",
+   "category": "E-commerce",
+   "score": 100
   }
  ]
 }
