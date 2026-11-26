@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-26",
+ "category": "E-commerce",
+ "title": "Names for your online store",
+ "image_url": "https://claimly.ae/social/daily/2026-11-26.jpg",
+ "names": [
+  {
+   "domain": "neodeal.co",
+   "price": 25,
+   "was": 50
+  },
+  {
+   "domain": "trydeal.co",
+   "price": 30,
+   "was": 60
+  },
+  {
+   "domain": "truesell.co",
+   "price": 20,
+   "was": 39
+  },
+  {
+   "domain": "dealstack.co",
+   "price": 20,
+   "was": 39
+  },
+  {
+   "domain": "truecraft.co",
+   "price": 20,
+   "was": 39
+  }
+ ]
+}
